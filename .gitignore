@@ -1,0 +1,5 @@
+outputs/browser-review-profile/
+__pycache__/
+*.pyc
+revisions/
+plot_dimensions.jpg
