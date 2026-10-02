@@ -1,44 +1,48 @@
 # Project state — resume here
 
-Updated: 2026-10-01. Phase: initial concept comparison.
+Updated: 2026-10-02. Phase: C03 owner-feedback comparison.
 
 ## Current position
 
-- Current design: **C01**, presented for owner review; **no option selected**.
-- Option 01: road-facing arrival. Option 02: the same layout rotated toward the garden, with window adjustments. Assistant preference for 02 is a proposal only.
-- Current entry: [concept viewer](outputs/house-concepts.html). Details: [C01 notes](docs/concept-study-C01.md).
-- Sources: [geometry](data/concepts.json), [viewer template](src/concept-viewer.html), [build](scripts/build_concepts.py).
-- Context: [brief](docs/brief.md), [site](docs/site-investigation.md), [family rules](docs/preferences-and-feng-shui.md), [roadmap](HOUSE_BUILDING_PLAN.md).
-- Tracking: [decisions](docs/decisions.md), [open issues](docs/open-issues.md), [revision workflow](docs/agent-workflow.md).
-- Handoff setup completed in this session: project instructions, house-revision skill, state/decision/issue records and an archive helper. House geometry was not revised during this setup.
+- Current revision **C03a**, corrected C03 review issue; **neither balcony/layout selected**.
+- Road-facing arrival and SE house/altar facing remain confirmed. C03 compares shared balcony versus sister's corner balcony, not entrance orientations.
+- Latest input: rear beside B, A-side wall about 0.30 m away; TV stand; entrance around 1.90 m; compact kitchen dining, more open living/altar; bedroom balcony conditionally allowed for layering; WC basins unnecessary.
+- B allowance 0.10 m is an assistant assumption. Named A/B edges govern; after retained clockwise display A is right, B above, C left.
+- [Viewer](outputs/house-concepts.html) · [C03 comparison/limits](docs/concept-study-C03.md) · [C03a handoff correction](docs/concept-study-C03a.md).
+- Sources: [geometry](data/concepts.json), [template](src/concept-viewer.html), [build](scripts/build_concepts.py), [browser/export](scripts/review_viewer.py).
+- Requirements/evidence: [brief](docs/brief.md), [site](docs/site-investigation.md), [family rules](docs/preferences-and-feng-shui.md); tracking: [decisions](docs/decisions.md), [issues](docs/open-issues.md), [workflow](docs/agent-workflow.md).
 
-## Existing evidence and checks
+## C03 changes and unresolved consequences
 
-- C01 build reported 14/14 limited geometry checks passing; see [report](outputs/geometry-review.md).
-- Both options/all five viewer views were exercised in Chrome, room selection and overlays checked, and 390 px layout checked for document overflow; see [viewer report](outputs/viewer-review.md).
-- Floor previews were visually inspected and furniture revised to improve bedroom/ balcony access. Door swings, actual clearances, stair headroom and car turning remain unchecked design issues.
-- Boundary geometry and 243.78 m² model area are inferred. No measured survey, geotechnical report, confirmed planning limits, adopted structural calculations or construction issue exists.
-- C01 is preserved in `revisions/C01/` with a manifest and archive. Use the snapshot verifier before relying on that baseline. A Git repository is now initialized on local branch `master`; it has no commits or remote configured yet. The repository and snapshots remain local history, not an off-device backup.
-- Agent setup validation: skill frontmatter/name/description and referenced local workflow files/links checked directly. The bundled skill validator could not run because PyYAML is absent; no dependency was installed. No house geometry or browser rerun was needed for this instructions-only setup.
+- F1 repositions toward A/B with the footprint retained. Compact kitchen dining frees the central zone for open living with a TV stand and wider entry. Five bedrooms / four separate WC-shower pairs remain; basins only in showers.
+- B-side door/cantilever removed; upper layer projects toward C. Garden reached via living/front yard, not a new door into B's narrow allowance. Direct kitchen/garden connection remains L07.
+- F2 sister/bedroom 5 positions change; brother enlarges toward C. Bedroom 5 rooflight is a candidate. No A/B windows assumed; kitchen daylight/extract and close-boundary performance remain priority unresolved work (L10/S02).
+- Balcony 01 is shared from landing; 02 is through sister's bedroom with stronger corner layering and a privacy/shared-access tradeoff (L03). Same F1 and F2 interior room system.
+- Altar solid backing/indoor buffer and exact empty upper projection retained. Final family acceptance of ceremony depth/extent remains L04.
+- Stair nominal 21-riser / 2.2 m bay / 260 mm going remains an unverified reservation (L06). Entry, TV, dining and sanitary occupied/swing clearances remain L05/L11.
+- Parking moves to front/A corner; shared balcony overlaps bay edge overhead. Turning, supports and clear height unresolved, along with structural, services and budget basis.
+
+## Artifacts and checks
+
+- [F1](outputs/option-01-F1.svg) · [Shared F2](outputs/option-01-F2.svg) · [Corner F2](outputs/option-02-F2.svg).
+- [Shared plot](outputs/option-01-site.svg) · [Corner plot](outputs/option-02-site.svg) · [Sections](outputs/option-01-section.svg).
+- [Shared massing](outputs/option-01-massing.svg) · [Corner massing](outputs/option-02-massing.svg). Ten current SVGs / ten matching PNGs exported.
+- Build **48/48 limited checks passed**; [geometry review](outputs/geometry-review.md). Counts, footprints and metadata are not usable circulation, planning or engineering approvals.
+- Chrome: both options/all five views, selection, balcony variants, TV/entry, five overlays and 390 px document overflow checked; [viewer review](outputs/viewer-review.md). PNG capture moved to standalone SVG tabs. Print/PDF not tested.
+- Visual inspection of F1, both F2 plans, plot/section and massing; plot labels/export behavior corrected and review rerun.
+- C02 verified before edits (32 archived files). C01/C02/C03/C03a local review snapshots verified; archives not overwritten. Snapshots preserve evidence, not owner/professional approval or off-device backup.
+- Top-level option-01/02 outputs are current C03a; nested obsolete-C01 outputs are historical. No stale current exports or interrupted edits remain.
 
 ## Next action
 
-Continue with the owner's requested revision. If asked simply to continue, review issues L01–L05 and propose a focused refinement of the current comparison; keep both orientations available until the owner selects one. Start a new design revision only when geometry/design actually changes.
+Review occupied kitchen dining and TV/entrance use, then choose the balcony access priority. Resolve kitchen and bedroom 5 daylight/ventilation, near-boundary construction details and garden adjacency before developing doors, stair headroom and cantilever/balcony structure. Relevant issues L02–L11, S01–S04, E01/E02 and deferred budget remain open. Do not re-ask road arrival, floor naming, room counts, stair clarification or basin-in-shower intent.
 
-The most useful owner choices are entrance orientation, whether approximately 16 m² living/dining feels sufficient, balcony access through the sister's room versus shared access, and acceptance of the reserved altar zones. Do not repeat questions about already confirmed bedrooms, boundary lengths, 100 m² footprint, parking, dining or upstairs-empty-space intent.
-
-## Resume commands
+C03a corrects the roadmap’s stale C01 introduction after C03 was archived; geometry and dimensions are unchanged. C03 archive remains immutable. A new reviewable design after C03a needs C04, preserving the current baseline first.
 
 ```powershell
-python scripts/snapshot_revision.py --verify C01
-# After changing concept source or renderer:
+python scripts/snapshot_revision.py --verify C03a
 python scripts/build_concepts.py
-# When geometry/UI changes justify browser/export review:
 python scripts/review_viewer.py
 ```
 
-Before using these for a different footprint or revision, read the implementation caveats in `docs/agent-workflow.md`.
-
-## Handoff maintenance
-
-At the end of substantial work update this file with: current revision and selected-option status, relevant artifacts, checks actually run, unresolved issue IDs, concrete next step, and any interrupted edits or stale outputs. Keep detailed dimensions in the brief/model and decisions in their register.
+Read [implementation caveats](docs/agent-workflow.md) before editing geometry. Detailed dimensions live in model/revision notes rather than this handoff.

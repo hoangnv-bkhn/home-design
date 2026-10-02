@@ -1,4 +1,4 @@
-"""Generate a portable concept viewer and factual geometry report. Standard library only."""
+"""Build the offline viewer and limited model checks; standard library only."""
 import json
 import math
 from pathlib import Path
@@ -6,91 +6,160 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 data = json.loads((ROOT / 'data/concepts.json').read_text(encoding='utf-8'))
 s = data['site']
-# Explicit family of assumed geometries, not a reconstructed survey.
 c_dx = math.sqrt(s['C'] ** 2 - s['assumed_C_drop'] ** 2)
 p = (s['A'], 0)
 q = (c_dx, s['B'] + s['assumed_C_drop'])
 dx, dy = q[0] - p[0], q[1] - p[1]
 chord = math.hypot(dx, dy)
 if chord > s['D']:
-    raise ValueError('Assumed geometry cannot accommodate the supplied D length')
-bend_offset = math.sqrt((s['D']/2) ** 2 - (chord/2) ** 2)
+    raise ValueError('Assumed geometry cannot accommodate D')
+bend_offset = math.sqrt((s['D']/2)**2 - (chord/2)**2)
 bend = ((p[0]+q[0])/2 + dy/chord*bend_offset,
         (p[1]+q[1])/2 - dx/chord*bend_offset)
 polygon = [(0, 0), p, bend, q, (0, s['B'])]
-area = abs(sum(a[0]*b[1]-b[0]*a[1] for a,b in zip(polygon, polygon[1:]+polygon[:1])))/2
-data['derived'] = {'polygon': polygon, 'site_area': area, 'bend_offset': bend_offset,
-                   'D_segments': [math.dist(p,bend), math.dist(bend,q)]}
+area = abs(sum(a[0]*b[1]-b[0]*a[1] for a,b in zip(polygon,polygon[1:]+polygon[:1])))/2
 
-def overlap(a,b):
+def overlap(a, b):
     return max(0,min(a[0]+a[2],b[0]+b[2])-max(a[0],b[0])) * max(0,min(a[1]+a[3],b[1]+b[3])-max(a[1],b[1]))
 
+def contains(outer, inner):
+    return (inner[0] >= outer[0]-1e-8 and inner[1] >= outer[1]-1e-8
+            and inner[0]+inner[2] <= outer[0]+outer[2]+1e-8
+            and inner[1]+inner[3] <= outer[1]+outer[3]+1e-8)
+
+def corners(r):
+    x,y,w,h = r
+    return [(x,y),(x+w,y),(x+w,y+h),(x,y+h)]
+
 def inside(point):
-    x,y=point
-    hit=False
+    x,y = point
+    hit = False
     for a,b in zip(polygon,polygon[1:]+polygon[:1]):
         if (a[1]>y)!=(b[1]>y) and x < (b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0]:
-            hit=not hit
+            hit = not hit
     return hit
 
-checks=[]
+def route_samples(route):
+    for a,b in zip(route['points'],route['points'][1:]):
+        for i in range(101):
+            yield [a[0]+(b[0]-a[0])*i/100, a[1]+(b[1]-a[1])*i/100, 0.001, 0.001]
+
+checks = []
 def check(name, condition):
     checks.append((name, bool(condition)))
 
-for floor in data['floors']:
-    rooms=floor['rooms']
-    check(f"{floor['id']}: unique room IDs", len({r['id'] for r in rooms}) == len(rooms))
-    check(f"{floor['id']}: no overlap of room zones", all(overlap(a['rect'],b['rect']) < 1e-8 for i,a in enumerate(rooms) for b in rooms[i+1:]))
-    check(f"{floor['id']}: two WCs and two showers", sum(r['type']=='wc' for r in rooms)==2 and sum(r['type']=='shower' for r in rooms)==2)
-    check(f"{floor['id']}: indoor zones within 10 × 10 m envelope", all(r['type']=='balcony' or (r['rect'][0]>=0.2-1e-8 and r['rect'][1]>=0.2-1e-8 and r['rect'][0]+r['rect'][2]<=9.8+1e-8 and r['rect'][1]+r['rect'][3]<=9.8+1e-8) for r in rooms))
-check('Five bedrooms total', sum(r['type']=='bed' for f in data['floors'] for r in f['rooms'])==5)
-altar=next(r['rect'] for r in data['floors'][0]['rooms'] if r['type']=='altar')
-upper=data['floors'][1]
-check('Altar clear width at least 3.4 m', altar[2]>=3.4)
-check('Altar projection excludes upstairs bedrooms and hall zones', all(overlap(altar,r['rect'])<1e-8 for r in upper['rooms'] if r['type'] in ['bed','hall']))
-check('No upstairs furniture above altar', all(overlap(altar,f[1:])<1e-8 for f in upper['furniture']))
-for option in data['options']:
-    def transform(x,y):
-        if option['rotation']==90: x,y=10-y,x
-        return x+s['assumed_house_origin'][0], y+s['assumed_house_origin'][1]
-    corners=[(0,0),(10,0),(10,10),(0,10),(10,.2),(11.4,.2),(11.4,3.4),(10,3.4)]
-    check(f"Option {option['id']}: house and balcony corners inside assumed plot",all(inside(transform(x,y)) for x,y in corners))
+check('Declared geometry units remain metres', data['units']=='m')
+all_ids = [r['id'] for f in data['floors'] for r in f['rooms']]
+check('Unique room IDs across floors', len(set(all_ids))==len(all_ids))
+for f in data['floors']:
+    rooms = f['rooms']
+    env = f['envelope']
+    t = data['house']['external_wall']
+    clear_env = [env[0]+t,env[1]+t,env[2]-2*t,env[3]-2*t]
+    check(f"{f['id']}: positive zone dimensions", all(r['rect'][2]>0 and r['rect'][3]>0 for r in rooms))
+    check(f"{f['id']}: no overlap of room zones", all(overlap(a['rect'],b['rect'])<1e-8 for i,a in enumerate(rooms) for b in rooms[i+1:]))
+    check(f"{f['id']}: two WCs and two separate showers", sum(r['type']=='wc' for r in rooms)==2 and sum(r['type']=='shower' for r in rooms)==2)
+    check(f"{f['id']}: indoor zones inside declared floor envelope", all(r['type']=='balcony' or contains(clear_env,r['rect']) for r in rooms))
+    fixtures = f.get('fixtures', [])
+    by_id = {r['id']:r for r in rooms}
+    check(f"{f['id']}: fixtures contained in assigned compartments", all(a['room'] in by_id and contains(by_id[a['room']]['rect'],a['rect']) for a in fixtures))
+    check(f"{f['id']}: each shower contains a basin and shower tray", all(all(any(a['room']==r['id'] and a['kind']==kind for a in fixtures) for kind in ['basin','shower']) for r in rooms if r['type']=='shower'))
+    check(f"{f['id']}: fixture footprints do not overlap", all(overlap(a['rect'],b['rect'])<1e-8 for i,a in enumerate(fixtures) for b in fixtures[i+1:]))
+    check(f"{f['id']}: furniture footprints inside floor envelope", all(contains(clear_env,a[1:]) for a in f['furniture']))
 
-lines=['# Concept C01 — generated geometry review', '',
-       'Generated from `data/concepts.json` by `scripts/build_concepts.py`.', '',
-       '**Concept checks only. These do not establish survey accuracy, buildability, legal compliance, door clearances, car turning, headroom or structural adequacy.**','',
-       '## Assumed site geometry','',
-       f'- Derived model area: {area:.2f} m². This belongs only to the assumed polygon; it is NOT the registered plot area.',
-       f'- D segments: {math.dist(p,bend):.3f} + {math.dist(bend,q):.3f} m.',
-       f'- Bend offset from its end-to-end chord: {bend_offset:.3f} m.',
-       '- Model vertices in metres: '+json.dumps(polygon),
-       '- House footprint: 100.00 m². Upper-floor envelope: 100.00 m² including stair opening; external balcony: 4.48 m².',
-       '- Two-floor envelope sum: 200.00 m²; plus balcony 4.48 m². This is a concept area convention, not a statutory/contract measurement.',
-       f'- Model land outside ground-floor footprint: {area-100:.2f} m²; includes access gaps/parking, not all garden.', '',
-       '## Automated checks','']
-lines += [f"- {'PASS' if result else 'FAIL'} — {name}" for name,result in checks]
-for floor in data['floors']:
-    lines += ['',f"## {floor['id']} clear zone schedule",'', '| ID | Space | Dimensions (m) | Area (m²) |','| --- | --- | --- | --- |']
-    for r in floor['rooms']:
+f1,f2 = data['floors']
+altar = next(r['rect'] for r in f1['rooms'] if r['id']=='ALT-01')
+empty = next(r['rect'] for r in f2['rooms'] if r['id']=='EMPTY-ALT')
+altar_width = altar[2 if data['coordination']['altar_width_axis']=='x' else 3]
+check('Five bedrooms: F1 two / F2 three', sum(r['type']=='bed' for r in f1['rooms'])==2 and sum(r['type']=='bed' for r in f2['rooms'])==3)
+check('Altar width parallel to backing at least 3.4 m', altar_width>=3.4)
+check('Upper empty zone equals altar projection', all(abs(a-b)<1e-8 for a,b in zip(altar,empty)))
+check('No other upstairs zone overlaps altar projection', all(overlap(altar,r['rect'])<1e-8 for r in f2['rooms'] if r['id']!='EMPTY-ALT'))
+check('No upstairs fixtures or furniture above altar', all(overlap(altar,a['rect'])<1e-8 for a in f2.get('fixtures',[])) and all(overlap(altar,a[1:])<1e-8 for a in f2['furniture']))
+check('Sampled common route centerlines bypass upper altar zone', all(overlap(altar,p)<1e-8 for r in f2.get('routes',[]) for p in route_samples(r)))
+check('Altar and house facing vectors agree', data['house']['facing_vector']==data['coordination']['altar_facing_vector'])
+wet1 = sorted(r['rect'] for r in f1['rooms'] if r['type'] in ['wc','shower'])
+wet2 = sorted(r['rect'] for r in f2['rooms'] if r['type'] in ['wc','shower'])
+check('Wet compartments align floor-to-floor', wet1==wet2)
+stair = data['house']['stair']
+check('21 stair risers split 10 + 11', stair['risers']==21 and stair['flight_risers']==[10,11])
+check('Nominal stair flight widths/gap fit 2.2 m bay', abs(2*stair['flight_width']+stair['central_gap']-stair['rect'][2])<1e-8 and abs(stair['rect'][2]-2.2)<1e-8)
+check('Longest tread run + landing fits bay depth', (max(stair['flight_risers'])-1)*stair['going']+stair['landing_depth'] <= stair['rect'][3]+1e-8)
+check('Stair reservations align on both floors', all(next(r['rect'] for r in f['rooms'] if r['type']=='stair')==stair['rect'] for f in data['floors']))
+balcony = data['options'][0]['balcony']['rect']
+by_id = {r['id']:r for r in f2['rooms']}
+balconies = {}
+for opt in data['options']:
+    if opt['rotation']!=0:
+        raise ValueError('Explicit floor envelopes use site axes; physical option rotation unsupported')
+    b = opt['balcony']
+    br, door = b['rect'], b['door']
+    access = by_id[b['access_room']]['rect']
+    balconies[opt['id']] = {'area':br[2]*br[3], 'access':b['access_room']}
+    check(f"Option {opt['id']}: balcony door connects declared access room", door[4]=='v' and abs(door[1]-(access[0]+access[2]+.1))<1e-8 and abs(door[1]-(br[0]-.1))<1e-8 and door[2]>=access[1] and door[2]+door[3]<=access[1]+access[3] and door[2]>=br[1] and door[2]+door[3]<=br[1]+br[3])
+    check(f"Option {opt['id']}: balcony does not overlap indoor zones", all(overlap(br,r['rect'])<1e-8 for r in f2['rooms'] if r['type']!='balcony'))
+    check(f"Option {opt['id']}: balcony route avoids altar exclusion", all(overlap(altar,p)<1e-8 for p in route_samples({'points':b['route']})))
+    origin = s['assumed_house_origin']
+    shapes = [f['envelope'] for f in data['floors']] + [br]
+    check(f"Option {opt['id']}: floor/balcony corners inside assumed plot", all(inside((x+origin[0],y+origin[1])) for r in shapes for x,y in corners(r)))
+check('Both floor rear edges retain proposed B allowance', all(abs(f['envelope'][0]+s['assumed_house_origin'][0]-.1)<1e-8 for f in data['floors']))
+check('Both floor A edges retain approximate 0.30 m allowance', all(abs(f['envelope'][1]+s['assumed_house_origin'][1]-.3)<1e-8 for f in data['floors']))
+check('No doors/windows face near-boundary A or B', all(all(not (d[0]=='GARDEN' or (d[4]=='v' and d[1]<.2) or (d[4]=='h' and d[2]<.2)) for d in f['doors']) and all(not ((w[3]=='v' and w[0]<.2) or (w[3]=='h' and w[1]<.2)) for w in f['windows']) for f in data['floors']))
+check('WC compartments contain no basins', all(not (a['room'].startswith('WC') and a['kind']=='basin') for f in data['floors'] for a in f['fixtures']))
+entry = next(d for d in f1['doors'] if d[0]=='ENTRY')
+living = next(r['rect'] for r in f1['rooms'] if r['id']=='LIV-01')
+check('Proposed 1.90 m entrance adjoins open living', entry[4]=='v' and abs(entry[3]-1.9)<1e-8 and abs(entry[1]-(living[0]+living[2]+.1))<1e-8 and entry[2]>=living[1] and entry[2]+entry[3]<=living[1]+living[3])
+check('TV stand and sofa lie within living reservation', contains(living,f1['tv']['stand']) and contains(living,f1['tv']['sofa']) and overlap(f1['tv']['stand'],f1['tv']['sofa'])<1e-8)
+kit = next(r['rect'] for r in f1['rooms'] if r['id']=='KIT-01')
+din = next(r['rect'] for r in f1['rooms'] if r['id']=='DIN-01')
+table = next(a[1:] for a in f1['furniture'] if a[0]=='Dining table')
+check('Dining table inside rear kitchen/dining bay', abs(kit[0]+kit[2]+.1-din[0])<1e-8 and kit[1]==din[1] and kit[3]==din[3] and contains(din,table))
+check('Stationary car bay corners inside assumed plot', all(inside(p) for p in corners(s['car_bay'])))
+check('Car bay does not overlap F1 footprint', overlap(s['car_bay'],[*s['assumed_house_origin'],*f1['envelope'][2:]])<1e-8)
+check('Clockwise plot/floor view rotation declared 90 degrees', data['presentation']['plan_rotation_clockwise']==90)
+
+gross = {f['id']:f['envelope'][2]*f['envelope'][3] for f in data['floors']}
+bal_area = balcony[2]*balcony[3]
+data['derived'] = {'polygon':polygon,'site_area':area,'bend_offset':bend_offset,'D_segments':[math.dist(p,bend),math.dist(bend,q)],'gross':gross,'balcony_area':bal_area,'balconies':balconies,'outside_f1':area-gross['F1'],'checks':[{'name':n,'pass':v} for n,v in checks]}
+lines = [f"# Concept {data['revision']} — generated geometry review", '',
+         'Generated from editable metre geometry. These limited checks do not establish survey accuracy, statutory compliance, usable circulation, stair safety, structural adequacy or vehicle turning.', '',
+         '## Assumed site and area convention', '',
+         f'- Model site area {area:.2f} m²; not surveyed/registered area.',
+         f'- D segments {math.dist(p,bend):.3f} + {math.dist(bend,q):.3f} m; chord bend offset {bend_offset:.3f} m.',
+         '- Model vertices (m): '+json.dumps(polygon),
+         f"- F1 gross footprint {gross['F1']:.2f} m²; F2 envelope {gross['F2']:.2f} m² including stair opening and empty altar zone.",
+         f"- Gross envelope sum {sum(gross.values()):.2f} m²; balcony {bal_area:.2f} m² separately. This is a concept convention, not statutory/contract measurement.",
+         f"- Model land outside F1 {area-gross['F1']:.2f} m², including gaps, access and parking, not all garden.",
+         '- F1/F2 B edge modeled 0.10 m from boundary; A edge 0.30 m. C-side upper projection 0.80 m. Owner placement preferences, not lawful setbacks.',
+         '', '## Automated checks', '']
+lines += [f"- {'PASS' if v else 'FAIL'} — {n}" for n,v in checks]
+lines += ['', '## Balcony comparison', '', '| Option | Balcony area (m²) | Access |', '| --- | --- | --- |']
+for opt in data['options']:
+    lines.append(f"| {opt['id']} — {opt['title']} | {balconies[opt['id']]['area']:.2f} | {opt['balcony']['access_room']} |")
+for f in data['floors']:
+    lines += ['',f"## {f['id']} clear zone schedule",'','| ID | Space | Dimensions (m) | Area (m²) |','| --- | --- | --- | --- |']
+    for r in f['rooms']:
         x,y,w,h=r['rect']
         lines.append(f"| {r['id']} | {r['label']} | {w:.2f} × {h:.2f} | {w*h:.2f} |")
-    total=sum(r['rect'][2]*r['rect'][3] for r in floor['rooms'] if r['type']!='balcony')
-    lines += ['', f'Indoor named zones sum: {total:.2f} m², including the stair zone. Remaining {100-total:.2f} m² covers walls and unassigned junction strips. These are not net lettable areas.']
-lines += ['', '## Still requires manual/professional review','',
-          '- Door swings/sliding hardware, fixture use and furniture circulation; especially the narrow private turning passage.',
-          '- Stair access, risers/landings, opening, headroom and guards; diagram is a reservation, not a stair design.',
-          '- Car gate/swept path on the narrow road. Car rectangles only show stationary accommodation.',
-          '- Setbacks, opening rights, boundary/neighbor heights and actual site area.',
-          '- Ventilation, airport acoustics, plumbing shaft dimensions and drainage routes.',
-          '- Structural grid: axes are discussion aids, not selected columns or beams.',
-          '- Altar extent/ceremony space, exact meaning of the backing buffer, and upstairs empty-zone acceptance.',
-          '- Balcony access is through the sister room in both options; confirm whether shared access is desired.']
+    named=sum(r['rect'][2]*r['rect'][3] for r in f['rooms'] if r['type']!='balcony')
+    lines += ['',f"Indoor named zones {named:.2f} m² including stair reservation; {gross[f['id']]-named:.2f} m² remains for walls and unassigned junction/extension strips. Not net lettable area."]
+lines += ['', '## Stair arithmetic — reservation only', '',
+          f"- Assumed floor rise {data['house']['floor_height']:.2f} m / 21 = {1000*data['house']['floor_height']/21:.1f} mm/riser.",
+          '- Flights 10 + 11 risers have 9 + 10 intervening treads; tread runs 2.34 / 2.60 m at 260 mm going.',
+          '- 2.60 m longest run + 1.10 m intermediate landing = 3.70 m bay depth. Top/bottom approaches lie in common circulation outside the bay.',
+          '- Nominal flights 1.00 + 1.00 m with 0.20 m center gap fill the 2.20 m reservation; wall/rail details may reduce finished widths.',
+          '', '## Unresolved review', '',
+          '- 21 steps provisionally means risers. Owner confirmed staircase; no lift requested. Architect must resolve actual finished flights, openings, headroom, rails and applicability.',
+          '- Door leaves, sanitary fixture use, privacy sightlines and occupied dining clearances; door gaps/fixtures are reservations.',
+          '- Open living 18.27 m²; compact kitchen/dining bay 12.76 m². Occupied chairs/appliances, suite and garden routes remain unverified.',
+          '- Altar 3.4 m width × 1.5 m depth, facing SE, and reduced 5.10 m² upper exclusion need family acceptance.',
+          '- C-side cantilever, both balcony alternatives, rooflight, foundations, acoustics, waterproofing and guards need a professional design basis.',
+          '- Approximate owner placement is not approval of boundary-wall construction/openings; kitchen daylight/extract, fifth-bedroom rooflight/ventilation, survey and car turning unresolved.']
 out=ROOT/'outputs'
 out.mkdir(exist_ok=True)
 (out/'geometry-review.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
-data['derived']['checks']=[{'name':n,'pass':p} for n,p in checks]
 template=(ROOT/'src/concept-viewer.html').read_text(encoding='utf-8')
-(out/'house-concepts.html').write_text(template.replace('__PROJECT_DATA__',json.dumps(data,ensure_ascii=False).replace('</','<\\/')),encoding='utf-8')
-print(f"Generated outputs/house-concepts.html and outputs/geometry-review.md; {sum(p for _,p in checks)}/{len(checks)} geometry checks pass.")
-if not all(p for _,p in checks):
+(out/'house-concepts.html').write_text(template.replace('__REVISION__',data['revision']).replace('__PROJECT_DATA__',json.dumps(data,ensure_ascii=False).replace('</','<\\/')),encoding='utf-8')
+print(f"Generated {data['revision']} viewer/report: {sum(v for _,v in checks)}/{len(checks)} limited checks pass.")
+if not all(v for _,v in checks):
     raise SystemExit('Geometry checks failed; inspect outputs/geometry-review.md')

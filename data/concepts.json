@@ -1,105 +1,1308 @@
 {
-  "revision": "C01",
-  "date": "2026-10-01",
-  "status": "Concept study — not for construction",
+  "revision": "C03a",
+  "date": "2026-10-02",
+  "status": "Owner-feedback comparison — neither balcony option selected; not for construction",
   "units": "m",
+  "presentation": {
+    "plan_rotation_clockwise": 90
+  },
   "site": {
-    "A": 15, "B": 16, "C": 13, "D": 18,
+    "A": 15,
+    "B": 16,
+    "C": 13,
+    "D": 18,
     "a_bearing_degrees": 130,
     "assumed_C_drop": 1.8,
-    "assumed_house_origin": [0.8, 0.8],
+    "assumed_house_origin": [
+      0.1,
+      0.3
+    ],
     "assumed_road_width": 3.5,
+    "car_bay": [
+      12,
+      1,
+      2.8,
+      5.5
+    ],
+    "garden": [
+      0.4,
+      12,
+      7.2,
+      3.4
+    ],
+    "gate": [
+      [
+        14.45,
+        12.6
+      ],
+      [
+        13.8,
+        15.5
+      ]
+    ],
+    "arrival_path": [
+      [
+        14.1,
+        14
+      ],
+      [
+        13.6,
+        11.9
+      ],
+      [
+        11.65,
+        11.9
+      ],
+      [
+        11.65,
+        5.45
+      ],
+      [
+        11.3,
+        5.45
+      ]
+    ],
     "notes": [
-      "A/B junction is origin. Local +x follows A toward D; local +y follows B toward C.",
-      "A and B assumed perpendicular. C falls 1.8 m in local +y over its 13 m length.",
-      "D modeled as two equal 9 m segments with an outward bend. All angles and bend coordinates are inferred.",
-      "0.8 m offsets from A and B are study allowances, not confirmed setbacks or opening rights.",
-      "130 degrees is owner-provided; true versus magnetic north unverified. 192 is ignored."
+      "A/B junction is origin; +x follows A toward D, +y follows B toward C. Approximate lengths unchanged; A/B angle and D bend remain inferred.",
+      "Owner wants rear next to B and about 0.30 m at A. C03 models B gap 0.10 m as a construction allowance, not an owner-specified exact offset or lawful setback.",
+      "Named edges govern placement. After the retained clockwise display rotation B is above, A is right and C is left; the owner’s left-wall wording does not relabel A.",
+      "C02 rear garden door and B-side cantilever removed. No door, window or projection is proposed across B. Garden access is from the front yard into the C-side garden.",
+      "Upper envelope extends 0.80 m toward C, within the provisional parcel; structural support, opening rights and eaves/drainage detail remain unverified.",
+      "Moving the same F1 footprint redistributes outdoor space toward D/C; it does not increase total land outside the footprint.",
+      "130° is the owner-provided bearing along A. House and altar face +x / SE conceptually; not a surveyed D normal. Plot/F1/F2 display rotates 90° only."
+    ],
+    "scooters": [
+      [
+        12.2,
+        7.1,
+        0.65,
+        1.8
+      ],
+      [
+        13.05,
+        7.1,
+        0.65,
+        1.8
+      ],
+      [
+        13.9,
+        7.1,
+        0.65,
+        1.8
+      ]
+    ],
+    "garden_path": [
+      [
+        11.3,
+        5.45
+      ],
+      [
+        11.65,
+        7
+      ],
+      [
+        11.65,
+        11.6
+      ],
+      [
+        5.5,
+        11.6
+      ],
+      [
+        5.5,
+        12
+      ]
     ]
   },
-  "house": {"width": 10, "depth": 10, "external_wall": 0.2, "partition": 0.1, "floor_height": 3.3},
+  "house": {
+    "width": 11.2,
+    "depth": 10.8,
+    "external_wall": 0.2,
+    "partition": 0.1,
+    "floor_height": 3.3,
+    "facing_vector": [
+      1,
+      0
+    ],
+    "stair": {
+      "rect": [
+        4.7,
+        6.9,
+        2.2,
+        3.7
+      ],
+      "risers": 21,
+      "flight_risers": [
+        10,
+        11
+      ],
+      "going": 0.26,
+      "flight_width": 1,
+      "central_gap": 0.2,
+      "landing_depth": 1.1,
+      "interpretation": "Owner confirmed staircase, not lift. Steps provisionally interpreted as 21 risers; 260 mm tread going; 2.2 m overall bay, not each flight. No lift requested."
+    },
+    "main_entrance": {
+      "opening_width": 1.9,
+      "leaf_proposal": [
+        0.95,
+        0.95
+      ],
+      "note": "Approximate total opening proposal; finished clear width, frames, leaves, swing and porch landing not designed."
+    }
+  },
   "options": [
-    {"id": "01", "title": "Road-facing entrance", "subtitle": "Direct arrival from D; shared living looks into the forecourt.", "rotation": 0,
-     "strengths": ["Shorter connection from road-side forecourt to entry", "Grandpa / sister rooms face the open road-side yard", "Simple direct arrival for visitors"],
-     "tradeoffs": ["Direct entry into compact living/dining needs careful furniture placement", "Parents / brother rooms depend on the B-side gap for daylight", "Private WC/shower against A require planned roof ventilation or ducts"]},
-    {"id": "02", "title": "Garden-facing entrance", "subtitle": "The same room system turns 90 degrees toward the garden beside C.", "rotation": 90,
-     "window_overrides": {"F1":[[2.1,0.1,1.5,"h"],[4.15,0.1,0.65,"h"],[5.3,0.1,0.65,"h"],[9.9,0.9,1.6,"v"],[9.9,5.25,1.25,"v"]],"F2":[[2.1,0.1,1.5,"h"],[4.15,0.1,0.65,"h"],[5.3,0.1,0.65,"h"],[9.9,4.9,1.5,"v"]]},
-     "strengths": ["Entry and shared living open to the deeper garden yard", "Private sanitary rooms move to the D-facing elevation", "Approach offers more separation from the road"],
-     "tradeoffs": ["Longer arrival path around the house", "Parents / brother rooms need openings toward D rather than A", "Stair sits near A/B, requiring roof daylight or planned artificial lighting"]}
+    {
+      "id": "01",
+      "title": "Shared balcony",
+      "subtitle": "C03 · compact kitchen dining, open living and common balcony access",
+      "rotation": 0,
+      "balcony": {
+        "rect": [
+          11.2,
+          3.7,
+          1.6,
+          4.4
+        ],
+        "door": [
+          "BAL-01",
+          11.1,
+          4.3,
+          1.1,
+          "v"
+        ],
+        "access_room": "HALL-04",
+        "label": "Shared balcony",
+        "note": "7.04 m² from common landing, without bedroom crossing. Baseline proposal; family has not selected either C03 balcony.",
+        "route": [
+          [
+            6.1,
+            6
+          ],
+          [
+            8.5,
+            6
+          ],
+          [
+            10.4,
+            4.85
+          ],
+          [
+            11.2,
+            4.85
+          ]
+        ]
+      },
+      "strengths": [
+        "Near B with proposed 0.10 m allowance; about 0.30 m from A. Outdoor space concentrated toward D/C.",
+        "Compact six-seat dining sits inside the rear kitchen; the former separate dining zone becomes open living.",
+        "18.27 m² living with a TV stand and sofa; 1.90 m entrance opening proposed.",
+        "Shared balcony keeps access independent of bedrooms. C-side upper projection retains a 20.68 m² brother room."
+      ],
+      "tradeoffs": [
+        "F1 remains 120.96 m²; repositioning redistributes yard space rather than increasing total outdoor area.",
+        "Close A/B walls have no assumed boundary windows; kitchen daylight/extract and upper rear bedroom rooflight need design.",
+        "Rear B-side garden door removed; kitchen reaches C-side garden through living/front yard.",
+        "Kitchen dining is compact; occupied chair, appliance and door clearances remain unresolved."
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Bedroom corner balcony",
+      "subtitle": "Same floor layout · balcony shifts to sister’s room and C-side corner",
+      "rotation": 0,
+      "balcony": {
+        "rect": [
+          11.2,
+          6.7,
+          1.6,
+          4.7
+        ],
+        "door": [
+          "BAL-01",
+          11.1,
+          8.2,
+          1.1,
+          "v"
+        ],
+        "access_room": "BR-04",
+        "label": "Sister’s corner balcony",
+        "note": "7.52 m² accessed through sister’s bedroom. Owner allows considering bedroom access for exterior layering; this sacrifices independent shared access and is not selected.",
+        "route": [
+          [
+            6.1,
+            6
+          ],
+          [
+            9.85,
+            6
+          ],
+          [
+            9.85,
+            6.7
+          ],
+          [
+            10.4,
+            8.75
+          ],
+          [
+            11.2,
+            8.75
+          ]
+        ]
+      },
+      "strengths": [
+        "Same C03 F1 and room system; comparison isolates balcony access/position.",
+        "7.52 m² balcony aligns with the C-side upper projection for a corner volume.",
+        "Potentially stronger corner layering; sister gains direct outdoor space."
+      ],
+      "tradeoffs": [
+        "Balcony access requires passing through sister’s room; privacy and shared use are compromised.",
+        "The former common balcony hall stays an indoor shared landing.",
+        "The visible corner composition is a proposal, not proof of structural or weather-detail feasibility."
+      ]
+    }
   ],
   "floors": [
-    {"id": "F1", "title": "Ground floor", "rooms": [
-      {"id":"BR-01","label":"Parents","type":"bed","rect":[0.2,0.2,3.7,3.2],"note":"11.84 m² sleeping room; private suite lobby and wet compartments additional."},
-      {"id":"WC-01","label":"Private WC","type":"wc","rect":[4,0.2,1.05,1.5]},
-      {"id":"SH-01","label":"Private shower","type":"shower","rect":[5.15,0.2,1.05,1.5]},
-      {"id":"EN-01","label":"Private passage","type":"hall","rect":[4,1.8,2.2,1.6],"note":"Enter from bedroom at the lower end, turn within suite, then approach separate WC/shower doors. Screen marks intended privacy; door/fixture clearances need detailed review."},
-      {"id":"BR-02","label":"Grandpa","type":"bed","rect":[6.3,0.2,3.5,3.2]},
-      {"id":"HALL-01","label":"Shared access","type":"hall","rect":[0.2,3.5,4.8,1.1],"open":true},
-      {"id":"STAIR-01","label":"U stair","type":"stair","rect":[0.2,4.7,2.3,4.2],"note":"Reserve 2.3 × 4.2 m. Study only: 3.3 m floor height, 20 risers at 165 mm, two flights of 10 risers, 280 mm going, about 1 m clear flight. Headroom, slab opening, rails and code compliance unresolved."},
-      {"id":"STORE-01","label":"Stair reserve","type":"utility","rect":[0.2,9,2.3,0.8],"note":"Extra space reserved for stair development; no separately accessible storage room is promised here."},
-      {"id":"KIT-01","label":"Kitchen","type":"kitchen","rect":[2.6,4.7,2.4,2.7],"open":true,"note":"Compact 6.48 m² kitchen open toward shared space. Appliance sizes and exhaust to be coordinated."},
-      {"id":"WC-02","label":"Shared WC","type":"wc","rect":[2.6,7.5,2.4,1.1]},
-      {"id":"SH-02","label":"Shared shower","type":"shower","rect":[2.6,8.7,2.4,1.1]},
-      {"id":"LIV-01","label":"Living + dining for 6","type":"living","rect":[5.1,3.5,4.7,3.4],"open":true,"note":"15.98 m² shared living/dining: compact, with a modest sofa. Furniture represents a fit study, not verified circulation clearance."},
-      {"id":"BUF-ACCESS","label":"Quiet access","type":"hall","rect":[5.1,7,1.1,2.8],"open":true},
-      {"id":"ALT-01","label":"Altar area","type":"altar","rect":[6.3,7,3.5,1.7],"open":true,"note":"3.5 m clear width; depth 1.7 m is provisional. Combined with living space in front. Solid backing at y=8.7–8.8; indoor buffer beyond it."},
-      {"id":"ALT-BUFFER","label":"Indoor buffer","type":"buffer","rect":[6.3,8.8,3.5,1],"open":true,"note":"Quiet indoor space beyond altar backing. Accessible from its side, without going through a WC, kitchen or bedroom."}
-    ],
-    "doors": [
-      ["BR-01",2.7,3.45,0.85,"h"],["EN-01",3.95,2.45,0.8,"v"],
-      ["WC-01",4.13,1.75,0.75,"h"],["SH-01",5.28,1.75,0.75,"h"],
-      ["BR-02",6.65,3.45,0.85,"h"],["WC-02",5.05,7.65,0.75,"v"],
-      ["SH-02",5.05,8.85,0.75,"v"],["ENTRY",9.9,3.8,1.1,"v"]
-    ],
-    "windows":[[0.1,0.9,1.6,"v"],[9.9,0.9,1.6,"v"],[9.9,5.25,1.25,"v"]],
-    "furniture":[
-      ["Double bed",0.6,0.45,1.6,2.0],["Wardrobe",2.9,0.4,0.6,1.6],
-      ["Bed",6.7,0.45,1.4,2.0],["Wardrobe",8.1,2.65,1.5,0.6],
-      ["Counter",2.65,4.75,0.6,2.45],["Fridge",3.35,4.75,0.65,0.65],
-      ["Dining table",5.55,4.5,1.6,0.8],["Sofa",7.75,5.95,1.8,0.8],
-      ["Coffee table",8.1,5.1,1.0,0.45],["Altar",6.95,8.03,2.2,0.6],
-      ["Basin",5.62,2.3,0.5,0.6],["Basin",4.1,7.55,0.5,0.4]
-    ]},
-    {"id":"F2","title":"Upper floor","rooms":[
-      {"id":"BR-03","label":"Brother","type":"bed","rect":[0.2,0.2,3.7,3.2]},
-      {"id":"WC-03","label":"Private WC","type":"wc","rect":[4,0.2,1.05,1.5]},
-      {"id":"SH-03","label":"Private shower","type":"shower","rect":[5.15,0.2,1.05,1.5]},
-      {"id":"EN-03","label":"Private passage","type":"hall","rect":[4,1.8,2.2,1.6]},
-      {"id":"BR-04","label":"Younger sister","type":"bed","rect":[6.3,0.2,3.5,3.2]},
-      {"id":"HALL-02","label":"Shared access","type":"hall","rect":[0.2,3.5,6,1.1],"open":true},
-      {"id":"STAIR-02","label":"Stair opening","type":"stair","rect":[0.2,4.7,2.3,4.2]},
-      {"id":"STORE-02","label":"Stair reserve","type":"utility","rect":[0.2,9,2.3,0.8],"note":"Extra space for stair/opening development, not an independently accessible room."},
-      {"id":"UTIL-02","label":"Utility / storage","type":"utility","rect":[2.6,4.7,2.4,2.7],"note":"Flexible space above kitchen. Laundry placement optional; no requirement to finalize it now."},
-      {"id":"WC-04","label":"Shared WC","type":"wc","rect":[2.6,7.5,2.4,1.1]},
-      {"id":"SH-04","label":"Shared shower","type":"shower","rect":[2.6,8.7,2.4,1.1]},
-      {"id":"BR-05","label":"Bedroom 5","type":"bed","rect":[6.3,3.5,3.5,3.4]},
-      {"id":"HALL-03","label":"Access","type":"hall","rect":[5.1,4.7,1.1,2.7],"open":true},
-      {"id":"HALL-04","label":"Wet-room access","type":"hall","rect":[5.1,7.5,1.1,2.3],"open":true},
-      {"id":"EMPTY-ALT","label":"Empty above altar","type":"empty","rect":[6.3,7,3.5,2.8],"note":"Includes the 3.5 × 1.7 m altar projection and rear buffer. Keep unfurnished; all regular room/balcony routes bypass it. Floor slab exists; not a void."},
-      {"id":"BAL-01","label":"Balcony","type":"balcony","rect":[10,0.2,1.4,3.2],"note":"4.48 m² external balcony, accessed through sister's room. Shown outside the 100 m² footprint; support, weather detailing and setbacks unresolved."}
-    ],
-    "doors":[
-      ["BR-03",2.7,3.45,0.85,"h"],["EN-03",3.95,2.45,0.8,"v"],
-      ["WC-03",4.13,1.75,0.75,"h"],["SH-03",5.28,1.75,0.75,"h"],
-      ["BR-04",6.65,3.45,0.85,"h"],["BR-05",6.25,4.85,0.85,"v"],
-      ["UTIL-02",4.99,5.55,0.8,"v"],["WC-04",5.05,7.65,0.75,"v"],
-      ["SH-04",5.05,8.85,0.75,"v"],["EMPTY-ALT",6.25,8.9,0.75,"v"],
-      ["BAL-01",9.9,1.15,0.85,"v"]
-    ],
-    "windows":[[0.1,0.9,1.6,"v"],[9.9,4.9,1.5,"v"]],
-    "furniture":[
-      ["Double bed",0.6,0.45,1.6,2.0],["Wardrobe",2.9,0.4,0.6,1.6],
-      ["Bed",6.7,0.45,1.4,2.0],["Wardrobe",8.1,2.65,1.5,0.6],
-      ["Bed",7.7,4.2,1.4,2.0],["Wardrobe",6.5,3.7,2.4,0.6],
-      ["Basin",5.62,2.3,0.5,0.6],["Basin",4.1,7.55,0.5,0.4]
-    ]}
+    {
+      "id": "F1",
+      "title": "Ground / entrance floor",
+      "envelope": [
+        0,
+        0,
+        11.2,
+        10.8
+      ],
+      "rooms": [
+        {
+          "id": "KIT-01",
+          "label": "Rear kitchen",
+          "type": "kitchen",
+          "rect": [
+            0.2,
+            0.2,
+            1.65,
+            2.9
+          ],
+          "note": "Cooking portion of a 4.4 × 2.9 m open kitchen/dining room; counter along B, fridge near A. No A/B boundary openings assumed. Extract/daylight strategy unresolved.",
+          "open": true
+        },
+        {
+          "id": "WC-02",
+          "label": "Shared WC",
+          "type": "wc",
+          "rect": [
+            4.7,
+            0.2,
+            1.2,
+            2
+          ],
+          "note": "WC-only compartment, 1.2 × 2.0 m; no basin. Adjacent separate shower retains its basin."
+        },
+        {
+          "id": "SH-02",
+          "label": "Shower + basin",
+          "type": "shower",
+          "rect": [
+            6,
+            0.2,
+            1.9,
+            2
+          ],
+          "note": "1.9 × 2.0 m separate shower with basin inside; not combined WC/shower."
+        },
+        {
+          "id": "HALL-01",
+          "label": "Shared wet access",
+          "type": "hall",
+          "rect": [
+            4.7,
+            2.3,
+            3.2,
+            1.3
+          ],
+          "note": "Separate WC and shower doors; kitchen/sister opening is 0.8 m. Frame and clear opening remain to be checked.",
+          "open": true
+        },
+        {
+          "id": "ALT-BUFFER",
+          "label": "Quiet indoor buffer",
+          "type": "buffer",
+          "rect": [
+            8,
+            0.2,
+            1.4,
+            3.4
+          ],
+          "note": "Indoor space immediately behind solid altar backing, accessed from living at south end. No wet room, stove or bedroom inside designated buffer. Exact extent requires family review."
+        },
+        {
+          "id": "ALT-01",
+          "label": "Altar · faces SE",
+          "type": "altar",
+          "rect": [
+            9.5,
+            0.2,
+            1.5,
+            3.4
+          ],
+          "note": "3.4 m width parallel to backing wall × 1.5 m depth toward road. Front faces +x, matching proposed house facing. Ritual depth and reduced exclusion extent need family review.",
+          "open": true
+        },
+        {
+          "id": "WC-01",
+          "label": "Private WC",
+          "type": "wc",
+          "rect": [
+            0.2,
+            3.2,
+            1.2,
+            2.2
+          ],
+          "note": "WC-only compartment, 1.2 × 2.2 m; no basin per latest owner feedback. Shower next door holds basin."
+        },
+        {
+          "id": "SH-01",
+          "label": "Shower + basin",
+          "type": "shower",
+          "rect": [
+            1.5,
+            3.2,
+            1.9,
+            2.2
+          ],
+          "note": "Wider 1.9 × 2.2 m separate shower, with basin inside. Door and fixture use still need detailed clearance design."
+        },
+        {
+          "id": "EN-ACCESS-01",
+          "label": "Suite dressing nook",
+          "type": "hall",
+          "rect": [
+            3.5,
+            3.2,
+            1.1,
+            2.2
+          ],
+          "note": "Unfurnished suite reserve. Storage must preserve access; not public circulation."
+        },
+        {
+          "id": "EN-01",
+          "label": "Private turning lobby",
+          "type": "hall",
+          "rect": [
+            0.2,
+            5.5,
+            4.4,
+            1.1
+          ],
+          "note": "Suite and bedroom entrances at east end; turn west along 1.1 m lobby, then north into WC/shower. Openings are offset from the bedroom door; final sightlines/leaves remain for review."
+        },
+        {
+          "id": "DIN-01",
+          "label": "Kitchen dining · 6",
+          "type": "living",
+          "rect": [
+            1.95,
+            0.2,
+            2.65,
+            2.9
+          ],
+          "note": "Compact 1.6 × 0.8 m table with six small side-chair reservations inside kitchen. Combined kitchen/dining bay is 12.76 m² including open junction strip; actual occupied and appliance clearances not verified.",
+          "open": true
+        },
+        {
+          "id": "LIV-01",
+          "label": "Open living + arrival",
+          "type": "living",
+          "rect": [
+            4.7,
+            3.7,
+            6.3,
+            2.9
+          ],
+          "note": "18.27 m² open living, replacing the separate central dining zone. Sofa faces TV stand on Grandpa room partition; front entrance 1.90 m. Remains open to altar side. Routes and furniture are reservations.",
+          "open": true
+        },
+        {
+          "id": "BR-01",
+          "label": "Parents",
+          "type": "bed",
+          "rect": [
+            0.2,
+            6.7,
+            4.4,
+            3.9
+          ],
+          "note": "17.16 m² sleeping room versus C01 11.84 m², plus private lobby, WC and shower. Suite entered via turning lobby."
+        },
+        {
+          "id": "STAIR-01",
+          "label": "Stair · 21 risers",
+          "type": "stair",
+          "rect": [
+            4.7,
+            6.9,
+            2.2,
+            3.7
+          ],
+          "note": "21 risers: flights 10 + 11, 260 mm going, nominal 1.0 m flight + 0.2 m central gap, 1.1 m landing. Assumed 3.3 m floor height gives 157.1 mm rise. Overall bay reservation: wall/rail reductions, opening, headroom and code applicability unresolved."
+        },
+        {
+          "id": "BR-02",
+          "label": "Grandpa",
+          "type": "bed",
+          "rect": [
+            7,
+            6.7,
+            4,
+            3.9
+          ],
+          "note": "15.60 m² sleeping room; shared bathrooms reached via common lobby without entering another bedroom."
+        }
+      ],
+      "doors": [
+        [
+          "WC-02",
+          4.95,
+          2.25,
+          0.75,
+          "h"
+        ],
+        [
+          "SH-02",
+          6.5,
+          2.25,
+          0.8,
+          "h"
+        ],
+        [
+          "KIT-01",
+          4.65,
+          2.3,
+          0.8,
+          "v"
+        ],
+        [
+          "ALT-BUFFER",
+          8.2,
+          3.65,
+          0.8,
+          "h"
+        ],
+        [
+          "WC-01",
+          0.45,
+          5.45,
+          0.75,
+          "h"
+        ],
+        [
+          "SH-01",
+          1.95,
+          5.45,
+          0.8,
+          "h"
+        ],
+        [
+          "EN-01",
+          4.65,
+          5.6,
+          0.85,
+          "v"
+        ],
+        [
+          "BR-01",
+          3.45,
+          6.65,
+          0.85,
+          "h"
+        ],
+        [
+          "BR-02",
+          10.1,
+          6.65,
+          0.85,
+          "h"
+        ],
+        [
+          "ENTRY",
+          11.1,
+          4.2,
+          1.9,
+          "v"
+        ],
+        [
+          "EN-ACCESS-01",
+          3.65,
+          5.45,
+          0.8,
+          "h"
+        ]
+      ],
+      "windows": [
+        [
+          0.8,
+          10.7,
+          2,
+          "h"
+        ],
+        [
+          11.1,
+          7.4,
+          1.8,
+          "v"
+        ]
+      ],
+      "furniture": [
+        [
+          "Counter",
+          0.3,
+          0.35,
+          0.6,
+          2.6
+        ],
+        [
+          "Fridge",
+          1,
+          0.35,
+          0.7,
+          0.7
+        ],
+        [
+          "Sink",
+          0.37,
+          1.35,
+          0.45,
+          0.65
+        ],
+        [
+          "Hob",
+          0.37,
+          2.2,
+          0.45,
+          0.6
+        ],
+        [
+          "Dining table",
+          2.25,
+          1.25,
+          1.6,
+          0.8
+        ],
+        [
+          "Sofa",
+          7.8,
+          3.9,
+          2.2,
+          0.85
+        ],
+        [
+          "TV stand",
+          7.8,
+          6.25,
+          2.2,
+          0.35
+        ],
+        [
+          "Double bed",
+          0.9,
+          7.4,
+          1.8,
+          2
+        ],
+        [
+          "Wardrobe",
+          0.4,
+          9.95,
+          3,
+          0.6
+        ],
+        [
+          "Bed",
+          7.6,
+          7.5,
+          1.4,
+          2
+        ],
+        [
+          "Wardrobe",
+          9.3,
+          9.95,
+          1.5,
+          0.6
+        ],
+        [
+          "Altar",
+          9.58,
+          0.8,
+          0.6,
+          2.2
+        ]
+      ],
+      "fixtures": [
+        {
+          "room": "WC-01",
+          "kind": "wc",
+          "rect": [
+            0.48,
+            3.35,
+            0.55,
+            0.7
+          ]
+        },
+        {
+          "room": "WC-02",
+          "kind": "wc",
+          "rect": [
+            4.98,
+            0.35,
+            0.55,
+            0.7
+          ]
+        },
+        {
+          "room": "SH-01",
+          "kind": "shower",
+          "rect": [
+            1.58,
+            3.28,
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "room": "SH-01",
+          "kind": "basin",
+          "rect": [
+            2.85,
+            3.42,
+            0.45,
+            0.6
+          ]
+        },
+        {
+          "room": "SH-02",
+          "kind": "shower",
+          "rect": [
+            6.08,
+            0.28,
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "room": "SH-02",
+          "kind": "basin",
+          "rect": [
+            7.35,
+            0.42,
+            0.45,
+            0.6
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "label": "Main arrival / stair",
+          "points": [
+            [
+              11.2,
+              5.15
+            ],
+            [
+              10.5,
+              5.15
+            ],
+            [
+              5.2,
+              5.15
+            ],
+            [
+              5.2,
+              6.8
+            ]
+          ]
+        },
+        {
+          "label": "Kitchen dining access",
+          "points": [
+            [
+              5.2,
+              5.15
+            ],
+            [
+              7.4,
+              3.1
+            ],
+            [
+              4.65,
+              2.7
+            ],
+            [
+              4.1,
+              2.7
+            ]
+          ]
+        }
+      ],
+      "tv": {
+        "stand": [
+          7.8,
+          6.25,
+          2.2,
+          0.35
+        ],
+        "sofa": [
+          7.8,
+          3.9,
+          2.2,
+          0.85
+        ],
+        "view_line": [
+          [
+            8.9,
+            4.75
+          ],
+          [
+            8.9,
+            6.25
+          ]
+        ],
+        "note": "About 1.5 m floor gap from sofa front to stand; actual eye/screen positions and TV size not specified. No screen-size recommendation."
+      }
+    },
+    {
+      "id": "F2",
+      "title": "Upper floor",
+      "envelope": [
+        0,
+        0,
+        11.2,
+        11.6
+      ],
+      "rooms": [
+        {
+          "id": "BR-04",
+          "label": "Younger sister",
+          "type": "bed",
+          "rect": [
+            7,
+            6.7,
+            4,
+            4.7
+          ],
+          "note": "18.80 m² sister room at C/road corner. Option 02 balcony accessed from this bedroom; Option 01 shared access remains outside it."
+        },
+        {
+          "id": "WC-04",
+          "label": "Shared WC",
+          "type": "wc",
+          "rect": [
+            4.7,
+            0.2,
+            1.2,
+            2
+          ],
+          "note": "WC-only compartment, 1.2 × 2.0 m; no basin. Adjacent separate shower retains its basin."
+        },
+        {
+          "id": "SH-04",
+          "label": "Shower + basin",
+          "type": "shower",
+          "rect": [
+            6,
+            0.2,
+            1.9,
+            2
+          ],
+          "note": "1.9 × 2.0 m separate shower with basin inside; not combined WC/shower."
+        },
+        {
+          "id": "HALL-02",
+          "label": "Shared wet access",
+          "type": "hall",
+          "rect": [
+            4.7,
+            2.3,
+            3.2,
+            1.3
+          ],
+          "note": "Separate WC and shower doors; kitchen/sister opening is 0.8 m. Frame and clear opening remain to be checked.",
+          "open": true
+        },
+        {
+          "id": "UTIL-02",
+          "label": "Linen / utility",
+          "type": "utility",
+          "rect": [
+            8,
+            0.2,
+            1.4,
+            3.4
+          ],
+          "note": "Reclaims floor above F1 backing buffer, outside altar projection. Fit-out proposed; avoid service routes through altar backing."
+        },
+        {
+          "id": "EMPTY-ALT",
+          "label": "Empty above altar",
+          "type": "empty",
+          "rect": [
+            9.5,
+            0.2,
+            1.5,
+            3.4
+          ],
+          "note": "5.10 m² exact altar-zone projection; C01 reserved 9.80 m². Slab remains; no furniture or regular routes. Reduced zone requires family acceptance."
+        },
+        {
+          "id": "WC-03",
+          "label": "Private WC",
+          "type": "wc",
+          "rect": [
+            0.2,
+            3.2,
+            1.2,
+            2.2
+          ],
+          "note": "WC-only compartment, 1.2 × 2.2 m; no basin per latest owner feedback. Shower next door holds basin."
+        },
+        {
+          "id": "SH-03",
+          "label": "Shower + basin",
+          "type": "shower",
+          "rect": [
+            1.5,
+            3.2,
+            1.9,
+            2.2
+          ],
+          "note": "Wider 1.9 × 2.2 m separate shower, with basin inside. Door and fixture use still need detailed clearance design."
+        },
+        {
+          "id": "EN-ACCESS-03",
+          "label": "Suite dressing nook",
+          "type": "hall",
+          "rect": [
+            3.5,
+            3.2,
+            1.1,
+            2.2
+          ],
+          "note": "Unfurnished suite reserve. Storage must preserve access; not public circulation."
+        },
+        {
+          "id": "EN-03",
+          "label": "Private turning lobby",
+          "type": "hall",
+          "rect": [
+            0.2,
+            5.5,
+            4.4,
+            1.1
+          ],
+          "note": "Suite and bedroom entrances at east end; turn west along 1.1 m lobby, then north into WC/shower. Openings are offset from the bedroom door; final sightlines/leaves remain for review."
+        },
+        {
+          "id": "HALL-03",
+          "label": "Common landing",
+          "type": "hall",
+          "rect": [
+            4.7,
+            3.7,
+            3.2,
+            2.9
+          ],
+          "note": "Connects stair, all bedrooms and wet access, bypassing altar exclusion.",
+          "open": true
+        },
+        {
+          "id": "HALL-04",
+          "label": "Shared landing",
+          "type": "hall",
+          "rect": [
+            8,
+            3.7,
+            3,
+            2.9
+          ],
+          "note": "Common access to bedrooms, utility and (Option 01) balcony. Option 02 balcony is reached through sister’s room.",
+          "open": true
+        },
+        {
+          "id": "BR-03",
+          "label": "Brother",
+          "type": "bed",
+          "rect": [
+            0.2,
+            6.7,
+            4.4,
+            4.7
+          ],
+          "note": "20.68 m² brother sleeping room; upper C-side 0.8 m projection enlarges depth without crossing B. Private separate WC/shower retained. C-side window proposed."
+        },
+        {
+          "id": "STAIR-02",
+          "label": "Stair opening",
+          "type": "stair",
+          "rect": [
+            4.7,
+            6.9,
+            2.2,
+            3.7
+          ],
+          "note": "21 risers: flights 10 + 11, 260 mm going, nominal 1.0 m flight + 0.2 m central gap, 1.1 m landing. Assumed 3.3 m floor height gives 157.1 mm rise. Overall bay reservation: wall/rail reductions, opening, headroom and code applicability unresolved."
+        },
+        {
+          "id": "BR-05",
+          "label": "Bedroom 5",
+          "type": "bed",
+          "rect": [
+            0.2,
+            0.2,
+            4.4,
+            2.9
+          ],
+          "note": "12.76 m² fifth bedroom moved to rear/A corner. No boundary windows assumed at 0.10/0.30 m gaps; rooflight and ventilation provision are unresolved design requirements."
+        },
+        {
+          "id": "BAL-01",
+          "label": "Shared balcony",
+          "type": "balcony",
+          "rect": [
+            11.2,
+            3.7,
+            1.6,
+            4.4
+          ],
+          "note": "7.04 m² road balcony, 57% larger than C01, shared landing access. Support, weathering, guards and rights unresolved."
+        }
+      ],
+      "doors": [
+        [
+          "WC-04",
+          4.95,
+          2.25,
+          0.75,
+          "h"
+        ],
+        [
+          "SH-04",
+          6.5,
+          2.25,
+          0.8,
+          "h"
+        ],
+        [
+          "BR-05",
+          4.65,
+          2.3,
+          0.8,
+          "v"
+        ],
+        [
+          "UTIL-02",
+          8.2,
+          3.65,
+          0.8,
+          "h"
+        ],
+        [
+          "WC-03",
+          0.45,
+          5.45,
+          0.75,
+          "h"
+        ],
+        [
+          "SH-03",
+          1.95,
+          5.45,
+          0.8,
+          "h"
+        ],
+        [
+          "EN-03",
+          4.65,
+          5.6,
+          0.85,
+          "v"
+        ],
+        [
+          "BR-03",
+          3.45,
+          6.65,
+          0.85,
+          "h"
+        ],
+        [
+          "BR-04",
+          9.45,
+          6.65,
+          0.85,
+          "h"
+        ],
+        [
+          "BAL-01",
+          11.1,
+          4.3,
+          1.1,
+          "v"
+        ],
+        [
+          "EMPTY-ALT",
+          9.8,
+          3.65,
+          0.75,
+          "h"
+        ],
+        [
+          "EN-ACCESS-03",
+          3.65,
+          5.45,
+          0.8,
+          "h"
+        ]
+      ],
+      "windows": [
+        [
+          0.8,
+          11.5,
+          2,
+          "h"
+        ],
+        [
+          7.4,
+          11.5,
+          1.8,
+          "h"
+        ],
+        [
+          11.1,
+          9.8,
+          1.2,
+          "v"
+        ]
+      ],
+      "furniture": [
+        [
+          "Double bed",
+          0.9,
+          7.4,
+          1.8,
+          2
+        ],
+        [
+          "Wardrobe",
+          0.4,
+          10.75,
+          3,
+          0.6
+        ],
+        [
+          "Desk",
+          3.35,
+          7.1,
+          1.1,
+          0.6
+        ],
+        [
+          "Bed",
+          0.6,
+          0.6,
+          1.4,
+          2
+        ],
+        [
+          "Wardrobe",
+          3.7,
+          0.4,
+          0.6,
+          1.2
+        ],
+        [
+          "Bed",
+          7.6,
+          7.5,
+          1.4,
+          2
+        ],
+        [
+          "Wardrobe",
+          9.3,
+          10.75,
+          1.5,
+          0.6
+        ]
+      ],
+      "fixtures": [
+        {
+          "room": "WC-03",
+          "kind": "wc",
+          "rect": [
+            0.48,
+            3.35,
+            0.55,
+            0.7
+          ]
+        },
+        {
+          "room": "WC-04",
+          "kind": "wc",
+          "rect": [
+            4.98,
+            0.35,
+            0.55,
+            0.7
+          ]
+        },
+        {
+          "room": "SH-03",
+          "kind": "shower",
+          "rect": [
+            1.58,
+            3.28,
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "room": "SH-03",
+          "kind": "basin",
+          "rect": [
+            2.85,
+            3.42,
+            0.45,
+            0.6
+          ]
+        },
+        {
+          "room": "SH-04",
+          "kind": "shower",
+          "rect": [
+            6.08,
+            0.28,
+            0.9,
+            0.9
+          ]
+        },
+        {
+          "room": "SH-04",
+          "kind": "basin",
+          "rect": [
+            7.35,
+            0.42,
+            0.45,
+            0.6
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "label": "Stair to shared balcony",
+          "points": [
+            [
+              6.1,
+              6.85
+            ],
+            [
+              6.1,
+              6
+            ],
+            [
+              8.5,
+              6
+            ],
+            [
+              10.4,
+              4.85
+            ],
+            [
+              11.2,
+              4.85
+            ]
+          ]
+        },
+        {
+          "label": "Shared bathrooms / sister",
+          "points": [
+            [
+              6.1,
+              6
+            ],
+            [
+              7.5,
+              3
+            ],
+            [
+              4.7,
+              2.7
+            ]
+          ]
+        }
+      ],
+      "rooflights": [
+        {
+          "room": "BR-05",
+          "rect": [
+            1.4,
+            0.8,
+            1.4,
+            0.8
+          ],
+          "note": "Rooflight candidate, not verified daylight/ventilation performance or selected opening specification."
+        }
+      ]
+    }
   ],
   "coordination": {
-    "grid_x": [0.1,3.95,6.25,9.9], "grid_y": [0.1,3.45,6.95,9.9],
-    "grid_note": "Discussion axes only; NOT columns, beams or structural design. Some axes cross rooms and require engineer-led revision.",
-    "stacks": [[4.1,0.4],[4.85,9.55]],
-    "stack_note": "Service-zone markers shared by both floors, not sized shafts; route/vent/access space still to be reserved.",
-    "backing_wall": [6.2,8.7,3.6,0.1],
-    "private_screen": [4.75,2.65,0.1,0.75]
+    "grid_x": [
+      0.1,
+      4.65,
+      6.95,
+      11.1
+    ],
+    "grid_y": [
+      0.1,
+      3.65,
+      6.65,
+      10.7,
+      11.5
+    ],
+    "grid_note": "Discussion axes only, not columns/beams or cantilever support design.",
+    "stacks": [
+      [
+        3.32,
+        3.35
+      ],
+      [
+        7.82,
+        0.35
+      ]
+    ],
+    "stack_note": "Wet compartments align; no A/B opening rights assumed. Service/extract shafts and kitchen daylight routes remain unsized proposals.",
+    "backing_wall": [
+      9.4,
+      0.1,
+      0.1,
+      3.5
+    ],
+    "altar_width_axis": "y",
+    "altar_facing_vector": [
+      1,
+      0
+    ],
+    "private_screens": [
+      [
+        3.4,
+        3.2,
+        0.1,
+        2.2
+      ]
+    ],
+    "cantilever": {
+      "direction": "side / C",
+      "depth": 0.8,
+      "note": "Upper envelope projects toward owned C-side garden. C02 rear/B projection removed; professional support and drainage design unresolved."
+    }
   }
 }

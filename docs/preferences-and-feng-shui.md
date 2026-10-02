@@ -1,6 +1,6 @@
 # Family preferences and feng shui register
 
-Updated: 2026-10-01. Status: initial family rules and indoor-space clarification recorded; preliminary backing-wall research completed, courtyard interpretation unresolved.
+Updated: 2026-10-02. Status: C03 feedback recorded; road/altar facing confirmed, altar extent proposed; courtyard interpretation remains unresolved.
 
 ## How requirements are adopted
 
@@ -11,15 +11,20 @@ This record does not claim that these rules are universal or scientifically prov
 | ID | Source and priority | Requirement | Working design/check method |
 | --- | --- | --- | --- |
 | ALT-01 | Owner; required | Altar area minimum width around 3.2–3.4 m | Reserve 3.4 m finished clear width initially; confirm exact minimum, altar furniture and ceremony/standing depth |
-| FS-01 | Owner; required, clarified | F2 floor allowed above altar, but keep that zone empty: no bedroom, tables/chairs or frequently used walkway | Project the designated F1 altar zone onto F2; reserve an unfurnished zone outside normal circulation. No double-height void required. Initially use the whole designated altar area, with exact boundary to define in drawings |
+| FS-01 | Owner; required, clarified | F2 floor allowed above altar, but keep that zone empty: no bedroom, tables/chairs or frequently used walkway | Project the designated F1 altar zone onto F2; reserve an unfurnished zone outside normal circulation. No double-height void required. Use the whole designated altar area; owner requests reducing C01’s oversized upper reservation. C03 retains the 3.4 × 1.5 m altar zone, excluding the backing buffer; exact depth/extent needs family review |
 | FS-02 | Owner; required | Staircase does not face the main entrance | Show entrance axis/sightline and first flight/landing in plan; explore a side-facing or screened approach, then review with family |
 | FS-03 | Owner; required | Solid wall behind altar, with indoor space beyond the wall; avoid WC/shower, gas stove, bedroom, etc. behind it | Indoor space is the baseline clarified by the owner. An outdoor gap/courtyard is conditionally acceptable if supported by the family's feng shui interpretation; current research does not settle that condition. Label wall and buffer zone in plan/section |
+| FS-04 | Owner; required, C02 | Altar faces the same direction as the house, toward road / southeast | Show matching +x facing vectors in C03; 130° follows A and is not D’s normal or a survey verification |
 | PR-01 | Owner; preference | Ensuite doors do not face the bedroom | Short screened passage with a turn before WC/shower doors; check bed/entry sightlines and circulation |
 | PR-02 | Owner; permitted | Living and altar may share an open space | Compare shared hall and more defined altar alcove without assuming either is selected |
 
 ## Resolve the altar in plan and section
 
 Choose the altar location while arranging both floors. Show its backing wall, the space behind it, F2 uses above it, and nearby service routes in a section. A solid backing wall does not automatically have to be a load-bearing wall; the structural scheme will determine that.
+
+C02/C03 owner feedback retains a matching southeast house/altar facing and asks to reduce the upper reservation. The proposed 5.10 m² zone covers only the revised altar footprint; the floor above the 1.4 m F1 backing buffer becomes utility space. This is a design response, not family approval of the exact reduced depth or buffer extent.
+
+C03 prioritizes the open living/altar relationship by moving dining into the kitchen. Close A/B placement and alternate balcony access do not change the solid backing/indoor-buffer rule or the empty upper projection. They are spatial preferences, not new feng shui rules.
 
 The owner clarified that an upper floor is allowed above the altar. Keep the projected zone empty, without tables/chairs or frequent walking. A sitting area or busy landing therefore does not satisfy the brief; a void is unnecessary. Place routine routes to rooms, bathrooms and balcony outside the zone. Show it explicitly on F2 as “empty zone above altar — no furniture or regular circulation.” Occasional cleaning access is a practical design interpretation, not a requirement that the zone be inaccessible.
 

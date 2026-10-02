@@ -1,14 +1,14 @@
 # Owner brief — Noi Bai house
 
-Updated: 2026-10-01. Source: owner's requirements supplied in conversation on this date.
+Updated: 2026-10-02. Source: owner's requirements supplied in conversation on this date.
 
 ## Project and floor naming
 
 - Location: Noi Bai area, Hanoi, near Noi Bai Airport. Exact address/current administrative locality pending.
 - Two floors, five bedrooms total.
-- Preferred location: near the junction of boundaries A and B. Exact boundary offsets are not yet established.
+- Preferred location: rear next to B, with the A-side wall approximately **0.30 m** away. Owner wants outdoor space concentrated toward the front/D and side garden/C. C03 assumes a **0.10 m B allowance** because no exact B dimension was given; this is not an owner-specified distance or verified permission.
 - Parking: one car plus a few scooters/bicycles; garden and front yard preferred.
-- Owner confirmed approximately **100 m² building footprint**, leaving outdoor space for yard, garden and parking. Two full floors would imply approximately 200 m² gross floor area; actual upper-floor/balcony areas will be scheduled separately. This is an approximate concept target, not confirmed fit or permissible coverage. The earlier “occupy entire plot” wording is superseded.
+- Owner retains an **approximately 100 m² footprint target**, but clarified that neither exactly 100 m² nor a 10 × 10 m square is required. Modest departures and upper-floor cantilever studies are permitted, with exterior design and outdoor space considered together. C03 retains the C02 proposal of 120.96 m² F1; this increase is not owner-approved. The earlier “occupy entire plot” wording remains superseded.
 - In this project, **F1 = ground/entrance floor (tầng 1)** and **F2 = upper floor (tầng 2)**. Use this convention on every drawing.
 - Budget figure deferred for initial layout exploration. No assumption of unlimited budget.
 - Plot evidence and uncertainties: [site notes](site-investigation.md).
@@ -19,30 +19,53 @@ Updated: 2026-10-01. Source: owner's requirements supplied in conversation on th
 
 | ID | Floor | Space | Requirement |
 | --- | --- | --- | --- |
-| BR-01 | F1 | Parents' bedroom | Private ensuite comprising separate WC and shower spaces |
+| BR-01 | F1 | Parents' bedroom | Spacious sleeping room; private ensuite with separate WC and shower |
 | BR-02 | F1 | Grandpa's bedroom | Access to shared WC/shower without entering another bedroom |
 | SAN-01 | F1 | Parents' private sanitary pair | One WC compartment and one separate shower compartment |
 | SAN-02 | F1 | Shared sanitary pair | One WC compartment and one separate shower compartment |
 | ALT-01 | F1 | Altar area | Owner requests minimum width around 3.2–3.4 m; provisionally reserve 3.4 m finished clear width, exact minimum/depth to confirm |
-| LIV-01 | F1 | Living room | May form an open space with the altar area |
-| KIT-01 | F1 | Kitchen | Required; gas stove is mentioned in the altar restriction but fuel choice is not yet confirmed |
-| DIN-01 | F1 | Dining space | Seat approximately six people; may be integrated with kitchen/living layout |
-| BR-03 | F2 | Brother's bedroom | Private ensuite comprising separate WC and shower spaces |
+| LIV-01 | F1 | Living room | Prioritize open space around living/altar; include a TV stand and sofa arrangement |
+| KIT-01 | F1 | Kitchen | Compact dining inside rear kitchen preferred; garden access must respond to close B placement; fuel unconfirmed |
+| DIN-01 | F1 | Dining space | Compact table/chairs in kitchen; retain original approximate six seats for this study, no separate generous dining zone needed |
+| BR-03 | F2 | Brother's bedroom | Spacious sleeping room; private ensuite with separate WC and shower |
 | BR-04 | F2 | Younger sister's bedroom | Access to shared sanitary pair |
 | BR-05 | F2 | Bedroom 5 | Use/occupants to confirm; access to shared sanitary pair |
 | SAN-03 | F2 | Brother's private sanitary pair | One WC compartment and one separate shower compartment |
 | SAN-04 | F2 | Shared sanitary pair | One WC compartment and one separate shower compartment |
-| BAL-01 | F2 | Balcony | Required; position, size and access to be explored |
+| BAL-01 | F2 | Balcony | Shared access remains a preference; bedroom access may be considered if it improves exterior layering |
 
 Working interpretation: four sanitary pairs across the house, totaling **four WCs and four separate shower compartments**. The private pairs are included in the requested two pairs per floor, not additional. F2's second pair is treated as shared. This interpretation should remain visible in concept reviews.
 
-Each pair needs a basin/handwashing arrangement, ventilation, plumbing and door-clearance design. Basin placement is open; a dry shared basin zone could serve independently entered WC and shower rooms. Avoid making someone pass through the WC to reach the shower.
+Owner now requires a **basin inside each shower compartment** and improved shower dimensions. Retain independent WC/shower entries; basin-inside-shower does not authorize combining WC and shower. Latest owner feedback removes **basins from WC compartments** and allows smaller WCs. Keep shower basins. Ventilation, plumbing, door operation and the resulting washbasin access arrangement still need design.
 
 ## Ensuite privacy
 
 Preference: WC/shower doors should not directly face the bedroom. Explore **bedroom → short screened/dressing passage → turn → separate WC and shower doors**. Check the sightline from both the bed and bedroom entry. Merely rotating the sanitary door while leaving the interior visible would not satisfy the intended privacy.
 
 Passage dimensions and turning space must support actual users and furniture. Favor useful dressing/storage space over a long corridor. Keep the private route within the relevant suite.
+
+## C02 feedback — owner input, 2026-10-01
+
+- **Road-facing arrival is confirmed**, superseding the unresolved C01 orientation choice and the assistant's former Option 02 preference. Neither C01 layout is selected.
+- Altar faces the same direction as the house, toward the road / **southeast**. In C02 both face local +x along A, using the owner-provided 130° concept bearing; this does not establish D's bearing or a surveyed facade normal.
+- Explore rear kitchen/dining and a garden door. C02 has rear kitchen and adjoining dining through a shared access lobby; the lobby connection is an explicit compromise for review.
+- Prefer larger **shared** F2 balcony; a bedroom balcony is allowed but less preferred.
+- Reduce the oversized upstairs altar reservation. Preserve empty floor above the actual designated altar area, with no furniture or frequent routes; depth/extent remain proposals.
+- Owner clarified “elevator” means **staircase**. Requested 21 steps, 2.2 m overall area width, and 26 cm tread depth. C02 interprets 21 steps as risers, with nominal 1.0 m flights; floor rise, walls, rails, landing, opening and headroom are unverified design inputs.
+- Enlarge parents' and brother's sleeping rooms; no exact minimum area was given. C02's sizes are proposed responses.
+- Exterior preference: modernism mixed with contemporary design, using **massing / volumetric layering**. Upper cantilevers may be explored, subject to exterior design and structural review.
+- Rotate plot, F1 and F2 **presentation 90° clockwise**. This is a display choice, not a change to the site bearing or physical layout orientation.
+
+## C03 feedback — owner input, 2026-10-02
+
+- Place rear very close to **B** and the **A-side wall about 30 cm away**. Named edges govern the model; after clockwise display rotation A appears right and C left. No edge labels are swapped to match the owner's “left wall” wording.
+- Prioritize front yard and side garden. C03 redistributes the same outdoor ground area toward D/C; it does not claim extra total land.
+- Include a **TV stand** in living, with sofa, doors and regular routes considered together. TV size and finished viewing distance are not specified.
+- Study main entrance around **1.90 m total width**. This is a suggested concept opening, not an approved finished clear width or door system.
+- Prefer **compact dining inside the kitchen**; a table and a few chairs are enough. Keep more open space around living/altar. C03 retains six small chair reservations from the earlier approximate six-person brief; comfortable occupied capacity is not established.
+- A **bedroom-access balcony** is conditionally acceptable if it improves exterior layering. Compare it against shared access; neither C03 variant is selected.
+- **WC basins are unnecessary**; compartments may be smaller. Basin inside each separate shower remains required.
+- Close B placement supersedes C02's rear garden strip and B-side cantilever. C03 removes its rear kitchen door, moves projection toward C, and reaches the garden via living/front yard. Direct kitchen/garden access is still a design issue, not declared resolved.
 
 ## Additional owner priorities
 
@@ -77,4 +100,4 @@ No construction price or feasible floor area is established by the current sketc
 6. Coordinate columns, stair opening, wet stacks and vertical sections. Revise both floors together.
 7. Compare two or three options with furniture, dimensions, sightlines, preliminary area schedules and unresolved issues.
 
-Concept C01 is now available in [the interactive viewer](../outputs/house-concepts.html), with [comparison notes](concept-study-C01.md). It compares road-facing and garden-facing orientations of a 100 m² layout, with dimensions, furniture reservations, both floors and outdoor areas. Neither option is selected; geometry and layout compromises remain for review. No structural system has been engineered.
+Current [viewer](../outputs/house-concepts.html) presents [C03a](concept-study-C03a.md), the corrected [C03 design](concept-study-C03.md): the same ground plan with two upper balcony-access alternatives. C02 is preserved in [its snapshot](../revisions/C02/manifest.json). Road arrival is confirmed; C03 layout, footprint and balcony option are unselected.

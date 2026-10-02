@@ -1,6 +1,6 @@
 # Site evidence and open geometry — Noi Bai
 
-Updated: 2026-10-01.
+Updated: 2026-10-02.
 
 ## Evidence
 
@@ -23,9 +23,9 @@ The photograph shows a roughly four-sided parcel with a bend along D. A, B and C
 | Beyond A | Owner: neighbor's wall/house |
 | Beyond B | Owner: neighbor's garden |
 | Beyond C | Owner: neighbor's wall/house |
-| Preferred house position | Owner: near A–B junction; does not establish permission or intent to build directly on either boundary |
+| Preferred house position | Owner now wants rear beside B and about 0.30 m at A. C03 models a 0.10 m B allowance; exact B distance, boundary-wall construction and permissions remain unverified |
 
-Site-planning brief: one car plus a few scooters/bicycles, with a garden/front yard preferred. Owner confirmed approximately 100 m² building footprint near A–B, leaving outdoor space. The house is not intended to occupy the entire plot. Remaining outdoor area cannot be quantified reliably until a provisional geometric model or survey establishes plot area; 192 remains excluded.
+Site-planning brief: one car plus a few scooters/bicycles, with a garden/front yard preferred. Owner confirmed approximately 100 m² footprint near A–B, later allowing departures from exactly 100 m² / 10 × 10 m and exploration of upper cantilevers. C02 proposes 120.96 m² F1; acceptance is pending. The house is not intended to occupy the entire plot. Remaining outdoor area cannot be quantified reliably until a provisional geometric model or survey establishes plot area; 192 remains excluded.
 
 For concept studies, account for the neighboring walls/houses at A and C. The garden beyond B is the currently reported condition, not a guarantee of permanent openness or a right to place boundary windows. Exact offsets, openings and neighboring building heights remain to be established.
 
@@ -35,7 +35,15 @@ Lengths use metres (m); area uses square metres (m²). The owner confirmed the b
 
 Use the photograph for topology and a provisional bend only. It is a photographed drawing with perspective distortion and unknown original scale; pixel proportions cannot establish exact angles, area or setbacks. Do not silently distort dimensions to make an assumed area fit.
 
-Concept C01 now provides a provisional polygon in [the data source](../data/concepts.json), derived by [the build script](../scripts/build_concepts.py). It assumes perpendicular A/B, a 1.8 m drop along C and two 9 m segments for D. Its computed area is approximately 243.78 m², for this model only. See [the geometry review](../outputs/geometry-review.md) for coordinates and assumptions. No surveyed boundary or registered area has been adopted.
+The concept model provides a provisional polygon in [the data source](../data/concepts.json), derived by [the build script](../scripts/build_concepts.py). It assumes perpendicular A/B, a 1.8 m drop along C and two 9 m segments for D. Its computed area is approximately 243.78 m², for this model only. See [the geometry review](../outputs/geometry-review.md) for coordinates and assumptions. No surveyed boundary or registered area has been adopted.
+
+C03 retains that polygon and moves F1/F2 to **(0.10, 0.30)** in local site axes. Approximately 0.30 m at A is the owner's desired layout; 0.10 m at B is the assistant's provisional allowance for “right next to B.” Neither fixes a surveyed envelope, legal setback, construction access or drainage/eaves rights.
+
+C02's rear/B 0.8 m projection and garden door are removed; the upper envelope projects **0.8 m toward C**, within the modeled parcel. Shared and bedroom corner balconies project toward D. No A/B boundary doors or windows are assumed. The upper rear bedroom has a rooflight candidate; kitchen daylight/extract and actual shafts remain unresolved, so near-boundary room performance is not established.
+
+The same ground footprint means the model's total land outside F1 stays about 122.82 m². Repositioning concentrates usable yard opportunities toward D/C. Garden planting is modeled on the C side; parking moves into the front/A corner. Its car bay passes corner containment, with turning still unverified. In the shared-balcony variant part of the bay lies under the upper projection; supports and clear heights need design.
+
+Plot/F1/F2 retain the 90° clockwise presentation. This puts B above, A right and C left on the display. Named A/B edges take precedence over casual left/right wording; no boundary side or bearing was relabeled.
 
 Use the owner-confirmed 130° bearing along A toward D for concept orientation. It is not the bearing along D or necessarily the perpendicular facing direction of a future facade. D has two segments; the eventual house facade and gate need not align with either. Measurement method and magnetic/true north are still unverified, so retain this as owner-provided concept data until survey. Do not derive bearings from the camera framing.
 

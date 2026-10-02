@@ -2,7 +2,9 @@
 
 Date: 2026-10-01. Status: exploratory spatial study, not a selected design or construction package.
 
-Open [the interactive concept viewer](../outputs/house-concepts.html) locally in a browser. It works offline. Switch options and floor tabs; select rooms for clear dimensions and notes. Furniture, altar projection, service-zone markers and discussion axes can be toggled. Print/save PDF includes the selected view and both floor drawings for the active option.
+Historical revision: the active viewer and current top-level exports now show [C03](concept-study-C03.md). To review C01 itself, extract [the preserved C01 archive](../revisions/C01/snapshot.zip) into a separate directory and open its viewer there. The following notes describe that original baseline; source/report links in this working copy may now target C03.
+
+The C01 viewer opens locally in a browser. It works offline. Switch options and floor tabs; select rooms for clear dimensions and notes. Furniture, altar projection, service-zone markers and discussion axes can be toggled. Print/save PDF includes the selected view and both floor drawings for the active option.
 
 ## What this study compares
 

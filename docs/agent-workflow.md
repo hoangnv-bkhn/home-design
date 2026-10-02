@@ -37,22 +37,28 @@ Documentation-only work does not require rebuilding house outputs or advancing t
 python scripts/snapshot_revision.py --verify C01
 python scripts/build_concepts.py
 python scripts/review_viewer.py
-# At completion of an actual C02 review package:
-python scripts/snapshot_revision.py --revision C02 --note "Describe this review baseline"
+# At completion of a new C03 review package (refuses an existing archive):
+python scripts/snapshot_revision.py --revision C03 --note "Describe this review baseline"
 ```
 
 The snapshot helper requires its revision to match `data/concepts.json`, refuses overwrite and records SHA-256 hashes. Extract `snapshot.zip` into a separate directory to inspect the older self-contained package; do not extract over the active workspace. Review reports inside a snapshot retain their original evidential limits.
 
 ## Current implementation caveats — read before geometry edits
 
-The prototype is only partly parameterized. Do not assume changing `house.width` or `house.depth` updates every consumer.
+C03 keeps metre geometry, explicit per-floor envelopes and two balcony-access variants. Viewer overview prose and some annotation/facade positions remain revision-specific.
 
-- `build_concepts.py` embeds 10 m / 100 m² envelope checks, 0.2 m wall bounds, option rotation, balcony corner samples, altar width logic and report wording. It also assumes a particular site construction from the supplied side lengths.
-- `src/concept-viewer.html` contains 10 m rotation centers, room/furniture labels, summaries, site house rectangle, stair treads, altar projection, section geometry, massing, parking/gate/garden positions, and C01 text. Several are not derived from room objects. Change or parameterize all affected values when geometry changes; otherwise a plan, section and massing can disagree.
-- `review_viewer.py` assumes option IDs 01/02, views site/F1/F2/section/massing, a BR-01 selection check and Chrome's Windows installation path. Adjust when those interfaces change. It creates a dedicated local browser profile; keep it out of archives and source control.
-- The existing 14 geometry checks are limited. They do not validate door connectivity/swings, all furniture overlap, circulation width, site setbacks, statutory areas, stair headroom, vehicle turning, engineering or all changes to geometry.
-- SVG and PNG exports are separate snapshots. `concept-preview.png` is an early overview capture, not the authoritative current floor export. Prefer `option-<id>-<view>` outputs and the working HTML.
-- Static SVG axonometric is the current massing view. Three.js, structural solvers and BIM have not been installed or implemented. Introduce them only when the task calls for their capabilities.
+- Source coordinates remain +x toward road/SE, +y along B toward C. Clockwise plot/F1/F2 display rotation is separate; B appears above, A right, C left. Never relabel edges or change compass to match casual left/right descriptions.
+- Owner wants about 0.30 m at A and rear next to B. B=0.10 m is a **model assumption**, not owner exact dimension or lawful boundary construction. No A/B door/window is assumed. C02 rear projection/door is superseded by the C-side upper projection and front-yard garden route.
+- `options[].balcony` defines each variant's rectangle, door, access-room ID, note and route. `floorData()` applies these overrides to the base F2 room/door list; the BAL-01 ID remains stable. Build checks/reports each variant and derives `derived.balconies`. F1 is common to both.
+- Floor envelopes, gross areas, stair, fixtures, altar width/projection and wet stacking are parameterized. The altar width is local y; its x dimension is depth. Unsupported physical option rotations are rejected.
+- Compact kitchen/dining is represented by adjacent open KIT-01 / DIN-01 rectangles with a 0.10 m junction strip. Their sum differs from the combined bay by 0.29 m². Do not add their bay area again to room totals.
+- `F1.tv` and furniture define the TV stand/sofa proposal. Main entry width is 1.90 m. No leaf/swing, occupied clearance or TV-size recommendation is encoded.
+- F2 rooflight is a candidate above bedroom 5, not proven daylight/ventilation. Kitchen daylight/extract and actual service shafts remain unresolved.
+- Viewer summaries, section/facade details, review questions, site annotations and some requirement-check values remain C03-specific. Reconcile them with future geometry rather than editing JSON alone.
+- The 48 checks are limited to counts, zones/envelopes, fixtures, stacking, altar, nominal stair arithmetic, both balcony access/routes, A/B allowances, entrance and selected furniture/site relationships. They do not validate all doors, use clearances, headroom, setbacks, daylight, turning or structure.
+- Browser review reads active options, tests per-option balcony notes/areas plus displayed TV/entry, and exports five views per option. PNGs are captured from their standalone SVGs in separate blank-origin tabs; this avoids viewer scroll/reflow clipping. Chrome path remains Windows-specific. Print/PDF output is not tested.
+- Current top-level option-01 and option-02 outputs are C03. Nested `outputs/obsolete-C01/` remains historical and is excluded by snapshot helper, along with browser profiles. C01/C02 verified archives preserve the originals.
+- Static SVG remains the renderer for plans/sections/massing. No new dependency, BIM or engineering solver was added. Volumes, rooflight, openings, guards and facade frame are schematic.
 
 ## Evidence and review notes
 
