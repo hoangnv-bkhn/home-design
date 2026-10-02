@@ -11,6 +11,7 @@ Updated: 2026-10-02. Phase: C03 owner-feedback comparison.
 - [Viewer](outputs/house-concepts.html) · [C03 comparison/limits](docs/concept-study-C03.md) · [C03a handoff correction](docs/concept-study-C03a.md).
 - Sources: [geometry](data/concepts.json), [template](src/concept-viewer.html), [build](scripts/build_concepts.py), [browser/export](scripts/review_viewer.py).
 - Requirements/evidence: [brief](docs/brief.md), [site](docs/site-investigation.md), [family rules](docs/preferences-and-feng-shui.md); tracking: [decisions](docs/decisions.md), [issues](docs/open-issues.md), [workflow](docs/agent-workflow.md).
+- Agent skills / slash commands: [/house-revision](.agents/skills/house-revision/SKILL.md), [/house-verify](.agents/skills/house-verify/SKILL.md), [/standards-research](.agents/skills/standards-research/SKILL.md), [/house-snapshot](.agents/skills/house-snapshot/SKILL.md). Dual Codex and Antigravity support.
 
 ## C03 changes and unresolved consequences
 

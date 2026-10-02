@@ -4,7 +4,7 @@
 
 1. Read `PROJECT_STATE.md` for current revision, unresolved choices and the next action.
 2. Read `docs/brief.md` and the open issues relevant to the request. For layout work, also read `docs/site-investigation.md` and `docs/preferences-and-feng-shui.md`.
-3. For concept revisions, load `.agents/skills/house-revision/SKILL.md`. For implementation details and checks, follow `docs/agent-workflow.md`.
+3. For concept revisions, load `.agents/skills/house-revision/SKILL.md`. For non-destructive health checks, load `.agents/skills/house-verify/SKILL.md`. For building codes and standards research, load `.agents/skills/standards-research/SKILL.md`. For archiving baselines, load `.agents/skills/house-snapshot/SKILL.md`. In Antigravity, these skills are also accessible as slash commands: `/house-revision`, `/house-verify`, `/standards-research`, `/house-snapshot`. For implementation details and checks, follow `docs/agent-workflow.md`.
 
 The latest user instruction governs the task. Record new requirements and corrections durably; do not ask again for information already confirmed. Unknown details may remain labeled assumptions during concept work. Ask only when the answer materially changes the requested work.
 

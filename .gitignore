@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 revisions/
 plot_dimensions.jpg
+.gemini/
+.antigravity/

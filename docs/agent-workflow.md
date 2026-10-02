@@ -4,7 +4,15 @@
 
 Begin with `AGENTS.md` and `PROJECT_STATE.md`. The brief, family rules and site evidence contain the design requirements. Use the local `house-revision` skill for actual concept revisions; a text correction or factual answer need not invoke the full drawing/export process.
 
-Repository instruction discovery follows [OpenAI's AGENTS.md guidance](https://learn.chatgpt.com/docs/agent-configuration/agents-md). The skill is stored under `.agents/skills/house-revision/SKILL.md`, the repository-local location described in [OpenAI's skill documentation](https://learn.chatgpt.com/docs/build-skills). Sources checked 2026-10-01. Start later sessions from the project root. If the skill is not shown in a client, follow its path from AGENTS.md; restart the session if discovery is stale.
+Repository instruction discovery follows [OpenAI's AGENTS.md guidance](https://learn.chatgpt.com/docs/agent-configuration/agents-md) and [Google Antigravity's Customization System](https://antigravity.google/docs/skills). Both environments read `AGENTS.md` at the project root as directory rules and discover skills under `.agents/skills/<name>/SKILL.md`.
+
+Available project skills (runbooks and slash commands):
+- `.agents/skills/house-revision/SKILL.md` (`/house-revision`): Concept iteration, geometry editing in `data/concepts.json`, viewer and report rebuilds.
+- `.agents/skills/house-verify/SKILL.md` (`/house-verify`): Non-destructive health check (48 build checks, headless Chrome review, snapshot verification).
+- `.agents/skills/standards-research/SKILL.md` (`/standards-research`): Vietnamese building codes (QCVN 01, QCVN 06, TCVN 9411) and feng shui cultural research with mandatory citations.
+- `.agents/skills/house-snapshot/SKILL.md` (`/house-snapshot`): Archiving and verifying immutable review baselines in `revisions/`.
+
+In Antigravity, subagents can be leveraged via `invoke_subagent` (e.g. `research` subagent for deep code/standards lookups without cluttering main conversation context). Start later sessions from the project root. If a skill is not discovered automatically, follow its path from `AGENTS.md`.
 
 ## Sources and derivatives
 

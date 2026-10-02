@@ -57,7 +57,21 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'outputs'
 MODEL=json.loads((ROOT/'data/concepts.json').read_text(encoding='utf-8'))
 profile=OUT/'browser-review-profile'
-chrome=Path('C:/Program Files/Google/Chrome/Application/chrome.exe')
+def find_chrome():
+    candidates = [
+        os.environ.get('CHROME_PATH'),
+        r'C:/Program Files/Google/Chrome/Application/chrome.exe',
+        r'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',
+        os.path.expandvars(r'%LOCALAPPDATA%/Google/Chrome/Application/chrome.exe'),
+        os.path.expandvars(r'%PROGRAMFILES%/Google/Chrome/Application/chrome.exe'),
+        os.path.expandvars(r'%PROGRAMFILES(X86)%/Google/Chrome/Application/chrome.exe'),
+    ]
+    for c in candidates:
+        if c and Path(c).is_file():
+            return Path(c)
+    return Path('C:/Program Files/Google/Chrome/Application/chrome.exe')
+
+chrome=find_chrome()
 process=subprocess.Popen([str(chrome),'--headless','--disable-gpu','--no-first-run',
     '--no-default-browser-check','--remote-debugging-port=0','--remote-allow-origins=*',
     '--user-data-dir='+str(profile),'about:blank'],stdout=subprocess.DEVNULL,

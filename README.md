@@ -11,7 +11,7 @@ Open the [C03a viewer](outputs/house-concepts.html) locally; it works offline. C
 - [Geometry review](outputs/geometry-review.md) · [Browser review](outputs/viewer-review.md)
 - [Decisions](docs/decisions.md) · [Open issues](docs/open-issues.md)
 
-Resume from [PROJECT_STATE.md](PROJECT_STATE.md), [AGENTS.md](AGENTS.md) and [workflow](docs/agent-workflow.md). Road arrival is confirmed; neither C03 balcony/layout is selected. Near-boundary offsets are owner design preferences, not verified permissions.
+Resume from [PROJECT_STATE.md](PROJECT_STATE.md), [AGENTS.md](AGENTS.md) and [workflow](docs/agent-workflow.md). Compatible with both OpenAI Codex and Google Antigravity. In Antigravity, available slash commands include `/house-revision`, `/house-verify`, `/standards-research`, and `/house-snapshot`. Road arrival is confirmed; neither C03 balcony/layout is selected. Near-boundary offsets are owner design preferences, not verified permissions.
 
 Edit [metre geometry](data/concepts.json), then regenerate:
 
