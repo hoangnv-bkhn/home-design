@@ -81,3 +81,11 @@ Larger shaded bedroom openings face D or the modeled own C yard; no A/B windows.
 ## C09 retained site basis
 
 C09 retains C08 envelope, open court, origin, front depth and ground parking/porch/walking geometry. Balcony 01 changes to 2.00 m projection × 3.60 m frontage; balcony 02 compares the earlier shared 1.60 × 4.40 m form. No private sister slab remains in the active comparison. Both are inside the assumed parcel model; no permission, support design, turning clearance or full porch weather cover is inferred. Ground/survey/environmental evidence status unchanged.
+
+## C10 current site update
+
+Bounding envelope reduces along B to **10.50 × 11.40 m / 119.70 m²**. Clear court relocates to [0.2,4.3,2.0,2.0] / **4.00 m²**, between corner suites and kitchen. Ground covered convention **115.70 m²**; upper enclosed convention **111.65 m²**, excluding its 4.05 m² front loggia notch. Model land outside rectangle is approximately **124.08 m²**, plus court. Front depth along A remains **4.40 m**; 0.60 m is gained toward C, not D.
+
+Origin, owner-reported edges/bearing, offsets, stationary C-side car bay, scooters and gates retain their evidence status. Porch/entry shift 0.60 m along B; arrival path turns from existing pedestrian gate. Canopy is a new 2.30 × 2.50 m schematic reservation. Both balcony options partly recess into F1 and project 1.20/0.60 m toward D; no enclosed room cantilever. Ground walking paths remain reservations, not swept vehicle/door paths or measured levels.
+
+Parents/brother remain dependent on their own smaller court, now with a common cleaning door. No A/B opening assumed. Window size reduces to 1.50 m and storage is clear of it; daylight/airflow/sky and drainage are unverified. [C10 tradeoffs](concept-study-C10.md) supersede prior current-envelope statements above.

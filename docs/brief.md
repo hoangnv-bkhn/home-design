@@ -8,7 +8,7 @@ Updated: 2026-10-03. Source: owner's requirements and corrections supplied in co
 - Two floors, five bedrooms total.
 - Preferred location: rear next to B, with the A-side wall approximately **0.30 m** away. Owner wants outdoor space concentrated toward the front/D and side garden/C. C03 assumes a **0.10 m B allowance** because no exact B dimension was given; this is not an owner-specified distance or verified permission.
 - Parking: one car plus a few scooters/bicycles; garden and front yard preferred.
-- Owner retains an **approximately 100 m² footprint target**, but neither exactly 100 m² nor a 10 × 10 m square is required. Latest feedback permits relayout for larger Grandpa/altar and normal bedroom/stair windows. C08 proposes 119.20 m² covered footprint per floor convention, from 126.00 m² outer envelope minus 6.80 m² court, versus C07 108.00 m². Court/footprint not approved; affordability unassessed. Upper cantilever studies remain permitted; covered envelopes align. “Occupy entire plot” remains superseded.
+- Owner retains an **approximately 100 m² footprint target**, but neither exactly 100 m² nor a 10 × 10 m square is required. Latest feedback permits relayout for larger Grandpa/altar and normal bedroom/stair windows. C10 proposes 115.70 m² ground covered footprint and 111.65 m² upper enclosed envelope, from 10.50 × 11.40 m bounding dimensions, 4.00 m² court and upper loggia recess. Court/footprint not approved; affordability unassessed. Upper cantilever studies remain permitted; C10 adopts no enclosed room cantilever. “Occupy entire plot” remains superseded.
 - In this project, **F1 = ground/entrance floor (tầng 1)** and **F2 = upper floor (tầng 2)**. Use this convention on every drawing.
 - Budget figure deferred for initial layout exploration. No assumption of unlimited budget.
 - Plot evidence and uncertainties: [site notes](site-investigation.md).
@@ -29,7 +29,7 @@ Updated: 2026-10-03. Source: owner's requirements and corrections supplied in co
 | DIN-01 | F1 | Dining space | Compact table/chairs in kitchen; retain original approximate six seats for this study, no separate generous dining zone needed |
 | BR-03 | F2 | Brother's bedroom | Spacious sleeping room; private ensuite with separate WC and shower |
 | BR-04 | F2 | Younger sister's bedroom | Access to shared sanitary pair |
-| BR-05 | F2 | Bedroom 5 | Use/occupants to confirm; access to shared sanitary pair |
+| BR-05 | F2 | Spare bedroom | Owner confirms spare use; may shrink freely, while retaining ordinary access and shared sanitary pair |
 | SAN-03 | F2 | Brother's private sanitary pair | One WC compartment and one separate shower compartment |
 | SAN-04 | F2 | Shared sanitary pair | One WC compartment and one separate shower compartment |
 | BAL-01 | F2 | Balcony | Shared access remains a preference; bedroom access may be considered if it improves exterior layering |
@@ -150,3 +150,12 @@ Current [viewer](../outputs/house-concepts.html) presents [C08](concept-study-C0
 - Broader relayout and room dimension changes are expressly welcome. This permits study; no proposal, structural system, study-room use or balcony option is selected.
 
 C09 proposes an accessible 0.90 m buffer with 0.80 m door/0.95 m sofa-back approach, aligned wet-core/stair-bedroom wall at x=6.25 m, 14.80 m² Grandpa/sister rooms, furnished shared upper study and one shared balcony in two proportions. Covered footprint stays 119.20 m². The 10.20 m² upper altar exclusion remains required under the existing family rule. [C09 comparison](concept-study-C09.md) records the shorter TV gap, narrower common bedroom passage and unverified structural design.
+
+## C10 owner clarification and iteration — 2026-10-03
+
+- Bedroom 5 is a spare room and may shrink; align its wall with brother's where useful for coordination. This settles use, without selecting a structure.
+- Altar itself is approximately 1.20 m deep. Keep only that actual strip empty upstairs; the whole deeper ground worship area need not be excluded. Supersedes earlier full-area projection interpretation (D34/D36, FS-01), not the indoor backing rule.
+- Explore shared WC/shower beside kitchen, nearby court and parents in a corner; shrink total width/depth where usable. Broad relayout authorized.
+- Reconsider balcony and exterior volumes/layering, including room cantilever candidates. Add timber privacy screen between altar and left-side bench/seating.
+
+C10 responds with 13.60 m² corner parents/brother rooms, 12.58 m² spare room, 2 × 2 m common-access court, 3.40 × 1.20 m empty upper strip and timber side screen. Shared wet pair stays on its stacked axis beside the new kitchen/common junction; no bathroom door into kitchen. Kitchen/dining is smaller and six seats remain a tight study. Recessed shared loggia compares 1.20/0.60 m outward projection. All dimensions/layouts are assistant proposals; [C10](concept-study-C10.md) governs current geometry.

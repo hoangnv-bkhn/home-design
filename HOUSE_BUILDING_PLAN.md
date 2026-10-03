@@ -2,10 +2,10 @@
 
 Created: 2026-09-30  
 Updated: 2026-10-03
-Status: C07 entrance/living/balcony/daylight proposal available; neither layout/balcony selected. Survey, opening rights, environmental performance and engineering pending.
+Status: C10 corner-suite, compact-spare and recessed-loggia proposal available; neither layout/balcony selected. Survey, court performance, permissions and engineering pending.
 Purpose: Guide an editable, AI-assisted process from land investigation to construction and handover.
 
-Current review package: [viewer](outputs/house-concepts.html), [C07 comparison](docs/concept-study-C07.md), [daylight/envelope evidence](docs/daylight-and-envelope-C07.md), [geometry review](outputs/geometry-review.md). C07 retains 108 m² envelopes, centers sofa/TV and introduces open arrival/outward doors/deeper porch at the cost of a smaller Grandpa room. Both balcony variants preserve shared access; one adds a private step-out. Wider shaded yard windows and roof daylight are candidates. Parents view/ventilation, all layout/footprint selections, 0.90 m altar buffer, permissions and engineering remain open. This roadmap is a phase guide; current owner requirements live in docs/brief.md. Model area is not registered area.
+Current review package: [viewer](outputs/house-concepts.html), [C10 comparison](docs/concept-study-C10.md), [geometry review](outputs/geometry-review.md). C10 proposes 115.70 m² ground covered footprint, 111.65 m² upper enclosure plus shared balcony, corner suites/common-access court, 12.58 m² spare room and 4.08 m² upper altar exclusion. Timber screen, recessed loggia and porch canopy are proposals. This roadmap is a phase guide; resume from PROJECT_STATE.md and current requirements in docs/brief.md. Model area is not registered area.
 
 ## 1. Recommended approach
 

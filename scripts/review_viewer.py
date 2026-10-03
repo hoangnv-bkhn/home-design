@@ -217,7 +217,10 @@ try:
         assert js('document.querySelector(\'[data-door-id="BR-01"]\').getAttribute("data-opening-width")')=='0.9'
         assert js('document.querySelector(\'[data-window-room="BR-01"][data-operable="true"][data-window-face="court"]\')!==null')
         assert js('document.querySelector(\'[data-window-room="STAIR-01"][data-operable="true"]\')!==null')
-        assert '119.20' in js('document.querySelector("#f1Area").textContent')
+        court=MODEL['house']['courtyard']['rect']
+        expected_ground=MODEL['house']['width']*MODEL['house']['depth']-court[2]*court[3]
+        assert f'{expected_ground:.2f}' in js('document.querySelector("#f1Area").textContent')
+        assert js('document.querySelector("[data-altar-side-screen]")!==null')
         assert js('document.querySelector(\'[data-operation-door="BR-01"]\').getAttribute("data-operation-kind")')=='hinged'
         assert js('document.querySelector(\'[data-furniture-name="Sofa"]\').getAttribute("data-seat-facing")')=='1,0'
         assert js('document.querySelectorAll(\'[data-operation-door="ENTRY"][data-swing="outward"]\').length')==2
@@ -241,8 +244,8 @@ try:
               "- Focused dining screenshot saved as viewer-selection-review.png; each BAL-01 variant area/access note populated correctly.",
               "- F1 displayed TV stand and 1.90 m entrance opening in both options.",
               "- Direct parents/brother bedroom openings, parents inward leaf and sofa facing metadata displayed in both options.",
-              "- C09 outward entry leaves and centered rendered sofa/TV checked; no tube chases, open court, normal operable parents/brother and stair windows, 119.20 m² covered footprint, shared balcony areas matched each option.",
-              "- C09 rendered study/chair, linen door, shared balcony bench, absent private slab and inward 0.80 m buffer door checked.",
+              "- Outward entry leaves, centered rendered sofa/TV, timber altar screen, open court and operable bedroom/stair windows checked; displayed ground area matched model dimensions.",
+              "- Study/chair, linen door, shared balcony bench, absent private slab and inward 0.80 m buffer door checked.",
               "- All five overlay controls responded; 390 px layout had no document-level horizontal overflow.",
               f"- {len(rendered)} standalone SVG and {len(rendered)} PNG drawings regenerated.",
               "- PNG drawings captured from corresponding standalone SVG tabs, avoiding page-scroll clipping.",

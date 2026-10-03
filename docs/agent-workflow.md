@@ -100,12 +100,22 @@ Keep the final response focused on the changed design and review links. End the 
 
 ## Current C09 implementation override
 
-C09 supersedes conflicting C08 dimensions above. Envelope/court and area convention retained. Stair moves +0.30 m in local x; wet-core outside and stair/Grandpa-sister division share x=6.25. Kitchen/dining and BR-05 widen 0.30 m. BR-02/04 are [6.3,8.1,4.0,3.7]; common bedroom halls are 1.00 m. Grid is a wall-reference overlay, not engineered beams/columns.
+C09 supersedes conflicting C08 dimensions above. Envelope/court and area convention retained. Stair moves +0.30 m in local x; wet-core outside and stair/Grandpa-sister division share x=6.25. Kitchen/dining and BR-05 widen 0.30 m. BR-02/04 are [6.3, 8.1, 4.0, 3.7]; common bedroom halls are 1.00 m. Grid is a wall-reference overlay, not engineered beams/columns.
 
 Sofa moves +0.80 m in x and −0.05 m in y; TV moves −0.05 m in y. Buffer door is 0.80 m inward, with 0.95 m sofa-back approach and explicit route. New checks validate actual portal adjacency and sampled finite furniture-free access. TV front gap now 1.85 m.
 
-HALL-04 becomes [6.3,5.8,4.0,1.1]; STUDY-02 is [6.3,3.7,4.0,2.0]. UTIL-02 has dry linen cabinet and inward door. Exact EMPTY-ALT retained, occasional cleaning door moved clear of desk. F2 furniture includes occupied chair footprints; renderer must not interpret Bedroom desk as a bed.
+HALL-04 becomes [6.3, 5.8, 4.0, 1.1]; STUDY-02 is [6.3, 3.7, 4.0, 2.0]. UTIL-02 has dry linen cabinet and inward door. Exact EMPTY-ALT retained, occasional cleaning door moved clear of desk. F2 furniture includes occupied chair footprints; renderer must not interpret Bedroom desk as a bed.
 
-Both options now have only shared BAL-01: option01 [10.5,4.6,2.0,3.6], option02 [10.5,4.2,1.6,4.4]. Balcony furniture is option-owned and appended by floorData(); guard/frame inset, occupied bench, entry reservation and seat facing are explicit. Stable BAL-02 is retired from active geometry, preserved in C08. No additional renderer/library.
+Both options now have only shared BAL-01: option01 [10.5, 4.6, 2.0, 3.6], option02 [10.5, 4.2, 1.6, 4.4]. Balcony furniture is option-owned and appended by floorData(); guard/frame inset, occupied bench, entry reservation and seat facing are explicit. Stable BAL-02 is retired from active geometry, preserved in C08. No additional renderer/library.
 
 Final check count is in the generated report (C09 extends the earlier 89 scope and retires three private-balcony checks). Regenerate ten SVG/PNG exports after source changes. C09 archive is a proposal, not acceptance; next design issue C10 or a distinct erratum suffix.
+
+## Current C10 implementation override
+
+C10 supersedes C09 dimensions/interpretations. `house.depth=11.4`, width 10.5; court [0.2, 4.3, 2, 2]. F1 gross 119.70−4=115.70. `house.upper_outline` is notched; `upper_recesses` subtracts 4.05 m² from F2 enclosure to 111.65. Balcony is separately counted in full; its floor/roof still needs construction. Bounding envelopes alone no longer describe F2 enclosure.
+
+`coordination.altar_exclusion` is authoritative 3.40 × 1.20 m strip. ALT-01 remains 3.40 ×3.00 m worship room; EMPTY-ALT equals the smaller exclusion. Renderer projection/section and checks must use the exclusion, not whole ALT-01. `altar_side_screen` and `porch_canopy` are source-driven proposals.
+
+Corner parents/brother and spare/kitchen right edges align x 3.65; wet/stair/Grandpa axis 6.25 retained. Common COURT-HALL-1/2 and KITCHEN-LOBBY/SPARE-LOBBY keep ordinary exits outside kitchen/spare. HALL-01/02 now narrow open junction zones, not standalone corridors; evaluate their union with cross hall. F2 STUDY-02 is forward of exclusion; LANDING-02 and LOGGIA-LINK connect it/linen to shared balcony. Doors, sweeps, windows, furniture, routes and site porch were reconciled.
+
+Massing uses actual upper outline with court roof aperture. Site area label is dynamic. Build checks distinguish worship/projection, window/storage, actual hinged-door anchors, common exits, screen and recess; final count in current report. Browser checks screen and dynamic ground area, then exports all ten views. No new libraries or renderer. C09 archive verified before changes; completed C10 archived. Next design issue C11 or distinct erratum suffix.

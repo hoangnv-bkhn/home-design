@@ -1,6 +1,6 @@
 # Family preferences and feng shui register
 
-Updated: 2026-10-03. Status: C09 proposed; road/altar facing and seating rule confirmed. Approximately 3 m altar depth requested for study; 3.4 × 3.0 m extent and 0.90 m buffer unselected. Optional courtyard behind altar unresolved; C08 court is beside sleeping rooms.
+Updated: 2026-10-03. Status: C10 proposed; latest owner clarification limits upper exclusion to approximately 1.20 m actual altar depth. Ground worship area, indoor backing and seated-back rule remain. Historical interpretations below are superseded where stated.
 
 ## How requirements are adopted
 
@@ -11,7 +11,7 @@ This record does not claim that these rules are universal or scientifically prov
 | ID | Source and priority | Requirement | Working design/check method |
 | --- | --- | --- | --- |
 | ALT-01 | Owner; required width / approximate depth study | Altar width around 3.2–3.4 m; C08 suggests approximately 3 m depth | C08 reserves 3.4 × 3.0 m. Exact extent/furniture remain proposals; reviewed sources establish no universal 3 m requirement |
-| FS-01 | Owner; required, clarified | F2 floor allowed above altar, but keep that zone empty: no bedroom, tables/chairs or frequently used walkway | Project the whole designated altar zone onto F2. C08 proposes 3.4 × 3.0 m / 10.20 m² exact empty floor, excluding backing buffer; no regular routes or furniture. No double-height void required. Exact extent remains unselected; the separate court has no upper floor |
+| FS-01 | Owner; required, clarified | F2 floor allowed above altar, but keep that zone empty: no bedroom, tables/chairs or frequently used walkway | C10: project only the actual approximately 1.20 m deep altar strip; proposed full 3.40 m width gives 4.08 m² empty floor. Ground worship floor stays 3.40 × 3.00 m. No regular route/furniture over the strip; no void required. Forward zone may be used upstairs |
 | FS-02 | Owner; required | Staircase does not face the main entrance | Show entrance axis/sightline and first flight/landing in plan; explore a side-facing or screened approach, then review with family |
 | FS-03 | Owner; required | Solid wall behind altar, with indoor space beyond the wall; avoid WC/shower, gas stove, bedroom, etc. behind it | Indoor space is the baseline clarified by the owner. An outdoor gap/courtyard is conditionally acceptable if supported by the family's feng shui interpretation; current research does not settle that condition. Label wall and buffer zone in plan/section |
 | FS-04 | Owner; required, C02 | Altar faces the same direction as the house, toward road / southeast | Show matching +x facing vectors in C03; 130° follows A and is not D’s normal or a survey verification |
@@ -83,3 +83,9 @@ Subsequent owner clarification confirms 130° along A toward the road beside D. 
 ## C09 access and upper use
 
 C09 preserves the indoor buffer and full solid backing; access is through its side end from living, not through the altar backing wall. Cleaning access is not a through-route. The 10.20 m² upper altar floor stays empty. The shared study and balcony bench are outside this zone; both face toward the altar side with seated backs away. Linen storage is above the buffer, not above the altar, with no wet appliances. These are practical proposals under existing rules, not new feng shui prescriptions or family approval. [C09](concept-study-C09.md).
+
+## C10 governing correction
+
+Owner explicitly allows ordinary use above the front worship/standing space: only the approximately 1.20 m altar depth must be avoided upstairs. This supersedes statements above that project the complete 3.00 m deep worship room. C10 keeps a 3.40 × 1.20 m empty floored strip; exact full-width margin is the assistant's proposal. A forward study and occasional cleaning access are proposed, not owner-selected.
+
+The requested timber screen is on the altar's displayed left/C side toward seating, separate from its continuous solid backing. C10 proposes 1.80 m length, 80 mm thickness and 2.20 m height, leaving 1.20 m front entry. Slat privacy, fixings and heat/flame clearances need detail. Sofa, study chair and shared balcony seating remain oriented with backs away from the altar. No new cultural constraint or guaranteed outcome is introduced. Indoor backing baseline remains; relocated sleeping court does not resolve optional F01.

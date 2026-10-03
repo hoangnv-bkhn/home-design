@@ -1,20 +1,19 @@
-﻿# Noi Bai house
+# Noi Bai house
 
-Open the [C09 viewer](outputs/house-concepts.html) locally; it works offline. C09 repairs altar-buffer access, aligns the wet-core/stair-bedroom wall, gives F2 a shared study and compares two shared balcony proportions. Proposed and unselected.
+Open the [C10 viewer](outputs/house-concepts.html) locally; it works offline. Proposed and unselected.
 
-- [C09 comparison and measured tradeoffs](docs/concept-study-C09.md)
-- [F1](outputs/option-01-F1.svg) · [Deeper balcony F2](outputs/option-01-F2.svg) · [Shallower F2](outputs/option-02-F2.svg)
-- [Deeper balcony massing](outputs/option-01-massing.svg) · [Shallower massing](outputs/option-02-massing.svg) · [Plot](outputs/option-01-site.svg) · [Sections](outputs/option-01-section.svg)
-- [Geometry review](outputs/geometry-review.md) · [Browser review](outputs/viewer-review.md) · [Selection capture](outputs/viewer-selection-review.png)
+- [C10 changes, comparison and structural explanation](docs/concept-study-C10.md)
+- [F1](outputs/option-01-F1.svg) · [F2 / 1.20 m projection](outputs/option-01-F2.svg) · [F2 / 0.60 m projection](outputs/option-02-F2.svg)
+- [Massing 01](outputs/option-01-massing.svg) · [Massing 02](outputs/option-02-massing.svg) · [Plot](outputs/option-01-site.svg) · [Sections](outputs/option-01-section.svg)
+- [Geometry review](outputs/geometry-review.md) · [Browser review](outputs/viewer-review.md)
 - [Brief](docs/brief.md) · [Site](docs/site-investigation.md) · [Family rules](docs/preferences-and-feng-shui.md) · [Decisions](docs/decisions.md) · [Open issues](docs/open-issues.md)
 
-Buffer approach is 0.95 m, door 0.80 m. Centered sofa/TV front gap reduces to 1.85 m. Grandpa/sister remain 14.80 m²; common bedroom passage becomes 1.00 m. The former upper landing gains an 8.00 m² shared study and separate balcony passage. Option01 proposes a deeper 7.20 m² balcony; option02 compares 7.04 m². Private step-out removed.
+Ground covered footprint **115.70 m²**, down 3.50 m²; upper enclosed convention **111.65 m²** plus balcony. Parents/brother move to the rear corner, with common access to a smaller2 ×2 m court. Spare bedroom **12.58 m²** aligns with brother/kitchen. Upper empty altar strip reduces to **4.08 m²** per owner clarification; the forward study is separate. A timber side screen defines the altar below.
 
-Covered footprint **stays 119.20 m²**: more useful space does not mean less building area. Required **10.20 m² empty floor above the altar remains**. Structural axes are architectural references, not engineered beams/columns. Court drainage/airflow, when-closed ventilation, stair headroom, occupied fit-out, parking maneuvers and affordability remain unresolved. [Retained altar/window evidence](docs/altar-and-windows-C08.md).
+Shared loggia recesses 1.40 m clear, comparing 1.20/0.60 m outward projection. Option02 is an assistant preference, not owner approval. Court daylight/airflow and smaller kitchen are explicit compromises. Wall alignment is architectural coordination; beams, columns, supports, waterproofing, occupied fit-out and affordability remain unresolved.
 
-**98/98 limited geometry checks and Chrome review passed**, with 78 actual pointer selections. Ten SVGs/PNGs and selection capture are current C09; print/PDF untested. Resume from [PROJECT_STATE.md](PROJECT_STATE.md), [AGENTS.md](AGENTS.md) and [workflow](docs/agent-workflow.md).
+**107/107 limited geometry checks and Chrome review passed**, with90 actual pointer selections. Ten SVGs/PNGs and selection capture are current C10. Print/PDF untested. Resume from [PROJECT_STATE.md](PROJECT_STATE.md), [AGENTS.md](AGENTS.md) and [workflow](docs/agent-workflow.md).
 
-Commands: `python scripts/build_concepts.py`, `python scripts/review_viewer.py`, `python scripts/snapshot_revision.py --verify C09`.
+Commands: `python scripts/build_concepts.py`, `python scripts/review_viewer.py`, `python scripts/snapshot_revision.py --verify C10`.
 
-Snapshots: [C01](revisions/C01/manifest.json), [C02](revisions/C02/manifest.json), [C03](revisions/C03/manifest.json), [C03a](revisions/C03a/manifest.json), [C04](revisions/C04/manifest.json), [C05](revisions/C05/manifest.json), [C06](revisions/C06/manifest.json), [C07](revisions/C07/manifest.json), [C08](revisions/C08/manifest.json), [C09](revisions/C09/manifest.json). Extract separately. Archives preserve proposals, not approval or off-device backup.
-
+Snapshots: [C09 baseline](revisions/C09/manifest.json), [C10 review](revisions/C10/manifest.json). Earlier C01–C08 packages remain in revisions/. Extract separately. Archives preserve proposals, not approval or off-device backup.

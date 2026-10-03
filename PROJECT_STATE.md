@@ -1,37 +1,38 @@
-﻿# Project state — resume here
+# Project state — resume here
 
-Updated: 2026-10-03. **C09 buffer access, wall coordination and useful upstairs space**. Proposed, unselected; not for construction.
+Updated: 2026-10-03. **C10 corner suites, compact spare bedroom and recessed loggia**. Proposed, unselected; not for construction.
 
 ## Current position
 
-Owner identifies inaccessible altar buffer, misaligned shower/Grandpa walls, excessive empty F2 space and uncertain balcony usefulness. Relayout/dimension changes expressly permitted. No layout, room use, balcony, footprint or structural system selected.
+Owner confirms Bedroom5 is spare and may shrink; upper exclusion only needs approximately 1.20 m altar depth, not whole worship room. Requests smaller footprint, kitchen/wet/court/corner-suite study, better exterior layering and timber partition left of altar. Relayout permitted; no design or structural system selected. D37/D38 record requirement/proposal distinction.
 
-- [Viewer](outputs/house-concepts.html) · [C09 comparison](docs/concept-study-C09.md) · [F1](outputs/option-01-F1.svg) · [Deeper balcony F2](outputs/option-01-F2.svg) · [Shallower F2](outputs/option-02-F2.svg).
-- Editable [metre geometry](data/concepts.json), [template](src/concept-viewer.html), [build](scripts/build_concepts.py), [browser/export](scripts/review_viewer.py).
-- Requirements/evidence: [brief](docs/brief.md), [family rules](docs/preferences-and-feng-shui.md), [site](docs/site-investigation.md), [decisions D35/D36](docs/decisions.md), [issues](docs/open-issues.md), [workflow](docs/agent-workflow.md).
+- [Viewer](outputs/house-concepts.html) · [C10 comparison](docs/concept-study-C10.md) · [F1](outputs/option-01-F1.svg) · [F2 / 1.20 m projection](outputs/option-01-F2.svg) · [F2 / 0.60 m projection](outputs/option-02-F2.svg) · [Massing](outputs/option-02-massing.svg).
+- Editable metre geometry: [data](data/concepts.json), [template](src/concept-viewer.html), [build](scripts/build_concepts.py), [browser/export](scripts/review_viewer.py).
+- Requirements/evidence: [brief](docs/brief.md), [family rules](docs/preferences-and-feng-shui.md), [site](docs/site-investigation.md), [decisions](docs/decisions.md), [issues](docs/open-issues.md), [workflow](docs/agent-workflow.md).
 
-## Proposal and tradeoffs
+## Proposal and material tradeoffs
 
-- **Buffer:** C08 door existed but sofa blocked approach. Sofa moves 0.80 m toward TV, leaving **0.95 m approach**, **0.80 m inward door**, **0.90 m indoor buffer**. Solid backing stays continuous; occasional cleaning, no storage/through-route. Sofa/TV centered; front-to-stand gap **2.65 → 1.85 m**. Screen size/viewing acceptance unresolved. Open arrival stays 2.30 × 1.90 m.
-- **Wall coordination:** 2.20 × 3.70 m stair moves 0.30 m. Wet-core outer wall and stair/Grandpa-sister division share **x=6.25 m** on both floors. Bedroom rectangles and wet pairs stack. Reference axes are not an engineered frame; other offsets remain. Columns, beams, openings, loads and supports unresolved, E01.
-- **Rooms:** Grandpa/sister **14.80 m²**, −0.25 each. Rotated 1.40 × 2.00 m bed: entrance-side gap 0.90, wardrobe gap 0.80, foot strip 1.50, head margin 0.50 m. Ordinary 0.85 m doors retained. Common bedroom passages **1.20 → 1.00 m**. Kitchen/dining and bedroom5 **17.76 m²** each, +1.44. Parents/brother **15.64 m²**, direct exits and screened private-bath routes retained.
-- **F2:** former 12.80 m² landing becomes **8.00 m² shared study + 4.40 m² / 1.10 m balcony passage + 0.40 m² open junction**. Desk/occupied chair shown; dry linen cabinet at closed end of 3.06 m² utility room. West linen/east occasional-cleaning approach strips 0.90 m. Shared study and balcony seats face toward altar side, backs away. Study use is a proposal, L16.
-- **Altar:** 3.4 × 3.0 m / **10.20 m² exact empty F2 floor**, solid backing, SE facing and indoor baseline retained. No routine routes/furniture above it. Floored exclusion, not a void. C08 cultural evidence remains relevant; no new rule.
-- **Balcony:** option01 recommended for review, **2.00 × 3.60 m / 7.20 m²**; option02 **1.60 × 4.40 m / 7.04 m²**. Both shared; private step-out removed. Modeled edge insets leave 1.80/1.40 m depth. Occupied bench clears 1.00 m entry reservation; sliding-door candidate. Guard, support, drainage, threshold and full porch weather cover unresolved.
-- **Area/site retained:** 10.5 m A × 12.0 m B = 126.00 m² envelope minus 6.80 m² clear court = **119.20 m² covered convention each floor**, including F2 stair reservation/court lining walls. **No footprint/cost saving**, 19.2% above approximate target. Court has no F2 slab/roof. Parents/brother court windows and C stair windows retained; maintenance through parents remains a compromise. Front depth 4.40 m, parking, gates, porch and walks unchanged. Turning/levels/weather, airflow/daylight, opening rights, soil/structure and affordability unverified. No A/B openings.
+- Ground **115.70 m²**, down 3.50 from 119.20. Envelope 10.50 m A ×11.40 m B /119.70 minus 4.00 m² court. Reduction 0.60 m along B gains C-side land; front depth along A remains 4.40 m. Still 15.70 m² above approximate target. Model/site offsets remain unverified.
+- Upper enclosed convention **111.65 m²**, subtracting 4.05 m² loggia notch; includes stair reservation. Balcony separately 6.50/5.00 m², including its recessed portion. Loggia/canopy still require construction; no cost/slab-area saving claimed. No enclosed room cantilever.
+- Parents/brother rear corner **13.60 m²**; spare **12.58 m²** aligns right wall x 3.65 with brother/kitchen. Grandpa/sister 14.80 unchanged. Wet/stair/Grandpa-sister axis 6.25 retained; other offsets remain. Axes are not designed beams/columns.
+- Parents/brother ordinary 0.90 m doors reach common 1.30 m court passage/lobby, separate from screened private bath routes. Rotated bed leaves 0.80 m A side, 1.40 m court side, 0.80 m wardrobe-foot gap. Storage clears 1.50 m court windows. Four separate WC/shower pairs, shower basins and no WC basins retained.
+- **Court2 ×2 m** between suite and kitchen; common 0.80 m cleaning door, no need to enter parents room. Smaller court is main light/air compromise. Shared wet pair stays stacked beside kitchen/common junction, rather than moving into kitchen. No direct shared-bath court window; extract/duct routes unresolved. No A/B windows.
+- Kitchen/dining named 13.42 m² +0.37 open join; excludes 2.20 m² common lobby. Six compact chairs, 0.70 ×1.60 m table, 0.90 m working aisle/garden approach. Chair withdrawal/appliances/occupied comfort unresolved.
+- Ground worship 3.40 ×3.00 m retained; altar strip/furniture 1.20 m deep and upper empty floor **4.08 m²**, superseding full 10.20 m² interpretation. Forward study 5.78 m², linen, 1.10 m landing and 1.30 m loggia access. No regular use over excluded strip.
+- Timber screen on altar's displayed left/C side: proposed 1.80 m length, 80 mm thickness, 2.20 m height; 1.20 m front entry. Solid backing/indoor 0.90 m buffer remain; 0.95 m sofa-back approach and 0.80 m inward buffer door. Screen density/fixings/heat clearances unresolved. Sofa 2.00 m, TV gap 1.85 m; open arrival 2.10 ×1.90 m.
+- Loggia recessed 1.40 m clear; compare 1.20 m outward projection (6.50 m²) and 0.60 m (5.00 m²). **Option02 assistant preference only** for compact exterior. Separate 2.30 ×2.50 m porch canopy. No additional bedroom projection; sister front projection only a discussed later alternative. Guards, supports, thresholds, weather/drainage unverified.
 
 ## Artifacts and checks
 
-- [Geometry](outputs/geometry-review.md): **98/98 limited checks**. Added actual buffer portal and sampled finite approach, wall alignment, stacked bedrooms, upper occupied furniture, linen access, balcony entry/bench and seating orientation. No occupied-comfort, legal, environmental or structural certification.
-- [Chrome review](outputs/viewer-review.md): both options/all five views, **78 actual pointer selections**, keyboard/focus, study/bench/buffer-door metadata, retained court/windows/area tests and 390 px overflow. Ten SVGs/ten PNGs and selection capture regenerated. Print/PDF untested.
-- Final visual inspection: F1, both F2, both massings, site, sections and selection capture. No stale current exports.
-- **C08 54-file archive verified before editing**. Completed C09 package archived and SHA-256 verified using house-snapshot; unselected proposal. Earlier archives immutable.
+- [Geometry](outputs/geometry-review.md): **107/107 limited checks**. New checks cover actual door/sweep anchors, unobstructed court-window strips, bedroom/common exit topology, wall alignment, smaller exclusion, screen/front route and upper recess. Not a usability, daylight, code or engineering certification.
+- [Chrome review](outputs/viewer-review.md): both options/all five views, **90 actual pointer selections**, keyboard/focus, overlays, dynamic ground area, screen/windows/doors, 390 px overflow. Ten SVGs/PNGs and selection capture regenerated. Print/PDF untested. Browser required environment escalation after sandbox connection resets.
+- Visual inspection: final F1/F2, both balconies/massings, site, sections and selection capture. Wardrobe/window conflict and obsolete court-door swing corrected; exports current.
+- C09 **55-file archive verified before editing**. C10 final package archived and SHA-256 verified using house-snapshot; archive preserves proposal, not approval. Existing archives immutable.
 
 ## Next action
 
-Review the shorter TV distance, 1.00 m common bedroom passage, usefulness of the shared study and deeper shared balcony. Meaningful footprint reduction needs coordinated court/wet-core/stair/altar relayout; furnishing leftover space does not reduce construction area. Then establish structural design basis and balcony/porch weather details with local team.
+Review smaller court/daylight and compact kitchen first, then spare 12.58 m², timber screen and loggia depth. If court performance is inadequate, return area or relayout rather than retaining savings at the expense of sleeping-room usability. Engineer to establish structural basis across x 3.65/x 6.25 reference lines, court/stair/recess edges and canopy; no member sizes selected.
 
-L02–L16, S01–S04, E01/E02, F01 and budget C01 remain open to their stated extent. Do not re-ask settled counts/floors/road/altar/stair/basin/site/outward-door inputs. C09 archived; next design issue **C10** or distinct erratum suffix. No owner/professional approval implied.
+L02–L16, S01–S04, E01/E02, F01 and budget C01 remain open to stated extent. Do not reopen confirmed spare use, limited altar strip, counts/floors/road/stair/basins/site rules. Next design issue **C11** or distinct erratum suffix. No interrupted geometry work or stale current exports.
 
-Commands: `python scripts/build_concepts.py`, `python scripts/review_viewer.py`, `python scripts/snapshot_revision.py --verify C09`.
-
+Commands: `python scripts/build_concepts.py`, `python scripts/review_viewer.py`, `python scripts/snapshot_revision.py --verify C10`.

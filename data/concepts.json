@@ -1,7 +1,7 @@
 {
-  "revision": "C09",
+  "revision": "C10",
   "date": "2026-10-03",
-  "status": "Accessible altar buffer, coordinated wall line and useful upstairs common area; unselected; not for construction",
+  "status": "Corner suites, compact spare bedroom, reduced altar exclusion and recessed balcony; proposed, unselected; not for construction",
   "units": "m",
   "presentation": {
     "plan_rotation_clockwise": 90
@@ -50,22 +50,24 @@
         7.25
       ],
       [
+        13.7,
+        6.65
+      ],
+      [
         12.8,
-        7.25
+        6.65
       ],
       [
         10.6,
-        7.25
+        6.65
       ]
     ],
     "notes": [
-      "C09: outer envelope and court unchanged; 119.20 m² covered footprint. No area/cost reduction claimed.",
-      "Accessible altar buffer; common wall line x=6.25 m; Grandpa/sister 14.80 m², shared upstairs study.",
-      "One shared balcony, 2.00 m or 1.60 m projection; private step-out removed. Supports and weather unresolved.",
-      "Parents and brother have normal opening windows to own court; staircase has C-yard windows. No A/B boundary openings or reflective tubes.",
-      "Front depth along A falls to 4.40 m. Porch/steps and garden walks move 1.50 m toward D; left/C stationary parking unchanged. Turning, levels and permissions unresolved.",
-      "Approximate plot, bend, 130° A bearing and origin (0.10,0.30) retained; not a survey or lawful setback.",
-      "Court is beside sleeping rooms, outside altar/buffer. Open roof, maintenance access, drainage, acoustic separation and ventilation performance need design."
+      "C10: 10.5 × 11.4 m outer envelope, 4.00 m² court, 115.70 m² ground covered convention.",
+      "Front depth along A remains 4.40 m; 0.60 m extra C-side land from narrower B dimension.",
+      "Parents/brother rear corner; court common cleaning access; smaller court needs performance review.",
+      "Shared recessed loggia and porch canopy; no enclosed bedroom cantilever or roof terrace.",
+      "Approximate parcel, offsets, parking and gates unverified; no new survey, permissions or turning result."
     ],
     "scooters": [
       [
@@ -90,7 +92,7 @@
     "garden_path": [
       [
         3.15,
-        12.3
+        11.7
       ],
       [
         3.15,
@@ -110,18 +112,18 @@
       ],
       [
         12.35,
-        7.25
+        6.65
       ]
     ],
     "porch": [
       10.6,
-      6.15,
+      5.55,
       2.2,
       2.2
     ],
     "porch_steps": [
       12.8,
-      6.15,
+      5.55,
       0.9,
       2.2
     ],
@@ -189,14 +191,14 @@
     ],
     "porch_waiting_reservation": [
       11.65,
-      6.35,
+      5.75,
       1.15,
       1.9
     ]
   },
   "house": {
     "width": 10.5,
-    "depth": 12.0,
+    "depth": 11.4,
     "external_wall": 0.2,
     "partition": 0.1,
     "floor_height": 3.3,
@@ -207,7 +209,7 @@
     "stair": {
       "rect": [
         4.0,
-        8.1,
+        7.5,
         2.2,
         3.7
       ],
@@ -233,84 +235,126 @@
     "courtyard": {
       "rect": [
         0.2,
-        0.2,
-        3.4,
+        4.3,
+        2.0,
         2.0
       ],
       "open_to_sky": true,
-      "note": "6.80 m² own open-to-sky court, ground paving and no F2 slab/roof. Not the altar backing buffer. Daylight/airflow, neighbor heights, drainage and cost unresolved."
+      "note": "4.00 m² open court between corner suite and kitchen; common cleaning access. Smaller sky aperture than C09: daylight, ventilation, privacy and drainage unverified."
     },
-    "area_note": "126.00 m² rectangular envelope minus 6.80 m² clear open court = 119.20 m² covered footprint per floor convention; F2 includes stair opening reservation. Court lining/walls remain included; not statutory measurement."
+    "area_note": "F1 119.70 m² outer envelope minus 4.00 m² court = 115.70 m². F2 subtracts 4.05 m² balcony recess = 111.65 m² enclosed-envelope convention, including stair reservation. Balcony surfaces and canopy remain construction, not cost savings.",
+    "upper_outline": [
+      [
+        0,
+        0
+      ],
+      [
+        10.5,
+        0
+      ],
+      [
+        10.5,
+        4.8
+      ],
+      [
+        9,
+        4.8
+      ],
+      [
+        9,
+        7.5
+      ],
+      [
+        10.5,
+        7.5
+      ],
+      [
+        10.5,
+        11.4
+      ],
+      [
+        0,
+        11.4
+      ]
+    ],
+    "upper_recesses": [
+      [
+        9,
+        4.8,
+        1.5,
+        2.7
+      ]
+    ]
   },
   "options": [
     {
       "id": "01",
-      "title": "Deeper shared balcony",
-      "subtitle": "C09 · accessible buffer, coordinated wall line and furnished upstairs study",
+      "title": "Recessed loggia · 1.20 m projection",
+      "subtitle": "C10 · corner suites, smaller spare room and layered upper volumes",
       "rotation": 0,
       "balcony": {
         "rect": [
-          10.5,
-          4.6,
-          2.0,
-          3.6
+          9.1,
+          4.9,
+          2.6,
+          2.5
         ],
         "door": [
           "BAL-01",
-          10.4,
-          5.8,
+          9.0,
+          5.1,
           1.0,
           "v"
         ],
         "access_room": "HALL-04",
         "label": "Shared balcony",
-        "note": "7.20 m² shared balcony: 2.00 m nominal projection × 3.60 m frontage. Recommended study; single bench faces toward altar side with back away. Independent passage and sliding-door candidate. Guard/frame insets, occupied footprint and entry area are modeled; drainage, support, thresholds and shade unverified.",
+        "note": "6.50 m² shared recessed balcony; 1.40 m of clear depth inside F1 edge, 1.20 m beyond. Common 1.00 m opening, occupied bench outside entry. Drainage, guards, privacy and support scheme unresolved; not declared a designed cantilever.",
         "route": [
           [
             5.1,
-            8.05
+            7.45
           ],
           [
             5.1,
-            6.3
+            6.9
           ],
           [
-            7.7,
-            6.3
+            8.3,
+            6.9
           ],
           [
-            9.2,
-            6.3
+            8.3,
+            5.6
           ],
           [
-            11.05,
-            6.3
+            9.7,
+            5.6
           ]
         ],
         "furniture": [
           [
             "Balcony bench",
-            10.7,
-            7.35,
+            9.3,
+            6.75,
             1.1,
             0.55
           ]
         ],
         "occupied": [
-          10.7,
-          6.95,
+          9.3,
+          6.35,
           1.1,
           0.95
         ],
         "usable_rect": [
-          10.6,
-          4.699999999999999,
-          1.8,
-          3.4
+          9.2,
+          5.0,
+          2.4,
+          2.3
         ],
         "entry_clearance": [
-          10.6,
-          5.8,
+          9.2,
+          5.1,
           1.0,
           1.0
         ],
@@ -320,86 +364,87 @@
         ]
       },
       "strengths": [
-        "Accessible indoor altar buffer via 0.95 m sofa-back strip and 0.80 m door.",
-        "Wet-core and stair/Grandpa wall line aligned at x=6.25 m on both floors.",
-        "8.00 m² shared study + linen storage; independent balcony passage, altar projection empty."
+        "Parents/brother in rear corner; common court cleaning route.",
+        "Bedroom 5 12.58 m²; wall aligned with brother and kitchen.",
+        "4.08 m² altar exclusion frees front upstairs study; timber side screen below.",
+        "115.70 m² ground footprint; recessed shared balcony articulates upper front."
       ],
       "tradeoffs": [
-        "Covered footprint stays 119.20 m²; more useful space, no construction-area saving.",
-        "Grandpa/sister 14.80 m² (−0.25); passages 1.00 m; TV front gap 1.85 m (−0.80).",
-        "Required 10.20 m² empty upper altar floor remains; court still 6.80 m².",
-        "Balcony member sizes/supports, drainage, finished widths, weather and budget unresolved; proposal unselected."
+        "Ground saving 3.50 m² versus C09; still above approximate 100 m² target.",
+        "2 × 2 m court is smaller; daylight/ventilation unverified.",
+        "Parents/brother 13.60 m²; six dining seats remain compact.",
+        "Loggia and porch canopy still need construction, drainage and supports; no extra room cantilever."
       ],
       "extra_balconies": []
     },
     {
       "id": "02",
-      "title": "Shallower shared balcony",
-      "subtitle": "C09 · accessible buffer, coordinated wall line and furnished upstairs study",
+      "title": "Recessed loggia · 0.60 m projection",
+      "subtitle": "C10 · corner suites, smaller spare room and layered upper volumes",
       "rotation": 0,
       "balcony": {
         "rect": [
-          10.5,
-          4.2,
-          1.6,
-          4.4
+          9.1,
+          4.9,
+          2.0,
+          2.5
         ],
         "door": [
           "BAL-01",
-          10.4,
-          5.8,
+          9.0,
+          5.1,
           1.0,
           "v"
         ],
         "access_room": "HALL-04",
         "label": "Shared balcony",
-        "note": "7.04 m² shared balcony: 1.60 m nominal projection × 4.40 m frontage. Shallower comparison; single bench faces toward altar side with back away. Independent passage and sliding-door candidate. Guard/frame insets, occupied footprint and entry area are modeled; drainage, support, thresholds and shade unverified.",
+        "note": "5.00 m² shared recessed balcony; 1.40 m of clear depth inside F1 edge, 0.60 m beyond. Common 1.00 m opening, occupied bench outside entry. Drainage, guards, privacy and support scheme unresolved; not declared a designed cantilever.",
         "route": [
           [
             5.1,
-            8.05
+            7.45
           ],
           [
             5.1,
-            6.3
+            6.9
           ],
           [
-            7.7,
-            6.3
+            8.3,
+            6.9
           ],
           [
-            9.2,
-            6.3
+            8.3,
+            5.6
           ],
           [
-            11.05,
-            6.3
+            9.7,
+            5.6
           ]
         ],
         "furniture": [
           [
             "Balcony bench",
-            10.7,
-            7.35,
+            9.3,
+            6.75,
             1.1,
             0.55
           ]
         ],
         "occupied": [
-          10.7,
-          6.95,
+          9.3,
+          6.35,
           1.1,
           0.95
         ],
         "usable_rect": [
-          10.6,
-          4.3,
-          1.4000000000000001,
-          4.2
+          9.2,
+          5.0,
+          1.8,
+          2.3
         ],
         "entry_clearance": [
-          10.6,
-          5.8,
+          9.2,
+          5.1,
           1.0,
           1.0
         ],
@@ -409,15 +454,16 @@
         ]
       },
       "strengths": [
-        "Accessible indoor altar buffer via 0.95 m sofa-back strip and 0.80 m door.",
-        "Wet-core and stair/Grandpa wall line aligned at x=6.25 m on both floors.",
-        "8.00 m² shared study + linen storage; independent balcony passage, altar projection empty."
+        "Parents/brother in rear corner; common court cleaning route.",
+        "Bedroom 5 12.58 m²; wall aligned with brother and kitchen.",
+        "4.08 m² altar exclusion frees front upstairs study; timber side screen below.",
+        "115.70 m² ground footprint; recessed shared balcony articulates upper front."
       ],
       "tradeoffs": [
-        "Covered footprint stays 119.20 m²; more useful space, no construction-area saving.",
-        "Grandpa/sister 14.80 m² (−0.25); passages 1.00 m; TV front gap 1.85 m (−0.80).",
-        "Required 10.20 m² empty upper altar floor remains; court still 6.80 m².",
-        "Balcony member sizes/supports, drainage, finished widths, weather and budget unresolved; proposal unselected."
+        "Ground saving 3.50 m² versus C09; still above approximate 100 m² target.",
+        "2 × 2 m court is smaller; daylight/ventilation unverified.",
+        "Parents/brother 13.60 m²; six dining seats remain compact.",
+        "Loggia and porch canopy still need construction, drainage and supports; no extra room cantilever."
       ],
       "extra_balconies": []
     }
@@ -430,7 +476,7 @@
         0,
         0,
         10.5,
-        12.0
+        11.4
       ],
       "rooms": [
         {
@@ -439,11 +485,11 @@
           "type": "kitchen",
           "rect": [
             0.2,
-            7.0,
-            1.2,
+            6.4,
+            1.1,
             4.8
           ],
-          "note": "Compact cooking zone in enlarged 17.76 m² kitchen/dining bay. Direct C-garden door retained.",
+          "note": "Compact C-garden kitchen; 0.60 m counter, 0.90 m working aisle. Hob/hood extract away from sleeping court still needs services design.",
           "open": true
         },
         {
@@ -478,9 +524,9 @@
             3.7,
             5.9,
             2.5,
-            1.0
+            0.4
           ],
-          "note": "Common 1.00 m hall for ordinary bedroom entrance and separate shared sanitary doors. Finished/occupied passing unresolved.",
+          "note": "Open junction to shared bathrooms and 1.00 m cross hall below; together continuous access, not a separate 0.40 m corridor.",
           "open": true
         },
         {
@@ -561,12 +607,12 @@
           "label": "Kitchen dining",
           "type": "living",
           "rect": [
-            1.5,
-            7.0,
-            2.4,
-            4.8
+            1.4,
+            7.5,
+            2.2,
+            3.7
           ],
-          "note": "Six compact occupied chair reservations retained; pull-out/appliance/hosting use unresolved.",
+          "note": "Compact six-seat dining: 0.70 × 1.60 m table; occupied chair reservations and C-garden exit. The 1.00 m common lobby stays outside dining.",
           "open": true
         },
         {
@@ -577,9 +623,9 @@
             6.3,
             3.7,
             4.0,
-            3.2
+            2.6
           ],
-          "note": "Centered 2.20 m sofa/TV; 1.85 m sofa-front-to-stand gap, reduced from 2.65 m. 0.95 m clear strip behind sofa reaches buffer, with 0.80 m door. Screen size remains unchosen.",
+          "note": "Sofa and TV retained with 1.85 m front gap; entry overlaps open cross hall. Timber screen along left of altar; buffer approach retained.",
           "open": true
         },
         {
@@ -588,11 +634,11 @@
           "type": "bed",
           "rect": [
             0.2,
-            2.3,
+            0.2,
             3.4,
-            4.6
+            4.0
           ],
-          "note": "15.64 m² sleeping room. Ordinary 0.90 m hall door independent of private bathroom route; 1.80 × 2.00 m bed, 0.60/1.00 m sides, 1.00 m court-side strip and 0.90 m wardrobe-front gap. Normal opening window to own 3.4 × 2.0 m open court; performance unverified."
+          "note": "13.60 m² rear corner room; rotated 1.80 × 2.00 m bed against B head wall, 0.80 m A-side gap, 1.40 m court-side strip and 0.80 m bed-foot/wardrobe gap. Ordinary 0.90 m entrance independent of screened bathroom route. Court window stays clear of wardrobe; environmental performance unverified."
         },
         {
           "id": "STAIR-01",
@@ -600,7 +646,7 @@
           "type": "stair",
           "rect": [
             4.0,
-            8.1,
+            7.5,
             2.2,
             3.7
           ],
@@ -612,7 +658,7 @@
           "type": "bed",
           "rect": [
             6.3,
-            8.1,
+            7.5,
             4.0,
             3.7
           ],
@@ -624,7 +670,7 @@
           "type": "hall",
           "rect": [
             6.3,
-            7.0,
+            6.4,
             4.0,
             1.0
           ],
@@ -637,11 +683,11 @@
           "type": "courtyard",
           "rect": [
             0.2,
-            0.2,
-            3.4,
+            4.3,
+            2.0,
             2.0
           ],
-          "note": "6.80 m² own open-to-sky court, ground paving and no F2 slab/roof. Not the altar backing buffer. Daylight/airflow, neighbor heights, drainage and cost unresolved."
+          "note": "4.00 m² open court between corner suite and kitchen; common cleaning access. Smaller sky aperture than C09: daylight, ventilation, privacy and drainage unverified."
         },
         {
           "id": "LINK-01",
@@ -650,7 +696,7 @@
           "open": true,
           "rect": [
             3.7,
-            6.9,
+            6.3,
             2.5,
             0.1
           ],
@@ -662,21 +708,47 @@
           "type": "hall",
           "open": true,
           "rect": [
-            4.0,
-            7.0,
+            3.7,
+            6.4,
+            2.5,
+            1.0
+          ],
+          "note": "1.00 m cross hall; widened west to aligned kitchen/spare wall."
+        },
+        {
+          "id": "COURT-HALL-1",
+          "label": "Court passage",
+          "type": "hall",
+          "open": true,
+          "rect": [
+            2.3,
+            4.3,
+            1.3,
+            2.0
+          ],
+          "note": "Common route to corner bedroom and court maintenance, 1.30 m concept width. No need to enter parents bedroom for cleaning."
+        },
+        {
+          "id": "KITCHEN-LOBBY",
+          "label": "Common lobby",
+          "type": "hall",
+          "open": true,
+          "rect": [
+            1.4,
+            6.4,
             2.2,
             1.0
           ],
-          "note": "1.00 m main cross hall; adjoining arrival/bedroom branch is also 1.00 m deep."
+          "note": "1.00 m common access connects court passage to main cross hall. Keeps corner-bedroom exit outside kitchen/spare room."
         }
       ],
       "doors": [
         [
           "BR-01",
-          3.65,
-          5.95,
+          2.6,
+          4.25,
           0.9,
-          "v"
+          "h"
         ],
         [
           "WC-01",
@@ -730,37 +802,37 @@
         [
           "BR-02",
           9.0,
-          8.05,
+          7.45,
           0.85,
           "h"
         ],
         [
           "KIT-01",
-          3.95,
-          7.05,
+          2.6,
+          7.45,
           0.9,
-          "v"
+          "h"
         ],
         [
           "KIT-GARDEN",
           2.6,
-          11.9,
+          11.3,
           0.9,
           "h"
         ],
         [
           "ENTRY",
           10.4,
-          6.0,
+          5.4,
           1.9,
           "v"
         ],
         [
           "COURT-01",
-          2.75,
           2.25,
-          0.75,
-          "h"
+          5.2,
+          0.8,
+          "v"
         ],
         [
           "EN-RETURN-01",
@@ -772,26 +844,26 @@
       ],
       "windows": [
         [
-          0.65,
-          2.25,
-          1.8,
+          0.45,
+          4.25,
+          1.5,
           "h"
         ],
         [
           4.3,
-          11.9,
+          11.3,
           1.6,
           "h"
         ],
         [
           10.4,
-          9.0,
+          8.4,
           1.2,
           "v"
         ],
         [
           0.5,
-          11.9,
+          11.3,
           1.6,
           "h"
         ]
@@ -799,65 +871,65 @@
       "furniture": [
         [
           "Double bed",
-          0.8,
-          3.3,
-          1.8,
-          2
+          0.2,
+          1.0,
+          2.0,
+          1.8
         ],
         [
           "Wardrobe",
+          3.0,
           0.3,
-          6.2,
-          2.2,
-          0.6
+          0.6,
+          2.2
         ],
         [
           "Bed",
           6.8,
-          9.0,
+          8.4,
           2.0,
           1.4
         ],
         [
           "Wardrobe",
           6.5,
-          11.2,
+          10.6,
           2.5,
           0.6
         ],
         [
           "Counter",
           0.3,
-          7.7,
+          7.1,
           0.6,
           3.7
         ],
         [
           "Fridge",
           0.3,
-          7.1,
+          6.5,
           0.7,
           0.5
         ],
         [
           "Sink",
           0.37,
-          8.7,
+          8.1,
           0.45,
           0.65
         ],
         [
           "Hob",
           0.37,
-          9.8,
+          9.2,
           0.45,
           0.6
         ],
         [
           "Dining table",
-          2.32,
-          8.5,
-          0.8,
+          2.22,
+          7.9,
+          0.7,
           1.6
         ],
         [
@@ -865,12 +937,12 @@
           7.25,
           3.8,
           0.85,
-          2.2
+          2.0
         ],
         [
           "TV stand",
           9.95,
-          4.3,
+          4.2,
           0.35,
           1.2
         ],
@@ -878,7 +950,7 @@
           "Altar",
           7.3,
           0.8,
-          0.6,
+          1.2,
           2.2
         ]
       ],
@@ -950,7 +1022,7 @@
           "points": [
             [
               5.1,
-              8.05
+              7.45
             ],
             [
               5.1,
@@ -970,16 +1042,16 @@
           "label": "Parents direct exit",
           "points": [
             [
-              3.65,
-              6.3
+              3.05,
+              4.25
+            ],
+            [
+              3.05,
+              6.9
             ],
             [
               5.1,
-              6.3
-            ],
-            [
-              5.1,
-              7.5
+              6.9
             ]
           ]
         },
@@ -1009,23 +1081,23 @@
           "points": [
             [
               10.5,
-              6.95
+              6.35
             ],
             [
               9.425,
-              6.95
+              6.35
             ],
             [
               9.425,
-              7.5
+              6.9
             ],
             [
               5.1,
-              7.5
+              6.9
             ],
             [
               5.1,
-              8.05
+              7.45
             ]
           ]
         },
@@ -1034,15 +1106,15 @@
           "points": [
             [
               9.425,
-              8.05
+              7.45
             ],
             [
               9.425,
-              7.5
+              6.9
             ],
             [
               5.1,
-              7.5
+              6.9
             ],
             [
               5.1,
@@ -1062,32 +1134,32 @@
           "label": "Dining to side garden",
           "points": [
             [
-              3.95,
+              3.65,
+              6.9
+            ],
+            [
+              1.9,
+              6.9
+            ],
+            [
+              1.9,
               7.5
             ],
             [
-              2.75,
+              1.35,
               7.5
             ],
             [
-              2.75,
-              8.0
-            ],
-            [
-              1.5,
-              8.0
-            ],
-            [
-              1.5,
-              10.5
+              1.35,
+              9.9
             ],
             [
               3.05,
-              10.5
+              9.9
             ],
             [
               3.05,
-              11.9
+              11.3
             ]
           ]
         },
@@ -1096,15 +1168,15 @@
           "points": [
             [
               10.5,
-              6.95
+              6.35
             ],
             [
               8.65,
-              6.95
+              6.35
             ],
             [
               8.65,
-              5.95
+              5.85
             ]
           ]
         },
@@ -1138,7 +1210,7 @@
           "points": [
             [
               6.75,
-              7.5
+              6.9
             ],
             [
               6.75,
@@ -1153,12 +1225,58 @@
               1.0
             ]
           ]
+        },
+        {
+          "label": "Common court cleaning",
+          "points": [
+            [
+              3.05,
+              6.9
+            ],
+            [
+              3.05,
+              5.6
+            ],
+            [
+              2.25,
+              5.6
+            ],
+            [
+              1.7,
+              5.6
+            ]
+          ]
+        },
+        {
+          "label": "Altar front approach",
+          "points": [
+            [
+              8.65,
+              6.35
+            ],
+            [
+              8.65,
+              4.15
+            ],
+            [
+              9.5,
+              4.15
+            ],
+            [
+              9.5,
+              3.1
+            ],
+            [
+              9.2,
+              2.6
+            ]
+          ]
         }
       ],
       "tv": {
         "stand": [
           9.95,
-          4.3,
+          4.2,
           0.35,
           1.2
         ],
@@ -1166,7 +1284,7 @@
           7.25,
           3.8,
           0.85,
-          2.2
+          2.0
         ],
         "seat_facing": [
           1,
@@ -1175,30 +1293,30 @@
         "view_line": [
           [
             8.1,
-            4.9
+            4.8
           ],
           [
             9.95,
-            4.9
+            4.8
           ]
         ],
-        "note": "Centered 2.20 m sofa/TV; 1.85 m sofa-front-to-stand gap, reduced from 2.65 m. 0.95 m clear strip behind sofa reaches buffer, with 0.80 m door. Screen size remains unchosen."
+        "note": "2.00 m sofa, centered TV; 1.85 m front gap. 0.95 m buffer approach retained. Wooden altar side screen lies outside sofa and access."
       },
       "door_operations": [
         {
           "door": "BR-01",
           "kind": "hinged",
           "hinge": [
-            3.65,
-            6.85
+            3.5,
+            4.25
           ],
           "closed_end": [
-            3.65,
-            5.95
+            2.6,
+            4.25
           ],
           "open_end": [
-            2.75,
-            6.85
+            3.5,
+            3.35
           ],
           "note": "Concept leaf; finished clear opening and occupied operation unresolved."
         },
@@ -1207,15 +1325,15 @@
           "kind": "hinged",
           "hinge": [
             9.85,
-            8.05
+            7.45
           ],
           "closed_end": [
             9.0,
-            8.05
+            7.45
           ],
           "open_end": [
             9.85,
-            8.9
+            8.3
           ],
           "note": "Concept leaf; finished clear opening and occupied operation unresolved."
         },
@@ -1244,15 +1362,15 @@
           "kind": "hinged",
           "hinge": [
             10.4,
-            6.0
+            5.4
           ],
           "closed_end": [
             10.4,
-            6.95
+            6.35
           ],
           "open_end": [
             11.35,
-            6.0
+            5.4
           ],
           "note": "Concept leaf; finished clear opening and occupied operation unresolved.",
           "swing": "outward"
@@ -1262,15 +1380,15 @@
           "kind": "hinged",
           "hinge": [
             10.4,
-            7.9
+            7.3
           ],
           "closed_end": [
             10.4,
-            6.95
+            6.35
           ],
           "open_end": [
             11.35,
-            7.9
+            7.3
           ],
           "note": "Concept leaf; finished clear opening and occupied operation unresolved.",
           "swing": "outward"
@@ -1279,18 +1397,18 @@
           "door": "COURT-01",
           "kind": "hinged",
           "hinge": [
-            3.5,
-            2.25
+            2.25,
+            6.0
           ],
           "closed_end": [
-            2.75,
-            2.25
+            2.25,
+            5.2
           ],
           "open_end": [
-            3.5,
-            3.0
+            1.45,
+            6.0
           ],
-          "note": "Concept leaf; finished clear opening and occupied operation unresolved."
+          "note": "0.80 m court cleaning door opens into court from common passage. Weather threshold and hardware unresolved."
         },
         {
           "door": "ALT-BUFFER",
@@ -1313,48 +1431,48 @@
       "dining_chairs": [
         {
           "rect": [
-            1.9,
-            8.61,
+            1.8,
+            8.01,
             0.42,
             0.43
           ]
         },
         {
           "rect": [
-            1.9,
-            9.08,
+            1.8,
+            8.48,
             0.42,
             0.43
           ]
         },
         {
           "rect": [
-            1.9,
-            9.55,
+            1.8,
+            8.95,
             0.42,
             0.43
           ]
         },
         {
           "rect": [
-            3.12,
-            8.61,
+            2.92,
+            8.01,
             0.42,
             0.43
           ]
         },
         {
           "rect": [
-            3.12,
-            9.08,
+            2.92,
+            8.48,
             0.42,
             0.43
           ]
         },
         {
           "rect": [
-            3.12,
-            9.55,
+            2.92,
+            8.95,
             0.42,
             0.43
           ]
@@ -1365,17 +1483,17 @@
           "label": "Garden route · 0.90 m",
           "rect": [
             2.6,
-            10.15,
+            9.55,
             0.9,
             1.65
           ]
         },
         {
-          "label": "Kitchen working aisle · 1.00 m",
+          "label": "Kitchen aisle · 0.90 m",
           "rect": [
             0.9,
-            8.5,
-            1.0,
+            7.9,
+            0.9,
             1.6
           ]
         },
@@ -1383,34 +1501,34 @@
           "label": "Cross hall · 1.00 m",
           "rect": [
             3.7,
-            7.0,
+            6.4,
             6.6,
             1.0
           ]
         },
         {
-          "label": "Open arrival · 2.30 × 1.90 m",
+          "label": "Arrival · 2.10 × 1.90 m",
           "rect": [
-            8.0,
-            6.0,
-            2.3,
+            8.2,
+            5.4,
+            2.1,
             1.9
           ]
         },
         {
-          "label": "Buffer access · 0.95 m",
+          "label": "Buffer approach · 0.95 m",
           "rect": [
             6.3,
             3.7,
             0.95,
-            3.2
+            2.6
           ]
         }
       ],
       "arrival_reservation": [
-        8.0,
-        6.0,
-        2.3,
+        8.2,
+        5.4,
+        2.1,
         1.9
       ],
       "window_proposals": [
@@ -1418,9 +1536,9 @@
           "id": "F1-WIN-COURT",
           "room": "BR-01",
           "opening": [
-            0.65,
-            2.25,
-            1.8,
+            0.45,
+            4.25,
+            1.5,
             "h"
           ],
           "sill": 0.75,
@@ -1429,14 +1547,14 @@
           "face": "court",
           "operable": true,
           "operation": "sliding/tilt panel candidate",
-          "note": "Normal operable window to own open court; sliding/tilt panel to avoid bed or maintenance-door sweeps. Court is 3.4 × 2.0 m and fully open above; airflow/sky/noise unverified."
+          "note": "1.50 m normal opening to 2 × 2 m own court. Court-side sill/guard, ventilation and daylight performance unresolved."
         },
         {
           "id": "F1-WIN-STAIR",
           "room": "STAIR-01",
           "opening": [
             4.3,
-            11.9,
+            11.3,
             1.6,
             "h"
           ],
@@ -1453,7 +1571,7 @@
           "room": "BR-02",
           "opening": [
             10.4,
-            9.0,
+            8.4,
             1.2,
             "v"
           ],
@@ -1470,7 +1588,7 @@
           "room": "KIT-01",
           "opening": [
             0.5,
-            11.9,
+            11.3,
             1.6,
             "h"
           ],
@@ -1491,7 +1609,7 @@
         0,
         0,
         10.5,
-        12.0
+        11.4
       ],
       "rooms": [
         {
@@ -1500,7 +1618,7 @@
           "type": "bed",
           "rect": [
             6.3,
-            8.1,
+            7.5,
             4.0,
             3.7
           ],
@@ -1538,9 +1656,9 @@
             3.7,
             5.9,
             2.5,
-            1.0
+            0.4
           ],
-          "note": "Common 1.00 m hall for ordinary bedroom entrance and separate shared sanitary doors. Finished/occupied passing unresolved.",
+          "note": "Open junction to shared bathrooms and 1.00 m cross hall below; together continuous access, not a separate 0.40 m corridor.",
           "open": true
         },
         {
@@ -1562,10 +1680,10 @@
           "rect": [
             7.3,
             0.2,
-            3.0,
+            1.2,
             3.4
           ],
-          "note": "10.20 m² exact projection; floor exists, no furniture or frequent circulation."
+          "note": "4.08 m² empty floor over 1.20 m deep designated altar strip; no furniture or routine circulation. Front worship floor below is excluded from this restriction per owner clarification."
         },
         {
           "id": "WC-03",
@@ -1621,7 +1739,7 @@
           "type": "hall",
           "rect": [
             3.7,
-            6.9,
+            6.3,
             2.5,
             0.1
           ],
@@ -1634,11 +1752,11 @@
           "type": "hall",
           "rect": [
             6.3,
-            5.8,
-            4.0,
-            1.1
+            5.0,
+            2.6,
+            1.3
           ],
-          "note": "Defined 1.10 m common balcony passage; independent of study chair and altar exclusion.",
+          "note": "1.30 m shared balcony access, outside study chair and altar exclusion.",
           "open": true
         },
         {
@@ -1647,11 +1765,11 @@
           "type": "bed",
           "rect": [
             0.2,
-            2.3,
+            0.2,
             3.4,
-            4.6
+            4.0
           ],
-          "note": "15.64 m² sleeping room. Ordinary 0.90 m hall door independent of private bathroom route; 1.80 × 2.00 m bed, 0.60/1.00 m sides, 1.00 m court-side strip and 0.90 m wardrobe-front gap. Normal opening window to own 3.4 × 2.0 m open court; performance unverified."
+          "note": "13.60 m² rear corner room; rotated 1.80 × 2.00 m bed against B head wall, 0.80 m A-side gap, 1.40 m court-side strip and 0.80 m bed-foot/wardrobe gap. Ordinary 0.90 m entrance independent of screened bathroom route. Court window stays clear of wardrobe; environmental performance unverified."
         },
         {
           "id": "STAIR-02",
@@ -1659,7 +1777,7 @@
           "type": "stair",
           "rect": [
             4.0,
-            8.1,
+            7.5,
             2.2,
             3.7
           ],
@@ -1671,23 +1789,23 @@
           "type": "bed",
           "rect": [
             0.2,
-            7.0,
-            3.7,
-            4.8
+            7.5,
+            3.4,
+            3.7
           ],
-          "note": "17.76 m²; gains 1.44 m² from stair shift. Normal C window and independent 0.90 m entrance; proposed study desk added. Actual occupants/use still unconfirmed."
+          "note": "12.58 m² spare bedroom; aligned 3.4 m width with brother/parents. 1.40 × 2.00 m bed, 0.80 m storage-side strip, ordinary common-lobby door from common lobby. No desk or private roof terrace."
         },
         {
           "id": "BAL-01",
           "label": "Shared balcony",
           "type": "balcony",
           "rect": [
-            10.5,
-            4.6,
-            2.0,
-            3.6
+            9.1,
+            4.9,
+            2.6,
+            2.5
           ],
-          "note": "7.20 m² shared balcony: 2.00 m nominal projection × 3.60 m frontage. Recommended study; single bench faces toward altar side with back away. Independent passage and sliding-door candidate. Guard/frame insets, occupied footprint and entry area are modeled; drainage, support, thresholds and shade unverified."
+          "note": "6.50 m² shared recessed balcony; 1.40 m of clear depth inside F1 edge, 1.20 m beyond. Common 1.00 m opening, occupied bench outside entry. Drainage, guards, privacy and support scheme unresolved; not declared a designed cantilever."
         },
         {
           "id": "HALL-05",
@@ -1695,12 +1813,12 @@
           "type": "hall",
           "rect": [
             6.3,
-            7.0,
-            4.0,
+            6.4,
+            2.6,
             1.0
           ],
           "open": true,
-          "note": "1.00 m common passage, aligned with stair approach. Reduced from 1.20 m; concept dimension before finishing, not a passing/accessibility certification."
+          "note": "Common sister passage stops before recessed balcony; 1.00 m width."
         },
         {
           "id": "COURT-02",
@@ -1708,11 +1826,11 @@
           "type": "courtyard",
           "rect": [
             0.2,
-            0.2,
-            3.4,
+            4.3,
+            2.0,
             2.0
           ],
-          "note": "6.80 m² own open-to-sky court, ground paving and no F2 slab/roof. Not the altar backing buffer. Daylight/airflow, neighbor heights, drainage and cost unresolved."
+          "note": "4.00 m² open court between corner suite and kitchen; common cleaning access. Smaller sky aperture than C09: daylight, ventilation, privacy and drainage unverified."
         },
         {
           "id": "HALL-06",
@@ -1720,34 +1838,86 @@
           "type": "hall",
           "open": true,
           "rect": [
-            4.0,
-            7.0,
-            2.2,
+            3.7,
+            6.4,
+            2.5,
             1.0
           ],
-          "note": "1.00 m main cross hall; adjoining arrival/bedroom branch is also 1.00 m deep."
+          "note": "1.00 m cross hall; widened west to aligned kitchen/spare wall."
         },
         {
           "id": "STUDY-02",
           "label": "Shared study",
           "type": "living",
           "rect": [
+            8.6,
+            0.2,
+            1.7,
+            3.4
+          ],
+          "open": true,
+          "note": "5.78 m² shared study over the front worship/standing zone, outside actual 1.20 m altar strip. Desk faces toward altar side, seated back away. 0.90 m entry at south end; family review of interpretation remains welcome."
+        },
+        {
+          "id": "COURT-HALL-2",
+          "label": "Court passage",
+          "type": "hall",
+          "open": true,
+          "rect": [
+            2.3,
+            4.3,
+            1.3,
+            2.0
+          ],
+          "note": "Common route to corner bedroom and court maintenance, 1.30 m concept width. No need to enter parents bedroom for cleaning."
+        },
+        {
+          "id": "LANDING-02",
+          "label": "Shared landing",
+          "type": "hall",
+          "open": true,
+          "rect": [
             6.3,
             3.7,
             4.0,
-            2.0
+            1.1
           ],
+          "note": "1.10 m common landing connects study, linen and balcony; outside exclusion."
+        },
+        {
+          "id": "SPARE-LOBBY",
+          "label": "Common lobby",
+          "type": "hall",
           "open": true,
-          "note": "8.00 m² open study reservation, formerly part of 12.80 m² undefined landing. Desk and occupied chair face toward altar side; back points away. West 0.90 m access reaches linen cupboard, east 0.90 m strip reaches occasional altar-zone cleaning door. No bed or furniture above altar."
+          "rect": [
+            1.4,
+            6.4,
+            2.2,
+            1.0
+          ],
+          "note": "1.00 m common access connects court passage to main cross hall. Keeps corner-bedroom exit outside kitchen/spare room."
+        },
+        {
+          "id": "LOGGIA-LINK",
+          "label": "Open junction",
+          "type": "hall",
+          "open": true,
+          "rect": [
+            6.3,
+            4.8,
+            2.6,
+            0.2
+          ],
+          "note": "Open connection between landing and balcony lobby; no independent clearance claim."
         }
       ],
       "doors": [
         [
           "BR-03",
-          3.65,
-          5.95,
+          2.6,
+          4.25,
           0.9,
-          "v"
+          "h"
         ],
         [
           "WC-03",
@@ -1800,29 +1970,29 @@
         ],
         [
           "BR-04",
-          9.0,
-          8.05,
+          7.9,
+          7.45,
           0.85,
           "h"
         ],
         [
           "BR-05",
-          3.95,
-          7.05,
+          2.6,
+          7.45,
           0.9,
-          "v"
+          "h"
         ],
         [
           "EMPTY-ALT",
-          9.45,
+          7.45,
           3.65,
           0.8,
           "h"
         ],
         [
           "BAL-01",
-          10.4,
-          5.8,
+          9.0,
+          5.1,
           1.0,
           "v"
         ],
@@ -1832,90 +2002,89 @@
           2.1,
           0.85,
           "v"
+        ],
+        [
+          "STUDY-02",
+          9.0,
+          3.65,
+          0.9,
+          "h"
         ]
       ],
       "windows": [
         [
-          0.65,
-          2.25,
-          1.8,
+          0.45,
+          4.25,
+          1.5,
           "h"
         ],
         [
           4.3,
-          11.9,
+          11.3,
           1.6,
           "h"
         ],
         [
           10.4,
-          9.0,
+          8.4,
           1.2,
           "v"
         ],
         [
           0.5,
-          11.9,
+          11.3,
           1.6,
           "h"
+        ],
+        [
+          10.4,
+          1.0,
+          1.4,
+          "v"
         ]
       ],
       "furniture": [
         [
           "Double bed",
-          0.8,
-          3.3,
-          1.8,
-          2
+          0.2,
+          1.0,
+          2.0,
+          1.8
         ],
         [
           "Wardrobe",
+          3.0,
           0.3,
-          6.2,
-          2.2,
-          0.6
+          0.6,
+          2.2
         ],
         [
           "Bed",
           6.8,
-          9.0,
+          8.4,
           2.0,
           1.4
         ],
         [
           "Wardrobe",
           6.5,
-          11.2,
+          10.6,
           2.5,
           0.6
         ],
         [
           "Bed",
           0.8,
-          7.8,
+          7.9,
           1.4,
-          2
+          2.0
         ],
         [
           "Wardrobe",
-          0.3,
-          11.05,
-          2.2,
-          0.6
-        ],
-        [
-          "Study desk",
-          7.45,
-          3.8,
-          1.65,
-          0.6
-        ],
-        [
-          "Study chair",
-          7.9,
-          4.5,
-          0.7,
-          0.7
+          3.0,
+          8.55,
+          0.6,
+          2.0
         ],
         [
           "Linen cabinet",
@@ -1925,18 +2094,18 @@
           0.6
         ],
         [
-          "Bedroom desk",
-          3.25,
-          9.3,
+          "Study desk",
+          8.65,
+          0.55,
           0.6,
-          1.3
+          1.5
         ],
         [
-          "Desk chair",
-          2.55,
-          9.6,
-          0.6,
-          0.6
+          "Study chair",
+          9.35,
+          0.95,
+          0.7,
+          0.7
         ]
       ],
       "fixtures": [
@@ -2007,7 +2176,7 @@
           "points": [
             [
               5.1,
-              8.05
+              7.45
             ],
             [
               5.1,
@@ -2027,16 +2196,16 @@
           "label": "Brother direct exit",
           "points": [
             [
-              3.65,
-              6.3
+              3.05,
+              4.25
+            ],
+            [
+              3.05,
+              6.9
             ],
             [
               5.1,
-              6.3
-            ],
-            [
-              5.1,
-              7.5
+              6.9
             ]
           ]
         },
@@ -2091,11 +2260,11 @@
           "points": [
             [
               6.75,
-              6.3
+              5.6
             ],
             [
               6.75,
-              4.2
+              4.3
             ],
             [
               6.75,
@@ -2112,11 +2281,23 @@
           "points": [
             [
               8.25,
-              6.3
+              5.6
             ],
             [
               8.25,
-              5.65
+              4.3
+            ],
+            [
+              9.5,
+              4.3
+            ],
+            [
+              9.5,
+              3.65
+            ],
+            [
+              9.5,
+              2.6
             ]
           ]
         }
@@ -2127,16 +2308,16 @@
           "door": "BR-03",
           "kind": "hinged",
           "hinge": [
-            3.65,
-            6.85
+            3.5,
+            4.25
           ],
           "closed_end": [
-            3.65,
-            5.95
+            2.6,
+            4.25
           ],
           "open_end": [
-            2.75,
-            6.85
+            3.5,
+            3.35
           ],
           "note": "Concept leaf; finished clear opening and occupied operation unresolved."
         },
@@ -2144,16 +2325,16 @@
           "door": "BR-04",
           "kind": "hinged",
           "hinge": [
-            9.85,
-            8.05
+            8.75,
+            7.45
           ],
           "closed_end": [
-            9.0,
-            8.05
+            7.9,
+            7.45
           ],
           "open_end": [
-            9.85,
-            8.9
+            8.75,
+            8.3
           ],
           "note": "Concept leaf; finished clear opening and occupied operation unresolved."
         },
@@ -2181,16 +2362,16 @@
           "door": "BR-05",
           "kind": "hinged",
           "hinge": [
-            3.95,
-            7.05
+            3.5,
+            7.45
           ],
           "closed_end": [
-            3.95,
-            7.95
+            2.6,
+            7.45
           ],
           "open_end": [
-            3.05,
-            7.05
+            3.5,
+            8.35
           ],
           "note": "Concept leaf; finished clear opening and occupied operation unresolved."
         },
@@ -2217,9 +2398,9 @@
           "id": "F2-WIN-COURT",
           "room": "BR-03",
           "opening": [
-            0.65,
-            2.25,
-            1.8,
+            0.45,
+            4.25,
+            1.5,
             "h"
           ],
           "sill": 0.9,
@@ -2228,14 +2409,14 @@
           "face": "court",
           "operable": true,
           "operation": "sliding/tilt panel candidate",
-          "note": "Normal operable window to own open court; sliding/tilt panel to avoid bed or maintenance-door sweeps. Court is 3.4 × 2.0 m and fully open above; airflow/sky/noise unverified."
+          "note": "1.50 m normal opening to 2 × 2 m own court. Court-side sill/guard, ventilation and daylight performance unresolved."
         },
         {
           "id": "F2-WIN-STAIR",
           "room": "STAIR-02",
           "opening": [
             4.3,
-            11.9,
+            11.3,
             1.6,
             "h"
           ],
@@ -2252,7 +2433,7 @@
           "room": "BR-04",
           "opening": [
             10.4,
-            9.0,
+            8.4,
             1.2,
             "v"
           ],
@@ -2269,7 +2450,7 @@
           "room": "BR-05",
           "opening": [
             0.5,
-            11.9,
+            11.3,
             1.6,
             "h"
           ],
@@ -2279,44 +2460,61 @@
           "face": "yard",
           "operable": true,
           "operation": "sliding/tilt panel candidate",
-          "note": "Normal C-yard opening for bedroom 5; no rooflight needed in this proposal."
+          "note": "Normal spare-bedroom window to C garden; no kitchen roof terrace retained."
+        },
+        {
+          "id": "F2-WIN-STUDY",
+          "room": "STUDY-02",
+          "opening": [
+            10.4,
+            1.0,
+            1.4,
+            "v"
+          ],
+          "sill": 0.9,
+          "height": 1.5,
+          "shade_depth": 0.45,
+          "face": "yard",
+          "operable": true,
+          "operation": "sliding/tilt panel candidate",
+          "note": "Study front window outside actual altar strip; shade/noise and guarding unresolved."
         }
       ],
       "seating": [
         {
           "furniture": "Study chair",
           "facing": [
-            0,
-            -1
+            -1,
+            0
           ]
         }
       ],
       "clearance_reservations": [
         {
-          "label": "Shared passage · 1.10 m",
+          "label": "Balcony access · 1.30 m",
           "rect": [
             6.3,
-            5.8,
+            5.0,
+            2.6,
+            1.3
+          ]
+        },
+        {
+          "label": "Shared landing · 1.10 m",
+          "rect": [
+            6.3,
+            3.7,
             4.0,
             1.1
           ]
         },
         {
-          "label": "Linen approach · 0.90 m",
+          "label": "Study arrival",
           "rect": [
-            6.3,
-            3.7,
+            9.0,
+            2.2,
             0.9,
-            2.0
-          ]
-        },
-        {
-          "label": "Cleaning approach · 0.90 m",
-          "rect": [
-            9.4,
-            3.7,
-            0.9,
-            2.0
+            1.4
           ]
         }
       ]
@@ -2325,20 +2523,23 @@
   "coordination": {
     "grid_x": [
       0.1,
+      2.25,
       3.65,
       3.95,
       6.25,
+      7.25,
+      9.0,
       10.4
     ],
     "grid_y": [
       0.1,
-      2.25,
-      3.65,
-      5.85,
-      8.05,
-      11.9
+      4.25,
+      6.35,
+      7.45,
+      10.0,
+      11.3
     ],
-    "grid_note": "C09 wall coordination: x=6.25 aligns wet-core outside wall and stair/Grandpa-sister division on both floors. Other lines are reference axes, not an engineered column/beam grid. No member sizes or load-path adequacy established.",
+    "grid_note": "Bedroom 5, brother/parents and kitchen right wall share x=3.65. Wet/stair/Grandpa-sister right division remains x=6.25. Reference axes only; stair left axis 3.95 remains distinct. Recesses and offsets need engineered supports.",
     "stacks": [
       [
         4.0,
@@ -2372,11 +2573,34 @@
     "cantilever": {
       "direction": "none / envelope aligned",
       "depth": 0,
-      "note": "Enclosed floors align. Shared balcony projection 2.00 m in option 01 / 1.60 m in option 02; support system not designed."
+      "note": "Upper front recess only; no enclosed room cantilever adopted. Shared loggia clear recess 1.40 m plus external projection 1.20 or 0.60 m. Support system unresolved."
     },
     "daylight_tubes": [],
-    "daylight_note": "C08 removes reflective tubes/upper chase boxes. Parents/brother use normal operable courtyard windows; stair and bedroom 5 use C-yard windows. Open court, air exchange, noise/heat, roof drainage and when-closed ventilation require design.",
-    "facade_note": "One shared balcony frame, comparing 2.00 m and 1.60 m nominal projections. Private sister slab removed. Support, guards, weather and roof drainage unresolved.",
-    "aligned_wall_axis": 6.25
+    "daylight_note": "Parents/brother rear-corner rooms have unobstructed normal windows to 2 × 2 m court; bedroom 5 and stairs face C garden. Smaller court needs performance review; no A/B opening assumed.",
+    "facade_note": "Shared recessed loggia between two front upper volumes; a light porch canopy below and deep window reveals provide layering. No additional bedroom cantilever or kitchen roof terrace adopted.",
+    "aligned_wall_axis": 6.25,
+    "altar_exclusion": [
+      7.3,
+      0.2,
+      1.2,
+      3.4
+    ],
+    "altar_side_screen": {
+      "rect": [
+        7.3,
+        3.6,
+        1.8,
+        0.08
+      ],
+      "height": 2.2,
+      "material": "timber slats with opaque lower panel",
+      "note": "Left/C side of altar toward sofa/bench; 1.20 m front opening retained. Decorative privacy candidate, not a fire barrier; flame/heat clearances and fixings unresolved."
+    },
+    "porch_canopy": [
+      10.5,
+      5.4,
+      2.3,
+      2.5
+    ]
   }
 }
