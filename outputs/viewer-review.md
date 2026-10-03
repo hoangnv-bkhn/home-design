@@ -1,4 +1,4 @@
-# C05 viewer review
+# C06 viewer review
 
 Headless Chrome local review completed.
 
@@ -7,6 +7,7 @@ Headless Chrome local review completed.
 - 66 actual room pointer clicks across both floors/options; keyboard selection and focus retained nonblack fills and accessible pressed state.
 - Focused dining screenshot saved as viewer-selection-review.png; each BAL-01 variant area/access note populated correctly.
 - F1 displayed TV stand and 1.90 m entrance opening in both options.
+- C06 direct parents/brother 0.90 m entrance openings, parents inward leaf and sofa facing metadata displayed in both options.
 - All five overlay controls responded; 390 px layout had no document-level horizontal overflow.
 - 10 standalone SVG and 10 PNG drawings regenerated.
 - PNG drawings captured from corresponding standalone SVG tabs, avoiding page-scroll clipping.

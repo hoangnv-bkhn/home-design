@@ -8,7 +8,7 @@ Updated: 2026-10-03. Source: owner's requirements and corrections supplied in co
 - Two floors, five bedrooms total.
 - Preferred location: rear next to B, with the A-side wall approximately **0.30 m** away. Owner wants outdoor space concentrated toward the front/D and side garden/C. C03 assumes a **0.10 m B allowance** because no exact B dimension was given; this is not an owner-specified distance or verified permission.
 - Parking: one car plus a few scooters/bicycles; garden and front yard preferred.
-- Owner retains an **approximately 100 m² footprint target**, but clarified that neither exactly 100 m² nor a 10 × 10 m square is required. Modest departures and upper-floor cantilever studies are permitted, with exterior design and outdoor space considered together. C05 proposes 122.88 m² F1 versus C03's 120.96 m²; neither larger footprint is owner-approved. The earlier “occupy entire plot” wording remains superseded.
+- Owner retains an **approximately 100 m² footprint target**, but neither exactly 100 m² nor a 10 × 10 m square is required. Latest feedback asks to reduce bedrooms/excess spaces and footprint. C06 proposes 108.00 m² F1/F2 versus C05 122.88/130.56 m²; no footprint approved. Upper cantilever studies remain permitted; C06 removes the C envelope extension. “Occupy entire plot” remains superseded.
 - In this project, **F1 = ground/entrance floor (tầng 1)** and **F2 = upper floor (tầng 2)**. Use this convention on every drawing.
 - Budget figure deferred for initial layout exploration. No assumption of unlimited budget.
 - Plot evidence and uncertainties: [site notes](site-investigation.md).
@@ -78,6 +78,16 @@ Passage dimensions and turning space must support actual users and furniture. Fa
 
 C05 proposes 9.6 m along A × 12.8 m along B, direct C kitchen exit and a west-side Grandpa door from an inner passage. It studies 1.0/1.4 m clear widths with 2.0 m private and 1.8 m shared depths. The indoor altar backing buffer reduces to 0.9 m; this is a new assistant compromise requiring family review, not an owner requirement. See [C05 tradeoffs](concept-study-C05.md).
 
+## C06 feedback — owner input, 2026-10-03
+
+- Parents need an ordinary entrance/exit independent of the dressing/bathroom nook. Correct the forced detour; apply the same check to other bedrooms.
+- Reduce oversized bedrooms and excess/empty circulation to reduce overall footprint. Earlier spacious-suite preferences establish no fixed minimum; balance compactness with furniture and usable paths.
+- Seated occupants must not have their backs toward the altar. Reconsider sofa/TV/entry together; this is the family's chosen rule, not universal guidance.
+- Explore car parking on the **displayed left/C side** for convenience. Requested study, not acceptance of a bay/gate or proof of turning.
+- Every decision must consider people's usability/convenience with experienced residential design judgment. Assess entry/exit, occupied chairs, dressing/storage, cooking, bathroom privacy, parking/unloading and garden routes; room containment alone is insufficient. Add this to agent instructions and fix discovered practical conflicts.
+
+C06 proposes 9.0 × 12.0 m aligned floors (108.00 m² each), direct parents/brother doors, shorter enclosed private passages with rotated stacked wet pairs, sofa rear away from altar, and left parking with separate gates/walks. All bedrooms shrink. Altar/exclusion and 0.90 m backing buffer remain. No layout/footprint/balcony selected; [C06 usability review](concept-study-C06.md) records clearances/compromises.
+
 ## Additional owner priorities (retained)
 
 - Laundry/drying: low priority during first layout exploration; resolve a practical location later without further briefing now.
@@ -111,4 +121,4 @@ No construction price or feasible floor area is established by the current sketc
 6. Coordinate columns, stair opening, wet stacks and vertical sections. Revise both floors together.
 7. Compare two or three options with furniture, dimensions, sightlines, preliminary area schedules and unresolved issues.
 
-Current [viewer](../outputs/house-concepts.html) presents [C05](concept-study-C05.md): the same revised ground plan with two upper balcony-access alternatives. [C03a](../revisions/C03a/manifest.json) and the separately existing [C04](../revisions/C04/manifest.json) archive are preserved. Road arrival is confirmed; C05 layout, footprint, sanitary dimensions and balcony option remain proposals for review.
+Current [viewer](../outputs/house-concepts.html) presents [C06](concept-study-C06.md): compact common interiors with two balcony-access alternatives. Previous archives including [C05](../revisions/C05/manifest.json) remain preserved. Road arrival and sofa rule confirmed; C06 layout, footprint, sanitary fit-out and balcony remain proposals.

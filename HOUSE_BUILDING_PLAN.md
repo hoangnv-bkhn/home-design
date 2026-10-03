@@ -2,10 +2,10 @@
 
 Created: 2026-09-30  
 Updated: 2026-10-03
-Status: C05 owner-feedback proposal available; neither balcony/layout selected. Surveyed geometry, near-boundary permissions and engineering remain pending.
+Status: C06 usability/footprint proposal available; neither balcony/layout selected. Survey, near-boundary permissions and engineering remain pending.
 Purpose: Guide an editable, AI-assisted process from land investigation to construction and handover.
 
-Current review package: [interactive viewer](outputs/house-concepts.html), [C05 comparison and compromises](docs/concept-study-C05.md), and [geometry review](outputs/geometry-review.md). C05 is wider along B and shallower along A, with direct C kitchen access, internal Grandpa entry and compact wet-room studies. Road arrival is confirmed; shared versus bedroom balcony access remains compared. Proposed F1 is 122.88 m²; side yard and backing-buffer compromises need review. The following roadmap is a phase guide; current owner requirements live in docs/brief.md. Model area is not registered area.
+Current review package: [viewer](outputs/house-concepts.html), [C06 comparison/usability](docs/concept-study-C06.md), [geometry review](outputs/geometry-review.md). C06 reduces both envelopes to 108.00 m², adds independent parents/brother exits, turns sofa backs away from altar and studies left parking with separate walks. B remains longer than A; C kitchen exit/empty altar projection retained. Footprint, 0.90 m buffer and balcony variants unselected. Usability-first decision making is required in AGENTS.md. This roadmap is a phase guide; current requirements live in docs/brief.md. Model area is not registered area.
 
 ## 1. Recommended approach
 
@@ -21,7 +21,7 @@ This plan proposes a workflow and technology direction. It does not establish si
 
 Confirmed: the owner has land near Noi Bai Airport, Hanoi, Vietnam, and plans two floors with five bedrooms. The project values easy editing, reproducible calculations, staged visualization, feng shui considerations, and an improving AI workflow.
 
-The current detailed requirements are in [the owner brief](docs/brief.md), [site investigation notes](docs/site-investigation.md), and [preferences and feng shui register](docs/preferences-and-feng-shui.md). These records distinguish owner requirements from provisional interpretations. The original plot reference is [plot_dimensions.jpg](plot_dimensions.jpg).
+Current requirements are in [brief](docs/brief.md), [site notes](docs/site-investigation.md) and [family rules](docs/preferences-and-feng-shui.md), distinguishing owner inputs from interpretations. The original `plot_dimensions.jpg` is absent from this working copy; site notes retain the initial inspection and owner-reported approximate inputs.
 
 Altar clarification: use indoor space beyond the solid backing wall as the baseline. The family is open to an outdoor gap/courtyard if suitable under its feng shui interpretation; preliminary research supports the solid-backing principle but does not settle the courtyard question. Keep courtyard layouts as unresolved alternatives. The owner confirms 130° along A toward the road beside D for concept orientation; survey and compass convention remain unverified.
 

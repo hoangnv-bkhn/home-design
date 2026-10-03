@@ -129,11 +129,51 @@ check('Arrival centerline avoids parked vehicles and house interior', all(overla
 gp=next(r['rect'] for r in f1['rooms'] if r['id']=='BR-02')
 gp_hall=next(r['rect'] for r in f1['rooms'] if r['id']=='GP-LOBBY')
 gp_door=next(d for d in f1['doors'] if d[0]=='BR-02')
-check('Grandpa door connects bedroom west wall to inner passage', gp_door[4]=='v' and abs(gp_door[1]-(gp[0]-.05))<1e-8 and abs(gp_door[1]-(gp_hall[0]+gp_hall[2]+.05))<1e-8 and all(gp_door[2]>=r[1] and gp_door[2]+gp_door[3]<=r[1]+r[3] for r in [gp,gp_hall]))
+check('Grandpa door connects bedroom rear wall to inner passage', gp_door[4]=='v' and abs(gp_door[1]-(gp[0]-.05))<1e-8 and abs(gp_door[1]-(gp_hall[0]+gp_hall[2]+.05))<1e-8 and all(gp_door[2]>=r[1] and gp_door[2]+gp_door[3]<=r[1]+r[3] for r in [gp,gp_hall]))
 garden_door=next(d for d in f1['doors'] if d[0]=='KIT-GARDEN')
 check('Kitchen dining has direct C-side garden opening', garden_door[4]=='h' and abs(garden_door[2]-(f1['envelope'][3]-data['house']['external_wall']/2))<1e-8 and garden_door[1]>=din[0] and garden_door[1]+garden_door[3]<=din[0]+din[2] and din[1]+din[3]==f1['envelope'][3]-data['house']['external_wall'])
 check('WC/shower study widths retain 1.0/1.4 m', all(abs(min(r['rect'][2:])-(1 if r['type']=='wc' else 1.4))<1e-8 for f in data['floors'] for r in f['rooms'] if r['type'] in ['wc','shower']))
-check('Sanitary entries lie on compartment/lobby junctions', all(d[4]=='h' and abs(d[2]-(next(r['rect'] for r in f['rooms'] if r['id']==d[0])[1]+next(r['rect'] for r in f['rooms'] if r['id']==d[0])[3]+.05))<1e-8 and d[1]>=next(r['rect'] for r in f['rooms'] if r['id']==d[0])[0] and d[1]+d[3]<=next(r['rect'] for r in f['rooms'] if r['id']==d[0])[0]+next(r['rect'] for r in f['rooms'] if r['id']==d[0])[2] for f in data['floors'] for d in f['doors'] if d[0].startswith(('WC-','SH-'))))
+def door_joins(door, a, b, wall=.1):
+    _,x,y,length,axis=door
+    along=1 if axis=='v' else 0
+    across=1-along
+    start=y if axis=='v' else x
+    level=x if axis=='v' else y
+    return (all(start>=r[along]-1e-8 and start+length<=r[along]+r[along+2]+1e-8 for r in [a,b])
+            and ((abs(level-(a[across]+a[across+2]+wall/2))<1e-8 and abs(level-(b[across]-wall/2))<1e-8)
+                 or (abs(level-(b[across]+b[across+2]+wall/2))<1e-8 and abs(level-(a[across]-wall/2))<1e-8)))
+sanitary_junctions=[]
+for f in data['floors']:
+    zones={r['id']:r['rect'] for r in f['rooms']}
+    for door in f['doors']:
+        if door[0].startswith(('WC-','SH-')):
+            sanitary_junctions.append(any(door_joins(door,zones[door[0]],r['rect']) for r in f['rooms'] if r['type']=='hall'))
+check('Sanitary entries join a real private/common passage in either orientation', all(sanitary_junctions))
+
+# C06 regressions: topology and finite clearance reservations, with narrow scope.
+bed_entries=[('F1','BR-01','HALL-01'),('F1','BR-02','GP-LOBBY'),('F2','BR-03','HALL-05'),('F2','BR-04','HALL-05'),('F2','BR-05','HALL-02')]
+check('Every bedroom has a direct common-access door independent of ensuite', all(door_joins(next(a for a in f['doors'] if a[0]==bed),next(r['rect'] for r in f['rooms'] if r['id']==bed),next(r['rect'] for r in f['rooms'] if r['id']==hall)) for fid,bed,hall in bed_entries for f in data['floors'] if f['id']==fid))
+check('Private passages have no former public ensuite entry door', all(not any(a[0] in ['EN-01','EN-03'] for a in f['doors']) for f in data['floors']))
+seat=f1['tv']['sofa']; facing=f1['tv']['seat_facing']
+altar_delta=[altar[i]+altar[i+2]/2-seat[i]-seat[i+2]/2 for i in [0,1]]
+check('Sofa rear half-plane excludes altar center', sum(-facing[i]*altar_delta[i] for i in [0,1])<=0)
+check('TV stand avoids main entrance approach reservation', overlap(f1['tv']['stand'],[living[0]+living[2]-.95,entry[2],.95,entry[3]])<1e-8)
+def sweep_box(op):
+    points=[op[k] for k in ['hinge','closed_end','open_end']]
+    return [min(p[0] for p in points),min(p[1] for p in points),max(p[0] for p in points)-min(p[0] for p in points),max(p[1] for p in points)-min(p[1] for p in points)]
+check('Bedroom/main-entry quarter-circle bounding boxes avoid furniture/fixtures', all(all(overlap(sweep_box(op),a)<1e-8 for a in [*[b[1:] for b in f['furniture']],*[b['rect'] for b in f['fixtures']]]) for f in data['floors'] for op in f['door_operations'] if op['kind']=='hinged'))
+check('Six occupied chair reservations stay inside dining and avoid furniture', len(f1['dining_chairs'])==6 and all(contains(din,c['rect']) and all(overlap(c['rect'],a[1:])<1e-8 for a in f1['furniture']) for c in f1['dining_chairs']))
+check('Kitchen/garden/living clearance rectangles avoid furniture and occupied chairs', all(all(overlap(c['rect'],a)<1e-8 for a in [*[b[1:] for b in f1['furniture']],*[b['rect'] for b in f1['dining_chairs']]]) for c in f1['clearance_reservations']))
+def occupied_route(route,width=.8):
+    for p in route_samples(route):
+        yield [p[0]-width/2,p[1]-width/2,width,width]
+check('0.80 m F1 sample bands avoid furniture, fixtures and occupied dining chairs', all(all(overlap(p,a)<1e-8 for a in [*[b[1:] for b in f1['furniture']],*[b['rect'] for b in f1['fixtures']],*[b['rect'] for b in f1['dining_chairs']]]) for r in f1['routes'] for p in occupied_route(r)))
+check('Both balcony 0.80 m sample bands avoid upper furniture and altar', all(all(overlap(p,a)<1e-8 for a in [altar,*[b[1:] for b in f2['furniture']]]) for opt in data['options'] for p in occupied_route({'points':opt['balcony']['route']})))
+check('Car bay is left/C of house and has separate pedestrian/vehicle gates', s['car_bay'][1]>=site_house[1]+site_house[3] and s['gate']!=s['pedestrian_gate'])
+walks=s['pedestrian_reservations']
+check('Walking strips inside parcel and clear of house, parking and steps', all(all(inside(p) for p in corners(r)) and all(overlap(r,a)<1e-8 for a in [site_house,*site_items]) for r in walks))
+check('Garden walking centerline clears house and parked vehicles', all(overlap(p,r)<1e-8 for p in route_samples({'points':s['garden_path']}) for r in [site_house,s['car_bay'],*s['scooters']]))
+check('Compact F1 gross below 110 m²; F2 envelope aligned', f1['envelope'][2]*f1['envelope'][3]<110 and f1['envelope']==f2['envelope'])
 
 gross = {f['id']:f['envelope'][2]*f['envelope'][3] for f in data['floors']}
 bal_area = balcony[2]*balcony[3]
@@ -147,7 +187,7 @@ lines = [f"# Concept {data['revision']} — generated geometry review", '',
          f"- F1 gross footprint {gross['F1']:.2f} m²; F2 envelope {gross['F2']:.2f} m² including stair opening and empty altar zone.",
          f"- Gross envelope sum {sum(gross.values()):.2f} m²; balcony {bal_area:.2f} m² separately. This is a concept convention, not statutory/contract measurement.",
          f"- Model land outside F1 {area-gross['F1']:.2f} m², including gaps, access and parking, not all garden.",
-         '- F1/F2 B edge modeled 0.10 m from boundary; A edge 0.30 m. C-side upper projection 0.80 m. Owner placement preferences, not lawful setbacks.',
+         f'- F1/F2 B edge modeled 0.10 m from boundary; A edge 0.30 m. C-side upper extension {data["coordination"]["cantilever"]["depth"]:.2f} m. Owner placement preferences, not lawful setbacks.',
          '', '## Automated checks', '']
 lines += [f"- {'PASS' if v else 'FAIL'} — {n}" for n,v in checks]
 lines += ['', '## Balcony comparison', '', '| Option | Balcony area (m²) | Access |', '| --- | --- | --- |']
@@ -167,13 +207,13 @@ lines += ['', '## Stair arithmetic — reservation only', '',
           '- Nominal flights 1.00 + 1.00 m with 0.20 m center gap fill the 2.20 m reservation; wall/rail details may reduce finished widths.',
           '', '## Unresolved review', '',
           '- 21 steps provisionally means risers. Owner confirmed staircase; no lift requested. Architect must resolve actual finished flights, openings, headroom, rails and applicability.',
-          '- Door leaves, sanitary fixture use, privacy sightlines and occupied dining clearances; door gaps/fixtures are reservations.',
+          '- Bedroom/main-entry inward leaves and sliding sanitary entries are concept studies. Bounding-box and 0.80 m sampled bands are limited collision checks, not occupied usability/compliance certification.',
           f'- Living {living[2]*living[3]:.2f} m²; kitchen/dining open bay {(kit[2]+din[2]+data["house"]["partition"])*kit[3]:.2f} m². Occupied chairs/appliances, suite and garden routes remain unverified.',
           '- Altar 3.4 m width × 1.5 m depth, facing SE, and reduced 5.10 m² upper exclusion need family acceptance.',
-          '- C-side cantilever, both balcony alternatives, rooflight, foundations, acoustics, waterproofing and guards need a professional design basis.',
+          '- C-side envelope extension removed; both road balconies, rooflight, foundations, acoustics, waterproofing and guards need a professional design basis.',
           '- Approximate owner placement is not approval of boundary-wall construction/openings; kitchen extract, fifth-bedroom rooflight/ventilation, survey and car turning unresolved.',
-          '- Indoor backing buffer is 0.9 m rather than C03 1.4 m; family acceptance unresolved. Grandpa and sister room proportions become longer/narrower.',
-          '- Car bay, porch and steps are ground reservations. 1.15 m lateral separation does not establish occupied vehicle access, safe levels or stair/door operation.']
+          '- Indoor backing buffer remains 0.9 m; family acceptance unresolved. Smaller bedrooms retain furniture studies; sister corner option uses a narrower secondary bed side.',
+          '- Left/C 3.0 × 5.0 m car bay, separate gates, porch and steps are reservations. Clear walking strips do not establish road maneuvers, door-opening envelopes, safe levels or finished door/stair operation.']
 out=ROOT/'outputs'
 out.mkdir(exist_ok=True)
 (out/'geometry-review.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')

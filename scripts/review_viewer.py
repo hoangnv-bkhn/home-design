@@ -203,6 +203,11 @@ try:
         js('document.querySelector("#furniture").checked=true;render()')
         assert js('document.querySelector(\'[data-furniture-name="TV stand"]\')!==null')
         assert js('document.querySelector(\'[data-door-id="ENTRY"]\').getAttribute("data-opening-width")')=='1.9'
+        assert js('document.querySelector(\'[data-door-id="BR-01"]\').getAttribute("data-opening-width")')=='0.9'
+        assert js('document.querySelector(\'[data-operation-door="BR-01"]\').getAttribute("data-operation-kind")')=='hinged'
+        assert js('document.querySelector(\'[data-furniture-name="Sofa"]\').getAttribute("data-seat-facing")')=='1,0'
+        js('document.querySelector(\'[data-view="F2"]\').click()')
+        assert js('document.querySelector(\'[data-door-id="BR-03"]\').getAttribute("data-opening-width")')=='0.9'
     assert not errors, errors
     report = [f"# {MODEL['revision']} viewer review", "", "Headless Chrome local review completed.", "",
               f"- {len(MODEL['options'])} active option / all five views rendered without captured JavaScript exceptions.",
@@ -210,6 +215,7 @@ try:
               f"- {room_interactions} actual room pointer clicks across both floors/options; keyboard selection and focus retained nonblack fills and accessible pressed state.",
               "- Focused dining screenshot saved as viewer-selection-review.png; each BAL-01 variant area/access note populated correctly.",
               "- F1 displayed TV stand and 1.90 m entrance opening in both options.",
+              "- C06 direct parents/brother 0.90 m entrance openings, parents inward leaf and sofa facing metadata displayed in both options.",
               "- All five overlay controls responded; 390 px layout had no document-level horizontal overflow.",
               f"- {len(rendered)} standalone SVG and {len(rendered)} PNG drawings regenerated.",
               "- PNG drawings captured from corresponding standalone SVG tabs, avoiding page-scroll clipping.",

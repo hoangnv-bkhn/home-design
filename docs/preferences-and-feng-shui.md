@@ -1,6 +1,6 @@
 # Family preferences and feng shui register
 
-Updated: 2026-10-03. Status: C05 geometry proposed; road/altar facing confirmed, altar extent and narrower backing buffer need family review; courtyard interpretation unresolved.
+Updated: 2026-10-03. Status: C06 proposed; road/altar facing and seating rule confirmed. Exact altar extent and 0.90 m buffer need review; courtyard unresolved.
 
 ## How requirements are adopted
 
@@ -15,6 +15,7 @@ This record does not claim that these rules are universal or scientifically prov
 | FS-02 | Owner; required | Staircase does not face the main entrance | Show entrance axis/sightline and first flight/landing in plan; explore a side-facing or screened approach, then review with family |
 | FS-03 | Owner; required | Solid wall behind altar, with indoor space beyond the wall; avoid WC/shower, gas stove, bedroom, etc. behind it | Indoor space is the baseline clarified by the owner. An outdoor gap/courtyard is conditionally acceptable if supported by the family's feng shui interpretation; current research does not settle that condition. Label wall and buffer zone in plan/section |
 | FS-04 | Owner; required, C02 | Altar faces the same direction as the house, toward road / southeast | Show matching +x facing vectors in C03; 130° follows A and is not D’s normal or a survey verification |
+| FS-05 | Owner; required, C06 | Seated occupants must not have their backs toward altar | Review sofa facing/back, altar, TV, entry and paths together. C06 faces +x/front, back toward B away from altar; family rule, not a universal prescription |
 | PR-01 | Owner; preference | Ensuite doors do not face the bedroom | Short screened passage with a turn before WC/shower doors; check bed/entry sightlines and circulation |
 | PR-02 | Owner; permitted | Living and altar may share an open space | Compare shared hall and more defined altar alcove without assuming either is selected |
 
@@ -35,6 +36,8 @@ Additional proposals for discussion, **not yet family requirements**:
 - Keep storage and equipment out of the empty zone as a working interpretation of “empty”; coordinate overhead beams and the exact zone limits in the concept review. Frequent circulation and tables/chairs are already explicitly excluded by the owner.
 
 The owner's “etc.” behind the wall leaves the full excluded-use list open. Do not silently convert it into a ban covering the entire rear half of the house. Define a specific backing/buffer zone and have the family review it.
+
+C06 retains the exact altar projection and 0.90 m indoor buffer, while turning sofa seats toward +x/front. The back points toward B, away from altar. This implements latest family input (FS-05), with no new claims about cultural universality or outcomes. Smaller envelope and independent bedroom exits do not change altar rules. See [C06](concept-study-C06.md).
 
 ## Investigation plan
 

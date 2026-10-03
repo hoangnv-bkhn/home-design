@@ -18,6 +18,10 @@ The latest user instruction governs the task. Record new requirements and correc
 
 ## Design invariants
 
+- Apply an experienced residential designer's usability-first judgment to every decision. Evaluate how people enter and leave rooms, carry shopping, sit, cook, dress, use bathrooms, park and reach the garden; fitting room rectangles is only a starting point.
+- Give bedrooms an ordinary entrance/exit separate from their private bathroom/dressing route. Review furnished paths, door operation, privacy, occupied chairs, storage access and maintenance together. Reduce excess area before shrinking a useful route; show measured concept clearances and unresolved compromises.
+- Respect the family's rule that seated occupants must not have their backs toward the altar. Review sofa facing, TV, main entrance and everyday routes as one arrangement. Parking must preserve pedestrian/garden access; stationary fit does not prove maneuvering.
+
 - F1 is the ground/entrance floor; F2 is upstairs. Preserve the brief's room counts and separate WC/shower compartments unless the owner changes them.
 - The current model explicitly uses **metres**, despite the roadmap's earlier millimetre proposal. Preserve declared units or migrate all consumers explicitly. Keep element IDs stable across revisions.
 - A/B/C/D are sides, not vertices. The 130-degree bearing follows A toward D's road. It is not necessarily D's bearing or a facade normal. Ignore the sketch's 192 annotation.

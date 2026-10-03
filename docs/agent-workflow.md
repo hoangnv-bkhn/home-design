@@ -8,7 +8,7 @@ Repository instruction discovery follows [OpenAI's AGENTS.md guidance](https://l
 
 Available project skills (runbooks and slash commands):
 - `.agents/skills/house-revision/SKILL.md` (`/house-revision`): Concept iteration, geometry editing in `data/concepts.json`, viewer and report rebuilds.
-- `.agents/skills/house-verify/SKILL.md` (`/house-verify`): Non-destructive health check (original 48 build checks, expanded to 58 in C05, headless Chrome review, snapshot verification).
+- `.agents/skills/house-verify/SKILL.md` (`/house-verify`): Health check (original 48, 58 in C05, 71 in C06, headless Chrome and snapshot verification). Read the actual active report; older skill counts describe earlier scope.
 - `.agents/skills/standards-research/SKILL.md` (`/standards-research`): Vietnamese building codes (QCVN 01, QCVN 06, TCVN 9411) and feng shui cultural research with mandatory citations.
 - `.agents/skills/house-snapshot/SKILL.md` (`/house-snapshot`): Archiving and verifying immutable review baselines in `revisions/`.
 
@@ -45,27 +45,28 @@ Documentation-only work does not require rebuilding house outputs or advancing t
 python scripts/snapshot_revision.py --verify C01
 python scripts/build_concepts.py
 python scripts/review_viewer.py
-# At completion of a new C05 review package (refuses an existing archive):
-python scripts/snapshot_revision.py --revision C05 --note "Describe this review baseline"
+# When issuing a new revision, use its matching unused ID (C06 is already archived):
+python scripts/snapshot_revision.py --verify C06
 ```
 
 The snapshot helper requires its revision to match `data/concepts.json`, refuses overwrite and records SHA-256 hashes. Extract `snapshot.zip` into a separate directory to inspect the older self-contained package; do not extract over the active workspace. Review reports inside a snapshot retain their original evidential limits.
 
 ## Current implementation caveats — read before geometry edits
 
-C05 keeps metre geometry, explicit per-floor envelopes and two balcony-access variants. Viewer overview prose and some annotation/facade positions remain revision-specific. Active C03a and separately discovered C04 archive were verified before C05; never overwrite either. C05 is archived, so the next design review is C06 or an erratum suffix.
+C06 keeps metre geometry and two balcony variants; F1/F2 envelopes now align at 9.0 × 12.0 m, without a C extension. Viewer headline and some annotation/facade positions remain revision-specific. C05 verified before C06; all archives preserved. C06 archived; next design review C07 or distinct erratum suffix. Apply AGENTS.md usability-first principles during every decision.
 
 - Source coordinates remain +x toward road/SE, +y along B toward C. Clockwise plot/F1/F2 display rotation is separate; B appears above, A right, C left. Never relabel edges or change compass to match casual left/right descriptions.
-- Owner wants about 0.30 m at A and rear next to B. B=0.10 m is a **model assumption**, not owner exact dimension or lawful boundary construction. No A/B door/window is assumed. C02 rear projection/door is superseded. C05 direct kitchen exit is on C, below the upper layer, not B.
+- Owner wants about 0.30 m at A and rear next to B. B=0.10 m is an **assumption**, not lawful setback. No A/B opening assumed. C02 rear door/projection superseded; C06 keeps direct kitchen exit on C and removes C05 upper C extension.
 - `options[].balcony` defines each variant's rectangle, door, access-room ID, note and route. `floorData()` applies these overrides to the base F2 room/door list; the BAL-01 ID remains stable. Build checks/reports each variant and derives `derived.balconies`. F1 is common to both.
 - Floor envelopes, gross areas, stair, fixtures, altar width/projection and wet stacking are parameterized. The altar width is local y; its x dimension is depth. Unsupported physical option rotations are rejected.
-- Kitchen/dining is represented by adjacent open KIT-01 / DIN-01 rectangles with a 0.10 m junction strip. C05 named zones total 18.33 m² versus 18.80 m² bay; the 0.47 m² junction strip explains the difference. Do not add bay area again to room totals. KIT-01 access/garden door is on the DIN-01 portion of the combined open bay.
-- `F1.tv` and furniture define the TV stand/sofa proposal. Main entry width is 1.90 m. No leaf/swing, occupied clearance or TV-size recommendation is encoded.
+- KIT-01 / DIN-01 are adjacent open rectangles with a 0.10 m strip. C06 named zones 16.83 m² versus 17.34 m² bay; 0.51 m² junction difference. Do not double-count. Table orientation and six `dining_chairs[].rect` footprints are explicit; avoid renderer-invented chair geometry. Garden opening is on DIN portion of combined bay.
+- `F1.tv`/furniture define sofa facing (`seat_facing`), rear line/arrow and TV. Main opening 1.90 m. `door_operations` provides inward bedroom/main leaves and unresolved sanitary sliding candidates. `clearance_reservations` and route bands specify limited checks; do not infer comfort, full privacy or finished clearances from them.
 - F2 rooflight is a candidate above bedroom 5, not proven daylight/ventilation. Kitchen daylight/extract and actual service shafts remain unresolved.
-- C05 uses 9.6 × 12.8 m F1, 0.9 m backing buffer, 1.0/1.4 m wet widths, GP-LOBBY/HALL-05 inner passages and explicit site porch/porch_steps/trees. Do not silently restore old literals. Section backing/altar furniture and plot car labels/porch derive from source, but headline prose, plot label anchors and some checks remain revision-specific.
-- The 58 checks include the original 48 plus 10 checks for aspect ratio, site reservation containment/non-overlap, porch/entry alignment, arrival centerlines, Grandpa/garden doors and compact sanitary geometry. They do not validate all doors, occupied clearances, headroom, setbacks, daylight, turning or structure.
-- Browser review reads active options, exports five views per option and tests real pointer clicks/focus/keyboard across all rooms, plus balcony notes/areas, TV/entry and overlays. A focused dining screenshot records the colour regression. PNGs come from standalone SVG tabs, avoiding page-scroll clipping. Chrome path remains Windows-specific; print/PDF untested.
-- Current top-level option-01/02 outputs are C05. Nested `outputs/obsolete-C01/` remains historical and is excluded by snapshot helper, along with browser profiles. C01/C02/C03/C03a and existing C04 archives preserve prior baselines.
+- C06 preserves 0.90 m buffer, 1.0/1.4 m wet widths, 21-riser stair and all IDs. Private compartments rotate: entry axis now v, shared remains h; `door_joins()` handles both. Bedroom IDs identify primary doors, `BR-01-BATH` / `BR-03-BATH` internal bath doors. Private public doors EN-01/03 removed; screens enclose passages on common side. Avoid restoring C05 coordinates.
+- Site source has left/C bay, `vehicle_body`, separate `pedestrian_gate`, `vehicle_path` axis and `pedestrian_reservations`. Dashed paths/axis are not swept-path analysis. Section/backing/porch derive from source, but plot text anchors remain revision-specific.
+- 71 checks retain original 48/C05 additions plus 13 C06 regressions: direct bedroom connections, removed private public entry, sofa rear/altar, TV/door, conservative leaf bounding boxes, chairs, clearance rectangles, 0.80 m sampled furniture bands, left bay and walking strips. They do not validate full wall/portal route connectivity, all door interactions, occupied movement, standards, daylight, headroom, turning or structure.
+- Browser reads active options, exports five views each and tests 66 real room clicks/focus/keyboard, balcony notes/areas, TV/entry, direct suite exits/leaf/sofa metadata and overlays. PNGs use standalone SVG tabs. Focused dining capture records selection. Chrome remains Windows-specific; print/PDF untested.
+- Top-level option-01/02 outputs are C06. Nested obsolete-C01/profile caches excluded from archive. All earlier archives including C05 preserved; never overwrite them.
 - Static SVG remains the renderer for plans/sections/massing. No new dependency, BIM or engineering solver was added. Volumes, rooflight, openings, guards and facade frame are schematic.
 
 ## Evidence and review notes
