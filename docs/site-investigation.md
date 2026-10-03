@@ -1,6 +1,6 @@
 # Site evidence and open geometry — Noi Bai
 
-Updated: 2026-10-03.
+Updated: 2026-10-04.
 
 ## Evidence
 
@@ -89,3 +89,9 @@ Bounding envelope reduces along B to **10.50 × 11.40 m / 119.70 m²**. Clear co
 Origin, owner-reported edges/bearing, offsets, stationary C-side car bay, scooters and gates retain their evidence status. Porch/entry shift 0.60 m along B; arrival path turns from existing pedestrian gate. Canopy is a new 2.30 × 2.50 m schematic reservation. Both balcony options partly recess into F1 and project 1.20/0.60 m toward D; no enclosed room cantilever. Ground walking paths remain reservations, not swept vehicle/door paths or measured levels.
 
 Parents/brother remain dependent on their own smaller court, now with a common cleaning door. No A/B opening assumed. Window size reduces to 1.50 m and storage is clear of it; daylight/airflow/sky and drainage are unverified. [C10 tradeoffs](concept-study-C10.md) supersede prior current-envelope statements above.
+
+## C11 governing site/envelope update
+
+Ground envelope/placement/court and parking remain C10: 10.50 × 11.40 m envelope, 115.70 m² covered footprint and 4.00 m² court. Upper right terrace is 10.58 m², including 0.60 m outward projection; upper enclosure 106.88 m² after 8.82 m² recess. The former study is removed. No new survey, A/B window right or balcony overlooking permission is established. Near-A terrace privacy and boundary permission need review.
+
+Entrance concept now shows 2.20 × 2.20 m porch, 2.45 × 2.80 m canopy and three 150 mm rises with two 300 mm treads plus porch. Yard −0.45 m is an assumption, not measured flood/road level. Posts clear sampled walking/door reservations; road turning, levels, support foundations and drainage remain unverified. [C11](concept-study-C11.md).

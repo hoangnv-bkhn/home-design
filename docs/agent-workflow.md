@@ -119,3 +119,13 @@ C10 supersedes C09 dimensions/interpretations. `house.depth=11.4`, width 10.5; c
 Corner parents/brother and spare/kitchen right edges align x 3.65; wet/stair/Grandpa axis 6.25 retained. Common COURT-HALL-1/2 and KITCHEN-LOBBY/SPARE-LOBBY keep ordinary exits outside kitchen/spare. HALL-01/02 now narrow open junction zones, not standalone corridors; evaluate their union with cross hall. F2 STUDY-02 is forward of exclusion; LANDING-02 and LOGGIA-LINK connect it/linen to shared balcony. Doors, sweeps, windows, furniture, routes and site porch were reconciled.
 
 Massing uses actual upper outline with court roof aperture. Site area label is dynamic. Build checks distinguish worship/projection, window/storage, actual hinged-door anchors, common exits, screen and recess; final count in current report. Browser checks screen and dynamic ground area, then exports all ten views. No new libraries or renderer. C09 archive verified before changes; completed C10 archived. Next design issue C11 or distinct erratum suffix.
+
+## Current C11 implementation override
+
+C11 supersedes conflicting dimensions above. F1 remains 115.70 m²; `upper_outline` recess moves to right former study: [8.7,0,1.8,4.9], 8.82 m²; F2 enclosed convention 106.88 m². Shared terrace [8.8,0.2,2.3,4.6], 10.58 m², has a **horizontal** weather door at y=4.9 from HALL-04. Do not restore the former vertical-door check. Both options share geometry; `shade`, `shade_rect`, `shade_posts` differ. Drain line/overflow remain proposals.
+
+Shared wet rooms y increases 0.30 m; private enclosure depth increases to 2.10 m. `suite_enclosure` draws its perimeter, both EN zones are open and old EN-ACCESS/RETURN partition portals are retired. `private_screens` retains short sightline screen. Stair [3.7,7.5,2.5,3.7], nominal flights 1.10 m, gap 0.30 m. y4.25 and x3.65/6.25 align real wall references, not structure.
+
+STUDY-02 and its furniture/window/door retired; stable history remains archived. UTIL-02 and EMPTY-ALT have no dividing wall, linen cabinet remains; `open_portals` identifies doorless buffer/linen openings. The empty strip remains unfurnished indoors behind terrace wall. F2-WIN-LANDING serves open hall above entrance; its lower fixed light/guard is unverified.
+
+`entrance_design` holds concept levels, three rises, canopy posts and drainage. Floor/site/massing/section reconcile porch and stair dimensions; sections export at 1800 px height. Static SVG renderer retained with open metal guards, optional shade and new facade composition. Geometry report has 114 limited checks; browser 88 actual room selections and ten current exports. C10 56-file archive verified first. C11 archived; next issue C12 or a distinct erratum suffix.

@@ -1,7 +1,7 @@
 {
-  "revision": "C10",
-  "date": "2026-10-03",
-  "status": "Corner suites, compact spare bedroom, reduced altar exclusion and recessed balcony; proposed, unselected; not for construction",
+  "revision": "C11",
+  "date": "2026-10-04",
+  "status": "Aligned service core, open right terrace and composed entrance; proposed, unselected; not for construction",
   "units": "m",
   "presentation": {
     "plan_rotation_clockwise": 90
@@ -63,11 +63,10 @@
       ]
     ],
     "notes": [
-      "C10: 10.5 × 11.4 m outer envelope, 4.00 m² court, 115.70 m² ground covered convention.",
-      "Front depth along A remains 4.40 m; 0.60 m extra C-side land from narrower B dimension.",
-      "Parents/brother rear corner; court common cleaning access; smaller court needs performance review.",
-      "Shared recessed loggia and porch canopy; no enclosed bedroom cantilever or roof terrace.",
-      "Approximate parcel, offsets, parking and gates unverified; no new survey, permissions or turning result."
+      "C11: ground footprint 115.70 m² unchanged; upper right terrace replaces study.",
+      "Aligned service walls and 2.50 m stair bay; 10.58 m² shared terrace with 0.60 m outward projection.",
+      "Porch/canopy/three-rise steps are dimensioned proposals; yard/road/flood levels unverified.",
+      "Approximate parcel, offsets, opening rights, parking and vehicle turning remain unverified."
     ],
     "scooters": [
       [
@@ -208,9 +207,9 @@
     ],
     "stair": {
       "rect": [
-        4.0,
+        3.7,
         7.5,
-        2.2,
+        2.5,
         3.7
       ],
       "risers": 21,
@@ -219,10 +218,10 @@
         11
       ],
       "going": 0.26,
-      "flight_width": 1,
-      "central_gap": 0.2,
+      "flight_width": 1.1,
+      "central_gap": 0.3,
       "landing_depth": 1.1,
-      "interpretation": "Owner confirmed staircase, not lift. Steps provisionally interpreted as 21 risers; 260 mm tread going; 2.2 m overall bay, not each flight. No lift requested."
+      "interpretation": "Owner permits widening bay. C11 proposes 2.50 m bay: two nominal 1.10 m flights and 0.30 m central rail/gap reservation; 1.10 m landing. Finished widths/headroom unresolved; 21 risers and 260 mm going retained."
     },
     "main_entrance": {
       "opening_width": 1.9,
@@ -242,31 +241,23 @@
       "open_to_sky": true,
       "note": "4.00 m² open court between corner suite and kitchen; common cleaning access. Smaller sky aperture than C09: daylight, ventilation, privacy and drainage unverified."
     },
-    "area_note": "F1 119.70 m² outer envelope minus 4.00 m² court = 115.70 m². F2 subtracts 4.05 m² balcony recess = 111.65 m² enclosed-envelope convention, including stair reservation. Balcony surfaces and canopy remain construction, not cost savings.",
+    "area_note": "F1 115.70 m² unchanged; F2 106.88 m² enclosed-envelope convention after 8.82 m² terrace recess, stair reservation included. Balcony 10.58 m² separately; covered terrace variant adds roof, not enclosed room area. No cost saving claimed.",
     "upper_outline": [
       [
         0,
         0
       ],
       [
-        10.5,
+        8.7,
         0
       ],
       [
-        10.5,
-        4.8
-      ],
-      [
-        9,
-        4.8
-      ],
-      [
-        9,
-        7.5
+        8.7,
+        4.9
       ],
       [
         10.5,
-        7.5
+        4.9
       ],
       [
         10.5,
@@ -279,36 +270,36 @@
     ],
     "upper_recesses": [
       [
-        9,
-        4.8,
-        1.5,
-        2.7
+        8.7,
+        0,
+        1.8,
+        4.9
       ]
     ]
   },
   "options": [
     {
       "id": "01",
-      "title": "Recessed loggia · 1.20 m projection",
-      "subtitle": "C10 · corner suites, smaller spare room and layered upper volumes",
+      "title": "Open terrace · light pergola",
+      "subtitle": "C11 · same aligned floor plan, two terrace shade treatments",
       "rotation": 0,
       "balcony": {
         "rect": [
-          9.1,
-          4.9,
-          2.6,
-          2.5
+          8.8,
+          0.2,
+          2.3,
+          4.6
         ],
         "door": [
           "BAL-01",
-          9.0,
-          5.1,
-          1.0,
-          "v"
+          9,
+          4.9,
+          1.2,
+          "h"
         ],
         "access_room": "HALL-04",
-        "label": "Shared balcony",
-        "note": "6.50 m² shared recessed balcony; 1.40 m of clear depth inside F1 edge, 1.20 m beyond. Common 1.00 m opening, occupied bench outside entry. Drainage, guards, privacy and support scheme unresolved; not declared a designed cantilever.",
+        "label": "Shared right terrace",
+        "note": "10.58 m² shared terrace replacing study on displayed right; 2.30 m depth × 4.60 m width, 0.60 m beyond ground front. Open guards, independent common access, no full-height side walls. Neighbor privacy, roof/slab supports, guard design and waterproofing unresolved.",
         "route": [
           [
             5.1,
@@ -319,86 +310,123 @@
             6.9
           ],
           [
-            8.3,
+            9.6,
             6.9
           ],
           [
-            8.3,
+            9.6,
             5.6
           ],
           [
-            9.7,
-            5.6
+            9.6,
+            4.3
+          ],
+          [
+            9.6,
+            1.5
           ]
         ],
         "furniture": [
           [
             "Balcony bench",
-            9.3,
-            6.75,
-            1.1,
-            0.55
+            10.4,
+            0.7,
+            0.5,
+            1.6
           ]
         ],
         "occupied": [
-          9.3,
-          6.35,
-          1.1,
-          0.95
+          10.0,
+          0.7,
+          0.9,
+          1.6
         ],
         "usable_rect": [
-          9.2,
-          5.0,
-          2.4,
-          2.3
+          8.9,
+          0.3,
+          2.1,
+          4.4
         ],
         "entry_clearance": [
-          9.2,
-          5.1,
-          1.0,
-          1.0
+          9,
+          4.0,
+          1.3,
+          0.7
         ],
         "seat_facing": [
-          0,
-          -1
-        ]
+          -1,
+          0
+        ],
+        "shade": "pergola",
+        "shade_rect": [
+          8.65,
+          0.1,
+          2.6,
+          2.4
+        ],
+        "shade_height": 6.35,
+        "shade_posts": [
+          [
+            11.02,
+            0.28
+          ],
+          [
+            11.02,
+            2.4
+          ]
+        ],
+        "drain_line": [
+          [
+            11.0,
+            0.35
+          ],
+          [
+            11.0,
+            4.65
+          ]
+        ],
+        "overflow": [
+          11.1,
+          4.65
+        ],
+        "drainage_note": "Concept fall away from weather wall to outer edge channel; outlet/visible overflow at C end, outside entrance zone. No pipe in altar backing. Falls, waterproofing, threshold and outlets unsized."
       },
       "strengths": [
-        "Parents/brother in rear corner; common court cleaning route.",
-        "Bedroom 5 12.58 m²; wall aligned with brother and kitchen.",
-        "4.08 m² altar exclusion frees front upstairs study; timber side screen below.",
-        "115.70 m² ground footprint; recessed shared balcony articulates upper front."
+        "Aligned wet and stair edges on both floors.",
+        "Wider 2.50 m stair bay; open private dressing with sightline screen.",
+        "10.58 m² shared right terrace replaces study; open guards.",
+        "Coordinated entrance canopy, porch levels and steps."
       ],
       "tradeoffs": [
-        "Ground saving 3.50 m² versus C09; still above approximate 100 m² target.",
-        "2 × 2 m court is smaller; daylight/ventilation unverified.",
-        "Parents/brother 13.60 m²; six dining seats remain compact.",
-        "Loggia and porch canopy still need construction, drainage and supports; no extra room cantilever."
+        "Ground footprint unchanged at 115.70 m²; affordability unassessed.",
+        "Smaller court and compact six-seat kitchen retain C10 limitations.",
+        "Upper enclosed area 106.88 m²; terrace floor remains construction.",
+        "Pergola gives partial shade only; roof version adds shade/rain cover and structure."
       ],
       "extra_balconies": []
     },
     {
       "id": "02",
-      "title": "Recessed loggia · 0.60 m projection",
-      "subtitle": "C10 · corner suites, smaller spare room and layered upper volumes",
+      "title": "Sheltered terrace · thin roof",
+      "subtitle": "C11 · same aligned floor plan, two terrace shade treatments",
       "rotation": 0,
       "balcony": {
         "rect": [
-          9.1,
-          4.9,
-          2.0,
-          2.5
+          8.8,
+          0.2,
+          2.3,
+          4.6
         ],
         "door": [
           "BAL-01",
-          9.0,
-          5.1,
-          1.0,
-          "v"
+          9,
+          4.9,
+          1.2,
+          "h"
         ],
         "access_room": "HALL-04",
-        "label": "Shared balcony",
-        "note": "5.00 m² shared recessed balcony; 1.40 m of clear depth inside F1 edge, 0.60 m beyond. Common 1.00 m opening, occupied bench outside entry. Drainage, guards, privacy and support scheme unresolved; not declared a designed cantilever.",
+        "label": "Shared right terrace",
+        "note": "10.58 m² shared terrace replacing study on displayed right; 2.30 m depth × 4.60 m width, 0.60 m beyond ground front. Open guards, independent common access, no full-height side walls. Neighbor privacy, roof/slab supports, guard design and waterproofing unresolved.",
         "route": [
           [
             5.1,
@@ -409,61 +437,98 @@
             6.9
           ],
           [
-            8.3,
+            9.6,
             6.9
           ],
           [
-            8.3,
+            9.6,
             5.6
           ],
           [
-            9.7,
-            5.6
+            9.6,
+            4.3
+          ],
+          [
+            9.6,
+            1.5
           ]
         ],
         "furniture": [
           [
             "Balcony bench",
-            9.3,
-            6.75,
-            1.1,
-            0.55
+            10.4,
+            0.7,
+            0.5,
+            1.6
           ]
         ],
         "occupied": [
-          9.3,
-          6.35,
-          1.1,
-          0.95
+          10.0,
+          0.7,
+          0.9,
+          1.6
         ],
         "usable_rect": [
-          9.2,
-          5.0,
-          1.8,
-          2.3
+          8.9,
+          0.3,
+          2.1,
+          4.4
         ],
         "entry_clearance": [
-          9.2,
-          5.1,
-          1.0,
-          1.0
+          9,
+          4.0,
+          1.3,
+          0.7
         ],
         "seat_facing": [
-          0,
-          -1
-        ]
+          -1,
+          0
+        ],
+        "shade": "roof",
+        "shade_rect": [
+          8.65,
+          0.1,
+          2.6,
+          4.9
+        ],
+        "shade_height": 6.35,
+        "shade_posts": [
+          [
+            11.02,
+            0.28
+          ],
+          [
+            11.02,
+            4.72
+          ]
+        ],
+        "drain_line": [
+          [
+            11.0,
+            0.35
+          ],
+          [
+            11.0,
+            4.65
+          ]
+        ],
+        "overflow": [
+          11.1,
+          4.65
+        ],
+        "drainage_note": "Concept fall away from weather wall to outer edge channel; outlet/visible overflow at C end, outside entrance zone. No pipe in altar backing. Falls, waterproofing, threshold and outlets unsized."
       },
       "strengths": [
-        "Parents/brother in rear corner; common court cleaning route.",
-        "Bedroom 5 12.58 m²; wall aligned with brother and kitchen.",
-        "4.08 m² altar exclusion frees front upstairs study; timber side screen below.",
-        "115.70 m² ground footprint; recessed shared balcony articulates upper front."
+        "Aligned wet and stair edges on both floors.",
+        "Wider 2.50 m stair bay; open private dressing with sightline screen.",
+        "10.58 m² shared right terrace replaces study; open guards.",
+        "Coordinated entrance canopy, porch levels and steps."
       ],
       "tradeoffs": [
-        "Ground saving 3.50 m² versus C09; still above approximate 100 m² target.",
-        "2 × 2 m court is smaller; daylight/ventilation unverified.",
-        "Parents/brother 13.60 m²; six dining seats remain compact.",
-        "Loggia and porch canopy still need construction, drainage and supports; no extra room cantilever."
+        "Ground footprint unchanged at 115.70 m²; affordability unassessed.",
+        "Smaller court and compact six-seat kitchen retain C10 limitations.",
+        "Upper enclosed area 106.88 m²; terrace floor remains construction.",
+        "Pergola gives partial shade only; roof version adds shade/rain cover and structure."
       ],
       "extra_balconies": []
     }
@@ -498,7 +563,7 @@
           "type": "wc",
           "rect": [
             3.7,
-            4.0,
+            4.3,
             1.0,
             1.8
           ],
@@ -510,7 +575,7 @@
           "type": "shower",
           "rect": [
             4.8,
-            4.0,
+            4.3,
             1.4,
             1.8
           ],
@@ -522,16 +587,16 @@
           "type": "hall",
           "rect": [
             3.7,
-            5.9,
+            6.2,
             2.5,
-            0.4
+            0.1
           ],
-          "note": "Open junction to shared bathrooms and 1.00 m cross hall below; together continuous access, not a separate 0.40 m corridor.",
+          "note": "Open junction; continuous with link and 1.00 m cross hall. 1.20 m combined approach to wet-room wall, not a separate narrow corridor.",
           "open": true
         },
         {
           "id": "ALT-BUFFER",
-          "label": "Quiet indoor buffer",
+          "label": "Quiet display alcove",
           "type": "buffer",
           "rect": [
             6.3,
@@ -539,7 +604,7 @@
             0.9,
             3.4
           ],
-          "note": "0.90 m quiet indoor backing buffer with an inward 0.80 m door and a measured 0.95 m approach behind sofa. Cleaning access, no through-route or storage; backing wall remains continuous."
+          "note": "Doorless 0.80 m side opening; solid altar backing stays continuous. 0.90 m clear width, shallow 0.25 m end ledge for a dry display, no seat or through-route. No shelves along the narrow aisle. Use is a proposal under the indoor-buffer rule."
         },
         {
           "id": "ALT-01",
@@ -551,7 +616,7 @@
             3.0,
             3.4
           ],
-          "note": "3.4 m clear width × 3.0 m depth / 10.20 m². 0.60 m altar cabinet leaves 2.40 m front ritual/standing reservation. Solid backing and indoor buffer; depth is a usability proposal, no universal feng shui minimum.",
+          "note": "3.40 × 3.00 m worship floor; 1.20 m deep altar reservation leaves 1.80 m forward standing depth. Solid backing and quiet indoor alcove retained.",
           "open": true
         },
         {
@@ -580,27 +645,29 @@
         },
         {
           "id": "EN-ACCESS-01",
-          "label": "Suite dressing nook",
+          "label": "Private dressing",
           "type": "hall",
           "rect": [
             3.7,
             2.1,
             1.3,
-            1.8
+            2.1
           ],
-          "note": "Enclosed private passage, 1.30 m west zone. Solid horizontal screen above bedroom bath entry blocks sampled bed sightlines. WC reached by turning around its east end, then returning along 0.90 m north strip."
+          "note": "One open private dressing/turning space: internal longitudinal partition removed. Short transverse sightline screen retained. Outer enclosure stays private; ordinary bedroom entrance remains independent.",
+          "open": true
         },
         {
           "id": "EN-01",
-          "label": "Private turning lobby",
+          "label": "Bathroom turn",
           "type": "hall",
           "rect": [
             5.1,
             2.1,
             1.1,
-            1.8
+            2.1
           ],
-          "note": "1.10 m east private turning zone, with upper and lower 0.85 m passage portals. Doors face north; ordinary bedroom exit remains separate. Sampled sightlines do not prove all occupied privacy."
+          "note": "One open private dressing/turning space: internal longitudinal partition removed. Short transverse sightline screen retained. Outer enclosure stays private; ordinary bedroom entrance remains independent.",
+          "open": true
         },
         {
           "id": "DIN-01",
@@ -645,12 +712,12 @@
           "label": "Stair · 21 risers",
           "type": "stair",
           "rect": [
-            4.0,
+            3.7,
             7.5,
-            2.2,
+            2.5,
             3.7
           ],
-          "note": "21 risers, 10 + 11; nominal 2.2 × 3.7 m bay, 260 mm going. Approach turns away from main entrance. Finished widths, floor rise/opening and headroom unverified."
+          "note": "Owner permits widening bay. C11 proposes 2.50 m bay: two nominal 1.10 m flights and 0.30 m central rail/gap reservation; 1.10 m landing. Finished widths/headroom unresolved; 21 risers and 260 mm going retained."
         },
         {
           "id": "BR-02",
@@ -772,23 +839,16 @@
           "v"
         ],
         [
-          "EN-ACCESS-01",
-          5.05,
-          3.05,
-          0.85,
-          "v"
-        ],
-        [
           "WC-02",
           3.8,
-          5.85,
+          6.15,
           0.75,
           "h"
         ],
         [
           "SH-02",
           5.35,
-          5.85,
+          6.15,
           0.8,
           "h"
         ],
@@ -832,13 +892,6 @@
           2.25,
           5.2,
           0.8,
-          "v"
-        ],
-        [
-          "EN-RETURN-01",
-          5.05,
-          2.1,
-          0.85,
           "v"
         ]
       ],
@@ -952,6 +1005,13 @@
           0.8,
           1.2,
           2.2
+        ],
+        [
+          "Display ledge",
+          6.4,
+          0.3,
+          0.7,
+          0.25
         ]
       ],
       "fixtures": [
@@ -990,7 +1050,7 @@
           "kind": "wc",
           "rect": [
             3.925,
-            4.15,
+            4.45,
             0.55,
             0.7
           ]
@@ -1000,7 +1060,7 @@
           "kind": "shower",
           "rect": [
             4.9,
-            4.1,
+            4.4,
             0.9,
             0.9
           ]
@@ -1010,7 +1070,7 @@
           "kind": "basin",
           "rect": [
             4.9,
-            5.15,
+            5.45,
             0.45,
             0.55
           ]
@@ -1026,15 +1086,15 @@
             ],
             [
               5.1,
-              6.3
+              6.65
             ],
             [
               5.75,
-              6.3
+              6.65
             ],
             [
               5.75,
-              5.85
+              6.15
             ]
           ]
         },
@@ -1118,15 +1178,15 @@
             ],
             [
               5.1,
-              6.3
+              6.65
             ],
             [
               5.75,
-              6.3
+              6.65
             ],
             [
               5.75,
-              5.85
+              6.15
             ]
           ]
         },
@@ -1409,23 +1469,6 @@
             6.0
           ],
           "note": "0.80 m court cleaning door opens into court from common passage. Weather threshold and hardware unresolved."
-        },
-        {
-          "door": "ALT-BUFFER",
-          "kind": "hinged",
-          "hinge": [
-            6.35,
-            3.65
-          ],
-          "closed_end": [
-            7.15,
-            3.65
-          ],
-          "open_end": [
-            6.35,
-            2.85
-          ],
-          "note": "Inward buffer door keeps the common approach clear. 0.80 m modeled opening; hardware/finished clearance unresolved."
         }
       ],
       "dining_chairs": [
@@ -1600,6 +1643,9 @@
           "operation": "sliding/tilt panel candidate",
           "note": "C-yard daylight and opening panel; kitchen extract remains separate."
         }
+      ],
+      "open_portals": [
+        "ALT-BUFFER"
       ]
     },
     {
@@ -1630,7 +1676,7 @@
           "type": "wc",
           "rect": [
             3.7,
-            4.0,
+            4.3,
             1.0,
             1.8
           ],
@@ -1642,7 +1688,7 @@
           "type": "shower",
           "rect": [
             4.8,
-            4.0,
+            4.3,
             1.4,
             1.8
           ],
@@ -1654,16 +1700,16 @@
           "type": "hall",
           "rect": [
             3.7,
-            5.9,
+            6.2,
             2.5,
-            0.4
+            0.1
           ],
-          "note": "Open junction to shared bathrooms and 1.00 m cross hall below; together continuous access, not a separate 0.40 m corridor.",
+          "note": "Open junction; continuous with link and 1.00 m cross hall. 1.20 m combined approach to wet-room wall, not a separate narrow corridor.",
           "open": true
         },
         {
           "id": "UTIL-02",
-          "label": "Linen store",
+          "label": "Open linen alcove",
           "type": "utility",
           "rect": [
             6.3,
@@ -1671,7 +1717,8 @@
             0.9,
             3.4
           ],
-          "note": "Dry linen at closed end of 0.90 m wide room, with 2.50 m aisle length before cabinet. Inward 0.80 m door; no wet appliances/services and no intrusion into altar projection."
+          "note": "Door and separating wall to empty upper strip removed. Closed linen cabinet at far end keeps dust out; 0.90 m access aisle remains outside altar exclusion. Low-use maintenance alcove, not an extra room or busy through-route.",
+          "open": true
         },
         {
           "id": "EMPTY-ALT",
@@ -1683,7 +1730,8 @@
             1.2,
             3.4
           ],
-          "note": "4.08 m² empty floor over 1.20 m deep designated altar strip; no furniture or routine circulation. Front worship floor below is excluded from this restriction per owner clarification."
+          "note": "4.08 m² empty floor over actual altar strip, marked by floor border; no routine route/furniture. Open to linen/maintenance alcove, no additional closet wall or door required.",
+          "open": true
         },
         {
           "id": "WC-03",
@@ -1711,27 +1759,29 @@
         },
         {
           "id": "EN-ACCESS-03",
-          "label": "Suite dressing nook",
+          "label": "Private dressing",
           "type": "hall",
           "rect": [
             3.7,
             2.1,
             1.3,
-            1.8
+            2.1
           ],
-          "note": "Enclosed private passage, 1.30 m west zone. Solid horizontal screen above bedroom bath entry blocks sampled bed sightlines. WC reached by turning around its east end, then returning along 0.90 m north strip."
+          "note": "One open private dressing/turning space: internal longitudinal partition removed. Short transverse sightline screen retained. Outer enclosure stays private; ordinary bedroom entrance remains independent.",
+          "open": true
         },
         {
           "id": "EN-03",
-          "label": "Private turning lobby",
+          "label": "Bathroom turn",
           "type": "hall",
           "rect": [
             5.1,
             2.1,
             1.1,
-            1.8
+            2.1
           ],
-          "note": "1.10 m east private turning zone, with upper and lower 0.85 m passage portals. Doors face north; ordinary bedroom exit remains separate. Sampled sightlines do not prove all occupied privacy."
+          "note": "One open private dressing/turning space: internal longitudinal partition removed. Short transverse sightline screen retained. Outer enclosure stays private; ordinary bedroom entrance remains independent.",
+          "open": true
         },
         {
           "id": "HALL-03",
@@ -1748,15 +1798,15 @@
         },
         {
           "id": "HALL-04",
-          "label": "Balcony passage",
+          "label": "Terrace landing",
           "type": "hall",
           "rect": [
             6.3,
-            5.0,
-            2.6,
+            5,
+            4,
             1.3
           ],
-          "note": "1.30 m shared balcony access, outside study chair and altar exclusion.",
+          "note": "Shared terrace access with 1.20 m sliding weather door; ordinary route bypasses empty altar strip.",
           "open": true
         },
         {
@@ -1776,12 +1826,12 @@
           "label": "Stair opening",
           "type": "stair",
           "rect": [
-            4.0,
+            3.7,
             7.5,
-            2.2,
+            2.5,
             3.7
           ],
-          "note": "21 risers, 10 + 11; nominal 2.2 × 3.7 m bay, 260 mm going. Approach turns away from main entrance. Finished widths, floor rise/opening and headroom unverified."
+          "note": "Owner permits widening bay. C11 proposes 2.50 m bay: two nominal 1.10 m flights and 0.30 m central rail/gap reservation; 1.10 m landing. Finished widths/headroom unresolved; 21 risers and 260 mm going retained."
         },
         {
           "id": "BR-05",
@@ -1797,15 +1847,16 @@
         },
         {
           "id": "BAL-01",
-          "label": "Shared balcony",
+          "label": "Shared right terrace",
           "type": "balcony",
           "rect": [
-            9.1,
-            4.9,
-            2.6,
-            2.5
+            8.8,
+            0.2,
+            2.3,
+            4.6
           ],
-          "note": "6.50 m² shared recessed balcony; 1.40 m of clear depth inside F1 edge, 1.20 m beyond. Common 1.00 m opening, occupied bench outside entry. Drainage, guards, privacy and support scheme unresolved; not declared a designed cantilever."
+          "note": "10.58 m² shared terrace replacing study on displayed right; 2.30 m depth × 4.60 m width, 0.60 m beyond ground front. Open guards, independent common access, no full-height side walls. Neighbor privacy, roof/slab supports, guard design and waterproofing unresolved.",
+          "open": true
         },
         {
           "id": "HALL-05",
@@ -1814,11 +1865,11 @@
           "rect": [
             6.3,
             6.4,
-            2.6,
-            1.0
+            4,
+            1
           ],
           "open": true,
-          "note": "Common sister passage stops before recessed balcony; 1.00 m width."
+          "note": "1.00 m common sister passage; former central balcony recess closed into common landing."
         },
         {
           "id": "COURT-02",
@@ -1846,19 +1897,6 @@
           "note": "1.00 m cross hall; widened west to aligned kitchen/spare wall."
         },
         {
-          "id": "STUDY-02",
-          "label": "Shared study",
-          "type": "living",
-          "rect": [
-            8.6,
-            0.2,
-            1.7,
-            3.4
-          ],
-          "open": true,
-          "note": "5.78 m² shared study over the front worship/standing zone, outside actual 1.20 m altar strip. Desk faces toward altar side, seated back away. 0.90 m entry at south end; family review of interpretation remains welcome."
-        },
-        {
           "id": "COURT-HALL-2",
           "label": "Court passage",
           "type": "hall",
@@ -1873,16 +1911,16 @@
         },
         {
           "id": "LANDING-02",
-          "label": "Shared landing",
+          "label": "Linen approach",
           "type": "hall",
           "open": true,
           "rect": [
             6.3,
             3.7,
-            4.0,
+            2.2,
             1.1
           ],
-          "note": "1.10 m common landing connects study, linen and balcony; outside exclusion."
+          "note": "Open maintenance approach to linen alcove; outside altar exclusion and terrace weather line."
         },
         {
           "id": "SPARE-LOBBY",
@@ -1905,7 +1943,7 @@
           "rect": [
             6.3,
             4.8,
-            2.6,
+            2.2,
             0.2
           ],
           "note": "Open connection between landing and balcony lobby; no independent clearance claim."
@@ -1941,23 +1979,16 @@
           "v"
         ],
         [
-          "EN-ACCESS-03",
-          5.05,
-          3.05,
-          0.85,
-          "v"
-        ],
-        [
           "WC-04",
           3.8,
-          5.85,
+          6.15,
           0.75,
           "h"
         ],
         [
           "SH-04",
           5.35,
-          5.85,
+          6.15,
           0.8,
           "h"
         ],
@@ -1983,31 +2014,10 @@
           "h"
         ],
         [
-          "EMPTY-ALT",
-          7.45,
-          3.65,
-          0.8,
-          "h"
-        ],
-        [
           "BAL-01",
-          9.0,
-          5.1,
-          1.0,
-          "v"
-        ],
-        [
-          "EN-RETURN-03",
-          5.05,
-          2.1,
-          0.85,
-          "v"
-        ],
-        [
-          "STUDY-02",
-          9.0,
-          3.65,
-          0.9,
+          9,
+          4.9,
+          1.2,
           "h"
         ]
       ],
@@ -2038,8 +2048,8 @@
         ],
         [
           10.4,
-          1.0,
-          1.4,
+          5.4,
+          1.9,
           "v"
         ]
       ],
@@ -2092,20 +2102,6 @@
           0.3,
           0.7,
           0.6
-        ],
-        [
-          "Study desk",
-          8.65,
-          0.55,
-          0.6,
-          1.5
-        ],
-        [
-          "Study chair",
-          9.35,
-          0.95,
-          0.7,
-          0.7
         ]
       ],
       "fixtures": [
@@ -2144,7 +2140,7 @@
           "kind": "wc",
           "rect": [
             3.925,
-            4.15,
+            4.45,
             0.55,
             0.7
           ]
@@ -2154,7 +2150,7 @@
           "kind": "shower",
           "rect": [
             4.9,
-            4.1,
+            4.4,
             0.9,
             0.9
           ]
@@ -2164,7 +2160,7 @@
           "kind": "basin",
           "rect": [
             4.9,
-            5.15,
+            5.45,
             0.45,
             0.55
           ]
@@ -2180,15 +2176,15 @@
             ],
             [
               5.1,
-              6.3
+              6.65
             ],
             [
               5.75,
-              6.3
+              6.65
             ],
             [
               5.75,
-              5.85
+              6.15
             ]
           ]
         },
@@ -2275,31 +2271,6 @@
               1.35
             ]
           ]
-        },
-        {
-          "label": "Study access",
-          "points": [
-            [
-              8.25,
-              5.6
-            ],
-            [
-              8.25,
-              4.3
-            ],
-            [
-              9.5,
-              4.3
-            ],
-            [
-              9.5,
-              3.65
-            ],
-            [
-              9.5,
-              2.6
-            ]
-          ]
         }
       ],
       "rooflights": [],
@@ -2374,23 +2345,6 @@
             8.35
           ],
           "note": "Concept leaf; finished clear opening and occupied operation unresolved."
-        },
-        {
-          "door": "UTIL-02",
-          "kind": "hinged",
-          "hinge": [
-            6.35,
-            3.65
-          ],
-          "closed_end": [
-            7.15,
-            3.65
-          ],
-          "open_end": [
-            6.35,
-            2.85
-          ],
-          "note": "Inward buffer door keeps the common approach clear. 0.80 m modeled opening; hardware/finished clearance unresolved."
         }
       ],
       "window_proposals": [
@@ -2463,60 +2417,46 @@
           "note": "Normal spare-bedroom window to C garden; no kitchen roof terrace retained."
         },
         {
-          "id": "F2-WIN-STUDY",
-          "room": "STUDY-02",
+          "id": "F2-WIN-LANDING",
+          "room": "HALL-04",
           "opening": [
             10.4,
-            1.0,
-            1.4,
+            5.4,
+            1.9,
             "v"
           ],
-          "sill": 0.9,
-          "height": 1.5,
-          "shade_depth": 0.45,
+          "sill": 0.5,
+          "height": 2.15,
+          "shade_depth": 0.25,
           "face": "yard",
           "operable": true,
-          "operation": "sliding/tilt panel candidate",
-          "note": "Study front window outside actual altar strip; shade/noise and guarding unresolved."
+          "operation": "guarded lower fixed light with operable upper panel candidate",
+          "note": "Landing daylight and front view above entrance, away from altar exclusion. Low sill needs protective fixed panel/guard; glass, privacy, shading and noise performance unresolved."
         }
       ],
-      "seating": [
-        {
-          "furniture": "Study chair",
-          "facing": [
-            -1,
-            0
-          ]
-        }
-      ],
+      "seating": [],
       "clearance_reservations": [
         {
-          "label": "Balcony access · 1.30 m",
+          "label": "Terrace approach · 1.30 m",
           "rect": [
-            6.3,
-            5.0,
-            2.6,
+            8.8,
+            5,
+            1.5,
             1.3
           ]
         },
         {
-          "label": "Shared landing · 1.10 m",
+          "label": "Linen approach · 1.10 m",
           "rect": [
             6.3,
             3.7,
-            4.0,
+            2.2,
             1.1
           ]
-        },
-        {
-          "label": "Study arrival",
-          "rect": [
-            9.0,
-            2.2,
-            0.9,
-            1.4
-          ]
         }
+      ],
+      "open_portals": [
+        "UTIL-02"
       ]
     }
   ],
@@ -2525,21 +2465,20 @@
       0.1,
       2.25,
       3.65,
-      3.95,
       6.25,
       7.25,
-      9.0,
+      8.6,
       10.4
     ],
     "grid_y": [
       0.1,
+      2.05,
       4.25,
-      6.35,
+      6.15,
       7.45,
-      10.0,
       11.3
     ],
-    "grid_note": "Bedroom 5, brother/parents and kitchen right wall share x=3.65. Wet/stair/Grandpa-sister right division remains x=6.25. Reference axes only; stair left axis 3.95 remains distinct. Recesses and offsets need engineered supports.",
+    "grid_note": "Primary wall references: x3.65 suite/kitchen/spare/stair edge; x6.25 wet/stair/Grandpa-sister edge; y4.25 suite rear/shared wet edge; y7.45 bedroom/stair edge. Other axes are local partitions or facade edges, not a uniform structural grid. Engineer to establish columns/beams.",
     "stacks": [
       [
         4.0,
@@ -2547,7 +2486,7 @@
       ],
       [
         6.1,
-        3.9
+        4.2
       ]
     ],
     "stack_note": "Four separate stacked WC/shower compartments on each floor; markers preliminary. No services within expanded altar/buffer/court. Extract, drain routes and shaft sizing unresolved.",
@@ -2573,11 +2512,11 @@
     "cantilever": {
       "direction": "none / envelope aligned",
       "depth": 0,
-      "note": "Upper front recess only; no enclosed room cantilever adopted. Shared loggia clear recess 1.40 m plus external projection 1.20 or 0.60 m. Support system unresolved."
+      "note": "Right terrace: 1.70 m clear recess and 0.60 m outward projection. No enclosed room cantilever. Thin porch canopy and optional terrace roof require engineered support."
     },
     "daylight_tubes": [],
     "daylight_note": "Parents/brother rear-corner rooms have unobstructed normal windows to 2 × 2 m court; bedroom 5 and stairs face C garden. Smaller court needs performance review; no A/B opening assumed.",
-    "facade_note": "Shared recessed loggia between two front upper volumes; a light porch canopy below and deep window reveals provide layering. No additional bedroom cantilever or kitchen roof terrace adopted.",
+    "facade_note": "Warm pale mineral walls, recessed right terrace with open metal guards, charcoal stair window surround, timber entrance and thin entrance canopy. No full-height balcony side frames. Two shade options share one floor plan.",
     "aligned_wall_axis": 6.25,
     "altar_exclusion": [
       7.3,
@@ -2598,9 +2537,53 @@
     },
     "porch_canopy": [
       10.5,
-      5.4,
-      2.3,
-      2.5
-    ]
+      5.05,
+      2.45,
+      2.8
+    ],
+    "entrance_design": {
+      "yard_level": -0.45,
+      "porch_level": 0,
+      "risers": 3,
+      "riser_height": 0.15,
+      "tread_depth": 0.3,
+      "canopy_soffit": 2.7,
+      "canopy_thickness": 0.12,
+      "canopy_posts": [
+        [
+          12.85,
+          5.15
+        ],
+        [
+          12.85,
+          7.75
+        ]
+      ],
+      "drain_line": [
+        [
+          10.55,
+          5.15
+        ],
+        [
+          10.55,
+          7.75
+        ]
+      ],
+      "note": "Concept levels only: three 150 mm rises, two 300 mm treads within 0.90 m step reservation; porch is third landing. Verify site flood/road levels before fixing plinth. Canopy posts outside porch/leaf/waiting and route bands; footing/support, gutter and threshold drainage unresolved."
+    },
+    "suite_enclosure": [
+      3.65,
+      2.05,
+      2.6,
+      2.2
+    ],
+    "buffer_ledge": [
+      6.4,
+      0.3,
+      0.7,
+      0.25
+    ],
+    "terrace_guard_height": 1.1,
+    "terrace_note": "Guard 1.10 m is a design placeholder, not a compliance finding; infill, climbability, edge fixings and A-side neighbor privacy require review. No new A/B windows."
   }
 }

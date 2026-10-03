@@ -1,6 +1,6 @@
 # Owner brief — Noi Bai house
 
-Updated: 2026-10-03. Source: owner's requirements and corrections supplied in conversation; proposal dimensions remain distinct from requirements.
+Updated: 2026-10-04. Source: owner's requirements and corrections supplied in conversation; proposal dimensions remain distinct from requirements.
 
 ## Project and floor naming
 
@@ -8,7 +8,7 @@ Updated: 2026-10-03. Source: owner's requirements and corrections supplied in co
 - Two floors, five bedrooms total.
 - Preferred location: rear next to B, with the A-side wall approximately **0.30 m** away. Owner wants outdoor space concentrated toward the front/D and side garden/C. C03 assumes a **0.10 m B allowance** because no exact B dimension was given; this is not an owner-specified distance or verified permission.
 - Parking: one car plus a few scooters/bicycles; garden and front yard preferred.
-- Owner retains an **approximately 100 m² footprint target**, but neither exactly 100 m² nor a 10 × 10 m square is required. Latest feedback permits relayout for larger Grandpa/altar and normal bedroom/stair windows. C10 proposes 115.70 m² ground covered footprint and 111.65 m² upper enclosed envelope, from 10.50 × 11.40 m bounding dimensions, 4.00 m² court and upper loggia recess. Court/footprint not approved; affordability unassessed. Upper cantilever studies remain permitted; C10 adopts no enclosed room cantilever. “Occupy entire plot” remains superseded.
+- Owner retains an **approximately 100 m² footprint target**, but neither exactly 100 m² nor a 10 × 10 m square is required. Latest feedback permits relayout for larger Grandpa/altar and normal bedroom/stair windows. C11 proposes 115.70 m² ground covered footprint and 106.88 m² upper enclosed envelope, from 10.50 × 11.40 m bounding dimensions, 4.00 m² court and 8.82 m² upper terrace recess. Terrace area is 10.58 m² separately. Court/footprint not approved; affordability unassessed. Upper cantilever studies remain permitted; C10 adopts no enclosed room cantilever. “Occupy entire plot” remains superseded.
 - In this project, **F1 = ground/entrance floor (tầng 1)** and **F2 = upper floor (tầng 2)**. Use this convention on every drawing.
 - Budget figure deferred for initial layout exploration. No assumption of unlimited budget.
 - Plot evidence and uncertainties: [site notes](site-investigation.md).
@@ -140,7 +140,7 @@ No construction price or feasible floor area is established by the current sketc
 6. Coordinate columns, stair opening, wet stacks and vertical sections. Revise both floors together.
 7. Compare two or three options with furniture, dimensions, sightlines, preliminary area schedules and unresolved issues.
 
-Current [viewer](../outputs/house-concepts.html) presents [C08](concept-study-C08.md): larger Grandpa/altar, normal courtyard and stair windows with shared-only versus shared-plus-private balcony layers. [C07 baseline](../revisions/C07/manifest.json) remains preserved. Road arrival and sofa rule confirmed; outward opening permitted. C08 layout/court/footprint, sanitary fit-out, balcony and environmental performance remain proposals.
+Current [viewer](../outputs/house-concepts.html) presents [C11](concept-study-C11.md): aligned wet walls, wider stair, open right terrace, doorless buffer/linen alcoves and coordinated entrance. [C10 baseline](../revisions/C10/manifest.json) is preserved. C11 layout, shade treatment, footprint, fit-out and environmental performance remain proposals.
 
 ## C09 feedback — owner input, 2026-10-03
 
@@ -159,3 +159,14 @@ C09 proposes an accessible 0.90 m buffer with 0.80 m door/0.95 m sofa-back appro
 - Reconsider balcony and exterior volumes/layering, including room cantilever candidates. Add timber privacy screen between altar and left-side bench/seating.
 
 C10 responds with 13.60 m² corner parents/brother rooms, 12.58 m² spare room, 2 × 2 m common-access court, 3.40 × 1.20 m empty upper strip and timber side screen. Shared wet pair stays on its stacked axis beside the new kitchen/common junction; no bathroom door into kitchen. Kitchen/dining is smaller and six seats remain a tight study. Recessed shared loggia compares 1.20/0.60 m outward projection. All dimensions/layouts are assistant proposals; [C10](concept-study-C10.md) governs current geometry.
+
+## C11 owner iteration — 2026-10-04
+
+- Improve room/wall alignment with the grid; explore moving shared WC/shower left to match parents wall. Review whether the suite dressing partition is necessary.
+- Prefer a more open balcony treatment; move shared outdoor space to the displayed right and omit the shared study to make a spacious balcony. This directs the study, not selection of an exact terrace geometry or construction.
+- Develop entrance canopy, porch and steps together.
+- Investigate useful quiet indoor buffer use, removing its door, and simplifying upper linen walls/door. No new permitted/excluded family use is assumed beyond this request to explore.
+- Stair may absorb the small intervening strip beside kitchen/spare bedroom; **2.20 m is no longer a fixed bay width**. The 21-step/260 mm-going input is retained.
+- Rework the unsatisfactory exterior massing creatively and carefully; broader coordinated design improvement remains authorized.
+
+C11 proposes a 300 mm shared wet shift, 2.50 m stair bay, one open private dressing space retaining a short sightline screen, doorless ground alcove with end ledge and open upper linen alcove with closed cabinet. A 10.58 m² shared right terrace replaces the study; partial pergola/full thin roof options use the same plan. Entrance canopy/steps and landing window are developed in all relevant views. See [C11](concept-study-C11.md); proposals remain unselected.

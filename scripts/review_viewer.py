@@ -139,13 +139,14 @@ try:
                 ws=preview_ws
                 call('Runtime.enable')
                 call('Page.enable')
-                call('Emulation.setDeviceMetricsOverride',{'width':1025,'height':980,'deviceScaleFactor':1,'mobile':False})
+                export_height=1800 if view=='section' else 980
+                call('Emulation.setDeviceMetricsOverride',{'width':1025,'height':export_height,'deviceScaleFactor':1,'mobile':False})
                 call('Page.navigate',{'url':(OUT/f'option-{opt}-{view}.svg').as_uri()})
                 for _ in range(50):
                     if js('document.documentElement.tagName.toLowerCase()==="svg" && document.readyState==="complete"'): break
                     time.sleep(.05)
                 else: raise RuntimeError('Standalone SVG did not load')
-                js('document.documentElement.setAttribute("width","1025");document.documentElement.setAttribute("height","980")')
+                js(f'document.documentElement.setAttribute("width","1025");document.documentElement.setAttribute("height","{export_height}")')
                 call('Runtime.evaluate',{'expression':'new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))','awaitPromise':True})
                 shot=call('Page.captureScreenshot',{'format':'png','captureBeyondViewport':False})
                 (OUT/f'option-{opt}-{view}.png').write_bytes(base64.b64decode(shot['data']))
@@ -228,14 +229,14 @@ try:
         js('document.querySelector(\'[data-view="F2"]\').click()')
         assert js('document.querySelector(\'[data-door-id="BR-03"]\').getAttribute("data-opening-width")')=='0.9'
     js('document.querySelector("#furniture").checked=true;render()')
-    assert js('document.querySelector(\'[data-room-id="STUDY-02"]\')!==null')
-    assert js('document.querySelector(\'[data-furniture-name="Study chair"]\')!==null')
+    assert js('document.querySelector(\'[data-room-id="STUDY-02"]\')===null')
+    assert js('document.querySelector(\'[data-furniture-name="Study chair"]\')===null')
     assert js('document.querySelector(\'[data-furniture-name="Balcony bench"]\')!==null')
     assert js('document.querySelector(\'[data-door-id="UTIL-02"]\').getAttribute("data-opening-width")')=='0.8'
     assert js('document.querySelector(\'[data-room-id="BAL-02"]\')===null')
     js('document.querySelector(\'[data-view="F1"]\').click()')
     assert js('document.querySelector(\'[data-door-id="ALT-BUFFER"]\').getAttribute("data-opening-width")')=='0.8'
-    assert js('document.querySelector(\'[data-operation-door="ALT-BUFFER"]\').getAttribute("data-operation-kind")')=='hinged'
+    assert js('document.querySelector(\'[data-operation-door="ALT-BUFFER"]\')===null')
     assert not errors, errors
     report = [f"# {MODEL['revision']} viewer review", "", "Headless Chrome local review completed.", "",
               f"- {len(MODEL['options'])} active option / all five views rendered without captured JavaScript exceptions.",
@@ -245,7 +246,7 @@ try:
               "- F1 displayed TV stand and 1.90 m entrance opening in both options.",
               "- Direct parents/brother bedroom openings, parents inward leaf and sofa facing metadata displayed in both options.",
               "- Outward entry leaves, centered rendered sofa/TV, timber altar screen, open court and operable bedroom/stair windows checked; displayed ground area matched model dimensions.",
-              "- Study/chair, linen door, shared balcony bench, absent private slab and inward 0.80 m buffer door checked.",
+              "- Study/chair removal, linen portal, shared terrace bench, absent private slab and doorless 0.80 m buffer opening checked.",
               "- All five overlay controls responded; 390 px layout had no document-level horizontal overflow.",
               f"- {len(rendered)} standalone SVG and {len(rendered)} PNG drawings regenerated.",
               "- PNG drawings captured from corresponding standalone SVG tabs, avoiding page-scroll clipping.",

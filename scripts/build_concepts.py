@@ -85,7 +85,7 @@ wet2 = sorted(r['rect'] for r in f2['rooms'] if r['type'] in ['wc','shower'])
 check('Wet compartments align floor-to-floor', wet1==wet2)
 stair = data['house']['stair']
 check('21 stair risers split 10 + 11', stair['risers']==21 and stair['flight_risers']==[10,11])
-check('Nominal stair flight widths/gap fit 2.2 m bay', abs(2*stair['flight_width']+stair['central_gap']-stair['rect'][2])<1e-8 and abs(stair['rect'][2]-2.2)<1e-8)
+check('Nominal 1.10 m stair flights and gap fit widened 2.50 m bay', abs(2*stair['flight_width']+stair['central_gap']-stair['rect'][2])<1e-8 and abs(stair['rect'][2]-2.5)<1e-8)
 check('Longest tread run + landing fits bay depth', (max(stair['flight_risers'])-1)*stair['going']+stair['landing_depth'] <= stair['rect'][3]+1e-8)
 check('Stair reservations align on both floors', all(next(r['rect'] for r in f['rooms'] if r['type']=='stair')==stair['rect'] for f in data['floors']))
 balcony = data['options'][0]['balcony']['rect']
@@ -99,7 +99,7 @@ for opt in data['options']:
     access = by_id[b['access_room']]['rect']
     extras = opt.get('extra_balconies', [])
     balconies[opt['id']] = {'area':br[2]*br[3]+sum(e['rect'][2]*e['rect'][3] for e in extras), 'shared_area':br[2]*br[3], 'private_area':sum(e['rect'][2]*e['rect'][3] for e in extras), 'access':b['access_room']}
-    check(f"Option {opt['id']}: balcony door connects declared access room", door[4]=='v' and abs(door[1]-(access[0]+access[2]+.1))<1e-8 and abs(door[1]-(br[0]-.1))<1e-8 and door[2]>=access[1] and door[2]+door[3]<=access[1]+access[3] and door[2]>=br[1] and door[2]+door[3]<=br[1]+br[3])
+    check(f"Option {opt['id']}: balcony door connects declared access room", door[4]=='h' and abs(door[2]-(access[1]-.1))<1e-8 and abs(door[2]-(br[1]+br[3]+.1))<1e-8 and all(door[1]>=r[0] and door[1]+door[3]<=r[0]+r[2] for r in [access,br]))
     check(f"Option {opt['id']}: balcony does not overlap indoor zones", all(overlap(br,r['rect'])<1e-8 for r in f2['rooms'] if r['type']!='balcony'))
     check(f"Option {opt['id']}: balcony route avoids altar exclusion", all(overlap(altar,p)<1e-8 for p in route_samples({'points':b['route']})))
     origin = s['assumed_house_origin']
@@ -246,13 +246,13 @@ check('Private 0.80 m route bands avoid physical return screen', all(all(overlap
 buffer = next(r['rect'] for r in f1['rooms'] if r['id']=='ALT-BUFFER')
 bd = next(a for a in f1['doors'] if a[0]=='ALT-BUFFER')
 buffer_route = next(r for r in f1['routes'] if r['label']=='Buffer cleaning access')
-check('Buffer 0.80 m door joins living and indoor buffer outside solid backing', door_joins(bd,buffer,living) and bd[3]>=.8 and overlap(sweep_box(next(o for o in f1['door_operations'] if o['door']=='ALT-BUFFER')),data['coordination']['backing_wall'])<1e-8)
+check('Buffer 0.80 m doorless opening joins living outside solid backing', door_joins(bd,buffer,living) and bd[3]>=.8 and 'ALT-BUFFER' in f1['open_portals'] and not any(o['door']=='ALT-BUFFER' for o in f1['door_operations']))
 check('Buffer approach has 0.95 m furniture-free width and continuous 0.80 m route', abs(seat[0]-living[0]-.95)<1e-8 and all(all(overlap(p,a[1:])<1e-8 for a in f1['furniture']) and all(overlap(p,r['rect'])<1e-8 for r in f1['rooms'] if r['id'] not in ['LIV-01','GP-LOBBY','ALT-BUFFER']) and overlap(p,data['coordination']['backing_wall'])<1e-8 for p in occupied_route(buffer_route)))
 axis=data['coordination']['aligned_wall_axis']
 check('Wet outer wall and stair-bedroom division share x=6.25 on both floors', all(abs(r['rect'][0]+r['rect'][2]+.05-axis)<1e-8 for f in data['floors'] for r in f['rooms'] if r['type'] in ['shower','stair']) and all(abs(next(r['rect'][0] for r in f['rooms'] if r['id']==rid)-.05-axis)<1e-8 for f,rid in [(f1,'BR-02'),(f2,'BR-04')]))
 check('Grandpa-sister wall rectangles stack exactly', gp==next(r['rect'] for r in f2['rooms'] if r['id']=='BR-04'))
-check('Upper occupied study and access bands avoid furnishings and altar', all(all(overlap(c['rect'],a[1:])<1e-8 for a in f2['furniture']) and overlap(c['rect'],altar)<1e-8 for c in f2['clearance_reservations']) and all(all(overlap(p,a[1:])<1e-8 for a in f2['furniture']) for r in f2['routes'] for p in occupied_route(r)))
-check('Linen door joins common landing and opens clear of cabinet', door_joins(next(a for a in f2['doors'] if a[0]=='UTIL-02'),next(r['rect'] for r in f2['rooms'] if r['id']=='UTIL-02'),next(r['rect'] for r in f2['rooms'] if r['id']=='LANDING-02')))
+check('Upper common and linen access bands avoid furnishings and altar', all(all(overlap(c['rect'],a[1:])<1e-8 for a in f2['furniture']) and overlap(c['rect'],altar)<1e-8 for c in f2['clearance_reservations']) and all(all(overlap(p,a[1:])<1e-8 for a in f2['furniture']) for r in f2['routes'] for p in occupied_route(r)))
+check('Doorless linen opening joins common landing', door_joins(next(a for a in f2['doors'] if a[0]=='UTIL-02'),next(r['rect'] for r in f2['rooms'] if r['id']=='UTIL-02'),next(r['rect'] for r in f2['rooms'] if r['id']=='LANDING-02')))
 check('Upper furniture and occupied chair footprints do not overlap', all(overlap(a[1:],b[1:])<1e-8 for i,a in enumerate(f2['furniture']) for b in f2['furniture'][i+1:]))
 for opt in data['options']:
     b=opt['balcony']
@@ -260,7 +260,7 @@ for opt in data['options']:
     check(f"Option {opt['id']}: balcony route clears occupied bench", all(overlap(p,b['occupied'])<1e-8 for p in occupied_route({'points':b['route']})))
 seats=[(next(a[1:] for a in f2['furniture'] if a[0]==s['furniture']),s['facing']) for s in f2['seating']]
 seats += [(o['balcony']['furniture'][0][1:],o['balcony']['seat_facing']) for o in data['options']]
-check('Shared study and balcony seated backs face away from altar projection', all(sum(-facing[i]*(altar[i]+altar[i+2]/2-r[i]-r[i+2]/2) for i in [0,1])<=0 for r,facing in seats))
+check('Terrace seated backs face away from altar projection', all(sum(-facing[i]*(altar[i]+altar[i+2]/2-r[i]-r[i+2]/2) for i in [0,1])<=0 for r,facing in seats))
 
 # C10: new topology, separate worship/exclusion extents and upper recesses.
 screen=data['coordination']['altar_side_screen']['rect']
@@ -269,7 +269,16 @@ check('Smaller spare bedroom remains furnished and has ordinary common entry', f
 check('Parents and brother corner sleeping-room walls stack', parents==next(r['rect'] for r in f2['rooms'] if r['id']=='BR-03') and parents[:2]==[.2,.2])
 check('Court-facing bedroom windows have a 0.60 m furniture-free interior strip', all(all(overlap([w['opening'][0],w['opening'][1]-.65,w['opening'][2],.6],a[1:])<1e-8 for a in f['furniture']) for f in data['floors'] for w in f['window_proposals'] if w['face']=='court'))
 check('Timber side screen leaves 1.20 m front approach and avoids sofa/buffer routes', abs(altar_room[0]+altar_room[2]-screen[0]-screen[2]-1.2)<1e-8 and all(overlap(screen,a[1:])<1e-8 for a in f1['furniture']) and all(overlap(screen,p)<1e-8 for r in f1['routes'] for p in occupied_route(r)))
-check('Study door joins common landing outside exclusion', door_joins(next(a for a in f2['doors'] if a[0]=='STUDY-02'),next(r['rect'] for r in f2['rooms'] if r['id']=='STUDY-02'),next(r['rect'] for r in f2['rooms'] if r['id']=='LANDING-02')))
+check('Study retired; terrace replaces it without entering altar exclusion', not any(r['id']=='STUDY-02' for r in f2['rooms']) and all(overlap(o['balcony']['rect'],altar)<1e-8 for o in data['options']))
+check('Shared wet rear wall aligns with corner bedroom wall on both floors', all(abs(next(r['rect'][1] for r in f['rooms'] if r['id']==wet)-.1-next(r['rect'][1]+r['rect'][3] for r in f['rooms'] if r['id']==bed))<1e-8 for f,wet,bed in [(f1,'WC-02','BR-01'),(f2,'WC-04','BR-03')]))
+check('Stair left edge shares suite kitchen spare wall axis', abs(stair['rect'][0]-.05-data['coordination']['grid_x'][2])<1e-8)
+check('Open dressing still has private outer enclosure and no obsolete partition portals', all(not any(d[0].startswith(('EN-ACCESS','EN-RETURN')) for d in f['doors']) and all(r.get('open') for r in f['rooms'] if r['id'].startswith(('EN-ACCESS','EN-0'))) for f in data['floors']) and bool(data['coordination']['private_screens']))
+check('Linen alcove door removed and empty floor stays unfurnished', 'UTIL-02' in f2['open_portals'] and not any(o['door']=='UTIL-02' for o in f2['door_operations']) and all(overlap(altar,a[1:])<1e-8 for a in f2['furniture']))
+entrance_design=data['coordination']['entrance_design']
+check('Entrance three-rise arithmetic matches proposed yard and porch levels', abs(entrance_design['risers']*entrance_design['riser_height']-entrance_design['porch_level']+entrance_design['yard_level'])<1e-8 and (entrance_design['risers']-1)*entrance_design['tread_depth']<=s['porch_steps'][2])
+check('Canopy posts avoid entry sweeps waiting and arrival centerline', all(all(overlap([pt[0]+s['assumed_house_origin'][0]-.04,pt[1]+s['assumed_house_origin'][1]-.04,.08,.08],r)<1e-8 for r in [wait,*global_sweeps,*occupied_route({'points':s['arrival_path']})]) for pt in entrance_design['canopy_posts']))
+check('Terrace shade posts fit slab and avoid occupied seat and entry bands', all(contains(o['balcony']['rect'],[pt[0]-.025,pt[1]-.025,.05,.05]) and all(overlap([pt[0]-.025,pt[1]-.025,.05,.05],r)<1e-8 for r in [o['balcony']['occupied'],o['balcony']['entry_clearance'],*occupied_route({'points':o['balcony']['route']})]) for o in data['options'] for pt in o['balcony']['shade_posts']))
+
 check('Upper recess excludes enclosed rooms and indoor furniture', all(overlap(recess,r['rect'])<1e-8 for recess in data['house']['upper_recesses'] for r in f2['rooms'] if r['type']!='balcony') and all(overlap(recess,a[1:])<1e-8 for recess in data['house']['upper_recesses'] for a in f2['furniture']))
 # Sample the actual corner-room exit through common zones, with 0.10 m open joints.
 check('Corner bedroom exits reach main hall through common space only', all(any(contains([r['rect'][0]-.051,r['rect'][1]-.051,r['rect'][2]+.102,r['rect'][3]+.102],[*pt,0,0]) for r in f['rooms'] if r['type']=='hall') for f in data['floors'] for route in f['routes'] if 'direct exit' in route['label'] for p in occupied_route({'points':[[3.05,4.75],*route['points'][1:]]},.8) for pt in corners(p)))
@@ -285,7 +294,7 @@ lines = [f"# Concept {data['revision']} — generated geometry review", '',
          f'- Model site area {area:.2f} m²; not surveyed/registered area.',
          f'- D segments {math.dist(p,bend):.3f} + {math.dist(bend,q):.3f} m; chord bend offset {bend_offset:.3f} m.',
          '- Model vertices (m): '+json.dumps(polygon),
-         f"- Bounding envelope {envelope_area['F1']:.2f} m² minus open court {court_area:.2f} m² = F1 covered footprint {gross['F1']:.2f} m². F2 further excludes the 4.05 m² loggia recess: {gross['F2']:.2f} m² enclosed-envelope convention. Stair opening reservation and court lining walls remain included.",
+         f"- Bounding envelope {envelope_area['F1']:.2f} m² minus open court {court_area:.2f} m² = F1 covered footprint {gross['F1']:.2f} m². F2 further excludes the 8.82 m² terrace recess: {gross['F2']:.2f} m² enclosed-envelope convention. Stair opening reservation and court lining walls remain included.",
          f"- Covered-envelope sum {sum(gross.values()):.2f} m²; balcony {bal_area:.2f} m² separately. This is a concept convention, not statutory/contract measurement.",
          f"- Model land outside outer envelope {area-envelope_area['F1']:.2f} m², plus {court_area:.2f} m² internal court; gaps/access/parking are not all garden.",
          f'- F1/F2 B edge modeled 0.10 m from boundary; A edge 0.30 m. C-side upper extension {data["coordination"]["cantilever"]["depth"]:.2f} m. Owner placement preferences, not lawful setbacks.',
@@ -303,25 +312,26 @@ for f in data['floors']:
         lines.append(f"| {r['id']} | {r['label']} | {w:.2f} × {h:.2f} | {area_label} |")
     named=sum(r['rect'][2]*r['rect'][3] for r in f['rooms'] if r['type'] not in ['balcony','courtyard'])
     lines += ['',f"Indoor named zones {named:.2f} m² including stair reservation; {gross[f['id']]-named:.2f} m² remains for walls and unassigned junction/extension strips. Not net lettable area."]
-lines += ['', '## C10 coordinated relayout', '',
-          '- Corner parents/brother 13.60 m²; ordinary 0.90 m common-access doors to 1.30 m court passage, independent of private wet routes. Common court cleaning avoids bedrooms.',
-          '- Bedroom 5 12.58 m², aligned at x=3.65 with brother and kitchen; no desk/private terrace. Wet/stair/Grandpa-sister division x=6.25 retained. Axes are not engineered beams/columns.',
-          '- Ground covered area 119.20 → 115.70 m²; upper enclosed envelope 119.20 → 111.65 m². Smaller 4.00 m² court is a daylight/airflow compromise, not a performance pass.',
-          '- Timber side screen 1.80 m long leaves 1.20 m front approach. Worship floor remains 10.20 m², but only 4.08 m² above the 1.20 m altar strip stays empty per owner correction.',
-          '- Shared study 5.78 m² occupies forward upstairs area; independent 1.10 m landing and 1.30 m loggia access. Study chair faces altar side. Linen remains accessible.',
-          '- Shared balcony 6.50 / 5.00 m², clear recess 1.40 m plus 1.20 / 0.60 m outward projection. Separate porch canopy; no enclosed bedroom cantilever adopted.',
-          '- See docs/concept-study-C10.md for tradeoffs and general structural evidence. No code-compliance or structural adequacy claim.']
+lines += ['', '## C11 coordinated relayout', '',
+          '- Shared wet compartments move 0.30 m toward C and align with suite wall at y=4.25; stacked on both floors. No new room count or combined bathroom.',
+          '- Stair fills 2.50 × 3.70 m bay, aligned x=3.65/6.25. Two nominal 1.10 m flights, 0.30 m central gap; finished rail/wall widths unresolved.',
+          '- Private internal dividing wall removed; perimeter and short sightline screen retained. Ordinary bedroom exits unchanged.',
+          '- Doorless ground buffer with shallow end ledge; open upper linen alcove and closed cabinet. 4.08 m² altar floor remains empty.',
+          '- Shared right terrace replaces study: 10.58 m², 0.60 m outward projection. Same plan compares partial pergola versus thin roof. No full-height balcony side walls.',
+          '- F1 remains 115.70 m²; F2 enclosed envelope 106.88 m², stair included. Terrace surfaces/roof still need construction; no cost saving claimed.',
+          '- Entrance canopy 2.45 × 2.80 m; porch 2.20 × 2.20 m; assumed three 150 mm rises, two 300 mm treads plus porch. Levels, supports and water management unverified.',
+          '- See docs/concept-study-C11.md for design reasoning and remaining compromises.']
 lines += ['', '## Stair arithmetic — reservation only', '',
           f"- Assumed floor rise {data['house']['floor_height']:.2f} m / 21 = {1000*data['house']['floor_height']/21:.1f} mm/riser.",
           '- Flights 10 + 11 risers have 9 + 10 intervening treads; tread runs 2.34 / 2.60 m at 260 mm going.',
           '- 2.60 m longest run + 1.10 m intermediate landing = 3.70 m bay depth. Top/bottom approaches lie in common circulation outside the bay.',
-          '- Nominal flights 1.00 + 1.00 m with 0.20 m center gap fill the 2.20 m reservation; wall/rail details may reduce finished widths.',
+          '- Nominal flights 1.10 + 1.10 m with 0.30 m center gap fill the 2.50 m reservation; wall/rail details may reduce finished widths.',
           '', '## Unresolved review', '',
           '- 21 steps provisionally means risers. Owner confirmed staircase; no lift requested. Architect must resolve actual finished flights, openings, headroom, rails and applicability.',
           '- Bedroom inward/main-entry outward leaves and sliding sanitary entries are concept studies. Bounding-box and 0.80 m sampled bands are limited collision checks, not occupied usability/compliance certification.',
           f'- Living {living[2]*living[3]:.2f} m²; kitchen/dining named L-shaped zones {kit[2]*kit[3]+din[2]*din[3]:.2f} m² plus 0.37 m² open join. Common lobby excluded. Occupied appliances/chair withdrawal remain unverified.',
           '- Altar furniture 1.20 m deep leaves 1.80 m forward worship depth. Upper empty floor 3.40 × 1.20 m; exact furniture/ceremony arrangement remains a proposal, not a feng shui minimum.',
-          '- Both shared-loggia variants, porch canopy, court, foundations, acoustics, waterproofing and guards need a professional design basis.',
+          '- Both terrace-shade variants, porch canopy, court, foundations, acoustics, waterproofing and guards need a professional design basis.',
           '- Approximate owner placement is not approval of boundary-wall construction/openings; court sky/airflow, window acoustics, kitchen extract, survey and car turning unresolved.',
           '- Indoor backing buffer remains 0.90 m; 0.95 m approach retained. Ground footprint 115.70 m² and front depth along A 4.40 m; 0.60 m extra C-side land. Affordability unassessed.',
           '- Left/C 3.0 × 5.0 m car bay, separate gates, porch and steps are reservations. Clear walking strips do not establish road maneuvers, door-opening envelopes, safe levels or finished door/stair operation.']

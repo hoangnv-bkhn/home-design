@@ -1,11 +1,11 @@
 # Hanoi house: planning and design roadmap
 
 Created: 2026-09-30  
-Updated: 2026-10-03
-Status: C10 corner-suite, compact-spare and recessed-loggia proposal available; neither layout/balcony selected. Survey, court performance, permissions and engineering pending.
+Updated: 2026-10-04
+Status: C11 aligned-room, open-right-terrace and entrance proposal available; neither layout nor shade option selected. Survey, court performance, permissions and engineering pending.
 Purpose: Guide an editable, AI-assisted process from land investigation to construction and handover.
 
-Current review package: [viewer](outputs/house-concepts.html), [C10 comparison](docs/concept-study-C10.md), [geometry review](outputs/geometry-review.md). C10 proposes 115.70 m² ground covered footprint, 111.65 m² upper enclosure plus shared balcony, corner suites/common-access court, 12.58 m² spare room and 4.08 m² upper altar exclusion. Timber screen, recessed loggia and porch canopy are proposals. This roadmap is a phase guide; resume from PROJECT_STATE.md and current requirements in docs/brief.md. Model area is not registered area.
+Current review package: [viewer](outputs/house-concepts.html), [C11 comparison](docs/concept-study-C11.md), [geometry review](outputs/geometry-review.md). C11 proposes 115.70 m² ground footprint, 106.88 m² upper enclosure and a 10.58 m² right terrace replacing the study. Shared wet walls align with suites; stair widens to 2.50 m. Doorless buffer/linen alcoves, open terrace guards, partial pergola/full roof options and coordinated canopy/porch/steps remain proposals. The 4.08 m² upper altar floor stays empty. This roadmap is a phase guide; resume from PROJECT_STATE.md and docs/brief.md. Model area is not registered area.
 
 ## 1. Recommended approach
 

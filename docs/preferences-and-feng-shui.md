@@ -1,6 +1,6 @@
 # Family preferences and feng shui register
 
-Updated: 2026-10-03. Status: C10 proposed; latest owner clarification limits upper exclusion to approximately 1.20 m actual altar depth. Ground worship area, indoor backing and seated-back rule remain. Historical interpretations below are superseded where stated.
+Updated: 2026-10-04. Status: C11 proposed; latest owner clarification limits upper exclusion to approximately 1.20 m actual altar depth. Ground worship area, indoor backing and seated-back rule remain. Historical interpretations below are superseded where stated.
 
 ## How requirements are adopted
 
@@ -89,3 +89,9 @@ C09 preserves the indoor buffer and full solid backing; access is through its si
 Owner explicitly allows ordinary use above the front worship/standing space: only the approximately 1.20 m altar depth must be avoided upstairs. This supersedes statements above that project the complete 3.00 m deep worship room. C10 keeps a 3.40 × 1.20 m empty floored strip; exact full-width margin is the assistant's proposal. A forward study and occasional cleaning access are proposed, not owner-selected.
 
 The requested timber screen is on the altar's displayed left/C side toward seating, separate from its continuous solid backing. C10 proposes 1.80 m length, 80 mm thickness and 2.20 m height, leaving 1.20 m front entry. Slat privacy, fixings and heat/flame clearances need detail. Sofa, study chair and shared balcony seating remain oriented with backs away from the altar. No new cultural constraint or guaranteed outcome is introduced. Indoor backing baseline remains; relocated sleeping court does not resolve optional F01.
+
+## C11 — enclosure simplification, existing family rules retained
+
+Ground quiet buffer remains indoors behind a continuous solid backing wall. Its side entry becomes doorless; a shallow dry display ledge at the dead end is an assistant proposal, not a newly approved family use. No seat, wet function, stove or bedroom is introduced there. The upper linen alcove loses its door and partition against the empty altar strip, retaining a closed linen cabinet and independent maintenance aisle outside the strip.
+
+The study is removed. A shared right terrace occupies the former forward area; its weather wall leaves the 3.40 × 1.20 m empty altar floor indoors. Regular routes, shade posts and furnishings avoid that strip. Bench faces local −x toward the altar side, back away. The short private bathroom sightline screen remains while the unnecessary internal dividing wall is removed. These are practical design proposals under existing rules, with no new cultural applicability or outcome claim. [C11](concept-study-C11.md).
