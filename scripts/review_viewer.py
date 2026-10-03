@@ -160,8 +160,8 @@ try:
         js(f'document.querySelector(\'#options [data-id="{option["id"]}"]\').click()')
         for floor in MODEL['floors']:
             js(f'document.querySelector(\'[data-view="{floor["id"]}"]\').click()')
-            for room in floor['rooms']:
-                ident=room['id']
+            room_ids=js(f'floorData({json.dumps(floor["id"])}).rooms.map(r=>r.id)')
+            for ident in room_ids:
                 selector=json.dumps(f'[data-room-id="{ident}"]')
                 box=js(f'(()=>{{const r=document.querySelector({selector});r.scrollIntoView({{block:"center"}});const b=r.querySelector("rect").getBoundingClientRect();return {{x:b.x+b.width/2,y:b.y+b.height/2}}}})()')
                 call('Input.dispatchMouseEvent',dict(type='mouseMoved',**box))
@@ -198,6 +198,14 @@ try:
         details = js("document.querySelector('#detail').textContent")
         assert f'{expected_area:.2f}' in details
         assert option['balcony']['note'] in details
+        total_area=expected_area+sum(b['rect'][2]*b['rect'][3] for b in option.get('extra_balconies',[]))
+        assert f'{total_area:.2f}' in js('document.querySelector("#balArea").textContent')
+        assert js('document.querySelectorAll("[data-daylight-tube]").length')==2
+        assert js('document.querySelectorAll("[data-window-shade]").length')==len(MODEL['floors'][1]['windows'])
+        for extra in option.get('extra_balconies',[]):
+            js(f'document.querySelector(\'[data-room-id="{extra["id"]}"]\').dispatchEvent(new MouseEvent("click"))')
+            assert extra['note'] in js('document.querySelector("#detail").textContent')
+            assert js(f'document.querySelector(\'[data-door-id="{extra["id"]}"]\')!==null')
         js('document.querySelector(\'[data-view="F1"]\').click()')
         # Furniture was toggled off earlier; restore it for this assertion.
         js('document.querySelector("#furniture").checked=true;render()')
@@ -206,6 +214,8 @@ try:
         assert js('document.querySelector(\'[data-door-id="BR-01"]\').getAttribute("data-opening-width")')=='0.9'
         assert js('document.querySelector(\'[data-operation-door="BR-01"]\').getAttribute("data-operation-kind")')=='hinged'
         assert js('document.querySelector(\'[data-furniture-name="Sofa"]\').getAttribute("data-seat-facing")')=='1,0'
+        assert js('document.querySelectorAll(\'[data-operation-door="ENTRY"][data-swing="outward"]\').length')==2
+        assert js('(()=>{const c=n=>{const r=document.querySelector(`[data-furniture-name="${n}"] rect`);return +r.getAttribute("x")+(+r.getAttribute("width"))/2};return Math.abs(c("Sofa")-c("TV stand"))<1e-8})()')
         js('document.querySelector(\'[data-view="F2"]\').click()')
         assert js('document.querySelector(\'[data-door-id="BR-03"]\').getAttribute("data-opening-width")')=='0.9'
     assert not errors, errors
@@ -215,7 +225,8 @@ try:
               f"- {room_interactions} actual room pointer clicks across both floors/options; keyboard selection and focus retained nonblack fills and accessible pressed state.",
               "- Focused dining screenshot saved as viewer-selection-review.png; each BAL-01 variant area/access note populated correctly.",
               "- F1 displayed TV stand and 1.90 m entrance opening in both options.",
-              "- C06 direct parents/brother 0.90 m entrance openings, parents inward leaf and sofa facing metadata displayed in both options.",
+              "- Direct parents/brother bedroom openings, parents inward leaf and sofa facing metadata displayed in both options.",
+              "- C07 outward entry leaves and centered rendered sofa/TV checked; two tube chases, window shades, private BAL-02 details/door and total balcony areas matched each option.",
               "- All five overlay controls responded; 390 px layout had no document-level horizontal overflow.",
               f"- {len(rendered)} standalone SVG and {len(rendered)} PNG drawings regenerated.",
               "- PNG drawings captured from corresponding standalone SVG tabs, avoiding page-scroll clipping.",

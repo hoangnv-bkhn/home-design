@@ -2,10 +2,10 @@
 
 Created: 2026-09-30  
 Updated: 2026-10-03
-Status: C06 usability/footprint proposal available; neither balcony/layout selected. Survey, near-boundary permissions and engineering remain pending.
+Status: C07 entrance/living/balcony/daylight proposal available; neither layout/balcony selected. Survey, opening rights, environmental performance and engineering pending.
 Purpose: Guide an editable, AI-assisted process from land investigation to construction and handover.
 
-Current review package: [viewer](outputs/house-concepts.html), [C06 comparison/usability](docs/concept-study-C06.md), [geometry review](outputs/geometry-review.md). C06 reduces both envelopes to 108.00 m², adds independent parents/brother exits, turns sofa backs away from altar and studies left parking with separate walks. B remains longer than A; C kitchen exit/empty altar projection retained. Footprint, 0.90 m buffer and balcony variants unselected. Usability-first decision making is required in AGENTS.md. This roadmap is a phase guide; current requirements live in docs/brief.md. Model area is not registered area.
+Current review package: [viewer](outputs/house-concepts.html), [C07 comparison](docs/concept-study-C07.md), [daylight/envelope evidence](docs/daylight-and-envelope-C07.md), [geometry review](outputs/geometry-review.md). C07 retains 108 m² envelopes, centers sofa/TV and introduces open arrival/outward doors/deeper porch at the cost of a smaller Grandpa room. Both balcony variants preserve shared access; one adds a private step-out. Wider shaded yard windows and roof daylight are candidates. Parents view/ventilation, all layout/footprint selections, 0.90 m altar buffer, permissions and engineering remain open. This roadmap is a phase guide; current owner requirements live in docs/brief.md. Model area is not registered area.
 
 ## 1. Recommended approach
 

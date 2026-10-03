@@ -4,7 +4,7 @@ Updated: 2026-10-03.
 
 ## Evidence
 
-Owner identifies the central parcel enclosed by sides A, B, C and D in the original `plot_dimensions.jpg`, inspected during initial briefing despite an attachment error. That image is absent from the current working copy. The recorded dimensions below remain owner-reported approximations; no new image/survey evidence was inferred for C06.
+Owner identifies the central parcel enclosed by sides A, B, C and D in the original `plot_dimensions.jpg`, inspected during initial briefing despite an attachment error. That image is absent from the current working copy. The recorded dimensions below remain owner-reported approximations; no new image/survey evidence was inferred for C07.
 
 The photograph shows a roughly four-sided parcel with a bend along D. A, B and C label the other sides; they are side labels, not vertex names. The plot must not be treated as a mathematical square. A road runs alongside D and is reported by the owner to be approximately 3–4 m wide. The sketch also shows a nearby road junction; access rights along any additional edge are not established.
 
@@ -63,3 +63,9 @@ Use the owner-confirmed 130° bearing along A toward D for concept orientation. 
 3. Where should the gate/vehicle access be, and is any road widening or building line known?
 
 Boundary units and the meaning of the 130° orientation are resolved; 192 is excluded. Room relationships and a visibly provisional boundary study can progress using the confirmed approximate lengths, owner-provided bearing and an assumed bend. Survey verification remains outstanding.
+
+## C07 entrance and daylight coordination
+
+C07 retains C06's 9.0 × 12.0 m aligned floors, origin and parcel assumptions. Main entrance/porch/pedestrian gate move 1.00 m toward C. Porch depth grows to 2.20 m for outward leaves; steps move outward. Garden approach/walking strips route around the deeper porch; parked-car reservation unchanged. Neither levels nor maneuvering are verified.
+
+Larger shaded bedroom openings face D or the modeled own C yard; no A/B windows. Brother storage is moved off its window wall. Parents receive only explicit roof-tube candidates, and upper bedroom 5 a diffusing rooflight. These are not environmental-performance or permit approvals. The 0.30 m A gap cannot establish adequate sky access without neighbor heights. See [C07 envelope research](daylight-and-envelope-C07.md); legal full-text retrieval failed, so no distance threshold is adopted from search snippets. Site opening rights/planning/airport controls remain S02.

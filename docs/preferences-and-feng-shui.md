@@ -1,6 +1,6 @@
 # Family preferences and feng shui register
 
-Updated: 2026-10-03. Status: C06 proposed; road/altar facing and seating rule confirmed. Exact altar extent and 0.90 m buffer need review; courtyard unresolved.
+Updated: 2026-10-03. Status: C07 proposed; road/altar facing and seating rule confirmed. Exact altar extent and 0.90 m buffer need review; courtyard unresolved.
 
 ## How requirements are adopted
 
@@ -38,6 +38,10 @@ Additional proposals for discussion, **not yet family requirements**:
 The owner's “etc.” behind the wall leaves the full excluded-use list open. Do not silently convert it into a ban covering the entire rear half of the house. Define a specific backing/buffer zone and have the family review it.
 
 C06 retains the exact altar projection and 0.90 m indoor buffer, while turning sofa seats toward +x/front. The back points toward B, away from altar. This implements latest family input (FS-05), with no new claims about cultural universality or outcomes. Smaller envelope and independent bedroom exits do not change altar rules. See [C06](concept-study-C06.md).
+
+## C07 coordination
+
+C07 preserves all family rules. The sofa keeps +x facing/back away from altar; centering the TV and moving the entry do not change this. Guests reach open arrival space and turn to seating, with the daily stair route along the C side. Main doors may open outward per owner permission; no new feng shui requirement is inferred. Shared balcony routes bypass the exact empty upper altar projection in both options. Daylight tubes are over the parents' room, outside altar/buffer; A/B backing remains solid. [C07](concept-study-C07.md).
 
 ## Investigation plan
 
