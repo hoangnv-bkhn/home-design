@@ -1,42 +1,37 @@
-# Project state — resume here
+﻿# Project state — resume here
 
-Updated: 2026-10-03. Phase: C07 entrance, living, balcony and daylight review.
+Updated: 2026-10-03. **C09 buffer access, wall coordination and useful upstairs space**. Proposed, unselected; not for construction.
 
 ## Current position
 
-- Current revision **C07**, proposed and unselected. Owner permits outward main entry and requests centered seating/TV, open arrival, coordinated balcony/exterior and better bedroom daylight. No private-balcony mandate or boundary-window permission added.
-- [Viewer](outputs/house-concepts.html) · [C07 comparison](docs/concept-study-C07.md) · [Daylight/envelope evidence](docs/daylight-and-envelope-C07.md) · [F1](outputs/option-01-F1.svg).
-- Sources: [metre geometry](data/concepts.json), [template](src/concept-viewer.html), [build](scripts/build_concepts.py), [browser/export](scripts/review_viewer.py).
-- Requirements/tracking: [brief](docs/brief.md), [site](docs/site-investigation.md), [family rules](docs/preferences-and-feng-shui.md), [decisions](docs/decisions.md), [issues](docs/open-issues.md), [workflow](docs/agent-workflow.md).
+Owner identifies inaccessible altar buffer, misaligned shower/Grandpa walls, excessive empty F2 space and uncertain balcony usefulness. Relayout/dimension changes expressly permitted. No layout, room use, balcony, footprint or structural system selected.
 
-## Design response and material limits
+- [Viewer](outputs/house-concepts.html) · [C09 comparison](docs/concept-study-C09.md) · [F1](outputs/option-01-F1.svg) · [Deeper balcony F2](outputs/option-01-F2.svg) · [Shallower F2](outputs/option-02-F2.svg).
+- Editable [metre geometry](data/concepts.json), [template](src/concept-viewer.html), [build](scripts/build_concepts.py), [browser/export](scripts/review_viewer.py).
+- Requirements/evidence: [brief](docs/brief.md), [family rules](docs/preferences-and-feng-shui.md), [site](docs/site-investigation.md), [decisions D35/D36](docs/decisions.md), [issues](docs/open-issues.md), [workflow](docs/agent-workflow.md).
 
-- Aligned F1/F2 **9.0 m A × 12.0 m B = 108.00 m²** retained; 8% above approximate target, affordability unassessed.
-- TV centered with 2.20 m sofa; 2.25 m front-to-stand gap. Main entry shifts 1.00 m toward C into **2.30 × 1.90 m empty arrival**, with **1.00 m through hall** outside viewing line. Sofa rear stays away from altar.
-- Two 0.95 m main leaves open outward. Porch becomes **2.20 × 2.20 m / 4.84 m²**, +1.54 m² outdoor ground; **1.15 m front waiting strip** outside sweep boxes. Steps, pedestrian gate and garden walks coordinated. Full weather cover, thresholds/levels and concurrent passing unresolved.
-- Grandpa trades **3.08 m²**, now **10.36 m²** with 1.40 × 2.00 m bed, 0.40/1.00 m sides and 0.60 m wardrobe-front gap. Normal 0.85 m hall entrance retained. Tighter side/storage/use needs review (L08).
-- Both options retain independent **7.04 m² shared BAL-01** as facade/entry frame. Option 02 adds **2.60 m² private BAL-02 / 1.00 m projection**, total **9.64 m²**; no shared bedroom crossing. Finished guard/fins reduce net area/depth; support/cost/shading unresolved (L03/E01).
-- Wider shaded bedroom windows toward own yard: Grandpa 2.10 m, brother 2.30 m, sister 2.20 m, nominal 1.65 m height. Brother wardrobe moved off window wall; sister C wall stays for storage. No A/B windows assumed.
-- Bedroom 5 has **1.12 m² rooflight candidate**. Two parents daylight tubes have explicit upper 0.40 m chase boxes, total **0.32 m²**, leaving bedroom 5 **12.60 m² after boxes** (12.92 rectangle). Output, roof/beam/slab paths and acoustic/fire detailing unverified; tubes give no view/ventilation. Parents environment remains a material open issue (new L14). Courtyard/yard-facing relocation is a future topology alternative, not implemented.
-- Five bedrooms, four separate stacked WC/shower pairs with shower basins, independent suite exits, compact C kitchen/garden door, altar 3.4 × 1.5 m/exact empty upper projection and 0.90 m indoor buffer retained. Stair still 21-riser reservation. Left parking remains stationary study with turning unresolved.
+## Proposal and tradeoffs
+
+- **Buffer:** C08 door existed but sofa blocked approach. Sofa moves 0.80 m toward TV, leaving **0.95 m approach**, **0.80 m inward door**, **0.90 m indoor buffer**. Solid backing stays continuous; occasional cleaning, no storage/through-route. Sofa/TV centered; front-to-stand gap **2.65 → 1.85 m**. Screen size/viewing acceptance unresolved. Open arrival stays 2.30 × 1.90 m.
+- **Wall coordination:** 2.20 × 3.70 m stair moves 0.30 m. Wet-core outer wall and stair/Grandpa-sister division share **x=6.25 m** on both floors. Bedroom rectangles and wet pairs stack. Reference axes are not an engineered frame; other offsets remain. Columns, beams, openings, loads and supports unresolved, E01.
+- **Rooms:** Grandpa/sister **14.80 m²**, −0.25 each. Rotated 1.40 × 2.00 m bed: entrance-side gap 0.90, wardrobe gap 0.80, foot strip 1.50, head margin 0.50 m. Ordinary 0.85 m doors retained. Common bedroom passages **1.20 → 1.00 m**. Kitchen/dining and bedroom5 **17.76 m²** each, +1.44. Parents/brother **15.64 m²**, direct exits and screened private-bath routes retained.
+- **F2:** former 12.80 m² landing becomes **8.00 m² shared study + 4.40 m² / 1.10 m balcony passage + 0.40 m² open junction**. Desk/occupied chair shown; dry linen cabinet at closed end of 3.06 m² utility room. West linen/east occasional-cleaning approach strips 0.90 m. Shared study and balcony seats face toward altar side, backs away. Study use is a proposal, L16.
+- **Altar:** 3.4 × 3.0 m / **10.20 m² exact empty F2 floor**, solid backing, SE facing and indoor baseline retained. No routine routes/furniture above it. Floored exclusion, not a void. C08 cultural evidence remains relevant; no new rule.
+- **Balcony:** option01 recommended for review, **2.00 × 3.60 m / 7.20 m²**; option02 **1.60 × 4.40 m / 7.04 m²**. Both shared; private step-out removed. Modeled edge insets leave 1.80/1.40 m depth. Occupied bench clears 1.00 m entry reservation; sliding-door candidate. Guard, support, drainage, threshold and full porch weather cover unresolved.
+- **Area/site retained:** 10.5 m A × 12.0 m B = 126.00 m² envelope minus 6.80 m² clear court = **119.20 m² covered convention each floor**, including F2 stair reservation/court lining walls. **No footprint/cost saving**, 19.2% above approximate target. Court has no F2 slab/roof. Parents/brother court windows and C stair windows retained; maintenance through parents remains a compromise. Front depth 4.40 m, parking, gates, porch and walks unchanged. Turning/levels/weather, airflow/daylight, opening rights, soil/structure and affordability unverified. No A/B openings.
 
 ## Artifacts and checks
 
-- [Shared F2](outputs/option-01-F2.svg) · [Shared + private F2](outputs/option-02-F2.svg) · [Shared massing](outputs/option-01-massing.svg) · [Additional private massing](outputs/option-02-massing.svg) · [Sections including tubes](outputs/option-01-section.svg) · [Plot](outputs/option-01-site.svg).
-- **83/83 limited build checks passed**; [geometry report](outputs/geometry-review.md). Finite bands/sweep boxes are not occupied usability, daylight, legality or engineering verification.
-- Chrome passed both options/all five views; **67 actual pointer clicks**, focus/keyboard, optional BAL-02/areas, rendered sofa/TV centers, outward leaves, tube/shade metadata, controls and 390 px overflow. [Browser report](outputs/viewer-review.md).
-- Ten SVGs/ten PNGs and focused selection capture regenerated. Visual inspection: F1, both F2, plot, sections, both massings and selection capture. Print/PDF untested; no stale current outputs or temporary scripts remain.
-- DOE primary daylight/fenestration guidance recorded. Vietnamese legal/standard primary full-text retrieval failed; no snippet-derived distances/compliance applied. S02 remains open.
-- C06 50-file snapshot verified before editing. Completed C07 package archived and SHA-256 verified using house-snapshot; preserves an unselected proposal. Earlier archives immutable.
+- [Geometry](outputs/geometry-review.md): **98/98 limited checks**. Added actual buffer portal and sampled finite approach, wall alignment, stacked bedrooms, upper occupied furniture, linen access, balcony entry/bench and seating orientation. No occupied-comfort, legal, environmental or structural certification.
+- [Chrome review](outputs/viewer-review.md): both options/all five views, **78 actual pointer selections**, keyboard/focus, study/bench/buffer-door metadata, retained court/windows/area tests and 390 px overflow. Ten SVGs/ten PNGs and selection capture regenerated. Print/PDF untested.
+- Final visual inspection: F1, both F2, both massings, site, sections and selection capture. No stale current exports.
+- **C08 54-file archive verified before editing**. Completed C09 package archived and SHA-256 verified using house-snapshot; unselected proposal. Earlier archives immutable.
 
 ## Next action
 
-Review open arrival and Grandpa's 0.40 m side/10.36 m² tradeoff, optional private step-out usefulness, and parents' long-term daylight/view/ventilation strategy. Then detail shade/noise/glazing, occupied doors/weather, balcony support, stair opening/headroom and real road/car access. L02–L14, S01–S04, E01/E02 and budget C01 remain open to their stated extent.
+Review the shorter TV distance, 1.00 m common bedroom passage, usefulness of the shared study and deeper shared balcony. Meaningful footprint reduction needs coordinated court/wet-core/stair/altar relayout; furnishing leftover space does not reduce construction area. Then establish structural design basis and balcony/porch weather details with local team.
 
-Do not re-ask settled counts/floors/road/sofa/altar/stair/basin/site inputs or outward-door permission. Keep metres, stable IDs and evidence statuses. C07 archived; next design issue C08 or distinct erratum suffix, preserving baseline first.
+L02–L16, S01–S04, E01/E02, F01 and budget C01 remain open to their stated extent. Do not re-ask settled counts/floors/road/altar/stair/basin/site/outward-door inputs. C09 archived; next design issue **C10** or distinct erratum suffix. No owner/professional approval implied.
 
-```powershell
-python scripts/build_concepts.py
-python scripts/review_viewer.py
-python scripts/snapshot_revision.py --verify C07
-```
+Commands: `python scripts/build_concepts.py`, `python scripts/review_viewer.py`, `python scripts/snapshot_revision.py --verify C09`.
+

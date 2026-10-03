@@ -200,7 +200,10 @@ try:
         assert option['balcony']['note'] in details
         total_area=expected_area+sum(b['rect'][2]*b['rect'][3] for b in option.get('extra_balconies',[]))
         assert f'{total_area:.2f}' in js('document.querySelector("#balArea").textContent')
-        assert js('document.querySelectorAll("[data-daylight-tube]").length')==2
+        assert js('document.querySelectorAll("[data-daylight-tube]").length')==0
+        assert js('document.querySelector(\'[data-room-id="COURT-02"]\')!==null')
+        assert js('document.querySelector(\'[data-window-room="BR-03"][data-operable="true"][data-window-face="court"]\')!==null')
+        assert js('document.querySelector(\'[data-window-room="STAIR-02"][data-operable="true"]\')!==null')
         assert js('document.querySelectorAll("[data-window-shade]").length')==len(MODEL['floors'][1]['windows'])
         for extra in option.get('extra_balconies',[]):
             js(f'document.querySelector(\'[data-room-id="{extra["id"]}"]\').dispatchEvent(new MouseEvent("click"))')
@@ -212,12 +215,24 @@ try:
         assert js('document.querySelector(\'[data-furniture-name="TV stand"]\')!==null')
         assert js('document.querySelector(\'[data-door-id="ENTRY"]\').getAttribute("data-opening-width")')=='1.9'
         assert js('document.querySelector(\'[data-door-id="BR-01"]\').getAttribute("data-opening-width")')=='0.9'
+        assert js('document.querySelector(\'[data-window-room="BR-01"][data-operable="true"][data-window-face="court"]\')!==null')
+        assert js('document.querySelector(\'[data-window-room="STAIR-01"][data-operable="true"]\')!==null')
+        assert '119.20' in js('document.querySelector("#f1Area").textContent')
         assert js('document.querySelector(\'[data-operation-door="BR-01"]\').getAttribute("data-operation-kind")')=='hinged'
         assert js('document.querySelector(\'[data-furniture-name="Sofa"]\').getAttribute("data-seat-facing")')=='1,0'
         assert js('document.querySelectorAll(\'[data-operation-door="ENTRY"][data-swing="outward"]\').length')==2
         assert js('(()=>{const c=n=>{const r=document.querySelector(`[data-furniture-name="${n}"] rect`);return +r.getAttribute("x")+(+r.getAttribute("width"))/2};return Math.abs(c("Sofa")-c("TV stand"))<1e-8})()')
         js('document.querySelector(\'[data-view="F2"]\').click()')
         assert js('document.querySelector(\'[data-door-id="BR-03"]\').getAttribute("data-opening-width")')=='0.9'
+    js('document.querySelector("#furniture").checked=true;render()')
+    assert js('document.querySelector(\'[data-room-id="STUDY-02"]\')!==null')
+    assert js('document.querySelector(\'[data-furniture-name="Study chair"]\')!==null')
+    assert js('document.querySelector(\'[data-furniture-name="Balcony bench"]\')!==null')
+    assert js('document.querySelector(\'[data-door-id="UTIL-02"]\').getAttribute("data-opening-width")')=='0.8'
+    assert js('document.querySelector(\'[data-room-id="BAL-02"]\')===null')
+    js('document.querySelector(\'[data-view="F1"]\').click()')
+    assert js('document.querySelector(\'[data-door-id="ALT-BUFFER"]\').getAttribute("data-opening-width")')=='0.8'
+    assert js('document.querySelector(\'[data-operation-door="ALT-BUFFER"]\').getAttribute("data-operation-kind")')=='hinged'
     assert not errors, errors
     report = [f"# {MODEL['revision']} viewer review", "", "Headless Chrome local review completed.", "",
               f"- {len(MODEL['options'])} active option / all five views rendered without captured JavaScript exceptions.",
@@ -226,7 +241,8 @@ try:
               "- Focused dining screenshot saved as viewer-selection-review.png; each BAL-01 variant area/access note populated correctly.",
               "- F1 displayed TV stand and 1.90 m entrance opening in both options.",
               "- Direct parents/brother bedroom openings, parents inward leaf and sofa facing metadata displayed in both options.",
-              "- C07 outward entry leaves and centered rendered sofa/TV checked; two tube chases, window shades, private BAL-02 details/door and total balcony areas matched each option.",
+              "- C09 outward entry leaves and centered rendered sofa/TV checked; no tube chases, open court, normal operable parents/brother and stair windows, 119.20 m² covered footprint, shared balcony areas matched each option.",
+              "- C09 rendered study/chair, linen door, shared balcony bench, absent private slab and inward 0.80 m buffer door checked.",
               "- All five overlay controls responded; 390 px layout had no document-level horizontal overflow.",
               f"- {len(rendered)} standalone SVG and {len(rendered)} PNG drawings regenerated.",
               "- PNG drawings captured from corresponding standalone SVG tabs, avoiding page-scroll clipping.",

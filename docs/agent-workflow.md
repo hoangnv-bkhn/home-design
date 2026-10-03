@@ -8,7 +8,7 @@ Repository instruction discovery follows [OpenAI's AGENTS.md guidance](https://l
 
 Available project skills (runbooks and slash commands):
 - `.agents/skills/house-revision/SKILL.md` (`/house-revision`): Concept iteration, geometry editing in `data/concepts.json`, viewer and report rebuilds.
-- `.agents/skills/house-verify/SKILL.md` (`/house-verify`): Health check (original 48, 58 in C05, 71 in C06, 83 in C07, headless Chrome and snapshot verification). Read the actual active report; older skill counts describe earlier scope.
+- `.agents/skills/house-verify/SKILL.md` (`/house-verify`): Health check (original 48, 58 in C05, 71 in C06, 83 in C07, 89 in C08, headless Chrome and snapshot verification). Read the actual active report; older skill counts describe earlier scope.
 - `.agents/skills/standards-research/SKILL.md` (`/standards-research`): Vietnamese building codes (QCVN 01, QCVN 06, TCVN 9411) and feng shui cultural research with mandatory citations.
 - `.agents/skills/house-snapshot/SKILL.md` (`/house-snapshot`): Archiving and verifying immutable review baselines in `revisions/`.
 
@@ -45,13 +45,26 @@ Documentation-only work does not require rebuilding house outputs or advancing t
 python scripts/snapshot_revision.py --verify C01
 python scripts/build_concepts.py
 python scripts/review_viewer.py
-# C07 is already archived; next design issue C08 or a distinct erratum suffix:
-python scripts/snapshot_revision.py --verify C07
+# C08 is archived; next design issue C09 or a distinct erratum suffix:
+python scripts/snapshot_revision.py --verify C08
 ```
 
 The snapshot helper requires its revision to match `data/concepts.json`, refuses overwrite and records SHA-256 hashes. Extract `snapshot.zip` into a separate directory to inspect the older self-contained package; do not extract over the active workspace. Review reports inside a snapshot retain their original evidential limits.
 
 ## Current implementation caveats — read before geometry edits
+
+Current **C08** changes, superseding conflicting C07 literals below:
+- Outer envelope 10.5 × 12.0 m, 126.00 m²; `house.courtyard` / COURT-01/02 are aligned 3.4 × 2.0 m clear open court. `derived.gross` subtracts 6.80 m² to report covered area 119.20 m²; `derived.envelope_area` retains 126.00. `outside_f1` excludes the complete outer envelope, with court recorded separately. Court lining/walls remain included; F2 includes stair reservation. Never count COURT-02 as a floor or altar EMPTY-ALT as a void.
+- ALT-01/EMPTY-ALT now 3.4 × 3.0 m / 10.20 m²; backing/buffer retained. BR-02/04 now 15.05 m² with rotated bed; header, section and actual furniture orientation coordinated.
+- Parents/brother now share corresponding court-facing geometry, BR-05 moves to C. Both stacked sanitary pairs relocated. Preserve primary bedroom doors independent of internal bathroom doors, privacy screen and the two passage portals. Private bath links 0.80 m, ordinary suite doors 0.90 m.
+- Main stair branch HALL-MAIN/HALL-06 is 1.00 m; GP-LOBBY/HALL-05 arrival branch 1.20 m. Tiny LINK-01/HALL-03 are junction strips, suppressed labels; not usable routes by themselves.
+- `window_proposals` now has `face`, `operable`, room metadata and explicit court segment. Massing excludes courtyard windows from external facade mapping; roof has an even-odd aperture and clipped interior, not a roof over court. Sections show open court plus normal windows.
+- Tubes/upper boxes/rooflight removed. Do not restore them or treat empty lists as tested daylight systems. Parents court window is single-sided; no airflow/daylight performance verified.
+- Porch/steps/walks move toward D with house width; gates/left car bay remain. Front depth 4.40 m, no turning solver. Balcony front coordinates follow expanded envelope.
+- Build has 89 limited checks, including 900 sampled bed-to-compartment rays and screen/finite private-route bands. Browser has 77 actual pointer selections and C08 window/court/area regressions. Screen overlays ignore pointer events. No legal/occupied/environmental/engineering certification.
+- C08 archived; next design issue C09/erratum. C07 52-file archive verified before edits. Historical implementation notes below remain for provenance; active geometry/report takes precedence.
+
+### Historical C07 and retained mechanisms
 
 C07 keeps metre geometry and 108 m² aligned envelopes. Both options now retain shared BAL-01; `options[].extra_balconies` adds private BAL-02 only in option 02. C06 was verified before editing and preserved; C07 is archived, next design issue C08 or a distinct erratum suffix. AGENTS.md usability principles remain active.
 
@@ -84,3 +97,15 @@ The older C06 notes below describe retained mechanisms except where superseded a
 For new technical/standards research, record exact designation/edition, authoritative link, access date, relevant scope/clauses and what remains unverified. No construction checks should be inferred from the C01 discussion grid. For feng shui, distinguish the family's rule from research, source quality and the proposed geometric interpretation.
 
 Keep the final response focused on the changed design and review links. End the file handoff with enough information that a new session can resume without reconstructing chat: current revision, selection status, completed checks, pending issue IDs, stale/partial outputs if any, and the next concrete action.
+
+## Current C09 implementation override
+
+C09 supersedes conflicting C08 dimensions above. Envelope/court and area convention retained. Stair moves +0.30 m in local x; wet-core outside and stair/Grandpa-sister division share x=6.25. Kitchen/dining and BR-05 widen 0.30 m. BR-02/04 are [6.3,8.1,4.0,3.7]; common bedroom halls are 1.00 m. Grid is a wall-reference overlay, not engineered beams/columns.
+
+Sofa moves +0.80 m in x and −0.05 m in y; TV moves −0.05 m in y. Buffer door is 0.80 m inward, with 0.95 m sofa-back approach and explicit route. New checks validate actual portal adjacency and sampled finite furniture-free access. TV front gap now 1.85 m.
+
+HALL-04 becomes [6.3,5.8,4.0,1.1]; STUDY-02 is [6.3,3.7,4.0,2.0]. UTIL-02 has dry linen cabinet and inward door. Exact EMPTY-ALT retained, occasional cleaning door moved clear of desk. F2 furniture includes occupied chair footprints; renderer must not interpret Bedroom desk as a bed.
+
+Both options now have only shared BAL-01: option01 [10.5,4.6,2.0,3.6], option02 [10.5,4.2,1.6,4.4]. Balcony furniture is option-owned and appended by floorData(); guard/frame inset, occupied bench, entry reservation and seat facing are explicit. Stable BAL-02 is retired from active geometry, preserved in C08. No additional renderer/library.
+
+Final check count is in the generated report (C09 extends the earlier 89 scope and retires three private-balcony checks). Regenerate ten SVG/PNG exports after source changes. C09 archive is a proposal, not acceptance; next design issue C10 or a distinct erratum suffix.

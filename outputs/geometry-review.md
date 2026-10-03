@@ -1,4 +1,4 @@
-# Concept C07 — generated geometry review
+# Concept C09 — generated geometry review
 
 Generated from editable metre geometry. These limited checks do not establish survey accuracy, statutory compliance, usable circulation, stair safety, structural adequacy or vehicle turning.
 
@@ -7,9 +7,9 @@ Generated from editable metre geometry. These limited checks do not establish su
 - Model site area 243.78 m²; not surveyed/registered area.
 - D segments 9.000 + 9.000 m; chord bend offset 0.813 m.
 - Model vertices (m): [[0, 0], [15, 0], [14.744591778293383, 8.996375194503877], [12.874781551544865, 17.8], [0, 16]]
-- F1 gross footprint 108.00 m²; F2 envelope 108.00 m² including stair opening and empty altar zone.
-- Gross envelope sum 216.00 m²; balcony 7.04 m² separately. This is a concept convention, not statutory/contract measurement.
-- Model land outside F1 135.78 m², including gaps, access and parking, not all garden.
+- Outer envelope 126.00 m² each floor minus open court 6.80 m² = F1 covered footprint / F2 covered-envelope convention 119.20 m² each. F2 includes stair opening and empty altar floor; court wall/lining area remains included.
+- Covered-envelope sum 238.40 m²; balcony 7.20 m² separately. This is a concept convention, not statutory/contract measurement.
+- Model land outside outer envelope 117.78 m², plus 6.80 m² internal court; gaps/access/parking are not all garden.
 - F1/F2 B edge modeled 0.10 m from boundary; A edge 0.30 m. C-side upper extension 0.00 m. Owner placement preferences, not lawful setbacks.
 
 ## Automated checks
@@ -52,9 +52,6 @@ Generated from editable metre geometry. These limited checks do not establish su
 - PASS — Option 02: balcony does not overlap indoor zones
 - PASS — Option 02: balcony route avoids altar exclusion
 - PASS — Option 02: floor/balcony corners inside assumed plot
-- PASS — Option 02: additional private balcony connects bedroom
-- PASS — Option 02: additional balcony contained and separate
-- PASS — Option 02: private balcony 0.80 m band avoids furniture/altar
 - PASS — Both floor rear edges retain proposed B allowance
 - PASS — Both floor A edges retain approximate 0.30 m allowance
 - PASS — No doors/windows face near-boundary A or B
@@ -87,79 +84,105 @@ Generated from editable metre geometry. These limited checks do not establish su
 - PASS — Car bay is left/C of house and has separate pedestrian/vehicle gates
 - PASS — Walking strips inside parcel and clear of house, parking and steps
 - PASS — Garden walking centerline clears house and parked vehicles
-- PASS — Compact F1 gross below 110 m²; F2 envelope aligned
+- PASS — Both floor envelopes align around same open court
 - PASS — TV screen and sofa have matching lateral centerlines
 - PASS — Empty arrival reservation avoids furniture and seated footprints
 - PASS — Two main door leaves explicitly open outward
 - PASS — Outward sweep boxes stay on porch and clear front waiting strip
 - PASS — Both comparisons retain independent shared balcony access
-- PASS — Two tube chases align inside parents and bedroom 5
-- PASS — Upper tube boxes avoid furniture and bedroom leaf sweep
-- PASS — Bedroom 5 rooflight lies inside room and clear of tube boxes
+- PASS — Reflective tubes and bedroom-5 rooflight removed
+- PASS — Altar depth 3.0 m and Grandpa revised 14.80 m²
+- PASS — Court has no F2 slab/roof reservation or furniture/services
 - PASS — Window schedule matches plan openings and avoids facade door gaps
+- PASS — Parents and brother operable windows join own open court
+- PASS — Both staircase windows join C-yard stair wall
+- PASS — Court cleaning door connects parents to court
+- PASS — Bedroom furniture stays within a bedroom and outside courtyard
+- PASS — Sampled bed-to-private-compartment sightlines blocked by entry wall or screen
+- PASS — Private 0.80 m route bands avoid physical return screen
+- PASS — Buffer 0.80 m door joins living and indoor buffer outside solid backing
+- PASS — Buffer approach has 0.95 m furniture-free width and continuous 0.80 m route
+- PASS — Wet outer wall and stair-bedroom division share x=6.25 on both floors
+- PASS — Grandpa-sister wall rectangles stack exactly
+- PASS — Upper occupied study and access bands avoid furnishings and altar
+- PASS — Linen door joins study and opens clear of cabinet
+- PASS — Upper furniture and occupied chair footprints do not overlap
+- PASS — Option 01: balcony occupied bench and entry fit modeled guard/frame insets
+- PASS — Option 01: balcony route clears occupied bench
+- PASS — Option 02: balcony occupied bench and entry fit modeled guard/frame insets
+- PASS — Option 02: balcony route clears occupied bench
+- PASS — Shared study and balcony seated backs face away from altar projection
 
 ## Balcony comparison
 
 | Option | Balcony area (m²) | Access |
 | --- | --- | --- |
-| 01 — Shared balcony frame | 7.04 (shared 7.04 + private 0.00) | HALL-04 shared |
-| 02 — Shared + private balcony | 9.64 (shared 7.04 + private 2.60) | HALL-04 shared |
+| 01 — Deeper shared balcony | 7.20 (shared 7.20 + private 0.00) | HALL-04 shared |
+| 02 — Shallower shared balcony | 7.04 (shared 7.04 + private 0.00) | HALL-04 shared |
 
 ## F1 clear zone schedule
 
 | ID | Space | Dimensions (m) | Area (m²) |
 | --- | --- | --- | --- |
-| KIT-01 | Garden kitchen | 1.20 × 5.10 | 6.12 |
+| KIT-01 | Garden kitchen | 1.20 × 4.80 | 5.76 |
 | WC-02 | Shared WC | 1.00 × 1.80 | 1.80 |
 | SH-02 | Shower + basin | 1.40 × 1.80 | 2.52 |
-| HALL-01 | Shared wet access | 2.50 × 1.50 | 3.75 |
+| HALL-01 | Shared wet access | 2.50 × 1.00 | 2.50 |
 | ALT-BUFFER | Quiet indoor buffer | 0.90 × 3.40 | 3.06 |
-| ALT-01 | Altar · faces SE | 1.50 × 3.40 | 5.10 |
-| WC-01 | Private WC | 2.00 × 1.00 | 2.00 |
-| SH-01 | Shower + basin | 2.00 × 1.40 | 2.80 |
-| EN-ACCESS-01 | Suite dressing nook | 1.30 × 1.00 | 1.30 |
-| EN-01 | Private turning lobby | 1.30 × 1.40 | 1.82 |
-| DIN-01 | Kitchen dining | 2.10 × 5.10 | 10.71 |
-| LIV-01 | Open living + arrival | 5.10 × 3.20 | 16.32 |
-| BR-01 | Parents | 3.40 × 3.80 | 12.92 |
+| ALT-01 | Altar · faces SE | 3.00 × 3.40 | 10.20 |
+| WC-01 | Private WC | 1.00 × 1.80 | 1.80 |
+| SH-01 | Shower + basin | 1.40 × 1.80 | 2.52 |
+| EN-ACCESS-01 | Suite dressing nook | 1.30 × 1.80 | 2.34 |
+| EN-01 | Private turning lobby | 1.10 × 1.80 | 1.98 |
+| DIN-01 | Kitchen dining | 2.40 × 4.80 | 11.52 |
+| LIV-01 | Open living + arrival | 4.00 × 3.20 | 12.80 |
+| BR-01 | Parents | 3.40 × 4.60 | 15.64 |
 | STAIR-01 | Stair · 21 risers | 2.20 × 3.70 | 8.14 |
-| BR-02 | Grandpa | 2.80 × 3.70 | 10.36 |
-| GP-LOBBY | Open arrival hall | 5.10 × 1.00 | 5.10 |
+| BR-02 | Grandpa | 4.00 × 3.70 | 14.80 |
+| GP-LOBBY | Arrival / bedroom passage | 4.00 × 1.00 | 4.00 |
+| COURT-01 | Open-to-sky court | 3.40 × 2.00 | 6.80 |
+| LINK-01 | Common hall link | 2.50 × 0.10 | 0.25 |
+| HALL-MAIN | Stair and kitchen passage | 2.20 × 1.00 | 2.20 |
 
-Indoor named zones 93.82 m² including stair reservation; 14.18 m² remains for walls and unassigned junction/extension strips. Not net lettable area.
+Indoor named zones 103.83 m² including stair reservation; 15.37 m² remains for walls and unassigned junction/extension strips. Not net lettable area.
 
 ## F2 clear zone schedule
 
 | ID | Space | Dimensions (m) | Area (m²) |
 | --- | --- | --- | --- |
-| BR-04 | Younger sister | 2.80 × 4.80 | 13.44 |
+| BR-04 | Younger sister | 4.00 × 3.70 | 14.80 |
 | WC-04 | Shared WC | 1.00 × 1.80 | 1.80 |
 | SH-04 | Shower + basin | 1.40 × 1.80 | 2.52 |
-| HALL-02 | Shared wet access | 2.50 × 1.50 | 3.75 |
-| UTIL-02 | Linen / utility | 0.90 × 3.40 | 3.06 |
-| EMPTY-ALT | Empty above altar | 1.50 × 3.40 | 5.10 |
-| WC-03 | Private WC | 2.00 × 1.00 | 2.00 |
-| SH-03 | Shower + basin | 2.00 × 1.40 | 2.80 |
-| EN-ACCESS-03 | Suite dressing nook | 1.30 × 1.00 | 1.30 |
-| EN-03 | Private turning lobby | 1.30 × 1.40 | 1.82 |
-| HALL-03 | Common landing | 2.50 × 3.20 | 8.00 |
-| HALL-04 | Shared landing | 2.50 × 3.20 | 8.00 |
-| BR-03 | Brother | 3.40 × 5.10 | 17.34 |
+| HALL-02 | Shared wet access | 2.50 × 1.00 | 2.50 |
+| UTIL-02 | Linen store | 0.90 × 3.40 | 3.06 |
+| EMPTY-ALT | Empty above altar | 3.00 × 3.40 | 10.20 |
+| WC-03 | Private WC | 1.00 × 1.80 | 1.80 |
+| SH-03 | Shower + basin | 1.40 × 1.80 | 2.52 |
+| EN-ACCESS-03 | Suite dressing nook | 1.30 × 1.80 | 2.34 |
+| EN-03 | Private turning lobby | 1.10 × 1.80 | 1.98 |
+| HALL-03 | Common landing | 2.50 × 0.10 | 0.25 |
+| HALL-04 | Balcony passage | 4.00 × 1.10 | 4.40 |
+| BR-03 | Brother | 3.40 × 4.60 | 15.64 |
 | STAIR-02 | Stair opening | 2.20 × 3.70 | 8.14 |
-| BR-05 | Bedroom 5 | 3.40 × 3.80 | 12.92 rectangle / 12.60 after boxes |
-| BAL-01 | Shared balcony | 1.60 × 4.40 | 7.04 |
-| HALL-05 | Inner passage | 2.20 × 1.00 | 2.20 |
+| BR-05 | Bedroom 5 | 3.70 × 4.80 | 17.76 |
+| BAL-01 | Shared balcony | 2.00 × 3.60 | 7.20 |
+| HALL-05 | Bedroom passage | 4.00 × 1.00 | 4.00 |
+| COURT-02 | Open court void | 3.40 × 2.00 | 6.80 |
+| HALL-06 | Stair and bedroom passage | 2.20 × 1.00 | 2.20 |
+| STUDY-02 | Shared study | 4.00 × 2.00 | 8.00 |
 
-Indoor named zones 94.19 m² including stair reservation; 13.81 m² remains for walls and unassigned junction/extension strips. Not net lettable area.
+Indoor named zones 103.91 m² including stair reservation; 15.29 m² remains for walls and unassigned junction/extension strips. Not net lettable area.
 
-## C07 arrival, daylight and envelope
+## C09 access, alignment and useful upper space
 
-- Centered sofa/TV; empty arrival 2.30 × 1.90 m; separate 1.00 m through lane. Grandpa bedroom 10.36 m² / 0.40 m tighter bed side is an unresolved tradeoff.
-- Outward main leaves; porch 2.20 × 2.20 m plus steps; 1.15 m front waiting strip. Conservative sweep boxes do not prove concurrent occupied door operation.
-- Two 0.40 × 0.40 m tube chases deduct 0.32 m² from bedroom-5 rectangular reservation: 12.60 m² after boxes. Approximately 3.3 m reflective runs to F1 ceiling; no view or ventilation.
-- Bedroom-5 rooflight 1.12 m²; shaded bedroom window widths Grandpa 2.10 m, brother 2.30 m, sister 2.20 m, nominal 1.65 m glazing height. Daylight/heat/noise performance not simulated.
-- Shared balcony 7.04 m² in both options; option 02 adds private 2.60 m², nominal 1.00 m projection. Guard/net usable depth and support unresolved.
-- See docs/daylight-and-envelope-C07.md for sources, applicability and the unresolved 0.30 m boundary-window question.
+- Buffer: inward 0.80 m door from living; 0.95 m sofa-back approach, 0.90 m internal width. A continuous sampled 0.80 m band avoids furniture and backing; no all-position occupied access certification.
+- Centered sofa/TV front-to-stand gap now 1.85 m; open arrival stays 2.30 × 1.90 m. Screen size and actual seated viewing comfort unconfirmed.
+- Stair moves 0.30 m to align wet-core outside wall and stair/Grandpa-sister division at x=6.25 m. Wet pairs and bedroom rectangles stack. Reference lines are not designed beams or columns.
+- Grandpa/sister 14.80 m² (−0.25); entrance-side bed gap 0.90 m, wardrobe gap 0.80 m, foot strip 1.50 m. Common bedroom passage 1.00 m, reduced from 1.20 m.
+- Kitchen/dining and bedroom 5 each 17.76 m² (+1.44). Parents/brother 15.64 m², 6.80 m² open court and covered footprint 119.20 m² retained.
+- Former 12.80 m² upper landing: 8.00 m² shared study, 4.40 m² passage, 0.40 m² open junction. Linen cabinet has a real access route. Required 10.20 m² empty altar floor stays empty.
+- Balcony options: 7.20 m² / 2.00 m projection or 7.04 m² / 1.60 m projection. Modeled edge allowances leave 1.80 / 1.40 m depth; occupied bench clears entry. No additional private slab.
+- C08 altar/window evidence remains applicable to unchanged features; C09 proposes no new code-compliance or structural adequacy claim. See docs/concept-study-C09.md.
 
 ## Stair arithmetic — reservation only
 
@@ -172,9 +195,9 @@ Indoor named zones 94.19 m² including stair reservation; 13.81 m² remains for 
 
 - 21 steps provisionally means risers. Owner confirmed staircase; no lift requested. Architect must resolve actual finished flights, openings, headroom, rails and applicability.
 - Bedroom inward/main-entry outward leaves and sliding sanitary entries are concept studies. Bounding-box and 0.80 m sampled bands are limited collision checks, not occupied usability/compliance certification.
-- Living 16.32 m²; kitchen/dining open bay 17.34 m². Occupied chairs/appliances, suite and garden routes remain unverified.
-- Altar 3.4 m width × 1.5 m depth, facing SE, and reduced 5.10 m² upper exclusion need family acceptance.
-- Enclosed floors stay aligned; shared/optional private balconies, roof openings, foundations, acoustics, waterproofing and guards need a professional design basis.
-- Approximate owner placement is not approval of boundary-wall construction/openings; parents tube output/ventilation, kitchen extract, rooflight, survey and car turning unresolved.
-- Indoor backing buffer remains 0.9 m; family acceptance unresolved. Smaller Grandpa room trades area for open arrival; tube boxes reduce bedroom-5 usable area.
+- Living 12.80 m²; kitchen/dining open bay 17.76 m². Occupied chairs/appliances, suite and garden routes remain unverified.
+- Altar 3.4 m width × 3.0 m depth, facing SE, and exact 10.20 m² upper empty floor need family acceptance. 0.60 m furniture reservation leaves 2.40 m forward standing/ritual depth, not a feng shui minimum.
+- Enclosed floors stay aligned; both shared-balcony variants, roof openings, foundations, acoustics, waterproofing and guards need a professional design basis.
+- Approximate owner placement is not approval of boundary-wall construction/openings; court sky/airflow, window acoustics, kitchen extract, survey and car turning unresolved.
+- Indoor backing buffer remains 0.9 m and gains access. Covered footprint stays 119.20 m² and front depth along A stays 4.40 m; affordability unassessed.
 - Left/C 3.0 × 5.0 m car bay, separate gates, porch and steps are reservations. Clear walking strips do not establish road maneuvers, door-opening envelopes, safe levels or finished door/stair operation.

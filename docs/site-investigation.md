@@ -64,8 +64,20 @@ Use the owner-confirmed 130° bearing along A toward D for concept orientation. 
 
 Boundary units and the meaning of the 130° orientation are resolved; 192 is excluded. Room relationships and a visibly provisional boundary study can progress using the confirmed approximate lengths, owner-provided bearing and an assumed bend. Survey verification remains outstanding.
 
-## C07 entrance and daylight coordination
+## C08 current envelope and real-window proposal
+
+C08 retains polygon, origin (0.10,0.30), approximate A/B allowances and 130° evidence. Outer envelope becomes **10.5 m A × 12.0 m B = 126.00 m²** each floor. A **6.80 m² clear open court** is inside it; subtracting it yields **119.20 m² covered footprint / covered-envelope convention**, including court lining walls and upper stair-opening reservation. Land outside the outer envelope is about **117.78 m²**, plus the internal court. Neither quantity is surveyed garden or statutory coverage. B remains longer than A.
+
+Front depth along A drops **5.90 → 4.40 m**, varying across bent D. Porch and steps move 1.50 m toward D; dimensions and 1.15 m waiting strip remain. Garden connectors move clear of the larger house; front pedestrian strip is now 1.00 m nominal. Separate gates, C parking and two-wheel reservations remain stationary proposals; no road turning or new permission established.
+
+Parents/brother open to an **own 3.4 × 2.0 m open-to-sky court**, with no F2 floor/roof across it, beside sleeping rooms and separate from indoor altar buffer. Both stairs and bedroom 5 have C-yard windows. Reflective tubes/boxes and rooflight removed. No A/B boundary opening assumed. Court sky/airflow, neighbor heights, noise/privacy, drainage, roof/wall edges and services unresolved. [C08 evidence](altar-and-windows-C08.md), S02/S04/L14/L15/E02. No new survey/image evidence or approved footprint.
+
+## C07 entrance and daylight coordination — historical
 
 C07 retains C06's 9.0 × 12.0 m aligned floors, origin and parcel assumptions. Main entrance/porch/pedestrian gate move 1.00 m toward C. Porch depth grows to 2.20 m for outward leaves; steps move outward. Garden approach/walking strips route around the deeper porch; parked-car reservation unchanged. Neither levels nor maneuvering are verified.
 
 Larger shaded bedroom openings face D or the modeled own C yard; no A/B windows. Brother storage is moved off its window wall. Parents receive only explicit roof-tube candidates, and upper bedroom 5 a diffusing rooflight. These are not environmental-performance or permit approvals. The 0.30 m A gap cannot establish adequate sky access without neighbor heights. See [C07 envelope research](daylight-and-envelope-C07.md); legal full-text retrieval failed, so no distance threshold is adopted from search snippets. Site opening rights/planning/airport controls remain S02.
+
+## C09 retained site basis
+
+C09 retains C08 envelope, open court, origin, front depth and ground parking/porch/walking geometry. Balcony 01 changes to 2.00 m projection × 3.60 m frontage; balcony 02 compares the earlier shared 1.60 × 4.40 m form. No private sister slab remains in the active comparison. Both are inside the assumed parcel model; no permission, support design, turning clearance or full porch weather cover is inferred. Ground/survey/environmental evidence status unchanged.

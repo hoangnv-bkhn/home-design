@@ -1,25 +1,20 @@
-# Noi Bai house
+﻿# Noi Bai house
 
-Open the [C07 viewer](outputs/house-concepts.html) locally; it works offline. The TV is centered on the sofa, guests enter empty arrival space, and main doors open outward onto a deeper porch. Both 108 m² enclosed floors are retained. Grandpa's room is smaller; daylight and balcony options are proposals.
+Open the [C09 viewer](outputs/house-concepts.html) locally; it works offline. C09 repairs altar-buffer access, aligns the wet-core/stair-bedroom wall, gives F2 a shared study and compares two shared balcony proportions. Proposed and unselected.
 
-- [C07 changes and tradeoffs](docs/concept-study-C07.md) · [Daylight/envelope evidence](docs/daylight-and-envelope-C07.md)
-- [F1](outputs/option-01-F1.svg) · [Plot](outputs/option-01-site.svg) · [Sections including daylight tubes](outputs/option-01-section.svg)
-- [Shared F2](outputs/option-01-F2.svg) · [Shared frame massing](outputs/option-01-massing.svg)
-- [Shared + private F2](outputs/option-02-F2.svg) · [Additional private layer](outputs/option-02-massing.svg)
+- [C09 comparison and measured tradeoffs](docs/concept-study-C09.md)
+- [F1](outputs/option-01-F1.svg) · [Deeper balcony F2](outputs/option-01-F2.svg) · [Shallower F2](outputs/option-02-F2.svg)
+- [Deeper balcony massing](outputs/option-01-massing.svg) · [Shallower massing](outputs/option-02-massing.svg) · [Plot](outputs/option-01-site.svg) · [Sections](outputs/option-01-section.svg)
 - [Geometry review](outputs/geometry-review.md) · [Browser review](outputs/viewer-review.md) · [Selection capture](outputs/viewer-selection-review.png)
 - [Brief](docs/brief.md) · [Site](docs/site-investigation.md) · [Family rules](docs/preferences-and-feng-shui.md) · [Decisions](docs/decisions.md) · [Open issues](docs/open-issues.md)
 
-Resume from [PROJECT_STATE.md](PROJECT_STATE.md), [AGENTS.md](AGENTS.md) and [workflow](docs/agent-workflow.md). Usability-first decision making remains required. Local skills: /house-revision, /house-verify, /standards-research and /house-snapshot.
+Buffer approach is 0.95 m, door 0.80 m. Centered sofa/TV front gap reduces to 1.85 m. Grandpa/sister remain 14.80 m²; common bedroom passage becomes 1.00 m. The former upper landing gains an 8.00 m² shared study and separate balcony passage. Option01 proposes a deeper 7.20 m² balcony; option02 compares 7.04 m². Private step-out removed.
 
-Neither C07 layout nor balcony is selected. Both comparisons retain independent shared balcony access; one adds a shallow private sister step-out. Grandpa loses 3.08 m² (now 10.36 m²) and has a 0.40 m tighter bed side. Parents roof tubes are daylight candidates only, with no view/ventilation; upper tube boxes deduct 0.32 m². No A/B windows or permissions assumed. Footprint/budget, occupied use, daylight/noise/shading, weather, stair headroom, turning and engineering remain open.
+Covered footprint **stays 119.20 m²**: more useful space does not mean less building area. Required **10.20 m² empty floor above the altar remains**. Structural axes are architectural references, not engineered beams/columns. Court drainage/airflow, when-closed ventilation, stair headroom, occupied fit-out, parking maneuvers and affordability remain unresolved. [Retained altar/window evidence](docs/altar-and-windows-C08.md).
 
-Edit [metre geometry](data/concepts.json), then rebuild/export:
+**98/98 limited geometry checks and Chrome review passed**, with 78 actual pointer selections. Ten SVGs/PNGs and selection capture are current C09; print/PDF untested. Resume from [PROJECT_STATE.md](PROJECT_STATE.md), [AGENTS.md](AGENTS.md) and [workflow](docs/agent-workflow.md).
 
-```powershell
-python scripts/build_concepts.py
-python scripts/review_viewer.py
-```
+Commands: `python scripts/build_concepts.py`, `python scripts/review_viewer.py`, `python scripts/snapshot_revision.py --verify C09`.
 
-Ten SVGs/ten PNGs and focused capture are current C07. **83 limited build checks and Chrome review passed**; 67 actual room clicks. Print/PDF untested.
+Snapshots: [C01](revisions/C01/manifest.json), [C02](revisions/C02/manifest.json), [C03](revisions/C03/manifest.json), [C03a](revisions/C03a/manifest.json), [C04](revisions/C04/manifest.json), [C05](revisions/C05/manifest.json), [C06](revisions/C06/manifest.json), [C07](revisions/C07/manifest.json), [C08](revisions/C08/manifest.json), [C09](revisions/C09/manifest.json). Extract separately. Archives preserve proposals, not approval or off-device backup.
 
-Local snapshots: [C01](revisions/C01/manifest.json), [C02](revisions/C02/manifest.json), [C03](revisions/C03/manifest.json), [C03a](revisions/C03a/manifest.json), [C04](revisions/C04/manifest.json), [C05](revisions/C05/manifest.json), [C06](revisions/C06/manifest.json), [C07](revisions/C07/manifest.json). Verify with `python scripts/snapshot_revision.py --verify C07`. Extract separately; never overwrite the workspace. Archives preserve proposals, not approval or off-device backup.

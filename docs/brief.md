@@ -8,7 +8,7 @@ Updated: 2026-10-03. Source: owner's requirements and corrections supplied in co
 - Two floors, five bedrooms total.
 - Preferred location: rear next to B, with the A-side wall approximately **0.30 m** away. Owner wants outdoor space concentrated toward the front/D and side garden/C. C03 assumes a **0.10 m B allowance** because no exact B dimension was given; this is not an owner-specified distance or verified permission.
 - Parking: one car plus a few scooters/bicycles; garden and front yard preferred.
-- Owner retains an **approximately 100 m² footprint target**, but neither exactly 100 m² nor a 10 × 10 m square is required. Latest feedback allows living-room relayout and asks coordinated entrance, balcony and bedroom daylight. C07 retains C06's 108.00 m² F1/F2 versus C05 122.88/130.56 m²; no footprint approved. Upper cantilever studies remain permitted; enclosed floors align. “Occupy entire plot” remains superseded.
+- Owner retains an **approximately 100 m² footprint target**, but neither exactly 100 m² nor a 10 × 10 m square is required. Latest feedback permits relayout for larger Grandpa/altar and normal bedroom/stair windows. C08 proposes 119.20 m² covered footprint per floor convention, from 126.00 m² outer envelope minus 6.80 m² court, versus C07 108.00 m². Court/footprint not approved; affordability unassessed. Upper cantilever studies remain permitted; covered envelopes align. “Occupy entire plot” remains superseded.
 - In this project, **F1 = ground/entrance floor (tầng 1)** and **F2 = upper floor (tầng 2)**. Use this convention on every drawing.
 - Budget figure deferred for initial layout exploration. No assumption of unlimited budget.
 - Plot evidence and uncertainties: [site notes](site-investigation.md).
@@ -23,7 +23,7 @@ Updated: 2026-10-03. Source: owner's requirements and corrections supplied in co
 | BR-02 | F1 | Grandpa's bedroom | Access to shared WC/shower without entering another bedroom |
 | SAN-01 | F1 | Parents' private sanitary pair | One WC compartment and one separate shower compartment |
 | SAN-02 | F1 | Shared sanitary pair | One WC compartment and one separate shower compartment |
-| ALT-01 | F1 | Altar area | Owner requests minimum width around 3.2–3.4 m; provisionally reserve 3.4 m finished clear width, exact minimum/depth to confirm |
+| ALT-01 | F1 | Altar area | Owner requests width around 3.2–3.4 m and now suggests depth approximately 3 m; C08 proposes 3.4 × 3.0 m, exact extent/furniture to review |
 | LIV-01 | F1 | Living room | Prioritize open space around living/altar; include a TV stand and sofa arrangement |
 | KIT-01 | F1 | Kitchen | Compact dining inside kitchen; latest request explores left/C side with direct side-garden access, superseding rear-only placement; fuel unconfirmed |
 | DIN-01 | F1 | Dining space | Compact table/chairs in kitchen; retain original approximate six seats for this study, no separate generous dining zone needed |
@@ -97,6 +97,16 @@ C06 proposes 9.0 × 12.0 m aligned floors (108.00 m² each), direct parents/brot
 
 C07 proposes outward entry leaves, a deeper porch, centered TV and open arrival hall. Grandpa's room trades 3.08 m² for arrival, leaving 10.36 m² and a 0.40 m tighter bed side. Both balcony comparisons keep shared access; one adds a shallow private sister step-out. Wider shaded yard-facing bedroom windows, a diffusing rooflight and explicit parents daylight-tube routes are proposals. Parents remain without outside view/window ventilation; A/B windows stay absent pending evidence. [C07 review](concept-study-C07.md) and [daylight/envelope evidence](daylight-and-envelope-C07.md) record dimensions, limitations and alternatives.
 
+## C08 feedback — owner input, 2026-10-03
+
+- Grandpa's current bedroom is too small; enlarge it. No exact area or new accessibility requirement was supplied.
+- Altar depth 1.5 m is too small; explore **approximately 3 m**, consult feng shui guidance, and assess exchanging altar and Grandpa room. This authorizes a study, not an exact dimension, swap or layout selection.
+- Prefer **normal windows for parents**, because they can also provide ventilation, replacing reflective tubes as the development direction.
+- Add **a staircase window**. No boundary-opening permission or exact window dimension was added.
+- Broader relayout remains welcome when it improves the design.
+
+C08 proposes a 3.4 × 2.0 m open-to-sky court for normal parents/brother windows and C-yard stair windows; tubes/upper boxes and bedroom-5 rooflight are removed. Grandpa becomes 15.05 m²; altar 3.4 × 3.0 m with exact 10.20 m² empty upper floor and retained indoor buffer. Covered footprint rises 108.00 → 119.20 m² within a 126.00 m² outer envelope, court excluded. Court, increased area and retained-side arrangement remain assistant proposals, unselected. [C08 comparison](concept-study-C08.md) and [research/limits](altar-and-windows-C08.md).
+
 ## Additional owner priorities (retained)
 
 - Laundry/drying: low priority during first layout exploration; resolve a practical location later without further briefing now.
@@ -130,4 +140,13 @@ No construction price or feasible floor area is established by the current sketc
 6. Coordinate columns, stair opening, wet stacks and vertical sections. Revise both floors together.
 7. Compare two or three options with furniture, dimensions, sightlines, preliminary area schedules and unresolved issues.
 
-Current [viewer](../outputs/house-concepts.html) presents [C07](concept-study-C07.md): open arrival/centered living with shared-only versus shared-plus-private balcony layers and daylight candidates. [C06 baseline](../revisions/C06/manifest.json) remains preserved. Road arrival and sofa rule confirmed; outward opening permitted. C07 layout, footprint, sanitary fit-out, balcony and daylight performance remain proposals.
+Current [viewer](../outputs/house-concepts.html) presents [C08](concept-study-C08.md): larger Grandpa/altar, normal courtyard and stair windows with shared-only versus shared-plus-private balcony layers. [C07 baseline](../revisions/C07/manifest.json) remains preserved. Road arrival and sofa rule confirmed; outward opening permitted. C08 layout/court/footprint, sanitary fit-out, balcony and environmental performance remain proposals.
+
+## C09 feedback — owner input, 2026-10-03
+
+- Correct inaccessible indoor space behind the altar.
+- Review the misaligned shower-side and Grandpa-side walls, considering future beam/structural coordination.
+- Reconsider excessive open/empty upstairs space and whether the current balcony is useful and well designed.
+- Broader relayout and room dimension changes are expressly welcome. This permits study; no proposal, structural system, study-room use or balcony option is selected.
+
+C09 proposes an accessible 0.90 m buffer with 0.80 m door/0.95 m sofa-back approach, aligned wet-core/stair-bedroom wall at x=6.25 m, 14.80 m² Grandpa/sister rooms, furnished shared upper study and one shared balcony in two proportions. Covered footprint stays 119.20 m². The 10.20 m² upper altar exclusion remains required under the existing family rule. [C09 comparison](concept-study-C09.md) records the shorter TV gap, narrower common bedroom passage and unverified structural design.

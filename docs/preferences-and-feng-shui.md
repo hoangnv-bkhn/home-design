@@ -1,6 +1,6 @@
 # Family preferences and feng shui register
 
-Updated: 2026-10-03. Status: C07 proposed; road/altar facing and seating rule confirmed. Exact altar extent and 0.90 m buffer need review; courtyard unresolved.
+Updated: 2026-10-03. Status: C09 proposed; road/altar facing and seating rule confirmed. Approximately 3 m altar depth requested for study; 3.4 × 3.0 m extent and 0.90 m buffer unselected. Optional courtyard behind altar unresolved; C08 court is beside sleeping rooms.
 
 ## How requirements are adopted
 
@@ -10,8 +10,8 @@ This record does not claim that these rules are universal or scientifically prov
 
 | ID | Source and priority | Requirement | Working design/check method |
 | --- | --- | --- | --- |
-| ALT-01 | Owner; required | Altar area minimum width around 3.2–3.4 m | Reserve 3.4 m finished clear width initially; confirm exact minimum, altar furniture and ceremony/standing depth |
-| FS-01 | Owner; required, clarified | F2 floor allowed above altar, but keep that zone empty: no bedroom, tables/chairs or frequently used walkway | Project the designated F1 altar zone onto F2; reserve an unfurnished zone outside normal circulation. No double-height void required. Use the whole designated altar area; owner requests reducing C01’s oversized upper reservation. C03 retains the 3.4 × 1.5 m altar zone, excluding the backing buffer; exact depth/extent needs family review |
+| ALT-01 | Owner; required width / approximate depth study | Altar width around 3.2–3.4 m; C08 suggests approximately 3 m depth | C08 reserves 3.4 × 3.0 m. Exact extent/furniture remain proposals; reviewed sources establish no universal 3 m requirement |
+| FS-01 | Owner; required, clarified | F2 floor allowed above altar, but keep that zone empty: no bedroom, tables/chairs or frequently used walkway | Project the whole designated altar zone onto F2. C08 proposes 3.4 × 3.0 m / 10.20 m² exact empty floor, excluding backing buffer; no regular routes or furniture. No double-height void required. Exact extent remains unselected; the separate court has no upper floor |
 | FS-02 | Owner; required | Staircase does not face the main entrance | Show entrance axis/sightline and first flight/landing in plan; explore a side-facing or screened approach, then review with family |
 | FS-03 | Owner; required | Solid wall behind altar, with indoor space beyond the wall; avoid WC/shower, gas stove, bedroom, etc. behind it | Indoor space is the baseline clarified by the owner. An outdoor gap/courtyard is conditionally acceptable if supported by the family's feng shui interpretation; current research does not settle that condition. Label wall and buffer zone in plan/section |
 | FS-04 | Owner; required, C02 | Altar faces the same direction as the house, toward road / southeast | Show matching +x facing vectors in C03; 130° follows A and is not D’s normal or a survey verification |
@@ -43,6 +43,12 @@ C06 retains the exact altar projection and 0.90 m indoor buffer, while turning s
 
 C07 preserves all family rules. The sofa keeps +x facing/back away from altar; centering the TV and moving the entry do not change this. Guests reach open arrival space and turn to seating, with the daily stair route along the C side. Main doors may open outward per owner permission; no new feng shui requirement is inferred. Shared balcony routes bypass the exact empty upper altar projection in both options. Daylight tubes are over the parents' room, outside altar/buffer; A/B backing remains solid. [C07](concept-study-C07.md).
 
+## C08 depth, court and retained-side proposal
+
+Owner asks for approximately 3 m altar depth and a swap assessment. C08 retains altar location, continuous backing, SE facing and 0.90 m indoor buffer, expands altar and exact upper empty floor to 10.20 m², and keeps sofa rear away from it. A 0.60 m cabinet leaves 2.40 m forward depth; this is practical concept sizing. [Research](altar-and-windows-C08.md) records cultural source quality and the lack of an established universal 3 m rule in the reviewed sources. FS-01's active projection is now the complete **3.4 × 3.0 m** proposed zone; earlier 5.10 m² interpretations are superseded geometry.
+
+A direct swap requires moving the stair/upper sister room to fit backing and upper exclusion; it is neither prohibited nor selected. The proposed **open courtyard is beside parents/brother**, outside altar and backing buffer. It does not adopt the unresolved F01 alternative behind the altar wall. No new family rule is inferred.
+
 ## Investigation plan
 
 1. Confirm the spatial meanings of “above,” “behind,” “space area” and “faces.” Use labeled floor overlays, sightlines and a section to make discussion concrete.
@@ -73,3 +79,7 @@ Optional study: **altar → continuous solid exterior wall → courtyard/garden 
 For the first concepts, preserve a solid wall across the altar backing zone and place any daylight openings to its sides rather than replacing that backing with glazing or an opening. This is a proposed implementation of the backing principle, not a newly discovered universal dimensional rule.
 
 Subsequent owner clarification confirms 130° along A toward the road beside D. Use it for concept orientation; measurement method and magnetic/true north remain unspecified.
+
+## C09 access and upper use
+
+C09 preserves the indoor buffer and full solid backing; access is through its side end from living, not through the altar backing wall. Cleaning access is not a through-route. The 10.20 m² upper altar floor stays empty. The shared study and balcony bench are outside this zone; both face toward the altar side with seated backs away. Linen storage is above the buffer, not above the altar, with no wet appliances. These are practical proposals under existing rules, not new feng shui prescriptions or family approval. [C09](concept-study-C09.md).
