@@ -153,8 +153,36 @@ try:
                 ws=main_ws
                 try: call('Target.closeTarget',{'targetId':preview_id})
                 finally: preview_ws.close()
-    js('document.querySelector(\'[data-view="F1"]\').click();document.querySelector(\'[data-room-id="BR-01"]\').dispatchEvent(new MouseEvent("click"))')
-    assert 'BR-01' in js("document.querySelector('#detail').textContent")
+    # Actual pointer input and SVG focus reproduce the reported black-room issue.
+    room_interactions=0
+    call('Emulation.setDeviceMetricsOverride',{'width':1600,'height':2400,'deviceScaleFactor':1,'mobile':False})
+    for option in MODEL['options']:
+        js(f'document.querySelector(\'#options [data-id="{option["id"]}"]\').click()')
+        for floor in MODEL['floors']:
+            js(f'document.querySelector(\'[data-view="{floor["id"]}"]\').click()')
+            for room in floor['rooms']:
+                ident=room['id']
+                selector=json.dumps(f'[data-room-id="{ident}"]')
+                box=js(f'(()=>{{const r=document.querySelector({selector});r.scrollIntoView({{block:"center"}});const b=r.querySelector("rect").getBoundingClientRect();return {{x:b.x+b.width/2,y:b.y+b.height/2}}}})()')
+                call('Input.dispatchMouseEvent',dict(type='mouseMoved',**box))
+                call('Input.dispatchMouseEvent',dict(type='mousePressed',button='left',clickCount=1,**box))
+                call('Input.dispatchMouseEvent',dict(type='mouseReleased',button='left',clickCount=1,**box))
+                assert ident in js("document.querySelector('#detail').textContent"), ident
+                assert js(f'document.querySelector({selector}).getAttribute("aria-pressed")')=='true'
+                before=js(f'getComputedStyle(document.querySelector({selector}).querySelector("rect")).fill')
+                assert before not in ['rgb(0, 0, 0)','none'], (ident,before)
+                js(f'document.querySelector({selector}).focus()')
+                assert js(f'getComputedStyle(document.querySelector({selector}).querySelector("rect")).fill')==before
+                assert js(f'getComputedStyle(document.querySelector({selector})).outlineStyle')=='none'
+                js(f'document.querySelector({selector}).dispatchEvent(new KeyboardEvent("keydown",{{key:"Enter",bubbles:true}}))')
+                assert js(f'document.querySelector({selector}).getAttribute("data-selected")')=='true'
+                room_interactions+=1
+    # A focused dining-room capture records the visual regression check.
+    js('document.querySelector(\'[data-view="F1"]\').click();const dining=document.querySelector(\'[data-room-id="DIN-01"]\');dining.focus();dining.dispatchEvent(new KeyboardEvent("keydown",{key:"Enter",bubbles:true}));document.querySelector("#canvas").scrollIntoView({block:"start"})')
+    call('Emulation.setDeviceMetricsOverride',{'width':1600,'height':1100,'deviceScaleFactor':1,'mobile':False})
+    call('Runtime.evaluate',{'expression':'new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))','awaitPromise':True})
+    shot=call('Page.captureScreenshot',{'format':'png','captureBeyondViewport':False})
+    (OUT/'viewer-selection-review.png').write_bytes(base64.b64decode(shot['data']))
     for control in ['grid','services','furniture','projection','routes']:
         js(f"document.querySelector('#{control}').click()")
     assert js("document.querySelector('#canvas svg')!==null")
@@ -179,7 +207,8 @@ try:
     report = [f"# {MODEL['revision']} viewer review", "", "Headless Chrome local review completed.", "",
               f"- {len(MODEL['options'])} active option / all five views rendered without captured JavaScript exceptions.",
               "- Plot, F1 and F2 declare the 90° clockwise display transform; export metadata matches current revision.",
-              "- BR-01 selection and each BAL-01 variant area/access note populated correctly.",
+              f"- {room_interactions} actual room pointer clicks across both floors/options; keyboard selection and focus retained nonblack fills and accessible pressed state.",
+              "- Focused dining screenshot saved as viewer-selection-review.png; each BAL-01 variant area/access note populated correctly.",
               "- F1 displayed TV stand and 1.90 m entrance opening in both options.",
               "- All five overlay controls responded; 390 px layout had no document-level horizontal overflow.",
               f"- {len(rendered)} standalone SVG and {len(rendered)} PNG drawings regenerated.",

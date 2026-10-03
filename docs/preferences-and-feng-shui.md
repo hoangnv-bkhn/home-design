@@ -1,6 +1,6 @@
 # Family preferences and feng shui register
 
-Updated: 2026-10-02. Status: C03 feedback recorded; road/altar facing confirmed, altar extent proposed; courtyard interpretation remains unresolved.
+Updated: 2026-10-03. Status: C05 geometry proposed; road/altar facing confirmed, altar extent and narrower backing buffer need family review; courtyard interpretation unresolved.
 
 ## How requirements are adopted
 
@@ -24,7 +24,7 @@ Choose the altar location while arranging both floors. Show its backing wall, th
 
 C02/C03 owner feedback retains a matching southeast house/altar facing and asks to reduce the upper reservation. The proposed 5.10 m² zone covers only the revised altar footprint; the floor above the 1.4 m F1 backing buffer becomes utility space. This is a design response, not family approval of the exact reduced depth or buffer extent.
 
-C03 prioritizes the open living/altar relationship by moving dining into the kitchen. Close A/B placement and alternate balcony access do not change the solid backing/indoor-buffer rule or the empty upper projection. They are spatial preferences, not new feng shui rules.
+C05 retains the open living/altar relationship, moves kitchen/dining to C and moves Grandpa's entrance to an inner passage. The solid backing/indoor-buffer rule and empty 5.10 m² upper projection remain. C05 narrows the buffer from 1.4 to 0.9 m; its exact extent needs family review. It is an assistant spatial compromise, not a new family rule or approval. No bedroom, stove or sanitary use is placed within that designated buffer.
 
 The owner clarified that an upper floor is allowed above the altar. Keep the projected zone empty, without tables/chairs or frequent walking. A sitting area or busy landing therefore does not satisfy the brief; a void is unnecessary. Place routine routes to rooms, bathrooms and balcony outside the zone. Show it explicitly on F2 as “empty zone above altar — no furniture or regular circulation.” Occasional cleaning access is a practical design interpretation, not a requirement that the zone be inaccessible.
 

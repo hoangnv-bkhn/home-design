@@ -1,6 +1,6 @@
 # Owner brief — Noi Bai house
 
-Updated: 2026-10-02. Source: owner's requirements supplied in conversation on this date.
+Updated: 2026-10-03. Source: owner's requirements and corrections supplied in conversation; proposal dimensions remain distinct from requirements.
 
 ## Project and floor naming
 
@@ -8,7 +8,7 @@ Updated: 2026-10-02. Source: owner's requirements supplied in conversation on th
 - Two floors, five bedrooms total.
 - Preferred location: rear next to B, with the A-side wall approximately **0.30 m** away. Owner wants outdoor space concentrated toward the front/D and side garden/C. C03 assumes a **0.10 m B allowance** because no exact B dimension was given; this is not an owner-specified distance or verified permission.
 - Parking: one car plus a few scooters/bicycles; garden and front yard preferred.
-- Owner retains an **approximately 100 m² footprint target**, but clarified that neither exactly 100 m² nor a 10 × 10 m square is required. Modest departures and upper-floor cantilever studies are permitted, with exterior design and outdoor space considered together. C03 retains the C02 proposal of 120.96 m² F1; this increase is not owner-approved. The earlier “occupy entire plot” wording remains superseded.
+- Owner retains an **approximately 100 m² footprint target**, but clarified that neither exactly 100 m² nor a 10 × 10 m square is required. Modest departures and upper-floor cantilever studies are permitted, with exterior design and outdoor space considered together. C05 proposes 122.88 m² F1 versus C03's 120.96 m²; neither larger footprint is owner-approved. The earlier “occupy entire plot” wording remains superseded.
 - In this project, **F1 = ground/entrance floor (tầng 1)** and **F2 = upper floor (tầng 2)**. Use this convention on every drawing.
 - Budget figure deferred for initial layout exploration. No assumption of unlimited budget.
 - Plot evidence and uncertainties: [site notes](site-investigation.md).
@@ -25,7 +25,7 @@ Updated: 2026-10-02. Source: owner's requirements supplied in conversation on th
 | SAN-02 | F1 | Shared sanitary pair | One WC compartment and one separate shower compartment |
 | ALT-01 | F1 | Altar area | Owner requests minimum width around 3.2–3.4 m; provisionally reserve 3.4 m finished clear width, exact minimum/depth to confirm |
 | LIV-01 | F1 | Living room | Prioritize open space around living/altar; include a TV stand and sofa arrangement |
-| KIT-01 | F1 | Kitchen | Compact dining inside rear kitchen preferred; garden access must respond to close B placement; fuel unconfirmed |
+| KIT-01 | F1 | Kitchen | Compact dining inside kitchen; latest request explores left/C side with direct side-garden access, superseding rear-only placement; fuel unconfirmed |
 | DIN-01 | F1 | Dining space | Compact table/chairs in kitchen; retain original approximate six seats for this study, no separate generous dining zone needed |
 | BR-03 | F2 | Brother's bedroom | Spacious sleeping room; private ensuite with separate WC and shower |
 | BR-04 | F2 | Younger sister's bedroom | Access to shared sanitary pair |
@@ -67,7 +67,18 @@ Passage dimensions and turning space must support actual users and furniture. Fa
 - **WC basins are unnecessary**; compartments may be smaller. Basin inside each separate shower remains required.
 - Close B placement supersedes C02's rear garden strip and B-side cantilever. C03 removes its rear kitchen door, moves projection toward C, and reaches the garden via living/front yard. Direct kitchen/garden access is still a design issue, not declared resolved.
 
-## Additional owner priorities
+## C05 feedback — owner input, 2026-10-03
+
+- Prefer the **horizontal B dimension longer than vertical A dimension** in the retained clockwise display, to gain more front-yard space. This changes house proportions, not reported parcel side lengths or compass orientation.
+- Investigate rooms turning black on click and improve selection behaviour.
+- Explore kitchen/dining on the **displayed left/C side**, with direct access from side yard/garden. This supersedes rear-only kitchen placement; compact dining inside kitchen remains a preference.
+- Relocate Grandpa's bedroom entrance away from the main entrance/TV arrangement. No special accessibility or acoustic performance requirement was added.
+- Investigate smaller wet compartments, suggesting **1.0 m WC width and 1.4 m shower width** if suitable. These are owner suggestions to test, not confirmed universal minimum dimensions. Independent compartments and shower basins remain required.
+- Double-check porch/steps/car placement and remove redundant plot text while retaining the parking brief of one car and a few two-wheel vehicles.
+
+C05 proposes 9.6 m along A × 12.8 m along B, direct C kitchen exit and a west-side Grandpa door from an inner passage. It studies 1.0/1.4 m clear widths with 2.0 m private and 1.8 m shared depths. The indoor altar backing buffer reduces to 0.9 m; this is a new assistant compromise requiring family review, not an owner requirement. See [C05 tradeoffs](concept-study-C05.md).
+
+## Additional owner priorities (retained)
 
 - Laundry/drying: low priority during first layout exploration; resolve a practical location later without further briefing now.
 - Grandpa: owner does not request special accessibility planning at this stage. Retain ordinary usable circulation; no wheelchair or assisted-showering brief is assumed.
@@ -100,4 +111,4 @@ No construction price or feasible floor area is established by the current sketc
 6. Coordinate columns, stair opening, wet stacks and vertical sections. Revise both floors together.
 7. Compare two or three options with furniture, dimensions, sightlines, preliminary area schedules and unresolved issues.
 
-Current [viewer](../outputs/house-concepts.html) presents [C03a](concept-study-C03a.md), the corrected [C03 design](concept-study-C03.md): the same ground plan with two upper balcony-access alternatives. C02 is preserved in [its snapshot](../revisions/C02/manifest.json). Road arrival is confirmed; C03 layout, footprint and balcony option are unselected.
+Current [viewer](../outputs/house-concepts.html) presents [C05](concept-study-C05.md): the same revised ground plan with two upper balcony-access alternatives. [C03a](../revisions/C03a/manifest.json) and the separately existing [C04](../revisions/C04/manifest.json) archive are preserved. Road arrival is confirmed; C05 layout, footprint, sanitary dimensions and balcony option remain proposals for review.

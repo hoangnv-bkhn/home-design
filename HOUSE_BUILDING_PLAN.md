@@ -1,11 +1,11 @@
 # Hanoi house: planning and design roadmap
 
 Created: 2026-09-30  
-Updated: 2026-10-02  
-Status: C03a owner-feedback comparison available; neither balcony/layout selected. Surveyed geometry, near-boundary permissions and engineering remain pending.  
+Updated: 2026-10-03
+Status: C05 owner-feedback proposal available; neither balcony/layout selected. Surveyed geometry, near-boundary permissions and engineering remain pending.
 Purpose: Guide an editable, AI-assisted process from land investigation to construction and handover.
 
-Current review package: [interactive viewer](outputs/house-concepts.html), [C03 design comparison](docs/concept-study-C03.md), [C03a handoff correction](docs/concept-study-C03a.md), and [geometry review](outputs/geometry-review.md). Road arrival is confirmed; shared versus bedroom balcony access is compared. The approximate footprint target is flexible; C03a retains a proposed 120.96 m² F1 footprint. The following roadmap is a phase guide; current owner requirements live in docs/brief.md. Model area is not registered area.
+Current review package: [interactive viewer](outputs/house-concepts.html), [C05 comparison and compromises](docs/concept-study-C05.md), and [geometry review](outputs/geometry-review.md). C05 is wider along B and shallower along A, with direct C kitchen access, internal Grandpa entry and compact wet-room studies. Road arrival is confirmed; shared versus bedroom balcony access remains compared. Proposed F1 is 122.88 m²; side yard and backing-buffer compromises need review. The following roadmap is a phase guide; current owner requirements live in docs/brief.md. Model area is not registered area.
 
 ## 1. Recommended approach
 

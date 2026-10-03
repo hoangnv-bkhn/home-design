@@ -113,10 +113,27 @@ check('TV stand and sofa lie within living reservation', contains(living,f1['tv'
 kit = next(r['rect'] for r in f1['rooms'] if r['id']=='KIT-01')
 din = next(r['rect'] for r in f1['rooms'] if r['id']=='DIN-01')
 table = next(a[1:] for a in f1['furniture'] if a[0]=='Dining table')
-check('Dining table inside rear kitchen/dining bay', abs(kit[0]+kit[2]+.1-din[0])<1e-8 and kit[1]==din[1] and kit[3]==din[3] and contains(din,table))
+check('Dining table inside open kitchen/dining bay', abs(kit[0]+kit[2]+.1-din[0])<1e-8 and kit[1]==din[1] and kit[3]==din[3] and contains(din,table))
 check('Stationary car bay corners inside assumed plot', all(inside(p) for p in corners(s['car_bay'])))
 check('Car bay does not overlap F1 footprint', overlap(s['car_bay'],[*s['assumed_house_origin'],*f1['envelope'][2:]])<1e-8)
 check('Clockwise plot/floor view rotation declared 90 degrees', data['presentation']['plan_rotation_clockwise']==90)
+check('Horizontal B extent exceeds vertical A extent', data['house']['depth']>data['house']['width'])
+site_house=[s['assumed_house_origin'][0],s['assumed_house_origin'][1],*f1['envelope'][2:]]
+site_items=[s['car_bay'],s['porch'],s['porch_steps'],*s['scooters']]
+check('Porch/steps/two-wheel spaces inside assumed parcel', all(inside(p) for r in site_items for p in corners(r)))
+check('Parking, porch, steps and two-wheel reservations do not overlap', all(overlap(a,b)<1e-8 for i,a in enumerate(site_items) for b in site_items[i+1:]))
+check('Porch, steps and two-wheel spaces avoid F1 footprint', all(overlap(site_house,r)<1e-8 for r in site_items))
+entry_center=[s['assumed_house_origin'][0]+entry[1],s['assumed_house_origin'][1]+entry[2]+entry[3]/2,.001,.001]
+check('Porch aligns with 1.90 m entrance opening', abs(s['porch'][0]-(site_house[0]+site_house[2]))<1e-8 and s['porch'][1]<=entry_center[1]-entry[3]/2 and s['porch'][1]+s['porch'][3]>=entry_center[1]+entry[3]/2)
+check('Arrival centerline avoids parked vehicles and house interior', all(overlap(p,r)<1e-8 for p in route_samples({'points':s['arrival_path']}) for r in [s['car_bay'],*s['scooters'],[site_house[0],site_house[1],site_house[2]-.002,site_house[3]]]))
+gp=next(r['rect'] for r in f1['rooms'] if r['id']=='BR-02')
+gp_hall=next(r['rect'] for r in f1['rooms'] if r['id']=='GP-LOBBY')
+gp_door=next(d for d in f1['doors'] if d[0]=='BR-02')
+check('Grandpa door connects bedroom west wall to inner passage', gp_door[4]=='v' and abs(gp_door[1]-(gp[0]-.05))<1e-8 and abs(gp_door[1]-(gp_hall[0]+gp_hall[2]+.05))<1e-8 and all(gp_door[2]>=r[1] and gp_door[2]+gp_door[3]<=r[1]+r[3] for r in [gp,gp_hall]))
+garden_door=next(d for d in f1['doors'] if d[0]=='KIT-GARDEN')
+check('Kitchen dining has direct C-side garden opening', garden_door[4]=='h' and abs(garden_door[2]-(f1['envelope'][3]-data['house']['external_wall']/2))<1e-8 and garden_door[1]>=din[0] and garden_door[1]+garden_door[3]<=din[0]+din[2] and din[1]+din[3]==f1['envelope'][3]-data['house']['external_wall'])
+check('WC/shower study widths retain 1.0/1.4 m', all(abs(min(r['rect'][2:])-(1 if r['type']=='wc' else 1.4))<1e-8 for f in data['floors'] for r in f['rooms'] if r['type'] in ['wc','shower']))
+check('Sanitary entries lie on compartment/lobby junctions', all(d[4]=='h' and abs(d[2]-(next(r['rect'] for r in f['rooms'] if r['id']==d[0])[1]+next(r['rect'] for r in f['rooms'] if r['id']==d[0])[3]+.05))<1e-8 and d[1]>=next(r['rect'] for r in f['rooms'] if r['id']==d[0])[0] and d[1]+d[3]<=next(r['rect'] for r in f['rooms'] if r['id']==d[0])[0]+next(r['rect'] for r in f['rooms'] if r['id']==d[0])[2] for f in data['floors'] for d in f['doors'] if d[0].startswith(('WC-','SH-'))))
 
 gross = {f['id']:f['envelope'][2]*f['envelope'][3] for f in data['floors']}
 bal_area = balcony[2]*balcony[3]
@@ -151,10 +168,12 @@ lines += ['', '## Stair arithmetic — reservation only', '',
           '', '## Unresolved review', '',
           '- 21 steps provisionally means risers. Owner confirmed staircase; no lift requested. Architect must resolve actual finished flights, openings, headroom, rails and applicability.',
           '- Door leaves, sanitary fixture use, privacy sightlines and occupied dining clearances; door gaps/fixtures are reservations.',
-          '- Open living 18.27 m²; compact kitchen/dining bay 12.76 m². Occupied chairs/appliances, suite and garden routes remain unverified.',
+          f'- Living {living[2]*living[3]:.2f} m²; kitchen/dining open bay {(kit[2]+din[2]+data["house"]["partition"])*kit[3]:.2f} m². Occupied chairs/appliances, suite and garden routes remain unverified.',
           '- Altar 3.4 m width × 1.5 m depth, facing SE, and reduced 5.10 m² upper exclusion need family acceptance.',
           '- C-side cantilever, both balcony alternatives, rooflight, foundations, acoustics, waterproofing and guards need a professional design basis.',
-          '- Approximate owner placement is not approval of boundary-wall construction/openings; kitchen daylight/extract, fifth-bedroom rooflight/ventilation, survey and car turning unresolved.']
+          '- Approximate owner placement is not approval of boundary-wall construction/openings; kitchen extract, fifth-bedroom rooflight/ventilation, survey and car turning unresolved.',
+          '- Indoor backing buffer is 0.9 m rather than C03 1.4 m; family acceptance unresolved. Grandpa and sister room proportions become longer/narrower.',
+          '- Car bay, porch and steps are ground reservations. 1.15 m lateral separation does not establish occupied vehicle access, safe levels or stair/door operation.']
 out=ROOT/'outputs'
 out.mkdir(exist_ok=True)
 (out/'geometry-review.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')

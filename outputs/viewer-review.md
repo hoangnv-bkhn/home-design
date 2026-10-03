@@ -1,10 +1,11 @@
-# C03a viewer review
+# C05 viewer review
 
 Headless Chrome local review completed.
 
 - 2 active option / all five views rendered without captured JavaScript exceptions.
 - Plot, F1 and F2 declare the 90° clockwise display transform; export metadata matches current revision.
-- BR-01 selection and each BAL-01 variant area/access note populated correctly.
+- 66 actual room pointer clicks across both floors/options; keyboard selection and focus retained nonblack fills and accessible pressed state.
+- Focused dining screenshot saved as viewer-selection-review.png; each BAL-01 variant area/access note populated correctly.
 - F1 displayed TV stand and 1.90 m entrance opening in both options.
 - All five overlay controls responded; 390 px layout had no document-level horizontal overflow.
 - 10 standalone SVG and 10 PNG drawings regenerated.
