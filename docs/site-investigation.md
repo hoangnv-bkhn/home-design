@@ -120,3 +120,9 @@ Remove D-side bedroom projection and move **0.60 m towards own C-side garden**: 
 Main entry/porch/treads/canopy shift **0.30 m right in the rotated front view**, preserving garden/arrival walks. Stationary car/gates remain unverified for maneuvers. Blade/portal supports and portal's short side slats clear the limited walking/swing/waiting bands.
 
 Altar moves from road-facing glazing to a dashed **conditional A-side** candidate; parents/brother high A-side lights are also conditional. No opening right or daylight/ventilation credit is adopted, and ordinary court windows remain. The roof screen top **8.15 m assumed**, collector/hatch and cold/hot storage are reservations; confirm exact solar horizon/true north, heights/airport applicability, support, maintenance and drains. [C14](concept-study-C14.md), [evidence](windows-roof-C14.md).
+
+## C15 governing site/envelope update
+
+Envelope/origin/front reference and parcel evidence remain C14. Court moves inward/grows to 6.96 m²; F1 covered 116.16 m² and F2 enclosed 108.32 m², excluding court. No enclosed sister projection; upper bounding envelope returns to 10.80×11.40 m. Terrace 11.50 m² is fully sheltered; porch 7.26 m²/canopy 12.00 m² are separately recorded. Wider porch retains D projection. Garden approach routes around to the front steps; stationary car/gates remain unverified for maneuvers.
+
+Common main roof 6.60 m/low parapet 6.95 m and inset screen 8.15 m are proposed levels, not permitted heights. Equipment relocates above rear suite to avoid court. Direct suite court windows narrow to 0.90 m; no environmental adequacy or A-boundary rights established. No new survey or local-code applicability claim. [C15](concept-study-C15.md).

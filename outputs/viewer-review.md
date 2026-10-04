@@ -1,4 +1,4 @@
-# C14 viewer review
+# C15 viewer review
 
 Headless Chrome local review completed.
 
@@ -11,9 +11,9 @@ Headless Chrome local review completed.
 - Outward entry leaves, centered rendered sofa/TV, solid altar side wall, open court and operable bedroom/stair windows checked; displayed ground area matched model dimensions.
 - Study/chair removal, linen portal, shared terrace bench, absent private slab and doorless 1.00 m buffer opening checked.
 - Wooden armchair facing and gallery glazing displayed; both exterior variants resolve camera-depth ordering without dependency cycles.
-- C14 actual upper polygon, C-side 0.60 m room extension, 6.78 m roof cap and two independent stair openings checked. Conditional A-side candidates stay distinct from ordinary window schedule.
-- Section labels match the 4.80 m² court and 3.00 m canopy, and include C-side extension, illustrative beam/window ranges, roof-service reservations and private balcony replacement diagram.
-- Blade/portal porch metadata differs by option; rooftop screen and exposed collector appear in both massings.
+- C15 actual upper polygon, zero enclosed projection, 6.60 m common roof datum/low parapet and two independent stair openings checked. Conditional A-side candidates stay distinct from ordinary window schedule.
+- Section labels match the 6.96 m² court and 3.00 m canopy, and include aligned bedroom walls, illustrative beam/window ranges, roof-service reservations and low-parapet drainage diagram.
+- Ranch/framed-ranch porch metadata differs by option; rooftop screen and exposed collector appear in both massings.
 - All five overlay controls responded; 390 px layout had no document-level horizontal overflow.
 - 10 standalone SVG and 10 PNG drawings regenerated.
 - PNG drawings captured from corresponding standalone SVG tabs, avoiding page-scroll clipping.

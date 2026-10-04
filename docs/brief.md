@@ -8,7 +8,7 @@ Updated: 2026-10-04. Source: owner's requirements and corrections supplied in co
 - Two floors, five bedrooms total.
 - Preferred location: rear next to B, with the A-side wall approximately **0.30 m** away. Owner wants outdoor space concentrated toward the front/D and side garden/C. C03 assumes a **0.10 m B allowance** because no exact B dimension was given; this is not an owner-specified distance or verified permission.
 - Parking: one car plus a few scooters/bicycles; garden and front yard preferred.
-- Owner retains an **approximately 100 m² footprint target**, but neither exactly 100 m² nor a 10 × 10 m square is required. C14 proposes **118.32 m² ground covered / 113.03 m² upper enclosed** using the actual notched/side-projecting upper outline, a 4.80 m² court and 0.60 m C-side upper-bedroom extension. Ground bounding dimensions are 10.80 × 11.40 m; F2's 10.80 × 12.00 m bounding rectangle is not floor area. Shared terrace 11.50 m² separately. Footprint, projection and affordability remain unapproved. “Occupy entire plot” remains superseded.
+- Owner retains an **approximately 100 m² footprint target**, but neither exactly 100 m² nor a 10 × 10 m square is required. C15 proposes **116.16 m² ground covered / 108.32 m² upper enclosed**, excluding a 6.96 m² inward court and using the actual notched upper outline. Both bounding envelopes are 10.80 × 11.40 m; F2's rectangle is not floor area. Shared sheltered terrace 11.50 m² and ground porch 7.26 m² separately. No sister room cantilever. Exact footprint/layout and affordability remain unapproved. “Occupy entire plot” remains superseded.
 - In this project, **F1 = ground/entrance floor (tầng 1)** and **F2 = upper floor (tầng 2)**. Use this convention on every drawing.
 - Budget figure deferred for initial layout exploration. No assumption of unlimited budget.
 - Plot evidence and uncertainties: [site notes](site-investigation.md).
@@ -40,7 +40,7 @@ Owner now requires a **basin inside each shower compartment** and improved showe
 
 ## Ensuite privacy
 
-Preference: WC/shower doors should not directly face the bedroom. Explore **bedroom → short screened/dressing passage → turn → separate WC and shower doors**. Check the sightline from both the bed and bedroom entry. Merely rotating the sanitary door while leaving the interior visible would not satisfy the intended privacy.
+Preference: WC/shower doors should not directly face the bedroom. The owner questions the dressing screen and asks to explore removal in C15. Preserve the privacy goal while simplifying the passage. C15 proposes an offset passage and opaque sliding suite door: bed sightlines are blocked with it open, but some ordinary-entry views need it closed. This is a disclosed compromise for owner review, not confirmed acceptance of reduced privacy. Check both bed and entrance sightlines; perpendicular doors alone are insufficient.
 
 Passage dimensions and turning space must support actual users and furniture. Favor useful dressing/storage space over a long corridor. Keep the private route within the relevant suite.
 
@@ -140,7 +140,7 @@ No construction price or feasible floor area is established by the current sketc
 6. Coordinate columns, stair opening, wet stacks and vertical sections. Revise both floors together.
 7. Compare two or three options with furniture, dimensions, sightlines, preliminary area schedules and unresolved issues.
 
-Current [viewer](../outputs/house-concepts.html) presents [C14](concept-study-C14.md): compact 2.40 m bay, relocated dressing return, conditional side windows, C-side upper-bedroom extension, deeper shared terrace and roof/porch comparison. [C13 baseline](../revisions/C13/manifest.json) is preserved. Layout, openings, roof/services and porch choices remain proposals.
+Current [viewer](../outputs/house-concepts.html) presents [C15](concept-study-C15.md): edge private baths, inward court, screen removal with opaque suite doors, aligned sister room, sheltered terrace, ranch porch and low parapet. [C14 baseline](../revisions/C14/manifest.json) is preserved. Shelter is the owner's preference; exact layout/openings/roof/services/porch remain proposals.
 
 ## C09 feedback — owner input, 2026-10-03
 
@@ -208,3 +208,14 @@ C13 aligns court/stair to a 2.50 m bay, retains suite minimum/counts, uses a cle
 - Explore another porch/canopy composition creatively; neither option selected.
 
 C14 reduces the aligned bay to 2.40 m and ground depth 10.90 → 10.80 m. Private showers reduce 1.40 → 1.30 m, central stair reservation 0.30 → 0.20 m; suite minimum/counts retained. Dressing return moves 0.45 m towards wet doors, entry shifts 0.30 m right with compact furniture reconciled. Altar/suite side windows are dashed conditional candidates, ordinary court windows retained. Sister's 0.60 m extension moves to C; shared terrace projects 1.00 m. Roof screen reserves separate cold/hot storage and exposed collector/hatch; blade/portal porch options and a separate private-balcony replacement diagram are proposals. [C14 comparison](concept-study-C14.md), [research/limits](windows-roof-C14.md).
+
+## C15 owner iteration — 2026-10-04
+
+- Dislikes the sister's cantilever and enclosed, wall-heavy exterior. Rework the composition creatively.
+- Dislikes private WC/shower near the center; explore moving them to the current court position. Preserve both floors and the other room requirements.
+- Questions the dressing screen and asks whether it can be removed. This authorizes simplification studies, not silent abandonment of privacy.
+- Questions whether the sister's ceiling is higher intentionally or due to drawing error. C14 had a raised exterior cap, but equal modeled floor rise; no different ceiling height was specified.
+- **Prefers sheltered terrace over open pergola**. Both C15 comparisons therefore have complete roof coverage.
+- Explore a **modern ranch porch**, recognizing limited space toward D, and consider a **modern parapet roof**. These are study directions, not approval of exact dimensions, roof assembly or structure.
+
+C15 moves stacked private wet rooms into the former court bay, shifts/grows the court inward, removes screens, adds opaque suite sliding doors and returns sister to the ground outline with larger D/C windows. A wider open-sided ranch porch retains existing depth; low parapet replaces raised bedroom cap. Direct suite windows narrow to 0.90 m, standing-entry privacy requires a closed suite door, sister storage reduces and tank reservations move above the rear suite. These are assistant tradeoffs for review. [C15 comparison](concept-study-C15.md).

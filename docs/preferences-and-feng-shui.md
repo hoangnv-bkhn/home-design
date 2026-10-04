@@ -1,6 +1,6 @@
 # Family preferences and feng shui register
 
-Updated: 2026-10-04. Status: C14 proposed; approximately 1.20 m actual altar depth governs upper exclusion. Latest lateral-window direction supersedes C13 provisional road-facing glazing. Indoor backing and seated-back rules remain; historical interpretations are superseded where stated.
+Updated: 2026-10-04. Status: C15 proposed; approximately 1.20 m actual altar depth governs upper exclusion. Lateral-window direction, indoor backing and seated-back rules remain. C15 removes the dressing screen but requires opaque suite doors for some standing-entry views; privacy acceptance remains open.
 
 ## How requirements are adopted
 
@@ -16,7 +16,7 @@ This record does not claim that these rules are universal or scientifically prov
 | FS-03 | Owner; required | Solid wall behind altar, with indoor space beyond the wall; avoid WC/shower, gas stove, bedroom, etc. behind it | Indoor space is the baseline clarified by the owner. An outdoor gap/courtyard is conditionally acceptable if supported by the family's feng shui interpretation; current research does not settle that condition. Label wall and buffer zone in plan/section |
 | FS-04 | Owner; required, C02 | Altar faces the same direction as the house, toward road / southeast | Show matching +x facing vectors in C03; 130° follows A and is not D’s normal or a survey verification |
 | FS-05 | Owner; required, C06 | Seated occupants must not have their backs toward altar | Review sofa facing/back, altar, TV, entry and paths together. C06 faces +x/front, back toward B away from altar; family rule, not a universal prescription |
-| PR-01 | Owner; preference | Ensuite doors do not face the bedroom | Short screened passage with a turn before WC/shower doors; check bed/entry sightlines and circulation |
+| PR-01 | Owner; preference, C15 simplification study | Ensuite doors do not face the bedroom; explore screen removal | C15 offset passage blocks sampled bed views; opaque suite door must close for some ordinary-entry views. Disclosed compromise, not owner-approved relaxation |
 | PR-02 | Owner; permitted | Living and altar may share an open space | Compare shared hall and more defined altar alcove without assuming either is selected |
 
 ## Resolve the altar in plan and section
@@ -114,3 +114,9 @@ The requested opposite-side window is ambiguous because the literal lateral oppo
 Owner expressly directs altar windows to a **side wall, away from the opposite-facing wall**. C14 removes the road-facing window and proposes a conditional high A-side diffusing light in the forward worship space. This exterior-side interpretation is the assistant's proposal; the family's lateral placement direction is confirmed, opening rights/sky are not. Continuous solid backing/quiet **1.00 m indoor gallery**, solid living-side divider and **3.20 × 1.20 m / 3.84 m²** empty upper strip remain. No new cultural rule or minimum window sill is claimed.
 
 Regular upper access, seating and rooftop storage/equipment stay outside the exclusion; no wet service is routed in the backing. Parents/brother ordinary bedroom entrances and screened private turns remain. Relocating the short privacy return towards sanitary doors does not remove the family's privacy preference. Compact wooden chair/table and terrace bench keep modeled backs away from the altar; occupied positions require family review. Roof reservations above the wet core do not introduce equipment into the gallery or altar strip. [C14](concept-study-C14.md) supersedes changed C13 geometry only.
+
+## C15 — screen removal and inward court
+
+The private pairs move nearer A, outside the retained indoor gallery/backing and altar projection. The new court is beside the living/gallery junction; it does not replace the indoor buffer or settle F01. Exact empty upper strip and seated-back rule remain.
+
+Freestanding dressing screens are removed. The offset wall blocks sampled bed views, but 72/324 sampled ordinary-entry rays see a sanitary doorway with all doors open. Proposed opaque suite sliding doors provide closure; the owner has not accepted this privacy compromise. No new cultural rule is inferred from moving toilets away from the center. [C15](concept-study-C15.md).

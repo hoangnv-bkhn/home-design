@@ -1,4 +1,4 @@
-# Concept C14 — generated geometry review
+# Concept C15 — generated geometry review
 
 Generated from editable metre geometry. These limited checks do not establish survey accuracy, statutory compliance, usable circulation, stair safety, structural adequacy or vehicle turning.
 
@@ -7,10 +7,10 @@ Generated from editable metre geometry. These limited checks do not establish su
 - Model site area 243.78 m²; not surveyed/registered area.
 - D segments 9.000 + 9.000 m; chord bend offset 0.813 m.
 - Model vertices (m): [[0, 0], [15, 0], [14.744591778293383, 8.996375194503877], [12.874781551544865, 17.8], [0, 16]]
-- Ground envelope 123.12 m² minus court 4.80 m² = F1 covered 118.32 m². Actual notched/projecting upper polygon 117.83 m² minus court = F2 enclosed 113.03 m². Stair reservation and court lining remain included; F2 bounding rectangle is not its floor area.
-- Covered-envelope sum 231.35 m²; balcony 11.50 m² separately. This is a concept convention, not statutory/contract measurement.
-- Model land outside outer envelope 120.66 m², plus 4.80 m² internal court; gaps/access/parking are not all garden.
-- F1/F2 B edge modeled 0.10 m from boundary; A edge 0.30 m. C-side upper bedroom projection 0.60 m. Owner placement preferences, not lawful setbacks.
+- Ground envelope 123.12 m² minus court 6.96 m² = F1 covered 116.16 m². Actual notched/projecting upper polygon 115.28 m² minus court = F2 enclosed 108.32 m². Stair reservation and court lining remain included; F2 bounding rectangle is not its floor area.
+- Covered-envelope sum 224.48 m²; balcony 11.50 m² separately. This is a concept convention, not statutory/contract measurement.
+- Model land outside outer envelope 120.66 m², plus 6.96 m² internal court; gaps/access/parking are not all garden.
+- F1/F2 B edge modeled 0.10 m from boundary; A edge 0.30 m. C-side upper bedroom projection 0.00 m. Owner placement preferences, not lawful setbacks.
 
 ## Automated checks
 
@@ -97,9 +97,11 @@ Generated from editable metre geometry. These limited checks do not establish su
 - PASS — Window schedule matches plan openings and avoids facade door gaps
 - PASS — Parents and brother operable windows join own open court
 - PASS — Two C-yard stair openings avoid illustrative floor-edge beam band
-- PASS — Court cleaning door connects common quiet gallery to court
+- PASS — Court cleaning door connects common living approach to court
 - PASS — Bedroom furniture stays within a bedroom and outside courtyard
-- PASS — Sampled bed-to-private-compartment sightlines blocked by entry wall or screen
+- PASS — Sampled bed views to private doors blocked by offset suite entry wall
+- PASS — Private suite entries have opaque closing-door proposal for standing-entry privacy
+- PASS — Open opaque suite leaves fit bedroom wall and avoid furnishings and ordinary door sweeps
 - PASS — Private 0.80 m route bands avoid physical return screen
 - PASS — Buffer full-width 1.00 m doorless opening joins living outside solid backing
 - PASS — Buffer approach has 0.90 m furniture-free width and continuous 0.80 m route
@@ -121,7 +123,7 @@ Generated from editable metre geometry. These limited checks do not establish su
 - PASS — Study retired; terrace replaces it without entering altar exclusion
 - PASS — Shared wet rear wall aligns with corner bedroom wall on both floors
 - PASS — Court stair private-wet bay and kitchen/spare share both principal wall lines
-- PASS — Open dressing still has private outer enclosure and no obsolete partition portals
+- PASS — Private passage retains outer enclosure with no freestanding screen or obsolete portals
 - PASS — Linen alcove door removed and empty floor stays unfurnished
 - PASS — Entrance three-rise arithmetic matches proposed yard and porch levels
 - PASS — Canopy posts avoid entry sweeps waiting and arrival centerline
@@ -149,14 +151,13 @@ Generated from editable metre geometry. These limited checks do not establish su
 - PASS — Roof access sample stays on actual roof and clears collector court and tanks
 - PASS — Option 01: porch canopy covers porch/treads and framed supports clear arrival
 - PASS — Option 02: porch canopy covers porch/treads and framed supports clear arrival
-- PASS — Portal side slats keep garden/arrival walks and door/waiting bands free
 
 ## Balcony comparison
 
 | Option | Balcony area (m²) | Access |
 | --- | --- | --- |
-| 01 — Blade canopy + open pergola | 11.50 (shared 11.50 + private 0.00) | HALL-04 shared |
-| 02 — Portal porch + sheltered terrace | 11.50 (shared 11.50 + private 0.00) | HALL-04 shared |
+| 01 — Ranch porch + low parapet | 11.50 (shared 11.50 + private 0.00) | HALL-04 shared |
+| 02 — Framed ranch porch + low parapet | 11.50 (shared 11.50 + private 0.00) | HALL-04 shared |
 
 ## F1 clear zone schedule
 
@@ -170,27 +171,27 @@ Generated from editable metre geometry. These limited checks do not establish su
 | ALT-01 | Altar · faces SE | 2.90 × 3.20 | 9.28 |
 | WC-01 | Private WC | 1.00 × 1.80 | 1.80 |
 | SH-01 | Shower + basin | 1.30 × 1.80 | 2.34 |
-| EN-ACCESS-01 | Private dressing | 0.90 × 1.90 | 1.71 |
-| EN-01 | Bathroom turn | 1.40 × 1.90 | 2.66 |
+| EN-ACCESS-01 | Private bath passage | 0.90 × 1.00 | 0.90 |
+| EN-01 | Bathroom turn | 1.40 × 1.00 | 1.40 |
 | DIN-01 | Kitchen dining | 2.60 × 3.70 | 9.62 |
 | LIV-01 | Open living + arrival | 4.00 × 2.80 | 11.20 |
 | BR-01 | Parents | 3.80 × 4.00 | 15.20 |
 | STAIR-01 | Stair · 21 risers | 2.40 × 3.70 | 8.88 |
 | BR-02 | Grandpa | 4.00 × 3.70 | 14.80 |
 | GP-LOBBY | Arrival / bedroom passage | 4.00 × 1.00 | 4.00 |
-| COURT-01 | Open-to-sky court | 2.40 × 2.00 | 4.80 |
+| COURT-01 | Open-to-sky court | 2.40 × 2.90 | 6.96 |
 | LINK-01 | Common hall link | 2.40 × 0.10 | 0.24 |
 | HALL-MAIN | Stair and kitchen passage | 2.40 × 1.00 | 2.40 |
 | COURT-HALL-1 | Bedroom passage | 1.30 × 2.00 | 2.60 |
 | KITCHEN-LOBBY | Shared sanitary lobby | 3.80 × 1.00 | 3.80 |
 
-Indoor named zones 102.18 m² including stair reservation; 16.14 m² remains for walls and unassigned junction/extension strips. Not net lettable area.
+Indoor named zones 100.11 m² including stair reservation; 16.05 m² remains for walls and unassigned junction/extension strips. Not net lettable area.
 
 ## F2 clear zone schedule
 
 | ID | Space | Dimensions (m) | Area (m²) |
 | --- | --- | --- | --- |
-| BR-04 | Younger sister | 4.00 × 4.30 | 17.20 |
+| BR-04 | Younger sister | 4.00 × 3.70 | 14.80 |
 | WC-04 | Shared WC | 1.00 × 1.80 | 1.80 |
 | SH-04 | Shower + basin | 1.30 × 1.80 | 2.34 |
 | HALL-02 | Sanitary lobby junction | 2.40 × 0.10 | 0.24 |
@@ -198,8 +199,8 @@ Indoor named zones 102.18 m² including stair reservation; 16.14 m² remains for
 | EMPTY-ALT | Empty above altar | 1.20 × 3.20 | 3.84 |
 | WC-03 | Private WC | 1.00 × 1.80 | 1.80 |
 | SH-03 | Shower + basin | 1.30 × 1.80 | 2.34 |
-| EN-ACCESS-03 | Private dressing | 0.90 × 1.90 | 1.71 |
-| EN-03 | Bathroom turn | 1.40 × 1.90 | 2.66 |
+| EN-ACCESS-03 | Private bath passage | 0.90 × 1.00 | 0.90 |
+| EN-03 | Bathroom turn | 1.40 × 1.00 | 1.40 |
 | HALL-03 | Common landing | 2.40 × 0.10 | 0.24 |
 | HALL-04 | Terrace landing | 4.00 × 1.30 | 5.20 |
 | BR-03 | Brother | 3.80 × 4.00 | 15.20 |
@@ -207,26 +208,27 @@ Indoor named zones 102.18 m² including stair reservation; 16.14 m² remains for
 | BR-05 | Bedroom 5 | 3.80 × 3.70 | 14.06 |
 | BAL-01 | Shared right terrace | 2.50 × 4.60 | 11.50 |
 | HALL-05 | Bedroom passage | 4.00 × 1.00 | 4.00 |
-| COURT-02 | Open court void | 2.40 × 2.00 | 4.80 |
+| COURT-02 | Open court void | 2.40 × 2.90 | 6.96 |
 | HALL-06 | Stair and bedroom passage | 2.40 × 1.00 | 2.40 |
 | COURT-HALL-2 | Bedroom passage | 1.30 × 2.00 | 2.60 |
 | LANDING-02 | Linen approach | 2.50 × 1.30 | 3.25 |
 | SPARE-LOBBY | Shared sanitary lobby | 3.80 × 1.00 | 3.80 |
 | LOGGIA-LINK | Open junction | 2.50 × 0.20 | 0.50 |
 
-Indoor named zones 97.26 m² including stair reservation; 15.77 m² remains for walls and unassigned junction/extension strips. Not net lettable area.
+Indoor named zones 92.79 m² including stair reservation; 15.53 m² remains for walls and unassigned junction/extension strips. Not net lettable area.
 
-## C14 compact bay and envelope study
+## C15 inward court and open exterior study
 
+- Privacy limitation: 72/324 sampled ordinary-bedroom-entry rays can see a sanitary doorway when all doors are open. Opaque suite door must close for those positions; bed rays pass with it open. This is a material compromise, not full privacy approval.
 - Parents/brother each 3.80 × 4.00 m, excluding private sanitary areas. Independent ordinary doors retained.
-- Court and stair share 2.40 m bay, principal references x4.05/6.55. Ground depth along A reduces 10.90 to 10.80 m; suite sleeping rooms unchanged.
-- Shared showers stay 1.30 × 1.80 m; private showers reduce from 1.40 to 1.30 m to fit the compact bay. All retain basins; WCs 1.00 × 1.80 m. Short dressing screen moves 0.45 m towards wet doors.
+- Court and stair share 2.40 m bay. Private baths move into former A-edge court; court moves inward and grows to 6.96 m². Envelope stays 10.80 × 11.40 m.
+- Showers remain 1.30 × 1.80 m with basins; WCs 1.00 × 1.80 m. Dressing screen removed; offset 1.00 m private passage replaces dressing area.
 - Grandpa common door moves near stair; solid altar side wall supports TV. Compact wooden set retained with 1.60 m front-to-front TV gap.
-- Quiet gallery 1.00 m wide with full-width open end and court glass; linen moved to upper landing. Worship area 3.20 × 2.90 m.
-- Ground covered 118.32 m²; upper 113.03 m² including 2.55 m² C-side enclosed bedroom projection; shared terrace 11.50 m² separately.
-- Two stair lights avoid illustrative z3.00–3.50 m beam band; A-side altar/suite candidates are conditional and separate from active openings. Roof tank screen/collector/hatch and blade/portal porches are proposals.
+- Quiet gallery 1.00 m wide; court glass moves to living/upper landing. Worship 3.20 × 2.90 m; exact upper empty strip retained. Suite direct court windows narrow from 1.50 to 0.90 m; dressing adds supplementary glass.
+- Ground covered 116.16 m²; upper 108.32 m², no enclosed bedroom projection; sheltered shared terrace 11.50 m² and porch 7.26 m² separately.
+- Same upper roof datum at 6.60 m; low parapet top6.95 m, roof services top8.15 m assumed. Tank screen relocated above rear suite; structural support/noise unresolved. Two ranch porch edge/support comparisons.
 - Stair, porch/canopy levels and six-seat compact dining retain stated limitations.
-- See docs/concept-study-C14.md; layout and shade treatments remain unselected.
+- See docs/concept-study-C15.md; exact layout and porch detail remain unselected. Sheltered terrace is owner preference.
 
 ## Stair arithmetic — reservation only
 
@@ -243,5 +245,5 @@ Indoor named zones 97.26 m² including stair reservation; 15.77 m² remains for 
 - Altar furniture 1.20 m deep leaves 1.70 m forward worship depth. Upper empty floor 3.20 × 1.20 m; ceremony/heat/privacy arrangement is a proposal, not a feng shui minimum.
 - Both terrace-shade variants, porch canopy, court, foundations, acoustics, waterproofing and guards need a professional design basis.
 - Approximate owner placement is not approval of boundary-wall construction/openings; court sky/airflow, window acoustics, kitchen extract, survey and car turning unresolved.
-- Indoor backing gallery 1.00 m with 0.90 m approach. Ground footprint 118.32 m² and front depth reference along A 4.10 m. Structural load paths and affordability unassessed.
+- Indoor backing gallery 1.00 m with 0.90 m approach. Ground footprint 116.16 m² and front depth reference along A 4.10 m. Structural load paths and affordability unassessed.
 - Left/C 3.0 × 5.0 m car bay, separate gates, porch and steps are reservations. Clear walking strips do not establish road maneuvers, door-opening envelopes, safe levels or finished door/stair operation.

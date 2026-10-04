@@ -128,22 +128,22 @@ try:
             if view=='massing':
                 assert js("document.querySelector('#canvas svg').getAttribute('data-depth-order')")=='camera-ray'
                 assert js("document.querySelector('#canvas svg').getAttribute('data-depth-cycles')")=='0', 'Massing has unresolved surface-order cycle'
-                assert js('document.querySelector("[data-enclosed-cantilever]").getAttribute("data-enclosed-cantilever")')=='0.6'
+                assert js('document.querySelector("[data-enclosed-cantilever]").getAttribute("data-enclosed-cantilever")')=='0'
                 assert js('document.querySelectorAll("[data-facade-window][data-window-room^=STAIR]").length')==2
-                assert js('document.querySelector("[data-enclosed-cantilever]").getAttribute("data-projection-side")')=='C'
+                assert js('document.querySelector("[data-low-parapet]")!==null')
                 assert js('document.querySelector("#canvas svg").getAttribute("data-porch-design")')==option['porch_design']['kind']
                 assert js('document.querySelector("[data-roof-service-screen]")!==null')
                 assert js('document.querySelector("[data-solar-collector]")!==null')
                 assert js('document.querySelector("[data-porch-side-screen]")!==null')==bool(option['porch_design'].get('side_screen_rect'))
                 assert js('document.querySelector("[data-upper-roof-outline]")!==null')
-                assert js('document.querySelector("#canvas svg").getAttribute("data-bedroom-cap-height")')=='6.78'
+                assert js('document.querySelector("#canvas svg").getAttribute("data-bedroom-cap-height")')=='6.6'
             if view=='section':
                 section_text=js('document.querySelector("#canvas").textContent')
-                assert '4.80 m²' in section_text and '5.00 m²' not in section_text
-                assert 'Upper bedroom projection' in section_text and '3.00 m projection' in section_text
+                assert '6.96 m²' in section_text and '0.90 m wide' in section_text
+                assert 'Aligned bedroom walls' in section_text and '3.00 m projection' in section_text
                 assert js('document.querySelector("[data-stair-beam-band]")!==null')
                 assert js('document.querySelector("[data-roof-services-plan]")!==null')
-                assert js('document.querySelector("[data-private-balcony-alternative]")!==null')
+                assert js('document.querySelector("[data-roof-overflow]")!==null')
                 assert 'z3.00–3.50 m' in section_text and '8.15 m' in section_text
             if view=='site':
                 assert js('document.querySelector("[data-upper-outline]").tagName')=='polygon'
@@ -254,7 +254,7 @@ try:
         assert js('document.querySelector(\'[data-operation-door="BR-01"]\').getAttribute("data-operation-kind")')=='hinged'
         assert js('document.querySelector(\'[data-furniture-name="Sofa"]\').getAttribute("data-seat-facing")')==','.join(str(v) for v in MODEL['floors'][0]['tv']['seat_facing'])
         assert js('document.querySelector(\'[data-furniture-name="Wooden armchair"]\').getAttribute("data-seat-facing")')=='-1,0'
-        assert js('document.querySelector(\'[data-window-room="ALT-BUFFER"][data-window-face="court-gallery"]\')!==null')
+        assert js('document.querySelector(\'[data-window-room="LIV-01"][data-window-face="court-gallery"]\')!==null')
         assert js('document.querySelectorAll(\'[data-operation-door="ENTRY"][data-swing="outward"]\').length')==2
         assert js('(()=>{const c=n=>{const r=document.querySelector(`[data-furniture-name="${n}"] rect`);return +r.getAttribute("y")+(+r.getAttribute("height"))/2};return Math.abs(c("Sofa")-c("TV stand"))<1e-8})()')
         js('document.querySelector(\'[data-view="F2"]\').click()')
@@ -279,9 +279,9 @@ try:
               "- Outward entry leaves, centered rendered sofa/TV, solid altar side wall, open court and operable bedroom/stair windows checked; displayed ground area matched model dimensions.",
               "- Study/chair removal, linen portal, shared terrace bench, absent private slab and doorless 1.00 m buffer opening checked.",
               "- Wooden armchair facing and gallery glazing displayed; both exterior variants resolve camera-depth ordering without dependency cycles.",
-              "- C14 actual upper polygon, C-side 0.60 m room extension, 6.78 m roof cap and two independent stair openings checked. Conditional A-side candidates stay distinct from ordinary window schedule.",
-              "- Section labels match the 4.80 m² court and 3.00 m canopy, and include C-side extension, illustrative beam/window ranges, roof-service reservations and private balcony replacement diagram.",
-              "- Blade/portal porch metadata differs by option; rooftop screen and exposed collector appear in both massings.",
+              "- C15 actual upper polygon, zero enclosed projection, 6.60 m common roof datum/low parapet and two independent stair openings checked. Conditional A-side candidates stay distinct from ordinary window schedule.",
+              "- Section labels match the 6.96 m² court and 3.00 m canopy, and include aligned bedroom walls, illustrative beam/window ranges, roof-service reservations and low-parapet drainage diagram.",
+              "- Ranch/framed-ranch porch metadata differs by option; rooftop screen and exposed collector appear in both massings.",
               "- All five overlay controls responded; 390 px layout had no document-level horizontal overflow.",
               f"- {len(rendered)} standalone SVG and {len(rendered)} PNG drawings regenerated.",
               "- PNG drawings captured from corresponding standalone SVG tabs, avoiding page-scroll clipping.",

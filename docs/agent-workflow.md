@@ -1,5 +1,13 @@
 # Continuing and issuing house revisions
 
+## C15 active implementation override
+
+C15 supersedes historical geometry below where changed. Read `data/concepts.json` and [C15 comparison](concept-study-C15.md). Ground/upper bounding envelopes 10.80×11.40; actual upper notched polygon has no sister projection. `cantilever.depth=0` is a retired reservation, not an active slab. `bedroom_cap.thickness=0` retires the separate cap; common roof datum 6.60, `exterior_design.parapet` defines 0.35 m height. Both options have `shade=roof`; porch kinds `ranch`/`framed-ranch` differ only edge/posts.
+
+Private wet y0.20–2.00, passage y2.10–3.10, court[4.10,3.20,2.40,2.90]. Suite direct court windows 0.90 m; additional `court-dressing` windows must not render on outer facades. Historical `court-gallery` face/IDs retained for stability, but assigned rooms now LIV-01/LANDING-02. Court maintenance door is from living, not gallery. No private screens; opaque BR-01/03-BATH sliding doors have explicit open-leaf reservations. Privacy report separates blocked bed rays from 72/324 unblocked ordinary-entry rays; never describe as full open-door privacy.
+
+Roof service screen/tanks relocate above rear suite, hatch/collector retained and access routed around court. Ground porch 3.30×2.20 m/canopy 3.00×4.00; garden path goes to front steps. Site/plan/section step count corrected to two 300 mm treads. Rebuild/export after geometry/template changes; verify/archive with existing scripts. Detailed checks and artifact status are in PROJECT_STATE.md. No new library or renderer.
+
 ## Load only what the task needs
 
 Begin with `AGENTS.md` and `PROJECT_STATE.md`. The brief, family rules and site evidence contain the design requirements. Use the local `house-revision` skill for actual concept revisions; a text correction or factual answer need not invoke the full drawing/export process.
