@@ -1,6 +1,6 @@
 # Family preferences and feng shui register
 
-Updated: 2026-10-04. Status: C11 proposed; latest owner clarification limits upper exclusion to approximately 1.20 m actual altar depth. Ground worship area, indoor backing and seated-back rule remain. Historical interpretations below are superseded where stated.
+Updated: 2026-10-04. Status: C14 proposed; approximately 1.20 m actual altar depth governs upper exclusion. Latest lateral-window direction supersedes C13 provisional road-facing glazing. Indoor backing and seated-back rules remain; historical interpretations are superseded where stated.
 
 ## How requirements are adopted
 
@@ -10,8 +10,8 @@ This record does not claim that these rules are universal or scientifically prov
 
 | ID | Source and priority | Requirement | Working design/check method |
 | --- | --- | --- | --- |
-| ALT-01 | Owner; required width / approximate depth study | Altar width around 3.2–3.4 m; C08 suggests approximately 3 m depth | C08 reserves 3.4 × 3.0 m. Exact extent/furniture remain proposals; reviewed sources establish no universal 3 m requirement |
-| FS-01 | Owner; required, clarified | F2 floor allowed above altar, but keep that zone empty: no bedroom, tables/chairs or frequently used walkway | C10: project only the actual approximately 1.20 m deep altar strip; proposed full 3.40 m width gives 4.08 m² empty floor. Ground worship floor stays 3.40 × 3.00 m. No regular route/furniture over the strip; no void required. Forward zone may be used upstairs |
+| ALT-01 | Owner; latest dimensional study | C13 suggests 3.20 m width × 2.90 m depth and approximately 1.00 m indoor buffer | Exact geometry remains a proposal; no universal depth/width rule adopted |
+| FS-01 | Owner; required, clarified | F2 floor allowed above altar, but keep actual altar strip empty: no bedroom, tables/chairs or frequently used walkway | C13 projects 3.20 × 1.20 m = 3.84 m², matching proposed altar width. Ground worship area has 1.70 m forward standing depth. Ordinary routes/furniture stay outside; no void |
 | FS-02 | Owner; required | Staircase does not face the main entrance | Show entrance axis/sightline and first flight/landing in plan; explore a side-facing or screened approach, then review with family |
 | FS-03 | Owner; required | Solid wall behind altar, with indoor space beyond the wall; avoid WC/shower, gas stove, bedroom, etc. behind it | Indoor space is the baseline clarified by the owner. An outdoor gap/courtyard is conditionally acceptable if supported by the family's feng shui interpretation; current research does not settle that condition. Label wall and buffer zone in plan/section |
 | FS-04 | Owner; required, C02 | Altar faces the same direction as the house, toward road / southeast | Show matching +x facing vectors in C03; 130° follows A and is not D’s normal or a survey verification |
@@ -95,3 +95,22 @@ The requested timber screen is on the altar's displayed left/C side toward seati
 Ground quiet buffer remains indoors behind a continuous solid backing wall. Its side entry becomes doorless; a shallow dry display ledge at the dead end is an assistant proposal, not a newly approved family use. No seat, wet function, stove or bedroom is introduced there. The upper linen alcove loses its door and partition against the empty altar strip, retaining a closed linen cabinet and independent maintenance aisle outside the strip.
 
 The study is removed. A shared right terrace occupies the former forward area; its weather wall leaves the 3.40 × 1.20 m empty altar floor indoors. Regular routes, shade posts and furnishings avoid that strip. Bench faces local −x toward the altar side, back away. The short private bathroom sightline screen remains while the unnecessary internal dividing wall is removed. These are practical design proposals under existing rules, with no new cultural applicability or outcome claim. [C11](concept-study-C11.md).
+
+
+## C12 — wider indoor gallery, smaller worship-depth proposal
+
+Owner requests a more open buffer and assumes wooden seating; no new family restriction is introduced. The **1.30 × 3.40 m gallery** stays indoors behind a continuous backing wall, with a full-width side opening and glazing to the separate bedroom court. Court cleaning access is occasional; there is no routine through-route, seat, bedroom, stove or sanitary use in the gallery. The court is outside the buffer and does not adopt the unresolved outdoor-behind-altar alternative F01.
+
+Worship depth **2.70 m instead of 3.00 m** is the assistant's explicit space trade, requiring review against the earlier approximate request. Width remains 3.40 m. The actual 1.20 m altar strip and exact 4.08 m² empty upstairs floor move together; ordinary upstairs routes remain outside it. Bench faces local −y toward the altar side; perpendicular wooden armchair faces −x with its back away from the altar center. The terrace bench keeps −x facing. Geometry checks address these modeled directions, not all positions or cultural approval. [C12](concept-study-C12.md).
+
+## C13 — solid side wall and narrower indoor gallery
+
+Latest owner direction studies approximately 1.00 m indoor buffer and 3.20 m altar width × 2.90 m depth, and tries a solid wall in place of the living-side screen. C13 implements those trial dimensions with full-width gallery entry/court glazing, continuous separate solid backing and 1.20 m front side opening past the divider. Upper empty strip is **3.20 × 1.20 m / 3.84 m²**, not the whole standing area. Linen moves into the common landing; there is no storage/seat/route inside the exclusion or furniture narrowing the gallery.
+
+The requested opposite-side window is ambiguous because the literal lateral opposite is at the A-boundary gap. C13's provisional road-facing window cuts neither backing nor divider; A/B walls remain closed. Placement clarification, site opening rights, ceremony/privacy and heat/flame details remain open. No new family constraint or cultural outcome claim is inferred. Wooden and terrace seating keep modeled backs away from altar. [C13](concept-study-C13.md) supersedes C12 geometry where changed.
+
+## C14 — lateral altar light, compact bay and roof services
+
+Owner expressly directs altar windows to a **side wall, away from the opposite-facing wall**. C14 removes the road-facing window and proposes a conditional high A-side diffusing light in the forward worship space. This exterior-side interpretation is the assistant's proposal; the family's lateral placement direction is confirmed, opening rights/sky are not. Continuous solid backing/quiet **1.00 m indoor gallery**, solid living-side divider and **3.20 × 1.20 m / 3.84 m²** empty upper strip remain. No new cultural rule or minimum window sill is claimed.
+
+Regular upper access, seating and rooftop storage/equipment stay outside the exclusion; no wet service is routed in the backing. Parents/brother ordinary bedroom entrances and screened private turns remain. Relocating the short privacy return towards sanitary doors does not remove the family's privacy preference. Compact wooden chair/table and terrace bench keep modeled backs away from the altar; occupied positions require family review. Roof reservations above the wet core do not introduce equipment into the gallery or altar strip. [C14](concept-study-C14.md) supersedes changed C13 geometry only.

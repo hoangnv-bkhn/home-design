@@ -2,10 +2,10 @@
 
 Created: 2026-09-30  
 Updated: 2026-10-04
-Status: C11 aligned-room, open-right-terrace and entrance proposal available; neither layout nor shade option selected. Survey, court performance, permissions and engineering pending.
+Status: C14 compact-bay, C-side upper-bedroom, conditional-side-window and roof/porch proposal available; neither layout nor option selected. Survey, performance, rights and engineering pending.
 Purpose: Guide an editable, AI-assisted process from land investigation to construction and handover.
 
-Current review package: [viewer](outputs/house-concepts.html), [C11 comparison](docs/concept-study-C11.md), [geometry review](outputs/geometry-review.md). C11 proposes 115.70 m² ground footprint, 106.88 m² upper enclosure and a 10.58 m² right terrace replacing the study. Shared wet walls align with suites; stair widens to 2.50 m. Doorless buffer/linen alcoves, open terrace guards, partial pergola/full roof options and coordinated canopy/porch/steps remain proposals. The 4.08 m² upper altar floor stays empty. This roadmap is a phase guide; resume from PROJECT_STATE.md and docs/brief.md. Model area is not registered area.
+Current review package: [viewer](outputs/house-concepts.html), [C14 comparison](docs/concept-study-C14.md), [geometry review](outputs/geometry-review.md). C14 proposes 118.32 m² ground covered, 113.03 m² actual upper enclosure and 11.50 m² shared terrace. Court/stair/private core share a 2.40 m bay; house depth reduces 0.10 m, dressing return moves towards sanitary doors and entry shifts 0.30 m right. Conditional A-side altar/suite lights replace the provisional altar road window; ordinary court windows retained. Sister's 0.60 m extension moves to C, shared projection increases to 1.00 m, roof water/solar reservations and blade/portal porches develop the exterior. Counts, suite minimum, indoor solid backing and empty upper altar strip retained. [Window/roof evidence](docs/windows-roof-C14.md) records limitations. Resume from PROJECT_STATE.md and docs/brief.md; this roadmap is a phase guide, model area is not surveyed area.
 
 ## 1. Recommended approach
 

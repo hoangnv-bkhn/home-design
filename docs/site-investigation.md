@@ -95,3 +95,28 @@ Parents/brother remain dependent on their own smaller court, now with a common c
 Ground envelope/placement/court and parking remain C10: 10.50 × 11.40 m envelope, 115.70 m² covered footprint and 4.00 m² court. Upper right terrace is 10.58 m², including 0.60 m outward projection; upper enclosure 106.88 m² after 8.82 m² recess. The former study is removed. No new survey, A/B window right or balcony overlooking permission is established. Near-A terrace privacy and boundary permission need review.
 
 Entrance concept now shows 2.20 × 2.20 m porch, 2.45 × 2.80 m canopy and three 150 mm rises with two 300 mm treads plus porch. Yard −0.45 m is an assumption, not measured flood/road level. Posts clear sampled walking/door reservations; road turning, levels, support foundations and drainage remain unverified. [C11](concept-study-C11.md).
+
+
+## C12 current site consequence
+
+C12's **10.90 m along A × 11.40 m along B** envelope extends 0.40 m toward D, retaining the modeled 0.10 m B and owner-reported approximately 0.30 m A allowances. Ground covered area is **119.46 m²** after the relocated 4.80 m² court. Model front depth along A reduces to **4.00 m**; land outside the complete outer envelope is approximately **119.52 m²**, plus internal court separately. None is surveyed area or a lawful setback.
+
+Porch/canopy/steps move with the shifted entrance; scooters shift outward. Left car bay and gates remain proposals with no swept-path finding. No A/B boundary windows added: suites/gallery face the new own court, not the neighbor gap. Upper terrace is 9.66 m² with 0.60 m outward projection. All earlier site evidence/permission, airport noise, road/flood levels and construction-access uncertainties remain. [C12](concept-study-C12.md).
+
+## C13 governing site/envelope update
+
+Ground bounding envelope/placement remain C12, **10.90 × 11.40 m**. Court widens to **2.50 × 2.00 m / 5.00 m²**, matching stair bay; ground covered area reduces to **119.26 m²**. Model outside-ground-envelope area remains approximately 119.52 m², plus court separately. Ground front depth reference remains 4.00 m. All parcel, bearing, near-A/B allowances and road-width evidence remains unchanged and unverified by survey.
+
+Sister's upper room has a **0.60 m D-side enclosed projection**, outer-envelope strip 2.37 m². Actual upper polygon area is **118.79 m²**, minus court gives **113.79 m²** enclosed convention, including stair reservation. Its 11.50 × 11.40 m bounding rectangle includes empty recesses and is not floor area. The upper bedroom roof cap extends 0.20 m beyond its D/C edges; no eave projects toward A/B. Projection/cap/terrace/canopy corners fit only the assumed parcel model; no planning/setback/overlooking permission or structural adequacy is established.
+
+Canopy grows to **3.00 × 2.80 m** over existing porch plus two 300 mm treads; ground step reservation corrects 0.90 → 0.60 m. Levels remain assumptions, stationary car/gates/scooters remain; no turning result. Shared-bathroom/bedroom court, clear indoor gallery and single cross-storey stair opening remain own-yard/court candidates. New altar window is provisionally D-facing because “other side” needs clarification; the literal opposite side faces ~0.30 m A gap, where opening rights/sky remain unresolved. No new A/B opening. [C13](concept-study-C13.md).
+
+## C14 governing site/envelope update
+
+Ground depth along A reduces **10.90 → 10.80 m**, width along B stays **11.40 m**. Origin (0.10,0.30), parcel lengths/model, compass and neighbor evidence are unchanged. Court returns to **2.40 × 2.00 m / 4.80 m²**. Covered ground area **118.32 m²**; model outside the complete 123.12 m² ground envelope approximately **120.66 m²**, with court separate. Front-depth reference along A **4.10 m**; not surveyed setback or a turning result.
+
+Remove D-side bedroom projection and move **0.60 m towards own C-side garden**: outer strip **2.55 m²**, clear sister room gain **2.40 m²** over unextended room. Upper actual polygon **117.83 m²**, less court yields **113.03 m²** enclosed convention; 10.80 × 12.00 m bounding rectangle is not floor area. Shared terrace projects **1.00 m** beyond the ground facade and reserves **11.50 m²** separately. Cap/terrace/roof service screen corners fit only the assumed parcel model; lawful envelope, support and overlooking unresolved.
+
+Main entry/porch/treads/canopy shift **0.30 m right in the rotated front view**, preserving garden/arrival walks. Stationary car/gates remain unverified for maneuvers. Blade/portal supports and portal's short side slats clear the limited walking/swing/waiting bands.
+
+Altar moves from road-facing glazing to a dashed **conditional A-side** candidate; parents/brother high A-side lights are also conditional. No opening right or daylight/ventilation credit is adopted, and ordinary court windows remain. The roof screen top **8.15 m assumed**, collector/hatch and cold/hot storage are reservations; confirm exact solar horizon/true north, heights/airport applicability, support, maintenance and drains. [C14](concept-study-C14.md), [evidence](windows-roof-C14.md).

@@ -8,7 +8,7 @@ Updated: 2026-10-04. Source: owner's requirements and corrections supplied in co
 - Two floors, five bedrooms total.
 - Preferred location: rear next to B, with the A-side wall approximately **0.30 m** away. Owner wants outdoor space concentrated toward the front/D and side garden/C. C03 assumes a **0.10 m B allowance** because no exact B dimension was given; this is not an owner-specified distance or verified permission.
 - Parking: one car plus a few scooters/bicycles; garden and front yard preferred.
-- Owner retains an **approximately 100 m² footprint target**, but neither exactly 100 m² nor a 10 × 10 m square is required. Latest feedback permits relayout for larger Grandpa/altar and normal bedroom/stair windows. C11 proposes 115.70 m² ground covered footprint and 106.88 m² upper enclosed envelope, from 10.50 × 11.40 m bounding dimensions, 4.00 m² court and 8.82 m² upper terrace recess. Terrace area is 10.58 m² separately. Court/footprint not approved; affordability unassessed. Upper cantilever studies remain permitted; C10 adopts no enclosed room cantilever. “Occupy entire plot” remains superseded.
+- Owner retains an **approximately 100 m² footprint target**, but neither exactly 100 m² nor a 10 × 10 m square is required. C14 proposes **118.32 m² ground covered / 113.03 m² upper enclosed** using the actual notched/side-projecting upper outline, a 4.80 m² court and 0.60 m C-side upper-bedroom extension. Ground bounding dimensions are 10.80 × 11.40 m; F2's 10.80 × 12.00 m bounding rectangle is not floor area. Shared terrace 11.50 m² separately. Footprint, projection and affordability remain unapproved. “Occupy entire plot” remains superseded.
 - In this project, **F1 = ground/entrance floor (tầng 1)** and **F2 = upper floor (tầng 2)**. Use this convention on every drawing.
 - Budget figure deferred for initial layout exploration. No assumption of unlimited budget.
 - Plot evidence and uncertainties: [site notes](site-investigation.md).
@@ -19,15 +19,15 @@ Updated: 2026-10-04. Source: owner's requirements and corrections supplied in co
 
 | ID | Floor | Space | Requirement |
 | --- | --- | --- | --- |
-| BR-01 | F1 | Parents' bedroom | Spacious sleeping room; private ensuite with separate WC and shower |
+| BR-01 | F1 | Parents' bedroom | Sleeping room minimum 4.00 × 3.80 m, excluding ensuite; private separate WC and shower |
 | BR-02 | F1 | Grandpa's bedroom | Access to shared WC/shower without entering another bedroom |
 | SAN-01 | F1 | Parents' private sanitary pair | One WC compartment and one separate shower compartment |
 | SAN-02 | F1 | Shared sanitary pair | One WC compartment and one separate shower compartment |
-| ALT-01 | F1 | Altar area | Owner requests width around 3.2–3.4 m and now suggests depth approximately 3 m; C08 proposes 3.4 × 3.0 m, exact extent/furniture to review |
+| ALT-01 | F1 | Altar area | Latest owner study suggests **3.20 m width × 2.90 m depth**, approximately 1.00 m indoor buffer and solid side wall replacing screen; exact design unselected |
 | LIV-01 | F1 | Living room | Prioritize open space around living/altar; include a TV stand and sofa arrangement |
 | KIT-01 | F1 | Kitchen | Compact dining inside kitchen; latest request explores left/C side with direct side-garden access, superseding rear-only placement; fuel unconfirmed |
 | DIN-01 | F1 | Dining space | Compact table/chairs in kitchen; retain original approximate six seats for this study, no separate generous dining zone needed |
-| BR-03 | F2 | Brother's bedroom | Spacious sleeping room; private ensuite with separate WC and shower |
+| BR-03 | F2 | Brother's bedroom | Sleeping room minimum 4.00 × 3.80 m, excluding ensuite; private separate WC and shower |
 | BR-04 | F2 | Younger sister's bedroom | Access to shared sanitary pair |
 | BR-05 | F2 | Spare bedroom | Owner confirms spare use; may shrink freely, while retaining ordinary access and shared sanitary pair |
 | SAN-03 | F2 | Brother's private sanitary pair | One WC compartment and one separate shower compartment |
@@ -81,7 +81,7 @@ C05 proposes 9.6 m along A × 12.8 m along B, direct C kitchen exit and a west-s
 ## C06 feedback — owner input, 2026-10-03
 
 - Parents need an ordinary entrance/exit independent of the dressing/bathroom nook. Correct the forced detour; apply the same check to other bedrooms.
-- Reduce oversized bedrooms and excess/empty circulation to reduce overall footprint. Earlier spacious-suite preferences establish no fixed minimum; balance compactness with furniture and usable paths.
+- Reduce oversized bedrooms and excess/empty circulation to reduce overall footprint. At C06 no fixed minimum was given; C12 supersedes this with 4.00 × 3.80 m for parents/brother. Balance remaining space with furniture and usable paths.
 - Seated occupants must not have their backs toward the altar. Reconsider sofa/TV/entry together; this is the family's chosen rule, not universal guidance.
 - Explore car parking on the **displayed left/C side** for convenience. Requested study, not acceptance of a bay/gate or proof of turning.
 - Every decision must consider people's usability/convenience with experienced residential design judgment. Assess entry/exit, occupied chairs, dressing/storage, cooking, bathroom privacy, parking/unloading and garden routes; room containment alone is insufficient. Add this to agent instructions and fix discovered practical conflicts.
@@ -140,7 +140,7 @@ No construction price or feasible floor area is established by the current sketc
 6. Coordinate columns, stair opening, wet stacks and vertical sections. Revise both floors together.
 7. Compare two or three options with furniture, dimensions, sightlines, preliminary area schedules and unresolved issues.
 
-Current [viewer](../outputs/house-concepts.html) presents [C11](concept-study-C11.md): aligned wet walls, wider stair, open right terrace, doorless buffer/linen alcoves and coordinated entrance. [C10 baseline](../revisions/C10/manifest.json) is preserved. C11 layout, shade treatment, footprint, fit-out and environmental performance remain proposals.
+Current [viewer](../outputs/house-concepts.html) presents [C14](concept-study-C14.md): compact 2.40 m bay, relocated dressing return, conditional side windows, C-side upper-bedroom extension, deeper shared terrace and roof/porch comparison. [C13 baseline](../revisions/C13/manifest.json) is preserved. Layout, openings, roof/services and porch choices remain proposals.
 
 ## C09 feedback — owner input, 2026-10-03
 
@@ -170,3 +170,41 @@ C10 responds with 13.60 m² corner parents/brother rooms, 12.58 m² spare room, 
 - Rework the unsatisfactory exterior massing creatively and carefully; broader coordinated design improvement remains authorized.
 
 C11 proposes a 300 mm shared wet shift, 2.50 m stair bay, one open private dressing space retaining a short sightline screen, doorless ground alcove with end ledge and open upper linen alcove with closed cabinet. A 10.58 m² shared right terrace replaces the study; partial pergola/full thin roof options use the same plan. Entrance canopy/steps and landing window are developed in all relevant views. See [C11](concept-study-C11.md); proposals remain unselected.
+
+
+## C12 owner iteration — 2026-10-04
+
+- Improve the main entrance: the nearby wall and TV stand feel tight. Relayout/replacement of seating is welcome; **assume a wooden sofa set**. No exact existing furniture sizes or piece count were supplied.
+- Shared WC/shower doors directly facing the stair are disliked. **Explore their relocation to the current court position**; this is a study suggestion, not approval to eliminate bedroom daylight/air access.
+- Parents' and brother's sleeping rooms must each be **at least 4.00 × 3.80 m**. This supersedes earlier no-minimum statements; ensuite area is additional.
+- Shower width may reduce to **1.30 m**. Separate WC/shower compartments and a basin in each shower remain required; no statutory minimum is asserted.
+- The narrow, deep space behind the altar feels unusable; make it more open/spacious. The indoor baseline, solid backing, upper empty strip and seated-back rule remain.
+- Improve exterior composition and investigate the balcony/window collision. Creative coordinated relayout remains welcome; neither layout nor shade option is selected.
+
+C12 proposes 3.80 × 4.00 m suites, shared sanitary rooms in the former court bay with side-lobby doors, and a new 2.40 × 2.00 m court beside suites/gallery. Private baths move to the old shared core; all showers 1.30 × 1.80 m. Entrance shifts 0.50 m toward altar side and TV moves to a side console with compact wooden bench/chair/table. Indoor gallery is 1.30 m wide/full-width open; worship depth reduces to 2.70 m, while the actual 1.20 m upper altar strip stays empty. These dimensions beyond the bedroom minimum are proposals; [C12 comparison](concept-study-C12.md) records the 119.46 m² footprint and other tradeoffs.
+
+## C13 owner iteration — 2026-10-04
+
+- Consider aligning the stair with the court on the other side for cleaner principal bay lines and structural coordination. This requests a study, not approval of a framing system.
+- The indoor space behind the altar may be approximately **1.00 m** rather than 1.30 m. Test altar **3.20 m width × 2.90 m depth** to release living width; these are suggested dimensions.
+- Consider Grandpa's door nearer the stair. Preserve an ordinary common entrance and review bedroom furniture/door operation.
+- **Try a solid wall instead of the altar side screen**, and a window on the other side. The literal opposite lateral wall faces the A-boundary gap; an asynchronous placement clarification is pending. C13 provisionally proposes a road-facing outer-wall window and adds no A/B opening right.
+- Review whether the stair needs as many windows. No particular replacement size or environmental performance requirement was selected.
+- Develop more articulated exterior volumes/layering, including possible cantilever, and coordinate canopy, porch/steps and roof. Creative changes remain authorized; neither shade option, structural system nor layout is selected.
+
+C13 aligns court/stair to a 2.50 m bay, retains suite minimum/counts, uses a clear 1.00 m gallery, a 3.20 × 2.90 m worship area and matching 3.84 m² empty upper strip. Grandpa's door moves near stair; kitchen/dining widens, private showers regain 1.40 m, shared showers remain 1.30 m. A single cross-storey half-landing window, 0.60 m projecting sister room, separate roof cap and 3.00 m canopy over porch/two treads develop the exterior. All precise geometry and window-placement interpretation remain proposals. [C13 comparison](concept-study-C13.md).
+
+## C14 owner iteration — 2026-10-04
+
+- Reconsider the stair opening across the potential floor-edge beam; put glazing elsewhere if needed. No beam size or framing system is confirmed.
+- **Move altar glazing to a lateral wall; avoid a window directly opposite the altar.** The A-side exterior location in C14 is the assistant's interpretation of that direction, conditional on rights and neighbor evidence.
+- Test **1.30 m shared showers and a 2.40 m court/stair/core bay**, reducing house depth. Shared showers were already 1.30 m in C13; private shower width/stair center reservation control the change. Earlier D41 permits 1.30 m shower studies generally.
+- Make parents' private dressing feel more spacious, considering partition removal/relocation; keep the existing privacy preference and ordinary bedroom exit.
+- Investigate parents/brother A-side windows at the reported **0.30 m gap** for natural light and ventilation. This requests a study, not opening permission or a proven performance result.
+- Consider moving the main entrance a little right; no exact distance specified.
+- Explore moving sister's cantilever **from front to side**, or a shallow private balcony instead. No private balcony selected.
+- Test shared balcony projection **approximately 1.00 m**; C13 was 0.60 m rather than the owner's approximate 0.50 m observation.
+- **Reserve roof space for water storage and solar water heating**, with equipment concealed/harmonized with the exterior, safe access and servicing to be developed. No capacity, system or product specified.
+- Explore another porch/canopy composition creatively; neither option selected.
+
+C14 reduces the aligned bay to 2.40 m and ground depth 10.90 → 10.80 m. Private showers reduce 1.40 → 1.30 m, central stair reservation 0.30 → 0.20 m; suite minimum/counts retained. Dressing return moves 0.45 m towards wet doors, entry shifts 0.30 m right with compact furniture reconciled. Altar/suite side windows are dashed conditional candidates, ordinary court windows retained. Sister's 0.60 m extension moves to C; shared terrace projects 1.00 m. Roof screen reserves separate cold/hot storage and exposed collector/hatch; blade/portal porch options and a separate private-balcony replacement diagram are proposals. [C14 comparison](concept-study-C14.md), [research/limits](windows-roof-C14.md).
